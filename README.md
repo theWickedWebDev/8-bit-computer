@@ -62,7 +62,13 @@ Uses a JK flip flop, a 555 timer and EEPROM to multiplex four 7-segment displays
 #### Schematic
 ![SCHEMATIC](https://github.com/theWickedWebDev/8-bit-computer/blob/master/DISPLAY/display-sch.png?raw=true)
 
-####
+### BUS
+
+Wanted to make a simple board for connecting all the modules to an 8-bit bus
+
+![BUS](https://github.com/theWickedWebDev/8-bit-computer/blob/master/BUS_BOARD/bus-board-board.png?raw=true)
+
+
 ### Clock
 #### TODO
 #### Manual
@@ -83,3 +89,4 @@ Uses a JK flip flop, a 555 timer and EEPROM to multiplex four 7-segment displays
 
 ### Flags Register
 #### TODO
+
