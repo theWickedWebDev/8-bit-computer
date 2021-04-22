@@ -8,7 +8,6 @@
 ### Counter
 ![COUNTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/COUNTER/counter.png?raw=true)
 
-
 ### RAM
 #### Memory Address Register
 ![RAM](https://github.com/theWickedWebDev/8-bit-computer/blob/master/MEMORY_ADDRESS_REGISTER/mar.png?raw=true)
@@ -19,3 +18,23 @@
 #### Storage
 ![RAM](https://github.com/theWickedWebDev/8-bit-computer/blob/master/RAM/ram-3d.png)
 
+#### Display
+![DISPLAY](https://github.com/theWickedWebDev/8-bit-computer/blob/master/DISPLAY/display-3d.png)
+
+#### Clock
+##### TODO
+
+#### Microcode / Control Logic  EEPROM
+##### TODO
+
+#### Manual RAM Write
+##### TODO
+
+#### A & B Registers
+##### TODO
+
+#### Instruction Register
+##### TODO
+
+#### Flags Register
+##### TODO

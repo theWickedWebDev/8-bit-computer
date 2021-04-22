@@ -145,82 +145,6 @@ F 3 "~" H 5150 7150 50  0001 C CNN
 	1    5150 7150
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	6450 1200 6450 1250
-Wire Wire Line
-	7500 1200 7500 1250
-Wire Wire Line
-	8500 1200 8500 1250
-Wire Wire Line
-	9550 1200 9550 1250
-Wire Wire Line
-	9550 1250 9450 1250
-Connection ~ 9550 1250
-Wire Wire Line
-	9550 1250 9550 1300
-Wire Wire Line
-	8500 1250 8400 1250
-Connection ~ 8500 1250
-Wire Wire Line
-	8500 1250 8500 1300
-Wire Wire Line
-	7400 1250 7500 1250
-Connection ~ 7500 1250
-Wire Wire Line
-	7500 1250 7500 1300
-Wire Wire Line
-	6400 1250 6450 1250
-Connection ~ 6450 1250
-Wire Wire Line
-	6450 1250 6450 1300
-Wire Wire Line
-	9450 750  5850 750 
-Wire Wire Line
-	9450 750  9450 1250
-Wire Wire Line
-	8400 700  5900 700 
-Wire Wire Line
-	8400 700  8400 1250
-Wire Wire Line
-	7400 650  5950 650 
-Wire Wire Line
-	7400 650  7400 1250
-Wire Wire Line
-	6400 800  6000 800 
-Wire Wire Line
-	6400 800  6400 1250
-Text Label 7150 1900 0    39   ~ 0
-A
-Wire Wire Line
-	7150 1900 7050 1900
-Text Label 7150 1800 0    39   ~ 0
-B
-Wire Wire Line
-	7150 1800 7050 1800
-Text Label 7150 1700 0    39   ~ 0
-C
-Wire Wire Line
-	7150 1700 7050 1700
-Text Label 7150 1600 0    39   ~ 0
-D
-Wire Wire Line
-	7150 1600 7050 1600
-Text Label 7150 1500 0    39   ~ 0
-E
-Wire Wire Line
-	7150 1500 7050 1500
-Text Label 7150 1400 0    39   ~ 0
-F
-Wire Wire Line
-	7150 1400 7050 1400
-Text Label 7150 1300 0    39   ~ 0
-G
-Wire Wire Line
-	7150 1300 7050 1300
-Text Label 7150 1200 0    39   ~ 0
-DP
-Wire Wire Line
-	7150 1200 7050 1200
 Text Label 9700 4700 0    39   ~ 0
 A
 Wire Wire Line
@@ -253,102 +177,22 @@ Text Label 9700 4000 0    39   ~ 0
 H
 Wire Wire Line
 	9700 4000 9600 4000
-Text Label 8200 1900 0    39   ~ 0
+Text Label 10050 750  2    39   ~ 0
 A
-Wire Wire Line
-	8200 1900 8100 1900
-Text Label 8200 1800 0    39   ~ 0
+Text Label 10150 750  2    39   ~ 0
 B
-Wire Wire Line
-	8200 1800 8100 1800
-Text Label 8200 1700 0    39   ~ 0
+Text Label 10050 2150 3    39   ~ 0
 C
-Wire Wire Line
-	8200 1700 8100 1700
-Text Label 8200 1600 0    39   ~ 0
+Text Label 9850 2150 3    39   ~ 0
 D
-Wire Wire Line
-	8200 1600 8100 1600
-Text Label 8200 1500 0    39   ~ 0
+Text Label 9750 2150 3    39   ~ 0
 E
-Wire Wire Line
-	8200 1500 8100 1500
-Text Label 8200 1400 0    39   ~ 0
+Text Label 9850 750  2    39   ~ 0
 F
-Wire Wire Line
-	8200 1400 8100 1400
-Text Label 8200 1300 0    39   ~ 0
+Text Label 9750 750  2    39   ~ 0
 G
-Wire Wire Line
-	8200 1300 8100 1300
-Text Label 8200 1200 0    39   ~ 0
+Text Label 10150 2150 3    39   ~ 0
 DP
-Wire Wire Line
-	8200 1200 8100 1200
-Text Label 9200 1900 0    39   ~ 0
-A
-Wire Wire Line
-	9200 1900 9100 1900
-Text Label 9200 1800 0    39   ~ 0
-B
-Wire Wire Line
-	9200 1800 9100 1800
-Text Label 9200 1700 0    39   ~ 0
-C
-Wire Wire Line
-	9200 1700 9100 1700
-Text Label 9200 1600 0    39   ~ 0
-D
-Wire Wire Line
-	9200 1600 9100 1600
-Text Label 9200 1500 0    39   ~ 0
-E
-Wire Wire Line
-	9200 1500 9100 1500
-Text Label 9200 1400 0    39   ~ 0
-F
-Wire Wire Line
-	9200 1400 9100 1400
-Text Label 9200 1300 0    39   ~ 0
-G
-Wire Wire Line
-	9200 1300 9100 1300
-Text Label 9200 1200 0    39   ~ 0
-DP
-Wire Wire Line
-	9200 1200 9100 1200
-Text Label 10250 1900 0    39   ~ 0
-A
-Wire Wire Line
-	10250 1900 10150 1900
-Text Label 10250 1800 0    39   ~ 0
-B
-Wire Wire Line
-	10250 1800 10150 1800
-Text Label 10250 1700 0    39   ~ 0
-C
-Wire Wire Line
-	10250 1700 10150 1700
-Text Label 10250 1600 0    39   ~ 0
-D
-Wire Wire Line
-	10250 1600 10150 1600
-Text Label 10250 1500 0    39   ~ 0
-E
-Wire Wire Line
-	10250 1500 10150 1500
-Text Label 10250 1400 0    39   ~ 0
-F
-Wire Wire Line
-	10250 1400 10150 1400
-Text Label 10250 1300 0    39   ~ 0
-G
-Wire Wire Line
-	10250 1300 10150 1300
-Text Label 10250 1200 0    39   ~ 0
-DP
-Wire Wire Line
-	10250 1200 10150 1200
 $Comp
 L power:VCC #PWR0334
 U 1 1 6124544D
@@ -728,8 +572,6 @@ Wire Wire Line
 Wire Wire Line
 	5950 1500 5750 1500
 Wire Wire Line
-	6000 800  6000 1600
-Wire Wire Line
 	6000 1600 5750 1600
 $Comp
 L power:GND #PWR?
@@ -770,48 +612,15 @@ Wire Wire Line
 Wire Wire Line
 	4400 1300 4400 1950
 $Comp
-L Display_Character:HDSP-7503 U102
+L HDSP-H103:HDSP-H103 U102
 U 1 1 611D7A6E
-P 9850 1600
-F 0 "U102" V 9850 2130 50  0001 L CNN
-F 1 "HDSP-7503" V 9895 2130 50  0001 L CNN
-F 2 "Display_7Segment:7SegmentLED_LTS6760_LTS6780" H 9850 1050 50  0001 C CNN
-F 3 "" H 9450 2150 50  0001 C CNN
-	1    9850 1600
-	-1   0    0    1   
-$EndComp
-$Comp
-L Display_Character:HDSP-7503 U82
-U 1 1 611D6A0B
-P 8800 1600
-F 0 "U82" V 8800 2130 50  0001 L CNN
-F 1 "HDSP-7503" V 8845 2130 50  0001 L CNN
-F 2 "Display_7Segment:7SegmentLED_LTS6760_LTS6780" H 8800 1050 50  0001 C CNN
-F 3 "" H 8400 2150 50  0001 C CNN
-	1    8800 1600
-	-1   0    0    1   
-$EndComp
-$Comp
-L Display_Character:HDSP-7503 U72
-U 1 1 611D5B8F
-P 7800 1600
-F 0 "U72" V 7800 2130 50  0001 L CNN
-F 1 "HDSP-7503" V 7845 2130 50  0001 L CNN
-F 2 "Display_7Segment:7SegmentLED_LTS6760_LTS6780" H 7800 1050 50  0001 C CNN
-F 3 "" H 7400 2150 50  0001 C CNN
-	1    7800 1600
-	-1   0    0    1   
-$EndComp
-$Comp
-L Display_Character:HDSP-7503 U62
-U 1 1 611D415F
-P 6750 1600
-F 0 "U62" V 6750 2130 50  0001 L CNN
-F 1 "HDSP-7503" V 6795 2130 50  0001 L CNN
-F 2 "Display_7Segment:7SegmentLED_LTS6760_LTS6780" H 6750 1050 50  0001 C CNN
-F 3 "" H 6350 2150 50  0001 C CNN
-	1    6750 1600
-	-1   0    0    1   
+P 9950 1450
+F 0 "U102" V 9950 1980 50  0001 L CNN
+F 1 "HDSP-7503" V 9995 1980 50  0001 L CNN
+F 2 "Display_7Segment:7SegmentLED_LTS6760_LTS6780" H 9950 900 50  0001 C CNN
+F 3 "" H 9550 2000 50  0001 C CNN
+	1    9950 1450
+	0    -1   -1   0   
 $EndComp
 $Comp
 L 74xx:74LS139 U4332
@@ -858,7 +667,7 @@ F 3 "" H 2400 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L AT28C256:AT28C256 U9
+L DISPLAY-rescue:AT28C256-AT28C256 U9
 U 1 1 611B6E4E
 P 9000 4200
 F 0 "U9" H 9000 5267 50  0001 C CNN
@@ -990,4 +799,145 @@ $EndComp
 Connection ~ 5750 7050
 Wire Wire Line
 	3850 2200 4800 2200
+Wire Wire Line
+	9450 750  9450 650 
+Wire Wire Line
+	9450 650  9950 650 
+Wire Wire Line
+	9950 650  9950 750 
+Wire Wire Line
+	9950 2150 9950 2300
+Wire Wire Line
+	9950 2300 9450 2300
+Wire Wire Line
+	9450 2300 9450 750 
+Connection ~ 9450 750 
+Wire Wire Line
+	9450 750  5850 750 
+Text Label 9050 900  2    39   ~ 0
+A
+Text Label 9150 900  2    39   ~ 0
+B
+Text Label 9050 2300 3    39   ~ 0
+C
+Text Label 8850 2300 3    39   ~ 0
+D
+Text Label 8750 2300 3    39   ~ 0
+E
+Text Label 8850 900  2    39   ~ 0
+F
+Text Label 8750 900  2    39   ~ 0
+G
+Text Label 9150 2300 3    39   ~ 0
+DP
+$Comp
+L HDSP-H103:HDSP-H103 U3
+U 1 1 60883926
+P 8950 1600
+F 0 "U3" V 8950 2130 50  0001 L CNN
+F 1 "HDSP-7503" V 8995 2130 50  0001 L CNN
+F 2 "Display_7Segment:7SegmentLED_LTS6760_LTS6780" H 8950 1050 50  0001 C CNN
+F 3 "" H 8550 2150 50  0001 C CNN
+	1    8950 1600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8950 2300 8950 2450
+Wire Wire Line
+	5900 700  8500 700 
+Wire Wire Line
+	8950 700  8950 900 
+Wire Wire Line
+	8950 2450 8500 2450
+Wire Wire Line
+	8500 2450 8500 700 
+Connection ~ 8500 700 
+Wire Wire Line
+	8500 700  8950 700 
+Text Label 6850 850  2    39   ~ 0
+A
+Text Label 6950 850  2    39   ~ 0
+B
+Text Label 6850 2250 3    39   ~ 0
+C
+Text Label 6650 2250 3    39   ~ 0
+D
+Text Label 6550 2250 3    39   ~ 0
+E
+Text Label 6650 850  2    39   ~ 0
+F
+Text Label 6550 850  2    39   ~ 0
+G
+Text Label 6950 2250 3    39   ~ 0
+DP
+$Comp
+L HDSP-H103:HDSP-H103 U1
+U 1 1 608AAF98
+P 6750 1550
+F 0 "U1" V 6750 2080 50  0001 L CNN
+F 1 "HDSP-7503" V 6795 2080 50  0001 L CNN
+F 2 "Display_7Segment:7SegmentLED_LTS6760_LTS6780" H 6750 1000 50  0001 C CNN
+F 3 "" H 6350 2100 50  0001 C CNN
+	1    6750 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6750 2250 6750 2400
+Text Label 8000 850  2    39   ~ 0
+A
+Text Label 8100 850  2    39   ~ 0
+B
+Text Label 8000 2250 3    39   ~ 0
+C
+Text Label 7800 2250 3    39   ~ 0
+D
+Text Label 7700 2250 3    39   ~ 0
+E
+Text Label 7800 850  2    39   ~ 0
+F
+Text Label 7700 850  2    39   ~ 0
+G
+Text Label 8100 2250 3    39   ~ 0
+DP
+$Comp
+L HDSP-H103:HDSP-H103 U2
+U 1 1 608B9E8C
+P 7900 1550
+F 0 "U2" V 7900 2080 50  0001 L CNN
+F 1 "HDSP-7503" V 7945 2080 50  0001 L CNN
+F 2 "Display_7Segment:7SegmentLED_LTS6760_LTS6780" H 7900 1000 50  0001 C CNN
+F 3 "" H 7500 2100 50  0001 C CNN
+	1    7900 1550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7900 2250 7900 2400
+Wire Wire Line
+	7900 650  7900 850 
+Wire Wire Line
+	7900 2400 7400 2400
+Wire Wire Line
+	7400 2400 7400 650 
+Wire Wire Line
+	7900 650  7400 650 
+Connection ~ 7400 650 
+Wire Wire Line
+	5950 650  7400 650 
+Wire Wire Line
+	6750 850  6750 600 
+Wire Wire Line
+	6000 600  6000 1600
+Wire Wire Line
+	6750 2400 6300 2400
+Wire Wire Line
+	6300 2400 6300 600 
+Wire Wire Line
+	6000 600  6300 600 
+Connection ~ 6300 600 
+Wire Wire Line
+	6300 600  6750 600 
+NoConn ~ 10150 2150
+NoConn ~ 9150 2300
+NoConn ~ 8100 2250
+NoConn ~ 6950 2250
 $EndSCHEMATC
