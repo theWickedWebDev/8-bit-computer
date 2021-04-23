@@ -75,14 +75,15 @@ Uses a JK flip flop, a 555 timer and EEPROM to multiplex four 7-segment displays
 ### Manual RAM Write
 #### TODO
 
-### A & B Registers
-#### TODO
+### Registers
+![DISPLAY](https://github.com/theWickedWebDev/8-bit-computer/blob/master/REGISTER/register-3d.png)
 
-### Instruction Register
-#### TODO
+#### A & B Registers
 
-### Flags Register
-#### TODO
+#### Instruction Register
+
+#### Flags Register
+
 
 ### BUS
 ![BUS](https://github.com/theWickedWebDev/8-bit-computer/blob/master/BUS_BOARD/bus-board-board.png?raw=true)
