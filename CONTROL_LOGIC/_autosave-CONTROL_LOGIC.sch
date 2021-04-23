@@ -1,0 +1,1727 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x15 J?
+U 1 1 609DD8AB
+P -8700 900
+AR Path="/609D754A/609DD8AB" Ref="J?"  Part="1" 
+AR Path="/609DD8AB" Ref="J2"  Part="1" 
+F 0 "J2" V -8575 846 50  0001 C CNN
+F 1 "Conn_01x15" V -8484 846 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x15_P2.54mm_Vertical" H -8700 900 50  0001 C CNN
+F 3 "~" H -8700 900 50  0001 C CNN
+	1    -8700 900 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 609DD8B7
+P -11350 1250
+AR Path="/609D754A/609DD8B7" Ref="J?"  Part="1" 
+AR Path="/609DD8B7" Ref="J1"  Part="1" 
+F 0 "J1" V -11478 1330 50  0000 L CNN
+F 1 "Conn_01x02" V -11387 1330 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H -11350 1250 50  0001 C CNN
+F 3 "~" H -11350 1250 50  0001 C CNN
+	1    -11350 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 609DD8BD
+P -11350 900
+AR Path="/609D754A/609DD8BD" Ref="#PWR?"  Part="1" 
+AR Path="/609DD8BD" Ref="#PWR0101"  Part="1" 
+F 0 "#PWR0101" H -11350 650 50  0001 C CNN
+F 1 "GND" H -11345 727 50  0000 C CNN
+F 2 "" H -11350 900 50  0001 C CNN
+F 3 "" H -11350 900 50  0001 C CNN
+	1    -11350 900 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	-11350 900  -11350 1050
+$Comp
+L Device:CP_Small C?
+U 1 1 609DD8C4
+P -12300 950
+AR Path="/609D754A/609DD8C4" Ref="C?"  Part="1" 
+AR Path="/609DD8C4" Ref="C1"  Part="1" 
+F 0 "C1" V -12075 950 50  0000 C CNN
+F 1 "CP_Small" V -12166 950 50  0000 C CNN
+F 2 "Capacitor_THT:C_Radial_D5.0mm_H7.0mm_P2.00mm" H -12300 950 50  0001 C CNN
+F 3 "~" H -12300 950 50  0001 C CNN
+	1    -12300 950 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	-11300 1050 -11350 1050
+Wire Wire Line
+	-11300 1050 -11300 1500
+Connection ~ -11350 1050
+$Comp
+L Device:CP_Small C?
+U 1 1 609DD8D3
+P -11400 1500
+AR Path="/609D754A/609DD8D3" Ref="C?"  Part="1" 
+AR Path="/609DD8D3" Ref="C5"  Part="1" 
+F 0 "C5" V -11175 1500 50  0000 C CNN
+F 1 "CP_Small" V -11266 1500 50  0001 C CNN
+F 2 "Capacitor_THT:C_Radial_D5.0mm_H7.0mm_P2.00mm" H -11400 1500 50  0001 C CNN
+F 3 "~" H -11400 1500 50  0001 C CNN
+	1    -11400 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 609DD8D9
+P -12150 950
+AR Path="/609D754A/609DD8D9" Ref="#PWR?"  Part="1" 
+AR Path="/609DD8D9" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H -12150 700 50  0001 C CNN
+F 1 "GND" H -12145 777 50  0000 C CNN
+F 2 "" H -12150 950 50  0001 C CNN
+F 3 "" H -12150 950 50  0001 C CNN
+	1    -12150 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 609DD8DF
+P -12450 950
+AR Path="/609D754A/609DD8DF" Ref="#PWR?"  Part="1" 
+AR Path="/609DD8DF" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H -12450 800 50  0001 C CNN
+F 1 "VCC" V -12435 1077 50  0000 L CNN
+F 2 "" H -12450 950 50  0001 C CNN
+F 3 "" H -12450 950 50  0001 C CNN
+	1    -12450 950 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	-11450 1000 -11450 1050
+Wire Wire Line
+	-12450 950  -12400 950 
+Wire Wire Line
+	-12200 950  -12150 950 
+$Comp
+L power:VCC #PWR?
+U 1 1 609DD8EB
+P -11450 1000
+AR Path="/609D754A/609DD8EB" Ref="#PWR?"  Part="1" 
+AR Path="/609DD8EB" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H -11450 850 50  0001 C CNN
+F 1 "VCC" V -11435 1127 50  0000 L CNN
+F 2 "" H -11450 1000 50  0001 C CNN
+F 3 "" H -11450 1000 50  0001 C CNN
+	1    -11450 1000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Network08_US RN?
+U 1 1 609DD925
+P -10250 6350
+AR Path="/609D754A/609DD925" Ref="RN?"  Part="1" 
+AR Path="/609DD925" Ref="RN1"  Part="1" 
+F 0 "RN1" H -9862 6396 50  0001 L CNN
+F 1 "R_Network08_US" H -9862 6305 50  0001 L CNN
+F 2 "Resistor_THT:R_Array_SIP9" V -9775 6350 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H -10250 6350 50  0001 C CNN
+	1    -10250 6350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 609DD933
+P -9850 6550
+AR Path="/609D754A/609DD933" Ref="#PWR?"  Part="1" 
+AR Path="/609DD933" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H -9850 6300 50  0001 C CNN
+F 1 "GND" H -9845 6377 50  0000 C CNN
+F 2 "" H -9850 6550 50  0001 C CNN
+F 3 "" H -9850 6550 50  0001 C CNN
+	1    -9850 6550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-11500 1050 -11450 1050
+Wire Wire Line
+	-11500 1050 -11500 1500
+Connection ~ -11450 1050
+$Comp
+L AT28C256:AT28C256 EEPROM1
+U 1 1 609F1420
+P -10150 2750
+F 0 "EEPROM1" V -10150 2650 50  0000 C CNN
+F 1 "AT28C256" H -10150 3000 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm" H -10150 2750 50  0001 C CNN
+F 3 "" H -10150 2750 50  0001 L BNN
+	1    -10150 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 609F515C
+P -10850 3350
+AR Path="/609D754A/609F515C" Ref="#PWR?"  Part="1" 
+AR Path="/609F515C" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H -10850 3100 50  0001 C CNN
+F 1 "GND" H -10845 3177 50  0000 C CNN
+F 2 "" H -10850 3350 50  0001 C CNN
+F 3 "" H -10850 3350 50  0001 C CNN
+	1    -10850 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 609F593B
+P -10950 3350
+AR Path="/609D754A/609F593B" Ref="#PWR?"  Part="1" 
+AR Path="/609F593B" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H -10950 3200 50  0001 C CNN
+F 1 "VCC" V -10935 3477 50  0000 L CNN
+F 2 "" H -10950 3350 50  0001 C CNN
+F 3 "" H -10950 3350 50  0001 C CNN
+	1    -10950 3350
+	-1   0    0    1   
+$EndComp
+Text Label -10650 3400 3    50   ~ 0
+D1
+Text Label -10550 3400 3    50   ~ 0
+D2
+Text Label -10450 3400 3    50   ~ 0
+D3
+Text Label -10350 3400 3    50   ~ 0
+D4
+Text Label -10250 3400 3    50   ~ 0
+D5
+Text Label -10150 3400 3    50   ~ 0
+D6
+Text Label -10050 3400 3    50   ~ 0
+D7
+Text Label -9950 3400 3    50   ~ 0
+D8
+Wire Wire Line
+	-10650 3550 -10650 3350
+Wire Wire Line
+	-10550 3550 -10550 3350
+Wire Wire Line
+	-10450 3550 -10450 3350
+Wire Wire Line
+	-10350 3550 -10350 3350
+Wire Wire Line
+	-10250 3550 -10250 3350
+Wire Wire Line
+	-10150 3550 -10150 3350
+Wire Wire Line
+	-10050 3550 -10050 3350
+Wire Wire Line
+	-9950 3550 -9950 3350
+$Comp
+L power:VCC #PWR?
+U 1 1 60A021CE
+P -9750 3350
+AR Path="/609D754A/60A021CE" Ref="#PWR?"  Part="1" 
+AR Path="/60A021CE" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H -9750 3200 50  0001 C CNN
+F 1 "VCC" V -9735 3477 50  0000 L CNN
+F 2 "" H -9750 3350 50  0001 C CNN
+F 3 "" H -9750 3350 50  0001 C CNN
+	1    -9750 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60A033B6
+P -9600 3350
+AR Path="/609D754A/60A033B6" Ref="#PWR?"  Part="1" 
+AR Path="/60A033B6" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H -9600 3100 50  0001 C CNN
+F 1 "GND" H -9595 3177 50  0000 C CNN
+F 2 "" H -9600 3350 50  0001 C CNN
+F 3 "" H -9600 3350 50  0001 C CNN
+	1    -9600 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-9650 3350 -9600 3350
+Connection ~ -9600 3350
+Wire Wire Line
+	-9600 3350 -9550 3350
+Text Label -10950 1900 3    50   ~ 0
+STEP1
+Text Label -10850 1900 3    50   ~ 0
+STEP2
+Text Label -10750 1900 3    50   ~ 0
+STEP3
+Text Label -10650 1900 3    50   ~ 0
+FLAG1
+Text Label -10550 1900 3    50   ~ 0
+FLAG2
+Text Label -10450 1900 3    50   ~ 0
+FLAG3
+Text Label -10350 1900 3    50   ~ 0
+FLAG4
+Text Label -10250 1900 3    50   ~ 0
+INST1
+Wire Wire Line
+	-10950 1900 -10950 2150
+Wire Wire Line
+	-10850 2150 -10850 1900
+Wire Wire Line
+	-10750 1900 -10750 2150
+Wire Wire Line
+	-10650 2150 -10650 1900
+Wire Wire Line
+	-10550 1900 -10550 2150
+Wire Wire Line
+	-10450 2150 -10450 1900
+Wire Wire Line
+	-10350 1900 -10350 2150
+Wire Wire Line
+	-10250 2150 -10250 1900
+Text Label -8950 3400 3    50   ~ 0
+D9
+Text Label -8850 3400 3    50   ~ 0
+D10
+Text Label -8750 3400 3    50   ~ 0
+D11
+Text Label -8650 3400 3    50   ~ 0
+D12
+Text Label -8550 3400 3    50   ~ 0
+D13
+Text Label -8450 3400 3    50   ~ 0
+D14
+Text Label -8350 3400 3    50   ~ 0
+D15
+Text Label -8250 3400 3    50   ~ 0
+D16
+Wire Wire Line
+	-8950 3550 -8950 3350
+Wire Wire Line
+	-8850 3550 -8850 3350
+Wire Wire Line
+	-8750 3550 -8750 3350
+Wire Wire Line
+	-8650 3550 -8650 3350
+Wire Wire Line
+	-8550 3550 -8550 3350
+Wire Wire Line
+	-8450 3550 -8450 3350
+Wire Wire Line
+	-8350 3550 -8350 3350
+Wire Wire Line
+	-8250 3550 -8250 3350
+Text Label -7250 3400 3    50   ~ 0
+D17
+Text Label -7150 3400 3    50   ~ 0
+D18
+Text Label -7050 3400 3    50   ~ 0
+D19
+Text Label -6950 3400 3    50   ~ 0
+D20
+Text Label -6850 3400 3    50   ~ 0
+D21
+Text Label -6750 3400 3    50   ~ 0
+D22
+Text Label -6650 3400 3    50   ~ 0
+D23
+Text Label -6550 3400 3    50   ~ 0
+D24
+Wire Wire Line
+	-7250 3550 -7250 3350
+Wire Wire Line
+	-7150 3550 -7150 3350
+Wire Wire Line
+	-7050 3550 -7050 3350
+Wire Wire Line
+	-6950 3550 -6950 3350
+Wire Wire Line
+	-6850 3550 -6850 3350
+Wire Wire Line
+	-6750 3550 -6750 3350
+Wire Wire Line
+	-6650 3550 -6650 3350
+Wire Wire Line
+	-6550 3550 -6550 3350
+$Comp
+L Device:CP_Small C?
+U 1 1 60A40EE3
+P -12300 1350
+AR Path="/609D754A/60A40EE3" Ref="C?"  Part="1" 
+AR Path="/60A40EE3" Ref="C2"  Part="1" 
+F 0 "C2" V -12075 1350 50  0000 C CNN
+F 1 "CP_Small" V -12166 1350 50  0000 C CNN
+F 2 "Capacitor_THT:C_Radial_D5.0mm_H7.0mm_P2.00mm" H -12300 1350 50  0001 C CNN
+F 3 "~" H -12300 1350 50  0001 C CNN
+	1    -12300 1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60A40EED
+P -12150 1350
+AR Path="/609D754A/60A40EED" Ref="#PWR?"  Part="1" 
+AR Path="/60A40EED" Ref="#PWR0126"  Part="1" 
+F 0 "#PWR0126" H -12150 1100 50  0001 C CNN
+F 1 "GND" H -12145 1177 50  0000 C CNN
+F 2 "" H -12150 1350 50  0001 C CNN
+F 3 "" H -12150 1350 50  0001 C CNN
+	1    -12150 1350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 60A40EF7
+P -12450 1350
+AR Path="/609D754A/60A40EF7" Ref="#PWR?"  Part="1" 
+AR Path="/60A40EF7" Ref="#PWR0127"  Part="1" 
+F 0 "#PWR0127" H -12450 1200 50  0001 C CNN
+F 1 "VCC" V -12435 1477 50  0000 L CNN
+F 2 "" H -12450 1350 50  0001 C CNN
+F 3 "" H -12450 1350 50  0001 C CNN
+	1    -12450 1350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	-12450 1350 -12400 1350
+Wire Wire Line
+	-12200 1350 -12150 1350
+$Comp
+L Device:CP_Small C?
+U 1 1 60A4558E
+P -12300 1750
+AR Path="/609D754A/60A4558E" Ref="C?"  Part="1" 
+AR Path="/60A4558E" Ref="C3"  Part="1" 
+F 0 "C3" V -12075 1750 50  0000 C CNN
+F 1 "CP_Small" V -12166 1750 50  0000 C CNN
+F 2 "Capacitor_THT:C_Radial_D5.0mm_H7.0mm_P2.00mm" H -12300 1750 50  0001 C CNN
+F 3 "~" H -12300 1750 50  0001 C CNN
+	1    -12300 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60A45598
+P -12150 1750
+AR Path="/609D754A/60A45598" Ref="#PWR?"  Part="1" 
+AR Path="/60A45598" Ref="#PWR0128"  Part="1" 
+F 0 "#PWR0128" H -12150 1500 50  0001 C CNN
+F 1 "GND" H -12145 1577 50  0000 C CNN
+F 2 "" H -12150 1750 50  0001 C CNN
+F 3 "" H -12150 1750 50  0001 C CNN
+	1    -12150 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 60A455A2
+P -12450 1750
+AR Path="/609D754A/60A455A2" Ref="#PWR?"  Part="1" 
+AR Path="/60A455A2" Ref="#PWR0129"  Part="1" 
+F 0 "#PWR0129" H -12450 1600 50  0001 C CNN
+F 1 "VCC" V -12435 1877 50  0000 L CNN
+F 2 "" H -12450 1750 50  0001 C CNN
+F 3 "" H -12450 1750 50  0001 C CNN
+	1    -12450 1750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	-12450 1750 -12400 1750
+Wire Wire Line
+	-12200 1750 -12150 1750
+$Comp
+L Connector_Generic:Conn_01x24 J?
+U 1 1 60A70122
+P -9350 5600
+AR Path="/609D754A/60A70122" Ref="J?"  Part="1" 
+AR Path="/60A70122" Ref="J3"  Part="1" 
+F 0 "J3" V -9478 5980 50  0001 L CNN
+F 1 "Conn_01x24" V -9387 5980 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x24_P2.54mm_Vertical" H -9350 5600 50  0001 C CNN
+F 3 "~" H -9350 5600 50  0001 C CNN
+	1    -9350 5600
+	0    1    1    0   
+$EndComp
+Text Label -11050 4050 1    50   ~ 0
+D1
+Text Label -10750 4050 1    50   ~ 0
+D2
+Text Label -10150 4050 1    50   ~ 0
+D4
+Text Label -10150 5250 3    50   ~ 0
+D5
+Text Label -9850 4050 1    50   ~ 0
+D6
+Text Label -9550 4050 1    50   ~ 0
+D7
+Wire Wire Line
+	-10150 5400 -10150 5200
+Text Label -8950 4050 1    50   ~ 0
+D9
+Text Label -8650 4050 1    50   ~ 0
+D10
+Text Label -8350 4050 1    50   ~ 0
+D11
+Text Label -9450 5250 3    50   ~ 0
+D12
+Text Label -9350 5250 3    50   ~ 0
+D13
+Text Label -9250 5250 3    50   ~ 0
+D14
+Text Label -9150 5250 3    50   ~ 0
+D15
+Text Label -9050 5250 3    50   ~ 0
+D16
+Wire Wire Line
+	-9450 5400 -9450 5200
+Wire Wire Line
+	-9350 5400 -9350 5200
+Wire Wire Line
+	-9250 5400 -9250 5200
+Wire Wire Line
+	-9150 5400 -9150 5200
+Wire Wire Line
+	-9050 5400 -9050 5200
+Text Label -7150 4050 1    50   ~ 0
+D18
+Text Label -8650 5250 3    50   ~ 0
+D20
+Text Label -8550 5250 3    50   ~ 0
+D21
+Text Label -5950 4050 1    50   ~ 0
+D22
+Wire Wire Line
+	-8650 5400 -8650 5200
+Wire Wire Line
+	-8550 5400 -8550 5200
+Text Label -10150 1900 3    50   ~ 0
+INST2
+Wire Wire Line
+	-10150 2150 -10150 1900
+Text Label -10050 1900 3    50   ~ 0
+INST3
+Wire Wire Line
+	-10050 2150 -10050 1900
+Text Label -9950 1900 3    50   ~ 0
+INST4
+Wire Wire Line
+	-9950 2150 -9950 1900
+Text Label -9850 1900 3    50   ~ 0
+INST5
+Wire Wire Line
+	-9850 2150 -9850 1900
+Text Label -9750 1900 3    50   ~ 0
+INST6
+Wire Wire Line
+	-9750 2150 -9750 1900
+Text Label -9650 1900 3    50   ~ 0
+INST7
+Wire Wire Line
+	-9650 2150 -9650 1900
+Text Label -9550 1900 3    50   ~ 0
+INST8
+Wire Wire Line
+	-9550 2150 -9550 1900
+$Comp
+L AT28C256:AT28C256 EEPROM2
+U 1 1 60B559F9
+P -8450 2750
+F 0 "EEPROM2" V -8450 2650 50  0000 C CNN
+F 1 "AT28C256" H -8450 3000 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm" H -8450 2750 50  0001 C CNN
+F 3 "" H -8450 2750 50  0001 L BNN
+	1    -8450 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60B55A03
+P -9150 3350
+AR Path="/609D754A/60B55A03" Ref="#PWR?"  Part="1" 
+AR Path="/60B55A03" Ref="#PWR0110"  Part="1" 
+F 0 "#PWR0110" H -9150 3100 50  0001 C CNN
+F 1 "GND" H -9145 3177 50  0000 C CNN
+F 2 "" H -9150 3350 50  0001 C CNN
+F 3 "" H -9150 3350 50  0001 C CNN
+	1    -9150 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 60B55A0D
+P -9250 3350
+AR Path="/609D754A/60B55A0D" Ref="#PWR?"  Part="1" 
+AR Path="/60B55A0D" Ref="#PWR0111"  Part="1" 
+F 0 "#PWR0111" H -9250 3200 50  0001 C CNN
+F 1 "VCC" V -9235 3477 50  0000 L CNN
+F 2 "" H -9250 3350 50  0001 C CNN
+F 3 "" H -9250 3350 50  0001 C CNN
+	1    -9250 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 60B55A27
+P -8050 3350
+AR Path="/609D754A/60B55A27" Ref="#PWR?"  Part="1" 
+AR Path="/60B55A27" Ref="#PWR0112"  Part="1" 
+F 0 "#PWR0112" H -8050 3200 50  0001 C CNN
+F 1 "VCC" V -8035 3477 50  0000 L CNN
+F 2 "" H -8050 3350 50  0001 C CNN
+F 3 "" H -8050 3350 50  0001 C CNN
+	1    -8050 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60B55A31
+P -7900 3350
+AR Path="/609D754A/60B55A31" Ref="#PWR?"  Part="1" 
+AR Path="/60B55A31" Ref="#PWR0113"  Part="1" 
+F 0 "#PWR0113" H -7900 3100 50  0001 C CNN
+F 1 "GND" H -7895 3177 50  0000 C CNN
+F 2 "" H -7900 3350 50  0001 C CNN
+F 3 "" H -7900 3350 50  0001 C CNN
+	1    -7900 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-7950 3350 -7900 3350
+Connection ~ -7900 3350
+Wire Wire Line
+	-7900 3350 -7850 3350
+Text Label -9250 1900 3    50   ~ 0
+STEP1
+Text Label -9150 1900 3    50   ~ 0
+STEP2
+Text Label -9050 1900 3    50   ~ 0
+STEP3
+Text Label -8950 1900 3    50   ~ 0
+FLAG1
+Text Label -8850 1900 3    50   ~ 0
+FLAG2
+Text Label -8750 1900 3    50   ~ 0
+FLAG3
+Text Label -8650 1900 3    50   ~ 0
+FLAG4
+Text Label -8550 1900 3    50   ~ 0
+INST1
+Wire Wire Line
+	-9250 1900 -9250 2150
+Wire Wire Line
+	-9150 2150 -9150 1900
+Wire Wire Line
+	-9050 1900 -9050 2150
+Wire Wire Line
+	-8950 2150 -8950 1900
+Wire Wire Line
+	-8850 1900 -8850 2150
+Wire Wire Line
+	-8750 2150 -8750 1900
+Wire Wire Line
+	-8650 1900 -8650 2150
+Wire Wire Line
+	-8550 2150 -8550 1900
+Text Label -8450 1900 3    50   ~ 0
+INST2
+Wire Wire Line
+	-8450 2150 -8450 1900
+Text Label -8350 1900 3    50   ~ 0
+INST3
+Wire Wire Line
+	-8350 2150 -8350 1900
+Text Label -8250 1900 3    50   ~ 0
+INST4
+Wire Wire Line
+	-8250 2150 -8250 1900
+Text Label -8150 1900 3    50   ~ 0
+INST5
+Wire Wire Line
+	-8150 2150 -8150 1900
+Text Label -8050 1900 3    50   ~ 0
+INST6
+Wire Wire Line
+	-8050 2150 -8050 1900
+Text Label -7950 1900 3    50   ~ 0
+INST7
+Wire Wire Line
+	-7950 2150 -7950 1900
+Text Label -7850 1900 3    50   ~ 0
+INST8
+Wire Wire Line
+	-7850 2150 -7850 1900
+$Comp
+L AT28C256:AT28C256 EEPROM3
+U 1 1 60B6AB22
+P -6750 2750
+F 0 "EEPROM3" V -6750 2650 50  0000 C CNN
+F 1 "AT28C256" H -6750 3000 50  0000 C CNN
+F 2 "Package_DIP:DIP-28_W15.24mm" H -6750 2750 50  0001 C CNN
+F 3 "" H -6750 2750 50  0001 L BNN
+	1    -6750 2750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60B6AB2C
+P -7450 3350
+AR Path="/609D754A/60B6AB2C" Ref="#PWR?"  Part="1" 
+AR Path="/60B6AB2C" Ref="#PWR0114"  Part="1" 
+F 0 "#PWR0114" H -7450 3100 50  0001 C CNN
+F 1 "GND" H -7445 3177 50  0000 C CNN
+F 2 "" H -7450 3350 50  0001 C CNN
+F 3 "" H -7450 3350 50  0001 C CNN
+	1    -7450 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 60B6AB36
+P -7550 3350
+AR Path="/609D754A/60B6AB36" Ref="#PWR?"  Part="1" 
+AR Path="/60B6AB36" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H -7550 3200 50  0001 C CNN
+F 1 "VCC" V -7535 3477 50  0000 L CNN
+F 2 "" H -7550 3350 50  0001 C CNN
+F 3 "" H -7550 3350 50  0001 C CNN
+	1    -7550 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 60B6AB40
+P -6350 3350
+AR Path="/609D754A/60B6AB40" Ref="#PWR?"  Part="1" 
+AR Path="/60B6AB40" Ref="#PWR0116"  Part="1" 
+F 0 "#PWR0116" H -6350 3200 50  0001 C CNN
+F 1 "VCC" V -6335 3477 50  0000 L CNN
+F 2 "" H -6350 3350 50  0001 C CNN
+F 3 "" H -6350 3350 50  0001 C CNN
+	1    -6350 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60B6AB4A
+P -6200 3350
+AR Path="/609D754A/60B6AB4A" Ref="#PWR?"  Part="1" 
+AR Path="/60B6AB4A" Ref="#PWR0117"  Part="1" 
+F 0 "#PWR0117" H -6200 3100 50  0001 C CNN
+F 1 "GND" H -6195 3177 50  0000 C CNN
+F 2 "" H -6200 3350 50  0001 C CNN
+F 3 "" H -6200 3350 50  0001 C CNN
+	1    -6200 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-6250 3350 -6200 3350
+Connection ~ -6200 3350
+Wire Wire Line
+	-6200 3350 -6150 3350
+Text Label -7550 1900 3    50   ~ 0
+STEP1
+Text Label -7450 1900 3    50   ~ 0
+STEP2
+Text Label -7350 1900 3    50   ~ 0
+STEP3
+Text Label -7250 1900 3    50   ~ 0
+FLAG1
+Text Label -7150 1900 3    50   ~ 0
+FLAG2
+Text Label -7050 1900 3    50   ~ 0
+FLAG3
+Text Label -6950 1900 3    50   ~ 0
+FLAG4
+Text Label -6850 1900 3    50   ~ 0
+INST1
+Wire Wire Line
+	-7550 1900 -7550 2150
+Wire Wire Line
+	-7450 2150 -7450 1900
+Wire Wire Line
+	-7350 1900 -7350 2150
+Wire Wire Line
+	-7250 2150 -7250 1900
+Wire Wire Line
+	-7150 1900 -7150 2150
+Wire Wire Line
+	-7050 2150 -7050 1900
+Wire Wire Line
+	-6950 1900 -6950 2150
+Wire Wire Line
+	-6850 2150 -6850 1900
+Text Label -6750 1900 3    50   ~ 0
+INST2
+Wire Wire Line
+	-6750 2150 -6750 1900
+Text Label -6650 1900 3    50   ~ 0
+INST3
+Wire Wire Line
+	-6650 2150 -6650 1900
+Text Label -6550 1900 3    50   ~ 0
+INST4
+Wire Wire Line
+	-6550 2150 -6550 1900
+Text Label -6450 1900 3    50   ~ 0
+INST5
+Wire Wire Line
+	-6450 2150 -6450 1900
+Text Label -6350 1900 3    50   ~ 0
+INST6
+Wire Wire Line
+	-6350 2150 -6350 1900
+Text Label -6250 1900 3    50   ~ 0
+INST7
+Wire Wire Line
+	-6250 2150 -6250 1900
+Text Label -6150 1900 3    50   ~ 0
+INST8
+Wire Wire Line
+	-6150 2150 -6150 1900
+Text Label -9400 1100 3    50   ~ 0
+STEP1
+Text Label -9300 1100 3    50   ~ 0
+STEP2
+Text Label -9200 1100 3    50   ~ 0
+STEP3
+Text Label -9100 1100 3    50   ~ 0
+FLAG1
+Text Label -9000 1100 3    50   ~ 0
+FLAG2
+Text Label -8900 1100 3    50   ~ 0
+FLAG3
+Text Label -8800 1100 3    50   ~ 0
+FLAG4
+Text Label -8700 1100 3    50   ~ 0
+INST1
+Wire Wire Line
+	-9400 1100 -9400 1350
+Wire Wire Line
+	-9300 1350 -9300 1100
+Wire Wire Line
+	-9200 1100 -9200 1350
+Wire Wire Line
+	-9100 1350 -9100 1100
+Wire Wire Line
+	-9000 1100 -9000 1350
+Wire Wire Line
+	-8900 1350 -8900 1100
+Wire Wire Line
+	-8800 1100 -8800 1350
+Wire Wire Line
+	-8700 1350 -8700 1100
+Text Label -8600 1100 3    50   ~ 0
+INST2
+Wire Wire Line
+	-8600 1350 -8600 1100
+Text Label -8500 1100 3    50   ~ 0
+INST3
+Wire Wire Line
+	-8500 1350 -8500 1100
+Text Label -8400 1100 3    50   ~ 0
+INST4
+Wire Wire Line
+	-8400 1350 -8400 1100
+Text Label -8300 1100 3    50   ~ 0
+INST5
+Wire Wire Line
+	-8300 1350 -8300 1100
+Text Label -8200 1100 3    50   ~ 0
+INST6
+Wire Wire Line
+	-8200 1350 -8200 1100
+Text Label -8100 1100 3    50   ~ 0
+INST7
+Wire Wire Line
+	-8100 1350 -8100 1100
+Text Label -8000 1100 3    50   ~ 0
+INST8
+Wire Wire Line
+	-8000 1350 -8000 1100
+$Comp
+L Device:LED D1
+U 1 1 60BE37CF
+P -10550 6000
+F 0 "D1" V -10557 5882 50  0001 R CNN
+F 1 "LED" V -10602 5882 50  0001 R CNN
+F 2 "LED_THT:LED_D3.0mm" H -10550 6000 50  0001 C CNN
+F 3 "~" H -10550 6000 50  0001 C CNN
+	1    -10550 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 60C0AB6D
+P -10450 6000
+F 0 "D2" V -10457 5882 50  0001 R CNN
+F 1 "LED" V -10502 5882 50  0001 R CNN
+F 2 "LED_THT:LED_D3.0mm" H -10450 6000 50  0001 C CNN
+F 3 "~" H -10450 6000 50  0001 C CNN
+	1    -10450 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 60C0AE63
+P -10350 6000
+F 0 "D3" V -10357 5882 50  0001 R CNN
+F 1 "LED" V -10402 5882 50  0001 R CNN
+F 2 "LED_THT:LED_D3.0mm" H -10350 6000 50  0001 C CNN
+F 3 "~" H -10350 6000 50  0001 C CNN
+	1    -10350 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D4
+U 1 1 60C0B14D
+P -10250 6000
+F 0 "D4" V -10257 5882 50  0001 R CNN
+F 1 "LED" V -10302 5882 50  0001 R CNN
+F 2 "LED_THT:LED_D3.0mm" H -10250 6000 50  0001 C CNN
+F 3 "~" H -10250 6000 50  0001 C CNN
+	1    -10250 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D5
+U 1 1 60C0B42D
+P -10150 6000
+F 0 "D5" V -10157 5882 50  0001 R CNN
+F 1 "LED" V -10202 5882 50  0001 R CNN
+F 2 "LED_THT:LED_D3.0mm" H -10150 6000 50  0001 C CNN
+F 3 "~" H -10150 6000 50  0001 C CNN
+	1    -10150 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D6
+U 1 1 60C0B732
+P -10050 6000
+F 0 "D6" V -10057 5882 50  0001 R CNN
+F 1 "LED" V -10102 5882 50  0001 R CNN
+F 2 "LED_THT:LED_D3.0mm" H -10050 6000 50  0001 C CNN
+F 3 "~" H -10050 6000 50  0001 C CNN
+	1    -10050 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D7
+U 1 1 60C0BAA8
+P -9950 6000
+F 0 "D7" V -9957 5882 50  0001 R CNN
+F 1 "LED" V -10002 5882 50  0001 R CNN
+F 2 "LED_THT:LED_D3.0mm" H -9950 6000 50  0001 C CNN
+F 3 "~" H -9950 6000 50  0001 C CNN
+	1    -9950 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D8
+U 1 1 60C0BD6D
+P -9850 6000
+F 0 "D8" V -9857 5882 50  0001 R CNN
+F 1 "LED" V -9902 5882 50  0001 R CNN
+F 2 "LED_THT:LED_D3.0mm" H -9850 6000 50  0001 C CNN
+F 3 "~" H -9850 6000 50  0001 C CNN
+	1    -9850 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Network08_US RN?
+U 1 1 60C16CC3
+P -9450 6350
+AR Path="/609D754A/60C16CC3" Ref="RN?"  Part="1" 
+AR Path="/60C16CC3" Ref="RN2"  Part="1" 
+F 0 "RN2" H -9062 6396 50  0001 L CNN
+F 1 "R_Network08_US" H -9062 6305 50  0001 L CNN
+F 2 "Resistor_THT:R_Array_SIP9" V -8975 6350 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H -9450 6350 50  0001 C CNN
+	1    -9450 6350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60C16CCD
+P -9050 6550
+AR Path="/609D754A/60C16CCD" Ref="#PWR?"  Part="1" 
+AR Path="/60C16CCD" Ref="#PWR0122"  Part="1" 
+F 0 "#PWR0122" H -9050 6300 50  0001 C CNN
+F 1 "GND" H -9045 6377 50  0000 C CNN
+F 2 "" H -9050 6550 50  0001 C CNN
+F 3 "" H -9050 6550 50  0001 C CNN
+	1    -9050 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D9
+U 1 1 60C16CD7
+P -9750 6000
+F 0 "D9" V -9757 5882 50  0001 R CNN
+F 1 "LED" V -9802 5882 50  0001 R CNN
+F 2 "LED_THT:LED_D3.0mm" H -9750 6000 50  0001 C CNN
+F 3 "~" H -9750 6000 50  0001 C CNN
+	1    -9750 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D10
+U 1 1 60C16CE1
+P -9650 6000
+F 0 "D10" V -9657 5882 50  0001 R CNN
+F 1 "LED" V -9702 5882 50  0001 R CNN
+F 2 "LED_THT:LED_D3.0mm" H -9650 6000 50  0001 C CNN
+F 3 "~" H -9650 6000 50  0001 C CNN
+	1    -9650 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D11
+U 1 1 60C16CEB
+P -9550 6000
+F 0 "D11" V -9557 5882 50  0001 R CNN
+F 1 "LED" V -9602 5882 50  0001 R CNN
+F 2 "LED_THT:LED_D3.0mm" H -9550 6000 50  0001 C CNN
+F 3 "~" H -9550 6000 50  0001 C CNN
+	1    -9550 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D12
+U 1 1 60C16CF5
+P -9450 6000
+F 0 "D12" V -9457 5882 50  0001 R CNN
+F 1 "LED" V -9502 5882 50  0001 R CNN
+F 2 "LED_THT:LED_D3.0mm" H -9450 6000 50  0001 C CNN
+F 3 "~" H -9450 6000 50  0001 C CNN
+	1    -9450 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D13
+U 1 1 60C16CFF
+P -9350 6000
+F 0 "D13" V -9357 5882 50  0001 R CNN
+F 1 "LED" V -9402 5882 50  0001 R CNN
+F 2 "LED_THT:LED_D3.0mm" H -9350 6000 50  0001 C CNN
+F 3 "~" H -9350 6000 50  0001 C CNN
+	1    -9350 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D14
+U 1 1 60C16D09
+P -9250 6000
+F 0 "D14" V -9257 5882 50  0001 R CNN
+F 1 "LED" V -9302 5882 50  0001 R CNN
+F 2 "LED_THT:LED_D3.0mm" H -9250 6000 50  0001 C CNN
+F 3 "~" H -9250 6000 50  0001 C CNN
+	1    -9250 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D15
+U 1 1 60C16D13
+P -9150 6000
+F 0 "D15" V -9157 5882 50  0001 R CNN
+F 1 "LED" V -9202 5882 50  0001 R CNN
+F 2 "LED_THT:LED_D3.0mm" H -9150 6000 50  0001 C CNN
+F 3 "~" H -9150 6000 50  0001 C CNN
+	1    -9150 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D16
+U 1 1 60C16D1D
+P -9050 6000
+F 0 "D16" V -9057 5882 50  0001 R CNN
+F 1 "LED" V -9102 5882 50  0001 R CNN
+F 2 "LED_THT:LED_D3.0mm" H -9050 6000 50  0001 C CNN
+F 3 "~" H -9050 6000 50  0001 C CNN
+	1    -9050 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Network08_US RN?
+U 1 1 60C28D95
+P -8650 6350
+AR Path="/609D754A/60C28D95" Ref="RN?"  Part="1" 
+AR Path="/60C28D95" Ref="RN3"  Part="1" 
+F 0 "RN3" H -8262 6396 50  0001 L CNN
+F 1 "R_Network08_US" H -8262 6305 50  0001 L CNN
+F 2 "Resistor_THT:R_Array_SIP9" V -8175 6350 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H -8650 6350 50  0001 C CNN
+	1    -8650 6350
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60C28D9F
+P -8250 6550
+AR Path="/609D754A/60C28D9F" Ref="#PWR?"  Part="1" 
+AR Path="/60C28D9F" Ref="#PWR0123"  Part="1" 
+F 0 "#PWR0123" H -8250 6300 50  0001 C CNN
+F 1 "GND" H -8245 6377 50  0000 C CNN
+F 2 "" H -8250 6550 50  0001 C CNN
+F 3 "" H -8250 6550 50  0001 C CNN
+	1    -8250 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D17
+U 1 1 60C28DA9
+P -8950 6000
+F 0 "D17" V -8957 5882 50  0001 R CNN
+F 1 "LED" V -9002 5882 50  0001 R CNN
+F 2 "LED_THT:LED_D3.0mm" H -8950 6000 50  0001 C CNN
+F 3 "~" H -8950 6000 50  0001 C CNN
+	1    -8950 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D18
+U 1 1 60C28DB3
+P -8850 6000
+F 0 "D18" V -8857 5882 50  0001 R CNN
+F 1 "LED" V -8902 5882 50  0001 R CNN
+F 2 "LED_THT:LED_D3.0mm" H -8850 6000 50  0001 C CNN
+F 3 "~" H -8850 6000 50  0001 C CNN
+	1    -8850 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D19
+U 1 1 60C28DBD
+P -8750 6000
+F 0 "D19" V -8757 5882 50  0001 R CNN
+F 1 "LED" V -8802 5882 50  0001 R CNN
+F 2 "LED_THT:LED_D3.0mm" H -8750 6000 50  0001 C CNN
+F 3 "~" H -8750 6000 50  0001 C CNN
+	1    -8750 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D20
+U 1 1 60C28DC7
+P -8650 6000
+F 0 "D20" V -8657 5882 50  0001 R CNN
+F 1 "LED" V -8702 5882 50  0001 R CNN
+F 2 "LED_THT:LED_D3.0mm" H -8650 6000 50  0001 C CNN
+F 3 "~" H -8650 6000 50  0001 C CNN
+	1    -8650 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D21
+U 1 1 60C28DD1
+P -8550 6000
+F 0 "D21" V -8557 5882 50  0001 R CNN
+F 1 "LED" V -8602 5882 50  0001 R CNN
+F 2 "LED_THT:LED_D3.0mm" H -8550 6000 50  0001 C CNN
+F 3 "~" H -8550 6000 50  0001 C CNN
+	1    -8550 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D22
+U 1 1 60C28DDB
+P -8450 6000
+F 0 "D22" V -8457 5882 50  0001 R CNN
+F 1 "LED" V -8502 5882 50  0001 R CNN
+F 2 "LED_THT:LED_D3.0mm" H -8450 6000 50  0001 C CNN
+F 3 "~" H -8450 6000 50  0001 C CNN
+	1    -8450 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D23
+U 1 1 60C28DE5
+P -8350 6000
+F 0 "D23" V -8357 5882 50  0001 R CNN
+F 1 "LED" V -8402 5882 50  0001 R CNN
+F 2 "LED_THT:LED_D3.0mm" H -8350 6000 50  0001 C CNN
+F 3 "~" H -8350 6000 50  0001 C CNN
+	1    -8350 6000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D24
+U 1 1 60C28DEF
+P -8250 6000
+F 0 "D24" V -8257 5882 50  0001 R CNN
+F 1 "LED" V -8302 5882 50  0001 R CNN
+F 2 "LED_THT:LED_D3.0mm" H -8250 6000 50  0001 C CNN
+F 3 "~" H -8250 6000 50  0001 C CNN
+	1    -8250 6000
+	0    -1   -1   0   
+$EndComp
+Text Label -8350 5250 3    50   ~ 0
+D23
+Text Label -8250 5250 3    50   ~ 0
+D24
+Wire Wire Line
+	-8350 5400 -8350 5200
+Wire Wire Line
+	-8250 5400 -8250 5200
+Wire Wire Line
+	-10550 5400 -10550 5850
+Connection ~ -10550 5400
+Wire Wire Line
+	-10450 5850 -10450 5400
+Connection ~ -10450 5400
+Wire Wire Line
+	-10350 5850 -10350 5400
+Connection ~ -10350 5400
+Wire Wire Line
+	-10250 5400 -10250 5850
+Connection ~ -10250 5400
+Wire Wire Line
+	-10150 5850 -10150 5400
+Connection ~ -10150 5400
+Wire Wire Line
+	-10050 5400 -10050 5850
+Connection ~ -10050 5400
+Wire Wire Line
+	-9950 5850 -9950 5400
+Connection ~ -9950 5400
+Wire Wire Line
+	-9850 5400 -9850 5850
+Connection ~ -9850 5400
+Wire Wire Line
+	-9750 5850 -9750 5400
+Connection ~ -9750 5400
+Wire Wire Line
+	-9650 5400 -9650 5850
+Connection ~ -9650 5400
+Wire Wire Line
+	-9550 5850 -9550 5400
+Connection ~ -9550 5400
+Wire Wire Line
+	-9450 5400 -9450 5850
+Connection ~ -9450 5400
+Wire Wire Line
+	-9350 5850 -9350 5400
+Connection ~ -9350 5400
+Wire Wire Line
+	-9250 5400 -9250 5850
+Connection ~ -9250 5400
+Wire Wire Line
+	-9150 5400 -9150 5850
+Connection ~ -9150 5400
+Wire Wire Line
+	-9050 5850 -9050 5400
+Connection ~ -9050 5400
+Wire Wire Line
+	-8950 5400 -8950 5850
+Connection ~ -8950 5400
+Wire Wire Line
+	-8850 5850 -8850 5400
+Wire Wire Line
+	-8750 5400 -8750 5850
+Wire Wire Line
+	-8650 5850 -8650 5400
+Connection ~ -8650 5400
+Wire Wire Line
+	-8550 5400 -8550 5850
+Connection ~ -8550 5400
+Wire Wire Line
+	-8450 5850 -8450 5400
+Connection ~ -8450 5400
+Wire Wire Line
+	-8350 5400 -8350 5850
+Connection ~ -8350 5400
+Wire Wire Line
+	-8250 5850 -8250 5400
+Connection ~ -8250 5400
+$Comp
+L 74xx:74LS04 U1
+U 1 1 60F697FF
+P -7750 4350
+F 0 "U1" V -7796 4530 50  0001 L CNN
+F 1 "74LS04" V -7705 4530 50  0001 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H -7750 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H -7750 4350 50  0001 C CNN
+	1    -7750 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74LS04 U1
+U 2 1 60F6B0D1
+P -8950 4350
+F 0 "U1" V -8996 4530 50  0001 L CNN
+F 1 "74LS04" V -8905 4530 50  0001 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H -8950 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H -8950 4350 50  0001 C CNN
+	2    -8950 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74LS04 U1
+U 3 1 60F6D1DC
+P -8650 4350
+F 0 "U1" V -8696 4530 50  0001 L CNN
+F 1 "74LS04" V -8605 4530 50  0001 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H -8650 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H -8650 4350 50  0001 C CNN
+	3    -8650 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74LS04 U1
+U 4 1 60F6F702
+P -8350 4350
+F 0 "U1" V -8396 4530 50  0001 L CNN
+F 1 "74LS04" V -8305 4530 50  0001 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H -8350 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H -8350 4350 50  0001 C CNN
+	4    -8350 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74LS04 U1
+U 5 1 60F70EEE
+P -8050 4350
+F 0 "U1" V -8096 4530 50  0001 L CNN
+F 1 "74LS04" V -8005 4530 50  0001 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H -8050 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H -8050 4350 50  0001 C CNN
+	5    -8050 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74LS04 U1
+U 6 1 60F72B8A
+P -9250 4350
+F 0 "U1" V -9296 4530 50  0001 L CNN
+F 1 "74LS04" V -9205 4530 50  0001 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H -9250 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H -9250 4350 50  0001 C CNN
+	6    -9250 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74LS04 U1
+U 7 1 60F7478B
+P -4700 2550
+F 0 "U1" H -4930 2504 50  0001 R CNN
+F 1 "74LS04" H -4550 2550 50  0000 R CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H -4700 2550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H -4700 2550 50  0001 C CNN
+	7    -4700 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 60F78660
+P -4700 3050
+AR Path="/609D754A/60F78660" Ref="#PWR?"  Part="1" 
+AR Path="/60F78660" Ref="#PWR0118"  Part="1" 
+F 0 "#PWR0118" H -4700 2900 50  0001 C CNN
+F 1 "VCC" V -4685 3177 50  0000 L CNN
+F 2 "" H -4700 3050 50  0001 C CNN
+F 3 "" H -4700 3050 50  0001 C CNN
+	1    -4700 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60F7866A
+P -4700 2050
+AR Path="/609D754A/60F7866A" Ref="#PWR?"  Part="1" 
+AR Path="/60F7866A" Ref="#PWR0119"  Part="1" 
+F 0 "#PWR0119" H -4700 1800 50  0001 C CNN
+F 1 "GND" H -4695 1877 50  0000 C CNN
+F 2 "" H -4700 2050 50  0001 C CNN
+F 3 "" H -4700 2050 50  0001 C CNN
+	1    -4700 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J?
+U 1 1 60F962AC
+P -6650 1500
+AR Path="/609D754A/60F962AC" Ref="J?"  Part="1" 
+AR Path="/60F962AC" Ref="J4"  Part="1" 
+F 0 "J4" V -6778 1880 50  0001 L CNN
+F 1 "Conn_01x08" V -6687 1880 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H -6650 1500 50  0001 C CNN
+F 3 "~" H -6650 1500 50  0001 C CNN
+	1    -6650 1500
+	0    1    1    0   
+$EndComp
+Text Label -7050 1300 2    50   ~ 0
+D21
+Wire Wire Line
+	-7050 1300 -6950 1300
+Connection ~ -6950 1300
+Wire Wire Line
+	-6950 1300 -6850 1300
+Connection ~ -6850 1300
+Wire Wire Line
+	-6850 1300 -6750 1300
+Connection ~ -6750 1300
+Wire Wire Line
+	-6750 1300 -6650 1300
+Connection ~ -6650 1300
+Wire Wire Line
+	-6650 1300 -6550 1300
+Connection ~ -6550 1300
+Wire Wire Line
+	-6550 1300 -6450 1300
+Connection ~ -6450 1300
+Wire Wire Line
+	-6450 1300 -6350 1300
+Text Notes -6800 1200 0    50   ~ 0
+RESET
+$Comp
+L Switch:SW_Push SW1
+U 1 1 60FAB3FB
+P -6700 950
+F 0 "SW1" H -6700 1235 50  0000 C CNN
+F 1 "SW_Push" H -6700 1144 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H -6700 1150 50  0001 C CNN
+F 3 "~" H -6700 1150 50  0001 C CNN
+	1    -6700 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-6900 950  -6950 950 
+Wire Wire Line
+	-6950 950  -6950 1300
+Wire Wire Line
+	-6500 950  -6100 950 
+$Comp
+L power:VCC #PWR?
+U 1 1 60FBFEF1
+P -6100 950
+AR Path="/609D754A/60FBFEF1" Ref="#PWR?"  Part="1" 
+AR Path="/60FBFEF1" Ref="#PWR0120"  Part="1" 
+F 0 "#PWR0120" H -6100 800 50  0001 C CNN
+F 1 "VCC" V -6085 1077 50  0000 L CNN
+F 2 "" H -6100 950 50  0001 C CNN
+F 3 "" H -6100 950 50  0001 C CNN
+	1    -6100 950 
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74LS04 U2
+U 1 1 60FEF26B
+P -11050 4350
+F 0 "U2" V -11096 4530 50  0001 L CNN
+F 1 "74LS04" V -11005 4530 50  0001 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H -11050 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H -11050 4350 50  0001 C CNN
+	1    -11050 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74LS04 U2
+U 2 1 60FEF275
+P -10750 4350
+F 0 "U2" V -10796 4530 50  0001 L CNN
+F 1 "74LS04" V -10705 4530 50  0001 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H -10750 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H -10750 4350 50  0001 C CNN
+	2    -10750 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74LS04 U2
+U 3 1 60FEF27F
+P -10450 4350
+F 0 "U2" V -10496 4530 50  0001 L CNN
+F 1 "74LS04" V -10405 4530 50  0001 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H -10450 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H -10450 4350 50  0001 C CNN
+	3    -10450 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74LS04 U2
+U 4 1 60FEF289
+P -10150 4350
+F 0 "U2" V -10196 4530 50  0001 L CNN
+F 1 "74LS04" V -10105 4530 50  0001 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H -10150 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H -10150 4350 50  0001 C CNN
+	4    -10150 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74LS04 U2
+U 5 1 60FEF293
+P -9850 4350
+F 0 "U2" V -9896 4530 50  0001 L CNN
+F 1 "74LS04" V -9805 4530 50  0001 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H -9850 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H -9850 4350 50  0001 C CNN
+	5    -9850 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74LS04 U2
+U 6 1 60FEF29D
+P -9550 4350
+F 0 "U2" V -9596 4530 50  0001 L CNN
+F 1 "74LS04" V -9505 4530 50  0001 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H -9550 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H -9550 4350 50  0001 C CNN
+	6    -9550 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74LS04 U2
+U 7 1 60FEF2A7
+P -5150 2550
+F 0 "U2" H -5380 2504 50  0001 R CNN
+F 1 "74LS04" H -5000 2550 50  0000 R CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H -5150 2550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H -5150 2550 50  0001 C CNN
+	7    -5150 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 60FEF2B1
+P -5150 3050
+AR Path="/609D754A/60FEF2B1" Ref="#PWR?"  Part="1" 
+AR Path="/60FEF2B1" Ref="#PWR0121"  Part="1" 
+F 0 "#PWR0121" H -5150 2900 50  0001 C CNN
+F 1 "VCC" V -5135 3177 50  0000 L CNN
+F 2 "" H -5150 3050 50  0001 C CNN
+F 3 "" H -5150 3050 50  0001 C CNN
+	1    -5150 3050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60FEF2BB
+P -5150 2050
+AR Path="/609D754A/60FEF2BB" Ref="#PWR?"  Part="1" 
+AR Path="/60FEF2BB" Ref="#PWR0124"  Part="1" 
+F 0 "#PWR0124" H -5150 1800 50  0001 C CNN
+F 1 "GND" H -5145 1877 50  0000 C CNN
+F 2 "" H -5150 2050 50  0001 C CNN
+F 3 "" H -5150 2050 50  0001 C CNN
+	1    -5150 2050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	-11050 4650 -11050 5100
+Wire Wire Line
+	-11050 5100 -10550 5100
+Wire Wire Line
+	-10550 5100 -10550 5400
+Wire Wire Line
+	-10750 4650 -10750 5050
+Wire Wire Line
+	-10750 5050 -10450 5050
+Wire Wire Line
+	-10450 5050 -10450 5400
+Wire Wire Line
+	-10450 4650 -10450 5000
+Wire Wire Line
+	-10450 5000 -10350 5000
+Wire Wire Line
+	-10350 5000 -10350 5400
+Wire Wire Line
+	-10150 4650 -10150 4850
+Wire Wire Line
+	-10150 4850 -10250 4850
+Wire Wire Line
+	-10250 4850 -10250 5400
+Wire Wire Line
+	-9850 4650 -9850 4800
+Wire Wire Line
+	-9850 4800 -10050 4800
+Wire Wire Line
+	-10050 4800 -10050 5400
+Wire Wire Line
+	-9550 4650 -9550 4900
+Wire Wire Line
+	-9550 4900 -9950 4900
+Wire Wire Line
+	-9950 4900 -9950 5400
+Wire Wire Line
+	-9850 4950 -9250 4950
+Wire Wire Line
+	-9250 4950 -9250 4650
+Wire Wire Line
+	-9850 4950 -9850 5400
+Text Label -10450 4050 1    50   ~ 0
+D3
+Text Label -9250 4050 1    50   ~ 0
+D8
+Wire Wire Line
+	-9750 4800 -8950 4800
+Wire Wire Line
+	-8950 4800 -8950 4650
+Wire Wire Line
+	-9750 4800 -9750 5400
+Wire Wire Line
+	-9650 4750 -8650 4750
+Wire Wire Line
+	-8650 4750 -8650 4650
+Wire Wire Line
+	-9650 4750 -9650 5400
+Wire Wire Line
+	-9550 5000 -8350 5000
+Wire Wire Line
+	-8350 5000 -8350 4650
+Wire Wire Line
+	-9550 5000 -9550 5400
+$Comp
+L 74xx:74LS04 U3
+U 1 1 613A83E2
+P -7450 4350
+F 0 "U3" V -7496 4530 50  0001 L CNN
+F 1 "74LS04" V -7405 4530 50  0001 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H -7450 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H -7450 4350 50  0001 C CNN
+	1    -7450 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74LS04 U3
+U 2 1 613CD42C
+P -7150 4350
+F 0 "U3" V -7196 4530 50  0001 L CNN
+F 1 "74LS04" V -7105 4530 50  0001 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H -7150 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H -7150 4350 50  0001 C CNN
+	2    -7150 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74LS04 U3
+U 3 1 613CEFE0
+P -6850 4350
+F 0 "U3" V -6896 4530 50  0001 L CNN
+F 1 "74LS04" V -6805 4530 50  0001 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H -6850 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H -6850 4350 50  0001 C CNN
+	3    -6850 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74LS04 U3
+U 4 1 613D0B49
+P -6550 4350
+F 0 "U3" V -6596 4530 50  0001 L CNN
+F 1 "74LS04" V -6505 4530 50  0001 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H -6550 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H -6550 4350 50  0001 C CNN
+	4    -6550 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74LS04 U3
+U 5 1 613D26BC
+P -6250 4350
+F 0 "U3" V -6296 4530 50  0001 L CNN
+F 1 "74LS04" V -6205 4530 50  0001 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H -6250 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H -6250 4350 50  0001 C CNN
+	5    -6250 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74LS04 U3
+U 6 1 613D3EA6
+P -5950 4350
+F 0 "U3" V -5996 4530 50  0001 L CNN
+F 1 "74LS04" V -5905 4530 50  0001 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H -5950 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H -5950 4350 50  0001 C CNN
+	6    -5950 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L 74xx:74LS04 U3
+U 7 1 613D5528
+P -4250 2550
+F 0 "U3" H -4480 2504 50  0000 R CNN
+F 1 "74LS04" H -4480 2595 50  0000 R CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H -4250 2550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H -4250 2550 50  0001 C CNN
+	7    -4250 2550
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 613E7486
+P -4250 2050
+AR Path="/609D754A/613E7486" Ref="#PWR?"  Part="1" 
+AR Path="/613E7486" Ref="#PWR0125"  Part="1" 
+F 0 "#PWR0125" H -4250 1800 50  0001 C CNN
+F 1 "GND" H -4245 1877 50  0000 C CNN
+F 2 "" H -4250 2050 50  0001 C CNN
+F 3 "" H -4250 2050 50  0001 C CNN
+	1    -4250 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 613E78AC
+P -4250 3050
+AR Path="/609D754A/613E78AC" Ref="#PWR?"  Part="1" 
+AR Path="/613E78AC" Ref="#PWR0130"  Part="1" 
+F 0 "#PWR0130" H -4250 2900 50  0001 C CNN
+F 1 "VCC" V -4235 3177 50  0000 L CNN
+F 2 "" H -4250 3050 50  0001 C CNN
+F 3 "" H -4250 3050 50  0001 C CNN
+	1    -4250 3050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	-7450 4850 -7450 4650
+NoConn ~ -6850 4650
+NoConn ~ -8050 4050
+NoConn ~ -6550 4050
+NoConn ~ -6550 4650
+NoConn ~ -6250 4650
+NoConn ~ -6250 4050
+NoConn ~ -7750 4050
+NoConn ~ -5950 4650
+Wire Wire Line
+	-7150 4650 -7150 5050
+Text Label -6850 4050 1    50   ~ 0
+D19
+Text Label -7450 4050 1    50   ~ 0
+D17
+Wire Wire Line
+	-8950 4850 -8950 5400
+Wire Wire Line
+	-8950 4850 -7450 4850
+Wire Wire Line
+	-8450 4900 -8450 5400
+Wire Wire Line
+	-7150 5050 -8850 5050
+Wire Wire Line
+	-8850 5050 -8850 5400
+Connection ~ -8850 5400
+Wire Wire Line
+	-8750 4950 -8750 5400
+Connection ~ -8750 5400
+Wire Wire Line
+	-6850 4950 -6850 4650
+Wire Wire Line
+	-8750 4950 -6850 4950
+Wire Wire Line
+	-5950 4900 -5950 4650
+Wire Wire Line
+	-8450 4900 -5950 4900
+$EndSCHEMATC
