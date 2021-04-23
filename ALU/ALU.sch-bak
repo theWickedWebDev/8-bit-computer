@@ -1012,7 +1012,7 @@ F 3 "" H 11350 13900 50  0001 C CNN
 	1    11350 13900
 	1    0    0    -1  
 $EndComp
-Text HLabel 10050 14450 3    59   Output ~ 0
+Text HLabel 11100 16450 3    59   Output ~ 0
 ALU_OUT8
 $Comp
 L 74xx:74LS157 U?
@@ -1056,7 +1056,7 @@ F 3 "" H 13400 13950 50  0001 C CNN
 	1    13400 13950
 	1    0    0    -1  
 $EndComp
-Text HLabel 12200 14450 3    59   Output ~ 0
+Text HLabel 11500 16450 3    59   Output ~ 0
 ALU_OUT4
 $Comp
 L power:GND #PWR?
@@ -1093,17 +1093,17 @@ Wire Wire Line
 Connection ~ 9750 13150
 Text Notes 11200 14500 0    79   ~ 0
 Multiplexer
-Text HLabel 10350 14450 3    59   Output ~ 0
+Text HLabel 11200 16450 3    59   Output ~ 0
 ALU_OUT7
-Text HLabel 10650 14450 3    59   Output ~ 0
+Text HLabel 11300 16450 3    59   Output ~ 0
 ALU_OUT6
-Text HLabel 10950 14450 3    59   Output ~ 0
+Text HLabel 11400 16450 3    59   Output ~ 0
 ALU_OUT5
-Text HLabel 12500 14450 3    59   Output ~ 0
+Text HLabel 11600 16450 3    59   Output ~ 0
 ALU_OUT3
-Text HLabel 12800 14450 3    59   Output ~ 0
+Text HLabel 11700 16450 3    59   Output ~ 0
 ALU_OUT2
-Text HLabel 13100 14450 3    59   Output ~ 0
+Text HLabel 11800 16450 3    59   Output ~ 0
 ALU_OUT1
 Wire Wire Line
 	9100 13150 9750 13150
@@ -1573,8 +1573,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 20500 2350 50  0001 C CNN
 	1    20500 2350
 	0    -1   -1   0   
 $EndComp
-Text HLabel 21000 3000 2    50   Input ~ 0
-PASS
 $Comp
 L power:GND #PWR?
 U 1 1 6090FF3A
@@ -1696,8 +1694,6 @@ F 3 "" H 20250 9050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	20250 9050 20300 9050
-Text HLabel 16350 9600 0    50   Input ~ 0
-CLOCK
 Wire Wire Line
 	21600 9550 21600 10050
 $Comp
@@ -3627,14 +3623,14 @@ SUM2
 Text Label 8650 7600 3    59   ~ 0
 SUM1
 $Comp
-L Connector_Generic:Conn_01x04 J6
+L Connector_Generic:Conn_01x05 J6
 U 1 1 667B0CDE
-P 14800 2000
-F 0 "J6" V 14718 1512 50  0001 R CNN
-F 1 "Conn_01x04" V 14673 1512 50  0001 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 14800 2000 50  0001 C CNN
-F 3 "~" H 14800 2000 50  0001 C CNN
-	1    14800 2000
+P 14900 2000
+F 0 "J6" V 14818 1512 50  0001 R CNN
+F 1 "Conn_01x05" V 14773 1512 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 14900 2000 50  0001 C CNN
+F 3 "~" H 14900 2000 50  0001 C CNN
+	1    14900 2000
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -3747,25 +3743,6 @@ Text HLabel 14800 2200 3    59   Input ~ 0
 F1
 Text HLabel 14900 2200 3    59   Input ~ 0
 F2
-Text HLabel 15000 2200 3    59   Input ~ 0
-F3
-Text HLabel 17650 13400 3    59   Input ~ 0
-F0
-Text HLabel 17750 13400 3    59   Input ~ 0
-F1
-Text HLabel 17850 13400 3    59   Input ~ 0
-F2
-Text HLabel 18150 13400 3    59   Input ~ 0
-F3
-Wire Wire Line
-	18250 13400 18300 13400
-Wire Wire Line
-	18300 13400 18300 13500
-Wire Wire Line
-	18300 13500 18400 13500
-Connection ~ 18300 13400
-Wire Wire Line
-	18300 13400 18350 13400
 $Comp
 L power:GND #PWR?
 U 1 1 669DAFB7
@@ -3871,16 +3848,16 @@ F 3 "" H 9650 2200 50  0001 C CNN
 $EndComp
 Connection ~ 9650 2200
 $Comp
-L Device:CP1 C?
+L Device:CP1 C3
 U 1 1 6864EF02
 P 10550 10250
-AR Path="/6864EF02" Ref="C?"  Part="1" 
+AR Path="/6864EF02" Ref="C3"  Part="1" 
 AR Path="/607E5D75/6864EF02" Ref="C?"  Part="1" 
 AR Path="/607ABD46/6864EF02" Ref="C?"  Part="1" 
 AR Path="/609B1486/6864EF02" Ref="C?"  Part="1" 
 AR Path="/60CD6BAA/609B1486/6864EF02" Ref="C?"  Part="1" 
 AR Path="/609369EF/6864EF02" Ref="C?"  Part="1" 
-F 0 "C?" H 10665 10296 50  0000 L CNN
+F 0 "C3" H 10665 10296 50  0000 L CNN
 F 1 "CP1" H 10665 10205 50  0000 L CNN
 F 2 "Capacitor_THT:C_Radial_D6.3mm_H11.0mm_P2.50mm" H 10550 10250 50  0001 C CNN
 F 3 "~" H 10550 10250 50  0001 C CNN
@@ -3888,16 +3865,16 @@ F 3 "~" H 10550 10250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1 C?
+L Device:CP1 C8
 U 1 1 6864FEF0
 P 10850 10250
-AR Path="/6864FEF0" Ref="C?"  Part="1" 
+AR Path="/6864FEF0" Ref="C8"  Part="1" 
 AR Path="/607E5D75/6864FEF0" Ref="C?"  Part="1" 
 AR Path="/607ABD46/6864FEF0" Ref="C?"  Part="1" 
 AR Path="/609B1486/6864FEF0" Ref="C?"  Part="1" 
 AR Path="/60CD6BAA/609B1486/6864FEF0" Ref="C?"  Part="1" 
 AR Path="/609369EF/6864FEF0" Ref="C?"  Part="1" 
-F 0 "C?" H 10965 10296 50  0000 L CNN
+F 0 "C8" H 10965 10296 50  0000 L CNN
 F 1 "CP1" H 10965 10205 50  0000 L CNN
 F 2 "Capacitor_THT:C_Radial_D6.3mm_H11.0mm_P2.50mm" H 10850 10250 50  0001 C CNN
 F 3 "~" H 10850 10250 50  0001 C CNN
@@ -3905,16 +3882,16 @@ F 3 "~" H 10850 10250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1 C?
+L Device:CP1 C9
 U 1 1 686504F7
 P 11150 10250
-AR Path="/686504F7" Ref="C?"  Part="1" 
+AR Path="/686504F7" Ref="C9"  Part="1" 
 AR Path="/607E5D75/686504F7" Ref="C?"  Part="1" 
 AR Path="/607ABD46/686504F7" Ref="C?"  Part="1" 
 AR Path="/609B1486/686504F7" Ref="C?"  Part="1" 
 AR Path="/60CD6BAA/609B1486/686504F7" Ref="C?"  Part="1" 
 AR Path="/609369EF/686504F7" Ref="C?"  Part="1" 
-F 0 "C?" H 11265 10296 50  0000 L CNN
+F 0 "C9" H 11265 10296 50  0000 L CNN
 F 1 "CP1" H 11265 10205 50  0000 L CNN
 F 2 "Capacitor_THT:C_Radial_D6.3mm_H11.0mm_P2.50mm" H 11150 10250 50  0001 C CNN
 F 3 "~" H 11150 10250 50  0001 C CNN
@@ -3928,10 +3905,6 @@ Wire Wire Line
 	10850 10100 11150 10100
 Wire Wire Line
 	11150 10400 10850 10400
-Wire Bus Line
-	12050 2550 13050 2550
-Wire Bus Line
-	10450 2550 11450 2550
 Connection ~ 10850 10400
 Wire Wire Line
 	10850 10400 10550 10400
@@ -3945,8 +3918,8 @@ AR Path="/609B123A/686A1BAF" Ref="#PWR?"  Part="1"
 AR Path="/60D0462D/686A1BAF" Ref="#PWR?"  Part="1" 
 AR Path="/60CD6BAA/609B123A/686A1BAF" Ref="#PWR?"  Part="1" 
 AR Path="/6081B834/686A1BAF" Ref="#PWR?"  Part="1" 
-AR Path="/686A1BAF" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 10850 10150 50  0001 C CNN
+AR Path="/686A1BAF" Ref="#PWR0173"  Part="1" 
+F 0 "#PWR0173" H 10850 10150 50  0001 C CNN
 F 1 "GND" H 10855 10227 50  0000 C CNN
 F 2 "" H 10850 10400 50  0001 C CNN
 F 3 "" H 10850 10400 50  0001 C CNN
@@ -3963,12 +3936,207 @@ AR Path="/609B123A/686A25E0" Ref="#PWR?"  Part="1"
 AR Path="/60D0462D/686A25E0" Ref="#PWR?"  Part="1" 
 AR Path="/60CD6BAA/609B123A/686A25E0" Ref="#PWR?"  Part="1" 
 AR Path="/6081B834/686A25E0" Ref="#PWR?"  Part="1" 
-AR Path="/686A25E0" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 10850 9950 50  0001 C CNN
+AR Path="/686A25E0" Ref="#PWR0174"  Part="1" 
+F 0 "#PWR0174" H 10850 9950 50  0001 C CNN
 F 1 "VCC" V 10865 10228 50  0000 L CNN
 F 2 "" H 10850 10100 50  0001 C CNN
 F 3 "" H 10850 10100 50  0001 C CNN
 	1    10850 10100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	18150 11950 18150 11550
+Connection ~ 18150 11950
+Wire Wire Line
+	18250 11900 18250 11550
+Connection ~ 18250 11900
+Text Label 18250 11550 1    50   ~ 0
+SHR
+Text Label 18150 11550 1    50   ~ 0
+SHL
+Text Label 18050 12400 1    50   ~ 0
+XOR_OUT
+Text Label 17850 12400 1    50   ~ 0
+AND_OUT
+Text Label 17950 12400 1    50   ~ 0
+OR_OUT
+Text Label 18350 12400 1    50   ~ 0
+PASS
+Text Label 21000 3000 0    59   ~ 0
+PASS
+Text Label 16350 9600 2    59   ~ 0
+CLOCK
+Text Label 17650 13400 3    50   ~ 0
+F0
+Text Label 17750 13400 3    50   ~ 0
+F1
+Text Label 17850 13400 3    50   ~ 0
+F2
+Text HLabel 15000 2200 3    59   Input ~ 0
+INVERT
+Wire Wire Line
+	18300 13500 18400 13500
+Wire Wire Line
+	18300 13400 18350 13400
+Wire Wire Line
+	18250 13400 18300 13400
+Connection ~ 18300 13400
+Wire Wire Line
+	18300 13400 18300 13500
+Text HLabel 15100 2200 3    59   Input ~ 0
+ALU_EN
+$Comp
+L 74xx:74LS245 U?
+U 1 1 60F108D3
+P 11600 15950
+AR Path="/607C44AD/60F108D3" Ref="U?"  Part="1" 
+AR Path="/607ABD46/60F108D3" Ref="U?"  Part="1" 
+AR Path="/609B123A/60F108D3" Ref="U?"  Part="1" 
+AR Path="/609B2005/60F108D3" Ref="U?"  Part="1" 
+AR Path="/60CD6BAA/609B2005/60F108D3" Ref="U?"  Part="1" 
+AR Path="/60F108D3" Ref="U?"  Part="1" 
+AR Path="/6099DAC6/60F108D3" Ref="U?"  Part="1" 
+F 0 "U?" V 11554 16794 50  0001 L CNN
+F 1 "74LS245" V 11700 15800 50  0000 L CNN
+F 2 "Package_DIP:DIP-20_W7.62mm" H 11600 15950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 11600 15950 50  0001 C CNN
+	1    11600 15950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60F108DD
+P 12000 16500
+AR Path="/607C44AD/60F108DD" Ref="#PWR?"  Part="1" 
+AR Path="/607ABD46/60F108DD" Ref="#PWR?"  Part="1" 
+AR Path="/609B123A/60F108DD" Ref="#PWR?"  Part="1" 
+AR Path="/609B2005/60F108DD" Ref="#PWR?"  Part="1" 
+AR Path="/60CD6BAA/609B2005/60F108DD" Ref="#PWR?"  Part="1" 
+AR Path="/60F108DD" Ref="#PWR?"  Part="1" 
+AR Path="/6099DAC6/60F108DD" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 12000 16250 50  0001 C CNN
+F 1 "GND" H 12005 16327 50  0000 C CNN
+F 2 "" H 12000 16500 50  0001 C CNN
+F 3 "" H 12000 16500 50  0001 C CNN
+	1    12000 16500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12000 16500 12000 16450
+$Comp
+L power:GND #PWR?
+U 1 1 60F108E8
+P 12450 15950
+AR Path="/607C44AD/60F108E8" Ref="#PWR?"  Part="1" 
+AR Path="/607ABD46/60F108E8" Ref="#PWR?"  Part="1" 
+AR Path="/609B123A/60F108E8" Ref="#PWR?"  Part="1" 
+AR Path="/609B2005/60F108E8" Ref="#PWR?"  Part="1" 
+AR Path="/60CD6BAA/609B2005/60F108E8" Ref="#PWR?"  Part="1" 
+AR Path="/60F108E8" Ref="#PWR?"  Part="1" 
+AR Path="/6099DAC6/60F108E8" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 12450 15700 50  0001 C CNN
+F 1 "GND" V 12455 15822 50  0000 R CNN
+F 2 "" H 12450 15950 50  0001 C CNN
+F 3 "" H 12450 15950 50  0001 C CNN
+	1    12450 15950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	12450 15950 12400 15950
+$Comp
+L power:VCC #PWR?
+U 1 1 60F108F3
+P 10750 15950
+AR Path="/607C44AD/60F108F3" Ref="#PWR?"  Part="1" 
+AR Path="/607ABD46/60F108F3" Ref="#PWR?"  Part="1" 
+AR Path="/609B123A/60F108F3" Ref="#PWR?"  Part="1" 
+AR Path="/609B2005/60F108F3" Ref="#PWR?"  Part="1" 
+AR Path="/60CD6BAA/609B2005/60F108F3" Ref="#PWR?"  Part="1" 
+AR Path="/60F108F3" Ref="#PWR?"  Part="1" 
+AR Path="/6099DAC6/60F108F3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10750 15800 50  0001 C CNN
+F 1 "VCC" V 10765 16078 50  0000 L CNN
+F 2 "" H 10750 15950 50  0001 C CNN
+F 3 "" H 10750 15950 50  0001 C CNN
+	1    10750 15950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10750 15950 10800 15950
+Wire Wire Line
+	12100 16450 12100 16500
+Wire Wire Line
+	12100 16500 12250 16500
+Wire Wire Line
+	12250 16500 12250 16600
+Text Label 12250 16600 3    59   ~ 0
+ALU_EN
+Wire Wire Line
+	10050 14450 10050 15250
+Wire Wire Line
+	10050 15250 11100 15250
+Wire Wire Line
+	11100 15250 11100 15450
+Wire Wire Line
+	10350 14450 10350 15100
+Wire Wire Line
+	10350 15100 11200 15100
+Wire Wire Line
+	11200 15100 11200 15450
+Wire Wire Line
+	10650 14450 10650 15000
+Wire Wire Line
+	10650 15000 11300 15000
+Wire Wire Line
+	11300 15000 11300 15450
+Wire Wire Line
+	10950 14450 10950 14900
+Wire Wire Line
+	10950 14900 11400 14900
+Wire Wire Line
+	11400 14900 11400 15450
+Wire Wire Line
+	11500 15450 11500 14900
+Wire Wire Line
+	11500 14900 12200 14900
+Wire Wire Line
+	12200 14900 12200 14450
+Wire Wire Line
+	12500 14450 12500 15000
+Wire Wire Line
+	12500 15000 11600 15000
+Wire Wire Line
+	11600 15000 11600 15450
+Wire Wire Line
+	11700 15450 11700 15100
+Wire Wire Line
+	11700 15100 12800 15100
+Wire Wire Line
+	12800 15100 12800 14450
+Wire Wire Line
+	13100 14450 13100 15200
+Wire Wire Line
+	13100 15200 11800 15200
+Wire Wire Line
+	11800 15200 11800 15450
+$Comp
+L power:VCC #PWR?
+U 1 1 613ECA25
+P 18150 13400
+AR Path="/607C44AD/613ECA25" Ref="#PWR?"  Part="1" 
+AR Path="/6089B4B7/613ECA25" Ref="#PWR?"  Part="1" 
+AR Path="/60CD6BAA/6089B4B7/613ECA25" Ref="#PWR?"  Part="1" 
+AR Path="/608804D8/613ECA25" Ref="#PWR?"  Part="1" 
+AR Path="/613ECA25" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 18150 13250 50  0001 C CNN
+F 1 "VCC" V 18165 13528 50  0000 L CNN
+F 2 "" H 18150 13400 50  0001 C CNN
+F 3 "" H 18150 13400 50  0001 C CNN
+	1    18150 13400
+	-1   0    0    1   
+$EndComp
+Wire Bus Line
+	12050 2550 13050 2550
+Wire Bus Line
+	10450 2550 11450 2550
 $EndSCHEMATC
