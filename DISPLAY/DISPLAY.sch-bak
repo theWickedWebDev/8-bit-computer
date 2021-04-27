@@ -191,8 +191,6 @@ Text Label 9850 750  2    39   ~ 0
 F
 Text Label 9750 750  2    39   ~ 0
 G
-Text Label 10150 2150 3    39   ~ 0
-DP
 $Comp
 L power:VCC #PWR0334
 U 1 1 6124544D
@@ -828,8 +826,6 @@ Text Label 8850 900  2    39   ~ 0
 F
 Text Label 8750 900  2    39   ~ 0
 G
-Text Label 9150 2300 3    39   ~ 0
-DP
 $Comp
 L HDSP-H103:HDSP-H103 U3
 U 1 1 60883926
@@ -868,8 +864,6 @@ Text Label 6650 850  2    39   ~ 0
 F
 Text Label 6550 850  2    39   ~ 0
 G
-Text Label 6950 2250 3    39   ~ 0
-DP
 $Comp
 L HDSP-H103:HDSP-H103 U1
 U 1 1 608AAF98
@@ -897,8 +891,6 @@ Text Label 7800 850  2    39   ~ 0
 F
 Text Label 7700 850  2    39   ~ 0
 G
-Text Label 8100 2250 3    39   ~ 0
-DP
 $Comp
 L HDSP-H103:HDSP-H103 U2
 U 1 1 608B9E8C

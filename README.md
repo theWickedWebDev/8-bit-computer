@@ -180,8 +180,10 @@ Uses a JK flip flop, a 555 timer and EEPROM to multiplex four 7-segment displays
 
 <br/>
 
-![DISPLAY](https://github.com/theWickedWebDev/8-bit-computer/blob/master/REGISTER/register-3d.png?raw=true)
+![DISPLAY](https://github.com/theWickedWebDev/8-bit-computer/blob/master/REGISTER/register-3d2.png?raw=true)
 
+
+![DISPLAY](https://github.com/theWickedWebDev/8-bit-computer/blob/master/REGISTER/register-pcb.png?raw=true)
 <br/><br/>
 
 ## Instruction Register
