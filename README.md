@@ -22,7 +22,7 @@ This is a large project that has been going on for quite a while now and things 
 
 ![ALU](https://github.com/theWickedWebDev/8-bit-computer/blob/master/ALU_LOGIC/logic-3d.png?raw=true)
 
-![ALU](https://github.com/theWickedWebDev/8-bit-computer/blob/master/ALU-ADD-SUB/add-sub-3d.png?raw=true)
+![ALU](https://github.com/theWickedWebDev/8-bit-computer/blob/master/ALU-ADD-SUB/alu-add-sub-3d.png?raw=true)
 
 Arithmetic logic unit which mostly uses simple [7400 series chips](https://www.futurlec.com/IC74LS00Series.shtml) such as logic gates, tri-state buffers and decoders.
 
@@ -190,6 +190,13 @@ Uses a JK flip flop, a 555 timer and EEPROM to multiplex four 7-segment displays
 ![DISPLAY](https://github.com/theWickedWebDev/8-bit-computer/blob/master/REGISTER/register-pcb.png?raw=true)
 <br/><br/>
 
+## Clock
+-----
+![DISPLAY](https://github.com/theWickedWebDev/8-bit-computer/blob/master/CLOCK/clock-v1-3d.png?raw=true)
+
+
+<br/><br/>
+
 ## Instruction Register
 -----
 
@@ -200,12 +207,6 @@ Uses a JK flip flop, a 555 timer and EEPROM to multiplex four 7-segment displays
 
 <br/><br/>
 
-## Clock
------
-![DISPLAY](https://github.com/theWickedWebDev/8-bit-computer/blob/master/CLOCK/clock-v1-3d.png?raw=true)
-
-
-<br/><br/>
 
 ## Manual RAM Write
 
