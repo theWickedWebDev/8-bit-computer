@@ -1372,8 +1372,8 @@ L Connector_Generic:Conn_01x02 J?
 U 1 1 61F95DB1
 P 2000 6300
 AR Path="/608F01AD/61F95DB1" Ref="J?"  Part="1" 
-AR Path="/61F95DB1" Ref="J?"  Part="1" 
-F 0 "J?" V 1918 5812 50  0001 R CNN
+AR Path="/61F95DB1" Ref="J7"  Part="1" 
+F 0 "J7" V 1918 5812 50  0001 R CNN
 F 1 "Conn_01x02" V 1873 5812 50  0001 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2000 6300 50  0001 C CNN
 F 3 "~" H 2000 6300 50  0001 C CNN
@@ -1385,8 +1385,8 @@ L power:PWR_FLAG #FLG?
 U 1 1 61F95DBB
 P 2100 6500
 AR Path="/608F01AD/61F95DBB" Ref="#FLG?"  Part="1" 
-AR Path="/61F95DBB" Ref="#FLG?"  Part="1" 
-F 0 "#FLG?" H 2100 6575 50  0001 C CNN
+AR Path="/61F95DBB" Ref="#FLG0102"  Part="1" 
+F 0 "#FLG0102" H 2100 6575 50  0001 C CNN
 F 1 "PWR_FLAG" H 2100 6673 50  0000 C CNN
 F 2 "" H 2100 6500 50  0001 C CNN
 F 3 "~" H 2100 6500 50  0001 C CNN
@@ -1398,8 +1398,8 @@ L power:GND #PWR?
 U 1 1 61F95DC5
 P 2000 6500
 AR Path="/608F01AD/61F95DC5" Ref="#PWR?"  Part="1" 
-AR Path="/61F95DC5" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2000 6250 50  0001 C CNN
+AR Path="/61F95DC5" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 2000 6250 50  0001 C CNN
 F 1 "GND" V 2005 6372 50  0000 R CNN
 F 2 "" H 2000 6500 50  0001 C CNN
 F 3 "" H 2000 6500 50  0001 C CNN
@@ -1413,8 +1413,8 @@ L power:VCC #PWR?
 U 1 1 61F95DD0
 P 2100 6500
 AR Path="/608F01AD/61F95DD0" Ref="#PWR?"  Part="1" 
-AR Path="/61F95DD0" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2100 6350 50  0001 C CNN
+AR Path="/61F95DD0" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 2100 6350 50  0001 C CNN
 F 1 "VCC" V 2115 6628 50  0000 L CNN
 F 2 "" H 2100 6500 50  0001 C CNN
 F 3 "" H 2100 6500 50  0001 C CNN
@@ -1422,8 +1422,55 @@ F 3 "" H 2100 6500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 2100 6500
+$Comp
+L Connector_Generic:Conn_01x08 J?
+U 1 1 620BBCDD
+P 10200 8400
+AR Path="/608F01AD/620BBCDD" Ref="J?"  Part="1" 
+AR Path="/620BBCDD" Ref="J?"  Part="1" 
+F 0 "J?" V 10118 7912 50  0001 R CNN
+F 1 "Conn_01x08" V 10073 7912 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 10200 8400 50  0001 C CNN
+F 3 "~" H 10200 8400 50  0001 C CNN
+	1    10200 8400
+	0    1    1    0   
+$EndComp
+Text Label 9800 8050 3    59   ~ 0
+SUM8
+Text Label 9900 8050 3    59   ~ 0
+SUM7
+Text Label 10000 8050 3    59   ~ 0
+SUM6
+Text Label 10100 8050 3    59   ~ 0
+SUM5
+Text Label 10200 8050 3    59   ~ 0
+SUM4
+Text Label 10300 8050 3    59   ~ 0
+SUM3
+Text Label 10400 8050 3    59   ~ 0
+SUM2
+Text Label 10500 8050 3    59   ~ 0
+SUM1
+Wire Wire Line
+	10500 8200 10500 8000
+Wire Wire Line
+	10400 8200 10400 7950
+Wire Wire Line
+	10300 8200 10300 7900
+Wire Wire Line
+	10200 8200 10200 7850
+Wire Wire Line
+	10100 8200 10100 7800
+Wire Wire Line
+	10000 8200 10000 7750
+Wire Wire Line
+	9900 7700 9900 8200
+Wire Wire Line
+	9800 7650 9800 8200
 Wire Bus Line
 	4000 4900 5000 4900
 Wire Bus Line
 	2400 4900 3400 4900
+Text Notes 10550 8600 2    79   ~ 0
+SUM REG OUT
 $EndSCHEMATC

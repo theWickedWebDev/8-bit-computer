@@ -24,6 +24,8 @@ This is a large project that has been going on for quite a while now and things 
 
 ![ALU](https://github.com/theWickedWebDev/8-bit-computer/blob/master/ALU-ADD-SUB/alu-add-sub-3d.png?raw=true)
 
+![ALU](https://github.com/theWickedWebDev/8-bit-computer/blob/master/ALU-ADD-SUB/shift-3d.png?raw=true)
+
 Arithmetic logic unit which mostly uses simple [7400 series chips](https://www.futurlec.com/IC74LS00Series.shtml) such as logic gates, tri-state buffers and decoders.
 
 It uses the `A Register` and the `B Resister` (Operand) to perform various arithmetic, logic and bitwise operations.
@@ -220,3 +222,4 @@ Uses a JK flip flop, a 555 timer and EEPROM to multiplex four 7-segment displays
 -----
 
 Made [a board](https://github.com/theWickedWebDev/8-bit-computer/blob/master/BUS_BOARD/bus-board-board.png?raw=true) to help me while testing the modular components. It pulls the lines LOW as well as has 8 LED status indicator lights.
+
