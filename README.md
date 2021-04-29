@@ -202,6 +202,8 @@ Uses a JK flip flop, a 555 timer and EEPROM to multiplex four 7-segment displays
 
 ## Clock
 -----
+![DISPLAY](https://github.com/theWickedWebDev/8-bit-computer/blob/master/CLOCK/clock-v1-3d.png?raw=true)
+
 
 <br/><br/>
 
