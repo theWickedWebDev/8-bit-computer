@@ -788,23 +788,23 @@ F 3 "~" H 6650 1600 50  0001 C CNN
 	1    6650 1600
 	1    0    0    -1  
 $EndComp
-Text HLabel 6450 1150 0    50   Input ~ 0
+Text HLabel 6450 1000 0    50   Input ~ 0
 CLOCK
 Text HLabel 4700 1900 1    50   Input ~ 0
 RESET
-Text HLabel 6450 1050 0    50   Input ~ 0
+Text HLabel 6450 900  0    50   Input ~ 0
 RESET
-Text HLabel 6450 950  0    50   Input ~ 0
+Text HLabel 6450 800  0    50   Input ~ 0
 JUMP
 $Comp
-L Connector_Generic:Conn_01x03 J2
+L Connector_Generic:Conn_01x04 J2
 U 1 1 60844354
-P 6650 1050
-F 0 "J2" H 6730 1046 50  0000 L CNN
-F 1 "Conn_01x03" H 6730 951 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6650 1050 50  0001 C CNN
-F 3 "~" H 6650 1050 50  0001 C CNN
-	1    6650 1050
+P 6650 900
+F 0 "J2" H 6730 896 50  0000 L CNN
+F 1 "Conn_01x04" H 6730 801 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 6650 900 50  0001 C CNN
+F 3 "~" H 6650 900 50  0001 C CNN
+	1    6650 900 
 	1    0    0    -1  
 $EndComp
 Text HLabel 6450 1700 0    50   Input ~ 0
@@ -815,4 +815,6 @@ Text HLabel 6450 1900 0    50   Input ~ 0
 D7
 Text HLabel 6450 2000 0    50   Input ~ 0
 D8
+Text HLabel 6450 1100 0    50   Input ~ 0
+OE
 $EndSCHEMATC

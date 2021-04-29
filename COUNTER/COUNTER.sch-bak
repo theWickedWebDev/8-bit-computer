@@ -807,4 +807,12 @@ F 3 "~" H 6650 1050 50  0001 C CNN
 	1    6650 1050
 	1    0    0    -1  
 $EndComp
+Text HLabel 6450 1700 0    50   Input ~ 0
+D5
+Text HLabel 6450 1800 0    50   Input ~ 0
+D6
+Text HLabel 6450 1900 0    50   Input ~ 0
+D7
+Text HLabel 6450 2000 0    50   Input ~ 0
+D8
 $EndSCHEMATC
