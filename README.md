@@ -24,7 +24,7 @@ This is a large project that has been going on for quite a while now and things 
 
 ![ALU](https://github.com/theWickedWebDev/8-bit-computer/blob/master/ALU-ADD-SUB/alu-add-sub-3d.png?raw=true)
 
-![ALU](https://github.com/theWickedWebDev/8-bit-computer/blob/master/ALU-ADD-SUB/shift-3d.png?raw=true)
+![ALU](https://github.com/theWickedWebDev/8-bit-computer/blob/master/ALU-SHIFT/shift-3d.png?raw=true)
 
 Arithmetic logic unit which mostly uses simple [7400 series chips](https://www.futurlec.com/IC74LS00Series.shtml) such as logic gates, tri-state buffers and decoders.
 
@@ -153,6 +153,8 @@ Connects to the bus to set an 8 bit value to write to ram at the given address f
 
 ![STORAGE](https://github.com/theWickedWebDev/8-bit-computer/blob/master/RAM/ram-sch.png?raw=true)
 
+![STORAGE](https://github.com/theWickedWebDev/8-bit-computer/blob/master/RAM_PROGRAMMER/RAM_PROG_3d.png?raw=true)
+
 Read and write with 16 address pins and 8 data pins.
 
 <br/>
@@ -210,16 +212,8 @@ Uses a JK flip flop, a 555 timer and EEPROM to multiplex four 7-segment displays
 <br/><br/>
 
 
-## Manual RAM Write
-
------
-
-<br/><br/>
-
-
 ## BUS
 
 -----
 
 Made [a board](https://github.com/theWickedWebDev/8-bit-computer/blob/master/BUS_BOARD/bus-board-board.png?raw=true) to help me while testing the modular components. It pulls the lines LOW as well as has 8 LED status indicator lights.
-
