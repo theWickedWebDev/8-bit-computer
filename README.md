@@ -109,7 +109,7 @@ The ALU provides 3 flags, `CO` (Carry out), `ZE` (Zero), and `NEG`
 
 <br/>
 
-![COUNTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/COUNTER/counter.png?raw=true)
+![COUNTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/COUNTER/counter-3d.png?raw=true)
 
 <br/>
 

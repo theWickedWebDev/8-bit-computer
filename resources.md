@@ -1,5 +1,11 @@
 # Helpful Links
 
+## Tools
+
+Karnaugh Maps, Truth Tables, and Boolean Expressions
+
+https://www.allaboutcircuits.com/textbook/digital/chpt-8/karnaugh-maps-truth-tables-boolean-expressions/
+
 ## Schematics
 
 ### Oscillator Circuit
