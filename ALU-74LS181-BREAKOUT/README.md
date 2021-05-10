@@ -98,6 +98,4 @@ Actual cost for me to fabricate this board.
 
 ## Gerber View (SVG)
 
-Made with Kicad
-
 ![ALU](https://github.com/theWickedWebDev/8-bit-computer/blob/master/ALU-74LS181-BREAKOUT/svg/ALU-181.svg?raw=true)

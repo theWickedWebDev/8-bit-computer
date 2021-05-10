@@ -15,208 +15,126 @@ This is a large project that has been going on for quite a while now and things 
 
 # Modules
 
-![ALU](https://github.com/theWickedWebDev/8-bit-computer/blob/master/ALU/alu.png?raw=true)
+Each module directory contains schematics, PCB layouts, Kicad files, Gerber files, Fritzing files, images and descriptions to help anyone interested in this project.
 
-![ALU](https://github.com/theWickedWebDev/8-bit-computer/blob/master/ALU_LOGIC/logic-3d.png?raw=true)
+## ALU (w/ a 74LS181 Breakout Board)
 
-![ALU](https://github.com/theWickedWebDev/8-bit-computer/blob/master/ALU-ADD-SUB/alu-add-sub-3d.png?raw=true)
+[![Generic badge](https://img.shields.io/badge/Status-PCB_Printed-orange.svg)](https://shields.io/)
 
-![ALU](https://github.com/theWickedWebDev/8-bit-computer/blob/master/ALU-SHIFT/shift-3d.png?raw=true)
+[![Generic badge](https://img.shields.io/badge/PCB-In_Transit-orange.svg)](https://shields.io/)
 
-Arithmetic logic unit which mostly uses simple [7400 series chips](https://www.futurlec.com/IC74LS00Series.shtml) such as logic gates, tri-state buffers and decoders.
+Click to explore the [ALU 74LS181 Breakout Board](https://github.com/theWickedWebDev/8-bit-computer/tree/master/ALU-74LS181-BREAKOUT)
 
-It uses the `A Register` and the `B Resister` (Operand) to perform various arithmetic, logic and bitwise operations.
-
-`ALU_EN` If set low, the ALU will outut its contents.
-
-`INVERT` If set low, the ALU will invert its output
-
-`F0..F2` Function pins (see table below)
-
-<br/>
-
-### Functions
-----
-
-3 function pins and an invert pin allows you to perform the following:
-- ADD - `F = A + B`
-- SUB - `F = A − B`
-- AND - `F = A & B`
-- OR - `F = A | B`
-- XOR - `F = A ⊕ B`
-- SHIFT LEFT - `F = A << 1`
-- SHIFT RIGHT - `F = A >> 1`
-- PASS - `F = A`
-- NAND - `F = A̅&̅B̅`
-- NOR - `F = ̅A̅|̅B̅`
-- XNOR - `F = A ⊙ B`
-- NOT - `F = A̅`
+#### **Used to perform the following functions:**
+- SUB
+- ADD
+- XOR
+- AND
+- OR
+- SHL A
+- DEC A
+- NOT A
+- NOR
+- NAND
+- NOT B
+- XNOR
+- A
+- B
 
 <br/>
 
-**Truth Tables**: `ALU_EN` and `INVERT` are active low inputs
-
-`x` - Doesnt matter
-
-```
- F0 | F1 | F2  | ALU EN | INVERT |  OUTPUT
- ----------------------------------------
- X     X     X      1       X       Floating (High Impediance)
- 0     0     0      0       1       ADD
- 0     0     1      0       1       SUB
- 0     1     0      0       1       AND
- 0     1     1      0       1       OR
- 1     0     0      0       1       XOR
- 1     0     1      0       1       SHL
- 1     1     0      0       1       SHR
- 1     1     1      0       1       PASS
- 0     1     0      0       0       NAND
- 0     1     1      0       0       NOR
- 1     0     0      0       0       XNOR
- 1     1     1      0       0       NOT
-```
-
-In order to get the **inverse**, `INVERT` pin must be set `LOW`
+>**ALU (w/ discrete logic chips)**
+>Click to explore the [ALU Module - using mostly discrete logic](https://github.com/theWickedWebDev/8-bit-computer/tree/master/ALU-DISCRETE-LOGIC)
 
 <br/>
 
-### Flags
-----
+## Binary Counter
 
-The ALU provides 3 flags, `CO` (Carry out), `ZE` (Zero), and `NEG`
+[![Generic badge](https://img.shields.io/badge/Status-Completed-green.svg)](https://shields.io/)
 
-<br/>
+[![Generic badge](https://img.shields.io/badge/PCB_Test-PASS-green.svg)](https://shields.io/)
 
-**`Carry Out`**
+Click to explore the [8bit Counter Module](https://github.com/theWickedWebDev/8-bit-computer/tree/master/COUNTER)
 
-    set HIGH when you are performing an `ADD` function and there is a carry bit.
-
-<br/>
-
-**`Zero`**
-
-    set HIGH when you are performing a `SUB` function and the result is 0.
+#### **Used for:**
+- Program
+- Microcode Operation
 
 <br/>
 
-**`NEG (Sign)`**
+## Generic Storage Registers
+[![Generic badge](https://img.shields.io/badge/Status-Completed-green.svg)](https://shields.io/)
 
-    set HIGH when you are performing a `SUB` function and the result is less than 0.
+[![Generic badge](https://img.shields.io/badge/PCB_Test-PASS-green.svg)](https://shields.io/)
 
-<br/>
-<br/>
+Click to explore the [2x 8bit Storage Register Module](https://github.com/theWickedWebDev/8-bit-computer/tree/master/STORAGE-REGISTER)
 
-## Program Counter
-
-----
-
-<br/>
-
-![COUNTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/COUNTER/counter-3d.png?raw=true)
-
-<br/>
-
-Used to point to the programs next instruction in RAM. With each rising edge of the clock, it will increment by one. It is connected to the bus through a tri-state buffer that allows for output and input. Input is used to manually set the value on the counter which is used for conditional jumps.
+#### **Used for:**
+- A and B
+- Scratch
+- Instruction
+- Memory Address
+- Memory Data
 
 <br/>
 
-## Memory Address Register
+## Memory (RAM)
 
-----
+[![Generic badge](https://img.shields.io/badge/Status-In_Progress-yellow.svg)](https://shields.io/)
 
-<br/>
+[![Generic badge](https://img.shields.io/badge/PCB_Test-Not_Started-red.svg)](https://shields.io/)
 
-![RAM](https://github.com/theWickedWebDev/8-bit-computer/blob/master/MEMORY_ADDRESS_REGISTER/mar.png?raw=true)
+Click to explore the various [Memory Module's](https://github.com/theWickedWebDev/8-bit-computer/tree/master/MEMORY)
 
-Connects to the bus with 2 latches (high and low bytes), that make up the 16 address pins on the RAM chip. It will take two operations in order to address 16 lines.
-
-<br/>
-
-## Memory Data Register
-
------
-
-<br/>
-
-![RAM](https://github.com/theWickedWebDev/8-bit-computer/blob/master/RAM_DATA_REGISTER/ram_data_reg.png?raw=true)
-
-<br/>
-
-Connects to the bus to set an 8 bit value to write to ram at the given address from the MAR
-
-<br/>
-
-## RAM
-
------
-
-<br/>
-
-![RAM](https://github.com/theWickedWebDev/8-bit-computer/blob/master/RAM/ram-3d.png?raw=true)
-
-![STORAGE](https://github.com/theWickedWebDev/8-bit-computer/blob/master/RAM/ram-sch.png?raw=true)
-
-![STORAGE](https://github.com/theWickedWebDev/8-bit-computer/blob/master/RAM_PROGRAMMER/RAM_PROG_3d.png?raw=true)
-
-Read and write with 16 address pins and 8 data pins.
-
-<br/>
 <br/>
 
 ## Display
------
+
+[![Generic badge](https://img.shields.io/badge/Status-In_Progress-yellow.svg)](https://shields.io/)
+
+[![Generic badge](https://img.shields.io/badge/PCB-Not_Printed-red.svg)](https://shields.io/)
+
+Click to explore the [Display Module](https://github.com/theWickedWebDev/8-bit-computer/tree/master/DISPLAY)
 
 <br/>
-
-![DISPLAY](https://github.com/theWickedWebDev/8-bit-computer/blob/master/DISPLAY/display-3d.png?raw=true)
-
-![SCHEMATIC](https://github.com/theWickedWebDev/8-bit-computer/blob/master/DISPLAY/display-sch.png?raw=true)
-
-Uses a JK flip flop, a 555 timer and EEPROM to multiplex four 7-segment displays to output the current value of the bus in decimal.
-
-<br/><br/>
 
 ## Microcode / Control Logic  EEPROM
------
+
+[![Generic badge](https://img.shields.io/badge/Status-PCB_Printed-orange.svg)](https://shields.io/)
+
+[![Generic badge](https://img.shields.io/badge/PCB-In_Transit-orange.svg)](https://shields.io/)
+
+Click to explore the [Microcode/Control Logic](https://github.com/theWickedWebDev/8-bit-computer/tree/master/CONTROL_LOGIC)
 
 <br/>
-
-![MICROCODE](https://github.com/theWickedWebDev/8-bit-computer/blob/master/CONTROL_LOGIC/control-3d.png?raw=true)
-
-
-<br/><br/>
-
-## A, B and Scratch Registers
------
-
-<br/>
-
-![DISPLAY](https://github.com/theWickedWebDev/8-bit-computer/blob/master/REGISTER/register-3d2.png?raw=true)
-
-
-![DISPLAY](https://github.com/theWickedWebDev/8-bit-computer/blob/master/REGISTER/register-pcb.png?raw=true)
-<br/><br/>
 
 ## Clock
------
-![DISPLAY](https://github.com/theWickedWebDev/8-bit-computer/blob/master/CLOCK/clock-v1-3d.png?raw=true)
 
+[![Generic badge](https://img.shields.io/badge/Status-In_Progress-yellow.svg)](https://shields.io/)
 
-<br/><br/>
+[![Generic badge](https://img.shields.io/badge/PCB_Test-Not_Started-red.svg)](https://shields.io/)
 
-## Instruction Register
------
+Currently working on a replica that uses an Osciallating Quartz Crystal instead of the 555 timer.
 
-<br/><br/>
+Click to explore the ([archived 555 Clock Module](https://github.com/theWickedWebDev/8-bit-computer/tree/master/_archived_/CLOCK_555))
 
-## Flags Register
------
+<br/>
 
-<br/><br/>
+## BUS Board
 
+[![Generic badge](https://img.shields.io/badge/Status-Completed-green.svg)](https://shields.io/)
 
-## BUS
+[![Generic badge](https://img.shields.io/badge/PCB_Test-PASS-green.svg)](https://shields.io/)
 
------
+Click to explore the [BUS Board](https://github.com/theWickedWebDev/8-bit-computer/tree/master/BUS_BOARD)
 
-Made [a board](https://github.com/theWickedWebDev/8-bit-computer/blob/master/BUS_BOARD/bus-board-board.png?raw=true) to help me while testing the modular components. It pulls the lines LOW as well as has 8 LED status indicator lights.
+<br/>
+
+## Power Module
+7-25V to 5V Voltage Regulator
+
+[![Generic badge](https://img.shields.io/badge/Status-Completed-green.svg)](https://shields.io/)
+
+[![Generic badge](https://img.shields.io/badge/PCB_Test-PASS-green.svg)](https://shields.io/)
+
+Click to explore the [5V Power Module](https://github.com/theWickedWebDev/8-bit-computer/tree/master/POWER)
