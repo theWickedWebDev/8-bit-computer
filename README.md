@@ -15,8 +15,10 @@ This is a large project that has been going on for quite a while now and things 
 
 # Modules
 
-## ALU
+## ALU (Multiple designs)
 <br/>
+
+![ALU](https://github.com/theWickedWebDev/8-bit-computer/blob/master/ALU-SIMPLIFIED/svg/ALU-SIMPLIFIED-brd.svg?raw=true)
 
 ![ALU](https://github.com/theWickedWebDev/8-bit-computer/blob/master/ALU/alu.png?raw=true)
 
