@@ -2,10 +2,10 @@
 
 ## Tools
 
-#### Karnaugh Maps, Truth Tables, and Boolean Expressions
+#### `Karnaugh Maps, Truth Tables, and Boolean Expressions`
     https://www.allaboutcircuits.com/textbook/digital/chpt-8/karnaugh-maps-truth-tables-boolean-expressions/
 
-#### Compiler Explorer
+#### `Compiler Explorer`
     https://godbolt.org/
 
 <br/>
@@ -14,10 +14,10 @@
 
 ## Schematics
 
-### Oscillator Circuit
-http://www.z80.info/uexosc.htm
+### `Oscillator Circuit`
+    http://www.z80.info/uexosc.htm
 
-### 555 Calculator Ohms Law
+### `555 Calculator Ohms Law`
     https://ohmslawcalculator.com/555-astable-calculator
 
 <br/>
@@ -26,16 +26,16 @@ http://www.z80.info/uexosc.htm
 
 ## YouTube Channels
 
-### Ben Eater
+### `Ben Eater`
     https://www.youtube.com/user/eaterbc
 
-### James Sharman
+### `James Sharman`
     https://www.youtube.com/channel/UCeRXQ_B5WZD3yjPly45myvg
 
-### learnelectronics
+### `learnelectronics`
     https://www.youtube.com/channel/UCSRTiJhBE5GsP-1fCbpFRWg
 
-### TTL Logic Chips 74LSxx Datasheets
+### `TTL Logic Chips 74LSxx Datasheets`
     https://www.futurlec.com/IC74LS00Series.shtml
 
 
@@ -43,11 +43,12 @@ http://www.z80.info/uexosc.htm
 
 ----
 ## Vendors
-### Parts
+
+### `Parts`
 
     https://www.jameco.com/ 
 
-### Fabrication PCBS
+### `Fabrication PCBS`
     https://jlcpcb.com/
 
 
@@ -57,11 +58,16 @@ http://www.z80.info/uexosc.htm
 
 ## Software
 
-### MiniPro
+### `MiniPro`
 Software to program various chips such as EEPROMs using programmer hardware (TL866xx)
 
     https://gitlab.com/DavidGriffith/minipro
 
+
+### `Logism`
+Graphical tool for designing and simulating logic circuits
+
+    http://www.cburch.com/logisim/download.html
 
 
 <br/>
@@ -69,5 +75,5 @@ Software to program various chips such as EEPROMs using programmer hardware (TL8
 ----
 ## Reddit (Support)
 
-### Ben Eater
+### `Ben Eater`
     https://www.reddit.com/r/beneater/

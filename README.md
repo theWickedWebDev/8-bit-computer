@@ -15,11 +15,6 @@ This is a large project that has been going on for quite a while now and things 
 
 # Modules
 
-## ALU (Multiple designs)
-<br/>
-
-![ALU](https://github.com/theWickedWebDev/8-bit-computer/blob/master/ALU-SIMPLIFIED/svg/ALU-SIMPLIFIED-brd.svg?raw=true)
-
 ![ALU](https://github.com/theWickedWebDev/8-bit-computer/blob/master/ALU/alu.png?raw=true)
 
 ![ALU](https://github.com/theWickedWebDev/8-bit-computer/blob/master/ALU_LOGIC/logic-3d.png?raw=true)
@@ -92,15 +87,21 @@ The ALU provides 3 flags, `CO` (Carry out), `ZE` (Zero), and `NEG`
 
 <br/>
 
-**`Carry Out`** - set HIGH when you are performing an `ADD` function and there is a carry bit.
+**`Carry Out`**
+
+    set HIGH when you are performing an `ADD` function and there is a carry bit.
 
 <br/>
 
-**`Zero`** - is set HIGH when you are performing a `SUB` function and the result is 0.
+**`Zero`**
+
+    set HIGH when you are performing a `SUB` function and the result is 0.
 
 <br/>
 
-**`NEG (Sign)`** - is set HIGH when you are performing a `SUB` function and the result is less than 0.
+**`NEG (Sign)`**
+
+    set HIGH when you are performing a `SUB` function and the result is less than 0.
 
 <br/>
 <br/>

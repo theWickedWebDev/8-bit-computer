@@ -7,14 +7,14 @@
       "Application": "Pcbnew",
       "Version":     "(5.1.9-0-10_14)"
     },
-    "CreationDate":  "2021-05-10T01:07:37-04:00"
+    "CreationDate":  "2021-05-10T13:01:54-04:00"
   },
   "GeneralSpecs":
   {
     "ProjectId":
     {
-      "Name": "ALU-SIMPLIFIED",
-      "GUID": "414c552d-5349-44d5-904c-49464945442e",
+      "Name": "ALU-181",
+      "GUID": "414c552d-3138-4312-9e6b-696361645f70",
       "Revision": "rev?"
     },
     "Size":
@@ -47,57 +47,57 @@
   "FilesAttributes":
   [
     {
-      "Path":  "ALU-SIMPLIFIED-F_Cu.gbr",
+      "Path":  "ALU-181-F_Cu.gbr",
       "FileFunction":  "Copper,L1,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "ALU-SIMPLIFIED-In1_Cu.gbr",
+      "Path":  "ALU-181-In1_Cu.gbr",
       "FileFunction":  "Copper,L2,Inr",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "ALU-SIMPLIFIED-In2_Cu.gbr",
+      "Path":  "ALU-181-In2_Cu.gbr",
       "FileFunction":  "Copper,L3,Inr",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "ALU-SIMPLIFIED-B_Cu.gbr",
+      "Path":  "ALU-181-B_Cu.gbr",
       "FileFunction":  "Copper,L4,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "ALU-SIMPLIFIED-F_Paste.gbr",
+      "Path":  "ALU-181-F_Paste.gbr",
       "FileFunction":  "SolderPaste,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "ALU-SIMPLIFIED-B_Paste.gbr",
+      "Path":  "ALU-181-B_Paste.gbr",
       "FileFunction":  "SolderPaste,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "ALU-SIMPLIFIED-F_SilkS.gbr",
+      "Path":  "ALU-181-F_SilkS.gbr",
       "FileFunction":  "Legend,Top",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "ALU-SIMPLIFIED-B_SilkS.gbr",
+      "Path":  "ALU-181-B_SilkS.gbr",
       "FileFunction":  "Legend,Bot",
       "FilePolarity":  "Positive"
     },
     {
-      "Path":  "ALU-SIMPLIFIED-F_Mask.gbr",
+      "Path":  "ALU-181-F_Mask.gbr",
       "FileFunction":  "SolderMask,Top",
       "FilePolarity":  "Negative"
     },
     {
-      "Path":  "ALU-SIMPLIFIED-B_Mask.gbr",
+      "Path":  "ALU-181-B_Mask.gbr",
       "FileFunction":  "SolderMask,Bot",
       "FilePolarity":  "Negative"
     },
     {
-      "Path":  "ALU-SIMPLIFIED-Edge_Cuts.gbr",
+      "Path":  "ALU-181-Edge_Cuts.gbr",
       "FileFunction":  "Profile",
       "FilePolarity":  "Positive"
     }
