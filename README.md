@@ -84,7 +84,7 @@ Click to explore the [2x 8bit Storage Register Module](https://github.com/theWic
 
 [![Generic badge](https://img.shields.io/badge/PCB_Test-Not_Started-red.svg)](https://shields.io/)
 
-Click to explore the various [Memory Module's](https://github.com/theWickedWebDev/8-bit-computer/tree/master/MEMORY)
+Click to explore the various [Memory Module's](https://github.com/theWickedWebDev/8-bit-computer/tree/master/RAM)
 
 <br/>
 
