@@ -1064,54 +1064,15 @@ F 3 "https://docs.broadcom.com/docs/AV02-1798EN" H 4550 5600 50  0001 C CNN
 $EndComp
 $Comp
 L power:GND #PWR?
-U 1 1 609DD933
-P 4750 6000
-AR Path="/609D754A/609DD933" Ref="#PWR?"  Part="1" 
-AR Path="/609DD933" Ref="#PWR0105"  Part="1" 
-F 0 "#PWR0105" H 4750 5750 50  0001 C CNN
-F 1 "GND" H 4755 5827 50  0000 C CNN
-F 2 "" H 4750 6000 50  0001 C CNN
-F 3 "" H 4750 6000 50  0001 C CNN
-	1    4750 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60C16CCD
-P 5550 6000
-AR Path="/609D754A/60C16CCD" Ref="#PWR?"  Part="1" 
-AR Path="/60C16CCD" Ref="#PWR0122"  Part="1" 
-F 0 "#PWR0122" H 5550 5750 50  0001 C CNN
-F 1 "GND" H 5555 5827 50  0000 C CNN
-F 2 "" H 5550 6000 50  0001 C CNN
-F 3 "" H 5550 6000 50  0001 C CNN
-	1    5550 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60C28D9F
-P 6350 6000
-AR Path="/609D754A/60C28D9F" Ref="#PWR?"  Part="1" 
-AR Path="/60C28D9F" Ref="#PWR0123"  Part="1" 
-F 0 "#PWR0123" H 6350 5750 50  0001 C CNN
-F 1 "GND" H 6355 5827 50  0000 C CNN
-F 2 "" H 6350 6000 50  0001 C CNN
-F 3 "" H 6350 6000 50  0001 C CNN
-	1    6350 6000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
 U 1 1 609FF58C
-P 7150 6000
+P 5400 5800
 AR Path="/609D754A/609FF58C" Ref="#PWR?"  Part="1" 
 AR Path="/609FF58C" Ref="#PWR0125"  Part="1" 
-F 0 "#PWR0125" H 7150 5750 50  0001 C CNN
-F 1 "GND" H 7155 5827 50  0000 C CNN
-F 2 "" H 7150 6000 50  0001 C CNN
-F 3 "" H 7150 6000 50  0001 C CNN
-	1    7150 6000
+F 0 "#PWR0125" H 5400 5550 50  0001 C CNN
+F 1 "GND" H 5405 5627 50  0000 C CNN
+F 2 "" H 5400 5800 50  0001 C CNN
+F 3 "" H 5400 5800 50  0001 C CNN
+	1    5400 5800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1785,10 +1746,10 @@ F 3 "~" H 4050 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R4
 U 1 1 6133C0BD
 P 4150 5700
-F 0 "R?" H 4218 5700 50  0001 L CNN
+F 0 "R4" H 4218 5700 50  0001 L CNN
 F 1 "R_Small_US" H 4218 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 4150 5700 50  0001 C CNN
 F 3 "~" H 4150 5700 50  0001 C CNN
@@ -1796,10 +1757,10 @@ F 3 "~" H 4150 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R6
 U 1 1 6133C31A
 P 4350 5700
-F 0 "R?" H 4418 5700 50  0001 L CNN
+F 0 "R6" H 4418 5700 50  0001 L CNN
 F 1 "R_Small_US" H 4418 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 4350 5700 50  0001 C CNN
 F 3 "~" H 4350 5700 50  0001 C CNN
@@ -1807,10 +1768,10 @@ F 3 "~" H 4350 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R5
 U 1 1 6133C73E
 P 4250 5700
-F 0 "R?" H 4318 5700 50  0001 L CNN
+F 0 "R5" H 4318 5700 50  0001 L CNN
 F 1 "R_Small_US" H 4318 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 4250 5700 50  0001 C CNN
 F 3 "~" H 4250 5700 50  0001 C CNN
@@ -1818,10 +1779,10 @@ F 3 "~" H 4250 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R7
 U 1 1 6133D515
 P 4450 5700
-F 0 "R?" H 4518 5700 50  0001 L CNN
+F 0 "R7" H 4518 5700 50  0001 L CNN
 F 1 "R_Small_US" H 4518 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 4450 5700 50  0001 C CNN
 F 3 "~" H 4450 5700 50  0001 C CNN
@@ -1829,10 +1790,10 @@ F 3 "~" H 4450 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R8
 U 1 1 6133D51F
 P 4550 5700
-F 0 "R?" H 4618 5700 50  0001 L CNN
+F 0 "R8" H 4618 5700 50  0001 L CNN
 F 1 "R_Small_US" H 4618 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 4550 5700 50  0001 C CNN
 F 3 "~" H 4550 5700 50  0001 C CNN
@@ -1840,10 +1801,10 @@ F 3 "~" H 4550 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R10
 U 1 1 6133D529
 P 4750 5700
-F 0 "R?" H 4818 5700 50  0001 L CNN
+F 0 "R10" H 4818 5700 50  0001 L CNN
 F 1 "R_Small_US" H 4818 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 4750 5700 50  0001 C CNN
 F 3 "~" H 4750 5700 50  0001 C CNN
@@ -1851,10 +1812,10 @@ F 3 "~" H 4750 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R9
 U 1 1 6133D533
 P 4650 5700
-F 0 "R?" H 4718 5700 50  0001 L CNN
+F 0 "R9" H 4718 5700 50  0001 L CNN
 F 1 "R_Small_US" H 4718 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 4650 5700 50  0001 C CNN
 F 3 "~" H 4650 5700 50  0001 C CNN
@@ -1862,10 +1823,10 @@ F 3 "~" H 4650 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R11
 U 1 1 61355DB4
 P 4850 5700
-F 0 "R?" H 4918 5700 50  0001 L CNN
+F 0 "R11" H 4918 5700 50  0001 L CNN
 F 1 "R_Small_US" H 4918 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 4850 5700 50  0001 C CNN
 F 3 "~" H 4850 5700 50  0001 C CNN
@@ -1873,10 +1834,10 @@ F 3 "~" H 4850 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R12
 U 1 1 61355DBE
 P 4950 5700
-F 0 "R?" H 5018 5700 50  0001 L CNN
+F 0 "R12" H 5018 5700 50  0001 L CNN
 F 1 "R_Small_US" H 5018 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 4950 5700 50  0001 C CNN
 F 3 "~" H 4950 5700 50  0001 C CNN
@@ -1884,10 +1845,10 @@ F 3 "~" H 4950 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R14
 U 1 1 61355DC8
 P 5150 5700
-F 0 "R?" H 5218 5700 50  0001 L CNN
+F 0 "R14" H 5218 5700 50  0001 L CNN
 F 1 "R_Small_US" H 5218 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 5150 5700 50  0001 C CNN
 F 3 "~" H 5150 5700 50  0001 C CNN
@@ -1895,10 +1856,10 @@ F 3 "~" H 5150 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R13
 U 1 1 61355DD2
 P 5050 5700
-F 0 "R?" H 5118 5700 50  0001 L CNN
+F 0 "R13" H 5118 5700 50  0001 L CNN
 F 1 "R_Small_US" H 5118 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 5050 5700 50  0001 C CNN
 F 3 "~" H 5050 5700 50  0001 C CNN
@@ -1906,10 +1867,10 @@ F 3 "~" H 5050 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R15
 U 1 1 61355DDC
 P 5250 5700
-F 0 "R?" H 5318 5700 50  0001 L CNN
+F 0 "R15" H 5318 5700 50  0001 L CNN
 F 1 "R_Small_US" H 5318 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 5250 5700 50  0001 C CNN
 F 3 "~" H 5250 5700 50  0001 C CNN
@@ -1917,10 +1878,10 @@ F 3 "~" H 5250 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R16
 U 1 1 61355DE6
 P 5350 5700
-F 0 "R?" H 5418 5700 50  0001 L CNN
+F 0 "R16" H 5418 5700 50  0001 L CNN
 F 1 "R_Small_US" H 5418 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 5350 5700 50  0001 C CNN
 F 3 "~" H 5350 5700 50  0001 C CNN
@@ -1928,10 +1889,10 @@ F 3 "~" H 5350 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R18
 U 1 1 61355DF0
 P 5550 5700
-F 0 "R?" H 5618 5700 50  0001 L CNN
+F 0 "R18" H 5618 5700 50  0001 L CNN
 F 1 "R_Small_US" H 5618 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 5550 5700 50  0001 C CNN
 F 3 "~" H 5550 5700 50  0001 C CNN
@@ -1939,10 +1900,10 @@ F 3 "~" H 5550 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R17
 U 1 1 61355DFA
 P 5450 5700
-F 0 "R?" H 5518 5700 50  0001 L CNN
+F 0 "R17" H 5518 5700 50  0001 L CNN
 F 1 "R_Small_US" H 5518 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 5450 5700 50  0001 C CNN
 F 3 "~" H 5450 5700 50  0001 C CNN
@@ -1950,10 +1911,10 @@ F 3 "~" H 5450 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R19
 U 1 1 6137042F
 P 5650 5700
-F 0 "R?" H 5718 5700 50  0001 L CNN
+F 0 "R19" H 5718 5700 50  0001 L CNN
 F 1 "R_Small_US" H 5718 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 5650 5700 50  0001 C CNN
 F 3 "~" H 5650 5700 50  0001 C CNN
@@ -1961,10 +1922,10 @@ F 3 "~" H 5650 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R20
 U 1 1 61370439
 P 5750 5700
-F 0 "R?" H 5818 5700 50  0001 L CNN
+F 0 "R20" H 5818 5700 50  0001 L CNN
 F 1 "R_Small_US" H 5818 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 5750 5700 50  0001 C CNN
 F 3 "~" H 5750 5700 50  0001 C CNN
@@ -1972,10 +1933,10 @@ F 3 "~" H 5750 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R22
 U 1 1 61370443
 P 5950 5700
-F 0 "R?" H 6018 5700 50  0001 L CNN
+F 0 "R22" H 6018 5700 50  0001 L CNN
 F 1 "R_Small_US" H 6018 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 5950 5700 50  0001 C CNN
 F 3 "~" H 5950 5700 50  0001 C CNN
@@ -1983,10 +1944,10 @@ F 3 "~" H 5950 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R21
 U 1 1 6137044D
 P 5850 5700
-F 0 "R?" H 5918 5700 50  0001 L CNN
+F 0 "R21" H 5918 5700 50  0001 L CNN
 F 1 "R_Small_US" H 5918 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 5850 5700 50  0001 C CNN
 F 3 "~" H 5850 5700 50  0001 C CNN
@@ -1994,10 +1955,10 @@ F 3 "~" H 5850 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R23
 U 1 1 61370457
 P 6050 5700
-F 0 "R?" H 6118 5700 50  0001 L CNN
+F 0 "R23" H 6118 5700 50  0001 L CNN
 F 1 "R_Small_US" H 6118 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 6050 5700 50  0001 C CNN
 F 3 "~" H 6050 5700 50  0001 C CNN
@@ -2005,10 +1966,10 @@ F 3 "~" H 6050 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R24
 U 1 1 61370461
 P 6150 5700
-F 0 "R?" H 6218 5700 50  0001 L CNN
+F 0 "R24" H 6218 5700 50  0001 L CNN
 F 1 "R_Small_US" H 6218 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 6150 5700 50  0001 C CNN
 F 3 "~" H 6150 5700 50  0001 C CNN
@@ -2016,10 +1977,10 @@ F 3 "~" H 6150 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R26
 U 1 1 6137046B
 P 6350 5700
-F 0 "R?" H 6418 5700 50  0001 L CNN
+F 0 "R26" H 6418 5700 50  0001 L CNN
 F 1 "R_Small_US" H 6418 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 6350 5700 50  0001 C CNN
 F 3 "~" H 6350 5700 50  0001 C CNN
@@ -2027,10 +1988,10 @@ F 3 "~" H 6350 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R25
 U 1 1 61370475
 P 6250 5700
-F 0 "R?" H 6318 5700 50  0001 L CNN
+F 0 "R25" H 6318 5700 50  0001 L CNN
 F 1 "R_Small_US" H 6318 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 6250 5700 50  0001 C CNN
 F 3 "~" H 6250 5700 50  0001 C CNN
@@ -2038,10 +1999,10 @@ F 3 "~" H 6250 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R27
 U 1 1 6137047F
 P 6450 5700
-F 0 "R?" H 6518 5700 50  0001 L CNN
+F 0 "R27" H 6518 5700 50  0001 L CNN
 F 1 "R_Small_US" H 6518 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 6450 5700 50  0001 C CNN
 F 3 "~" H 6450 5700 50  0001 C CNN
@@ -2049,10 +2010,10 @@ F 3 "~" H 6450 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R28
 U 1 1 61370489
 P 6550 5700
-F 0 "R?" H 6618 5700 50  0001 L CNN
+F 0 "R28" H 6618 5700 50  0001 L CNN
 F 1 "R_Small_US" H 6618 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 6550 5700 50  0001 C CNN
 F 3 "~" H 6550 5700 50  0001 C CNN
@@ -2060,10 +2021,10 @@ F 3 "~" H 6550 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R30
 U 1 1 61370493
 P 6750 5700
-F 0 "R?" H 6818 5700 50  0001 L CNN
+F 0 "R30" H 6818 5700 50  0001 L CNN
 F 1 "R_Small_US" H 6818 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 6750 5700 50  0001 C CNN
 F 3 "~" H 6750 5700 50  0001 C CNN
@@ -2071,10 +2032,10 @@ F 3 "~" H 6750 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R29
 U 1 1 6137049D
 P 6650 5700
-F 0 "R?" H 6718 5700 50  0001 L CNN
+F 0 "R29" H 6718 5700 50  0001 L CNN
 F 1 "R_Small_US" H 6718 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 6650 5700 50  0001 C CNN
 F 3 "~" H 6650 5700 50  0001 C CNN
@@ -2082,10 +2043,10 @@ F 3 "~" H 6650 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R31
 U 1 1 613704A7
 P 6850 5700
-F 0 "R?" H 6918 5700 50  0001 L CNN
+F 0 "R31" H 6918 5700 50  0001 L CNN
 F 1 "R_Small_US" H 6918 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 6850 5700 50  0001 C CNN
 F 3 "~" H 6850 5700 50  0001 C CNN
@@ -2093,14 +2054,103 @@ F 3 "~" H 6850 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R32
 U 1 1 613704B1
 P 6950 5700
-F 0 "R?" H 7018 5700 50  0001 L CNN
+F 0 "R32" H 7018 5700 50  0001 L CNN
 F 1 "R_Small_US" H 7018 5655 50  0001 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 6950 5700 50  0001 C CNN
 F 3 "~" H 6950 5700 50  0001 C CNN
 	1    6950 5700
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4050 5800 4150 5800
+Connection ~ 4150 5800
+Wire Wire Line
+	4150 5800 4250 5800
+Connection ~ 4250 5800
+Wire Wire Line
+	4250 5800 4350 5800
+Connection ~ 4350 5800
+Wire Wire Line
+	4350 5800 4450 5800
+Connection ~ 4450 5800
+Wire Wire Line
+	4450 5800 4550 5800
+Connection ~ 4550 5800
+Wire Wire Line
+	4550 5800 4650 5800
+Connection ~ 4650 5800
+Wire Wire Line
+	4650 5800 4750 5800
+Connection ~ 4750 5800
+Wire Wire Line
+	4750 5800 4850 5800
+Connection ~ 4850 5800
+Wire Wire Line
+	4850 5800 4950 5800
+Connection ~ 4950 5800
+Wire Wire Line
+	4950 5800 5050 5800
+Connection ~ 5050 5800
+Wire Wire Line
+	5050 5800 5150 5800
+Connection ~ 5150 5800
+Wire Wire Line
+	5150 5800 5250 5800
+Connection ~ 5250 5800
+Wire Wire Line
+	5250 5800 5350 5800
+Connection ~ 5350 5800
+Wire Wire Line
+	5350 5800 5400 5800
+Connection ~ 5450 5800
+Wire Wire Line
+	5450 5800 5550 5800
+Connection ~ 5550 5800
+Wire Wire Line
+	5550 5800 5650 5800
+Connection ~ 5650 5800
+Wire Wire Line
+	5650 5800 5750 5800
+Connection ~ 5750 5800
+Wire Wire Line
+	5750 5800 5850 5800
+Connection ~ 5850 5800
+Wire Wire Line
+	5850 5800 5950 5800
+Connection ~ 5950 5800
+Wire Wire Line
+	5950 5800 6050 5800
+Connection ~ 6050 5800
+Wire Wire Line
+	6050 5800 6150 5800
+Connection ~ 6150 5800
+Wire Wire Line
+	6150 5800 6250 5800
+Connection ~ 6250 5800
+Wire Wire Line
+	6250 5800 6350 5800
+Connection ~ 6350 5800
+Wire Wire Line
+	6350 5800 6450 5800
+Connection ~ 6450 5800
+Wire Wire Line
+	6450 5800 6550 5800
+Connection ~ 6550 5800
+Wire Wire Line
+	6550 5800 6650 5800
+Connection ~ 6650 5800
+Wire Wire Line
+	6650 5800 6750 5800
+Connection ~ 6750 5800
+Wire Wire Line
+	6750 5800 6850 5800
+Connection ~ 6850 5800
+Wire Wire Line
+	6850 5800 6950 5800
+Connection ~ 5400 5800
+Wire Wire Line
+	5400 5800 5450 5800
 $EndSCHEMATC

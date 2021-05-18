@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name CONTROL_LOGIC-rescue)(type Legacy)(uri ${KIPRJMOD}/CONTROL_LOGIC-rescue.lib)(options "")(descr ""))
+)
