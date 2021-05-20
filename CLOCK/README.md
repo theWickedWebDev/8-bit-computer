@@ -2,6 +2,10 @@
 
 TODO: Description coming soon...
 
+TODO:
+ - Fix weirdness on schematics (some labels are off and switch net labels with globals)
+ - put VCC coming in from top and GND coming in from bottom
+
 <br/>
 
 ## QA

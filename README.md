@@ -62,12 +62,12 @@ Click to explore the [8bit Counter Module](https://github.com/theWickedWebDev/8-
 
 <br/>
 
-## Generic Storage Registers
+## Generic Storage Registers (Dual)
 [![Generic badge](https://img.shields.io/badge/Status-Completed-green.svg)](https://shields.io/)
 
 [![Generic badge](https://img.shields.io/badge/PCB_Test-PASS-green.svg)](https://shields.io/)
 
-Click to explore the [2x 8bit Storage Register Module](https://github.com/theWickedWebDev/8-bit-computer/tree/master/STORAGE-REGISTER)
+Click to explore the [2x 8bit Storage Register Module](https://github.com/theWickedWebDev/8-bit-computer/tree/master/STORAGE-REGISTER-DUAL)
 
 #### **Used for:**
 - A and B
@@ -75,6 +75,12 @@ Click to explore the [2x 8bit Storage Register Module](https://github.com/theWic
 - Instruction
 - Memory Address
 - Memory Data
+
+<br/>
+
+### Generic Storage Registers (Single)
+
+Click to explore the [2x 8bit Storage Register Module](https://github.com/theWickedWebDev/8-bit-computer/tree/master/STORAGE-REGISTER-SINGLE)
 
 <br/>
 
