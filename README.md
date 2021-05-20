@@ -80,7 +80,7 @@ Click to explore the [2x 8bit Storage Register Module](https://github.com/theWic
 
 ### Generic Storage Registers (Single)
 
-Click to explore the [2x 8bit Storage Register Module](https://github.com/theWickedWebDev/8-bit-computer/tree/master/STORAGE-REGISTER-SINGLE)
+Click to explore the [Single 8bit Storage Register Module](https://github.com/theWickedWebDev/8-bit-computer/tree/master/STORAGE-REGISTER-SINGLE)
 
 <br/>
 

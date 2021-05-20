@@ -8,7 +8,8 @@ DESCRIPTION TODO
 
 Made with Kicad
 
-![REGISTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/STORAGE-REGISTER-SINGLE/schematic.pdf?raw=true)
+[SCHEMATIC](https://github.com/theWickedWebDev/8-bit-computer/blob/master/STORAGE-REGISTER-SINGLE/schematic.pdf?raw=true)
+![SCHEMATIC](https://github.com/theWickedWebDev/8-bit-computer/blob/master/STORAGE-REGISTER-SINGLE/schematic.png?raw=true)
 
 <br/>
 
@@ -26,4 +27,4 @@ Actual cost for me to fabricate this board.
 ![REGISTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/STORAGE-REGISTER-SINGLE/register-3d.png?raw=true)
 <br/>
 
-![REGISTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/STORAGE-REGISTERSINGLE/register-board.png?raw=true)
+![REGISTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/STORAGE-REGISTER-SINGLE/register-board.png?raw=true)
