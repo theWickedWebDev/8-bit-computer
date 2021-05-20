@@ -27,7 +27,7 @@ Made with Fritzing
 
 (1 of the 2 registers in this module)
 
-![REGISTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/STORAGE-REGISTER/register-breadboard.png?raw=true)
+![REGISTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/STORAGE-REGISTER-DUAL/register-breadboard.png?raw=true)
 
 <br/>
 
@@ -35,7 +35,7 @@ Made with Fritzing
 
 Made with Kicad
 
-![REGISTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/STORAGE-REGISTER/register-sch.png?raw=true)
+![REGISTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/STORAGE-REGISTER-DUAL/register-sch.png?raw=true)
 
 <br/>
 
@@ -50,11 +50,11 @@ Actual cost for me to fabricate this board.
 
 <br/>
 
-![REGISTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/STORAGE-REGISTER/register-3d2.png?raw=true)
+![REGISTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/STORAGE-REGISTER-DUAL/register-3d2.png?raw=true)
 <br/>
 
-![REGISTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/STORAGE-REGISTER/register-board.png?raw=true)
+![REGISTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/STORAGE-REGISTER-DUAL/register-board.png?raw=true)
 
 ## Gerber View (SVG)
 
-![REGISTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/STORAGE-REGISTER/svg/ALU-181.svg?raw=true)
+![REGISTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/STORAGE-REGISTER-DUAL/svg/ALU-181.svg?raw=true)
