@@ -124,7 +124,7 @@ Click to explore the [Microcode/Control Logic](https://github.com/theWickedWebDe
 
 Currently working on a replica that uses an Osciallating Quartz Crystal instead of the 555 timer.
 
-Click to explore the ([archived 555 Clock Module](https://github.com/theWickedWebDev/8-bit-computer/tree/master/_archived_/CLOCK_555))
+Click to explore the ([Crystal & 555 Clock Module](https://github.com/theWickedWebDev/8-bit-computer/tree/master/CLOCK))
 
 <br/>
 
