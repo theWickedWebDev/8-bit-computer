@@ -13,12 +13,12 @@ TODO: Description coming soon...
 
 ## PCB
 
-![MAR](https://github.com/theWickedWebDev/8-bit-computer/blob/master/RAM/mar-3d.png?raw=true)
+![RAM](https://github.com/theWickedWebDev/8-bit-computer/blob/master/RAM/RAM/ram-3d.png?raw=true)
 
 <br/>
 
-![MAR](https://github.com/theWickedWebDev/8-bit-computer/blob/master/RAM/mar-sch.png?raw=true)
+![RAM](https://github.com/theWickedWebDev/8-bit-computer/blob/master/RAM/ram-sch.png?raw=true)
 
 <br/>
 
-![MAR](https://github.com/theWickedWebDev/8-bit-computer/blob/master/RAM/mar-board.png?raw=true)
+![RAM](https://github.com/theWickedWebDev/8-bit-computer/blob/master/RAM/RAM/ram-board.png?raw=true)
