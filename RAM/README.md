@@ -16,4 +16,4 @@ TODO
 
 ### RAM Programmer with Atmega328
 
-Click to explore the [2x 8bit Storage Register Module](https://github.com/theWickedWebDev/8-bit-computer/tree/master/STORAGE-REGISTER-DUAL)
+Click to explore the [Atmega328 RAM Programmer](https://github.com/theWickedWebDev/8-bit-computer/tree/master/RAM/RAM_PROGRAMMER)
