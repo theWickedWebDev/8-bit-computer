@@ -1695,19 +1695,6 @@ Wire Wire Line
 	10000 3150 10000 3900
 Wire Wire Line
 	10000 3900 10100 3900
-$Comp
-L Connector_Generic:Conn_01x05 J?
-U 1 1 61226356
-P 11100 2950
-AR Path="/609D754A/61226356" Ref="J?"  Part="1" 
-AR Path="/61226356" Ref="J11"  Part="1" 
-F 0 "J11" V 10972 3330 50  0001 L CNN
-F 1 "Conn_1x05" V 11063 3330 50  0001 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 11100 2950 50  0001 C CNN
-F 3 "~" H 11100 2950 50  0001 C CNN
-	1    11100 2950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	10900 2750 10900 2250
 Wire Wire Line
@@ -1717,15 +1704,9 @@ Wire Wire Line
 Wire Wire Line
 	10850 2650 10850 2850
 Wire Wire Line
-	10850 2850 10900 2850
-Wire Wire Line
 	10700 3050 10750 3050
 Wire Wire Line
 	10750 3050 10750 2950
-Wire Wire Line
-	10750 2950 10900 2950
-Wire Wire Line
-	10900 3050 10800 3050
 Wire Wire Line
 	10800 3050 10800 3500
 Wire Wire Line
@@ -2153,4 +2134,23 @@ Wire Wire Line
 Connection ~ 5400 5800
 Wire Wire Line
 	5400 5800 5450 5800
+Wire Wire Line
+	10900 3050 10800 3050
+Wire Wire Line
+	10750 2950 10900 2950
+Wire Wire Line
+	10850 2850 10900 2850
+$Comp
+L Connector_Generic:Conn_01x05 J?
+U 1 1 61226356
+P 11100 2950
+AR Path="/609D754A/61226356" Ref="J?"  Part="1" 
+AR Path="/61226356" Ref="J11"  Part="1" 
+F 0 "J11" V 10972 3330 50  0001 L CNN
+F 1 "Conn_1x05" V 11063 3330 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 11100 2950 50  0001 C CNN
+F 3 "~" H 11100 2950 50  0001 C CNN
+	1    11100 2950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
