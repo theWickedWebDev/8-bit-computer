@@ -65,7 +65,7 @@ Click to explore the [8bit Counter Module](https://github.com/theWickedWebDev/8-
 ## Generic Storage Registers (Dual)
 [![Generic badge](https://img.shields.io/badge/Status-Completed-green.svg)](https://shields.io/)
 
-[![Generic badge](https://img.shields.io/badge/PCB_Test-PASS-green.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/PCB_Test-FAIL-orange.svg)](https://shields.io/) (Need to fix reset lines, they are connected currently)
 
 Click to explore the [2x 8bit Storage Register Module](https://github.com/theWickedWebDev/8-bit-computer/tree/master/STORAGE-REGISTER-DUAL)
 
@@ -78,6 +78,9 @@ Click to explore the [2x 8bit Storage Register Module](https://github.com/theWic
 <br/>
 
 ### Generic Storage Registers (Single)
+[![Generic badge](https://img.shields.io/badge/Status-In_Progress-yellow.svg)](https://shields.io/)
+
+[![Generic badge](https://img.shields.io/badge/PCB-Shipping-red.svg)](https://shields.io/)
 
 Click to explore the [Single 8bit Storage Register Module](https://github.com/theWickedWebDev/8-bit-computer/tree/master/STORAGE-REGISTER-SINGLE)
 
@@ -105,9 +108,9 @@ Click to explore the [Display Module](https://github.com/theWickedWebDev/8-bit-c
 
 ## Microcode / Control Logic  EEPROM
 
-[![Generic badge](https://img.shields.io/badge/Status-PCB_Printed-orange.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/Status-FAIL-yellow.svg)](https://shields.io/) (Reworking invert gate, had bad labelling/traces - still works)
 
-[![Generic badge](https://img.shields.io/badge/PCB-In_Transit-orange.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/PCB-Printed-green.svg)](https://shields.io/)
 
 Click to explore the [Microcode/Control Logic](https://github.com/theWickedWebDev/8-bit-computer/tree/master/CONTROL_LOGIC)
 
@@ -117,7 +120,7 @@ Click to explore the [Microcode/Control Logic](https://github.com/theWickedWebDe
 
 [![Generic badge](https://img.shields.io/badge/Status-In_Progress-yellow.svg)](https://shields.io/)
 
-[![Generic badge](https://img.shields.io/badge/PCB_Test-Not_Started-red.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/PCB_Test-Shipping-red.svg)](https://shields.io/)
 
 Currently working on a replica that uses an Osciallating Quartz Crystal instead of the 555 timer.
 
