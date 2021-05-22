@@ -17,8 +17,8 @@ TODO: Description coming soon...
 
 <br/>
 
-![RAM](https://github.com/theWickedWebDev/8-bit-computer/blob/master/RAM/ram-sch.png?raw=true)
+![RAM](https://github.com/theWickedWebDev/8-bit-computer/blob/master/RAM/RAM/ram-board.png?raw=true)
 
 <br/>
 
-![RAM](https://github.com/theWickedWebDev/8-bit-computer/blob/master/RAM/RAM/ram-board.png?raw=true)
+![RAM](https://github.com/theWickedWebDev/8-bit-computer/blob/master/RAM/RAM/ram-sch.png?raw=true)
