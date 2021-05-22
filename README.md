@@ -73,8 +73,7 @@ Click to explore the [2x 8bit Storage Register Module](https://github.com/theWic
 - A and B
 - Scratch
 - Instruction
-- Memory Address
-- Memory Data
+- etc
 
 <br/>
 
