@@ -116,6 +116,16 @@ Click to explore the [Microcode/Control Logic](https://github.com/theWickedWebDe
 
 <br/>
 
+## Audio/Sound
+
+[![Generic badge](https://img.shields.io/badge/Status-In_Progress-yellow.svg)](https://shields.io/)
+
+[![Generic badge](https://img.shields.io/badge/PCB-Shipping-yellow.svg)](https://shields.io/)
+
+Click to explore the [Sound Module](https://github.com/theWickedWebDev/8-bit-computer/tree/master/SOUND)
+
+<br/>
+
 ## Clock
 
 [![Generic badge](https://img.shields.io/badge/Status-In_Progress-yellow.svg)](https://shields.io/)
