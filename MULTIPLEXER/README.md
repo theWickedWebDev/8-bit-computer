@@ -2,7 +2,7 @@
 
 TODO: Description coming soon...
     
-### Sound 1 Module
+### MUX w/ Tri-State Buffer
 [![Generic badge](https://img.shields.io/badge/Status-In_Progress-yellow.svg)](https://shields.io/)
 
 [![Generic badge](https://img.shields.io/badge/PCB-Shipping-red.svg)](https://shields.io/)
