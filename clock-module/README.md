@@ -1,5 +1,9 @@
 # Clock v3.1
 
+[![Generic badge](https://img.shields.io/badge/Status-Done-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/PCB-Built-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/QA-Pass-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/ERC-Pass-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/DRC-Pass-green.svg)](https://shields.io/)
+
+<br/>
+
 ![DEMO](https://github.com/theWickedWebDev/8-bit-computer/blob/master/clock-module/clock-demo.gif?raw=true)
 
 
@@ -33,11 +37,6 @@ You can use a 2-pin jumper to chose which tuning you'd like.
 
 <br/>
 <hr/>
-<br/>
-
-## QA & Assembly
-[![Generic badge](https://img.shields.io/badge/Status-Done-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/PCB-Built-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/QA-Pass-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/ERC-Pass-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/DRC-Pass-green.svg)](https://shields.io/)
-
 <br/>
 
 ## PCB Fabrication

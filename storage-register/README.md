@@ -1,19 +1,13 @@
 # 8-bit Register
 
+[![Generic badge](https://img.shields.io/badge/Status-Done-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/PCB-Built-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/QA-Pass-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/ERC-Pass-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/DRC-Pass-green.svg)](https://shields.io/)
+
 ![DEMO](https://github.com/theWickedWebDev/8-bit-computer/blob/master/storage-register/register-demo.gif?raw=true)
 
 <br/>
 
 This module stores one byte of data. It has a tri-state output which can be used to tie into a central bus system.
 <br/>
-<br/>
-
-## QA & Assembly
-
-<br/>
-
-[![Generic badge](https://img.shields.io/badge/Status-Done-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/PCB-Built-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/QA-Pass-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/ERC-Pass-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/DRC-Pass-green.svg)](https://shields.io/)
-
 <br/>
 
 ## Truth Table
