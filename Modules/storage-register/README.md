@@ -43,10 +43,20 @@ Actual cost for me to fabricate this board.
 <br/>
 
 ![REGISTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/Modules/storage-register/register3d.png?raw=true)
+
 <br/>
 
 ![REGISTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/Modules/storage-register/registerboard.png?raw=true)
 
+<br/>
+
+## Fritzing
+
+For demo purposes only, this file/drawing hasnt been verified.
+
+![REGISTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/Modules/storage-register/register-breadboard.png?raw=true)
+
+<br/>
 
 ## Parts List
 
