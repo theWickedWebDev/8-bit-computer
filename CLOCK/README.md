@@ -1,6 +1,6 @@
 # Clock v3.1
 
-![DEMO](https://github.com/theWickedWebDev/8-bit-computer/blob/master/CLOCK/clock-demo.gif?raw=true)
+![DEMO](https://github.com/theWickedWebDev/8-bit-computer/blob/master/clock/clock-demo.gif?raw=true)
 
 
 KiCad Files, images and Gerber files are included.
@@ -47,24 +47,24 @@ I use www.jlcpcb.com for my circuit board manufacturing. They print 5 copies of 
 
 ### Schematic
 
-![MAR](https://github.com/theWickedWebDev/8-bit-computer/blob/master/CLOCK/clock-sch.png?raw=true)
+![MAR](https://github.com/theWickedWebDev/8-bit-computer/blob/master/clock/clock-sch.png?raw=true)
 
 <br/>
 
 ### Rendering
 
-![MAR](https://github.com/theWickedWebDev/8-bit-computer/blob/master/CLOCK/clock-3d.png?raw=true)
+![MAR](https://github.com/theWickedWebDev/8-bit-computer/blob/master/clock/clock-3d.png?raw=true)
 
 <br/>
 
-![MAR](https://github.com/theWickedWebDev/8-bit-computer/blob/master/CLOCK/clock-board.png?raw=true)
+![MAR](https://github.com/theWickedWebDev/8-bit-computer/blob/master/clock/clock-board.png?raw=true)
 
 <br/>
 
 ### Fritzing Breadboard
 (Might not be 100% accurate)
 
-![MAR](https://github.com/theWickedWebDev/8-bit-computer/blob/master/CLOCK/CLOCK-breadboard.png?raw=true)
+![MAR](https://github.com/theWickedWebDev/8-bit-computer/blob/master/clock/clock-breadboard.png?raw=true)
 
 <br/>
 <hr/>

@@ -1,6 +1,6 @@
 # 8-bit Register
 
-![DEMO](https://github.com/theWickedWebDev/8-bit-computer/blob/master/STORAGE-REGISTER-SINGLE/register-demo.gif?raw=true)
+![DEMO](https://github.com/theWickedWebDev/8-bit-computer/blob/master/storage-register/register-demo.gif?raw=true)
 
 <br/>
 
@@ -33,7 +33,7 @@ This module stores one byte of data. It has a tri-state output which can be used
 
 Made with Kicad
 
-![SCHEMATIC](https://github.com/theWickedWebDev/8-bit-computer/blob/master/STORAGE-REGISTER-SINGLE/registersch.png?raw=true)
+![SCHEMATIC](https://github.com/theWickedWebDev/8-bit-computer/blob/master/storage-register/registersch.png?raw=true)
 
 <br/>
 
@@ -48,7 +48,7 @@ Actual cost for me to fabricate this board.
 
 <br/>
 
-![REGISTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/STORAGE-REGISTER-SINGLE/register3d.png?raw=true)
+![REGISTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/storage-register/register3d.png?raw=true)
 <br/>
 
-![REGISTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/STORAGE-REGISTER-SINGLE/registerboard.png?raw=true)
+![REGISTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/storage-register/registerboard.png?raw=true)
