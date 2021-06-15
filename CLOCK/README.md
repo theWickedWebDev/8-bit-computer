@@ -1,5 +1,8 @@
 # Clock v3.1
 
+![DEMO](https://github.com/theWickedWebDev/8-bit-computer/blob/master/CLOCK/clock-demo.gif?raw=true)
+
+
 KiCad Files, images and Gerber files are included.
 
 ### Description
@@ -33,7 +36,7 @@ You can use a 2-pin jumper to chose which tuning you'd like.
 <br/>
 
 ## QA & Assembly
-[![Generic badge](https://img.shields.io/badge/Status-PCB_Printed-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/PCB-Tested-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/QA-Pass-green.svg)](https://shields.io/)
+[![Generic badge](https://img.shields.io/badge/Status-Done-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/PCB-Built-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/QA-Pass-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/ERC-Pass-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/DRC-Pass-green.svg)](https://shields.io/)
 
 <br/>
 
@@ -55,6 +58,13 @@ I use www.jlcpcb.com for my circuit board manufacturing. They print 5 copies of 
 <br/>
 
 ![MAR](https://github.com/theWickedWebDev/8-bit-computer/blob/master/CLOCK/clock-board.png?raw=true)
+
+<br/>
+
+### Fritzing Breadboard
+(Might not be 100% accurate)
+
+![MAR](https://github.com/theWickedWebDev/8-bit-computer/blob/master/CLOCK/CLOCK-breadboard.png?raw=true)
 
 <br/>
 <hr/>
