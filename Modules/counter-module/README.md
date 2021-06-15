@@ -3,7 +3,7 @@
 [![Generic badge](https://img.shields.io/badge/Status-In_Progress-yellow.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/PCB-Built-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/QA-In_Progress-yellow.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/ERC-Pass-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/DRC-Pass-green.svg)](https://shields.io/)
 
 
-![DEMO](https://github.com/theWickedWebDev/8-bit-computer/blob/master/counter-module/counter-demo.gif?raw=true)
+![DEMO](https://github.com/theWickedWebDev/8-bit-computer/blob/master/Modules/counter-module/counter-demo.gif?raw=true)
 
 <br/>
 
@@ -62,10 +62,21 @@ the current count will be asserted.
 
 ## Schematic
 
-![COUNTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/counter-module/counter-sch.png?raw=true)
+![COUNTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/Modules/counter-module/counter-sch.png?raw=true)
 
 ## PCB
 
-![COUNTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/counter-module/counter-3d.png?raw=true)
+![COUNTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/Modules/counter-module/counter-3d.png?raw=true)
 
-![COUNTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/counter-module/counter-board.png?raw=true)
+![COUNTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/Modules/counter-module/counter-board.png?raw=true)
+
+
+## Parts List
+
+... more details to come TODO
+
+### IC's
+
+- `74L245` (1) - Tri-state Buffer [Datasheet/Product](https://www.jameco.com/z/74LS245-Major-Brands-IC-74LS245-Tri-State-Octal-Bus-Transceiver_47212.html)
+
+- `74L161` (2) - 4-Bit Synchronous Binary Counter [Datasheet](https://www.jameco.com/z/74LS161-Major-Brands-IC-74LS161-4-Bit-Synchronous-Binary-Counter-DIP-16_46818.html)

@@ -2,7 +2,7 @@
 
 [![Generic badge](https://img.shields.io/badge/Status-Done-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/PCB-Built-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/QA-Pass-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/ERC-Pass-green.svg)](https://shields.io/) [![Generic badge](https://img.shields.io/badge/DRC-Pass-green.svg)](https://shields.io/)
 
-![DEMO](https://github.com/theWickedWebDev/8-bit-computer/blob/master/storage-register/register-demo.gif?raw=true)
+![DEMO](https://github.com/theWickedWebDev/8-bit-computer/blob/master/Modules/storage-register/register-demo.gif?raw=true)
 
 <br/>
 
@@ -27,7 +27,7 @@ This module stores one byte of data. It has a tri-state output which can be used
 
 Made with Kicad
 
-![SCHEMATIC](https://github.com/theWickedWebDev/8-bit-computer/blob/master/storage-register/registersch.png?raw=true)
+![SCHEMATIC](https://github.com/theWickedWebDev/8-bit-computer/blob/master/Modules/storage-register/registersch.png?raw=true)
 
 <br/>
 
@@ -42,7 +42,18 @@ Actual cost for me to fabricate this board.
 
 <br/>
 
-![REGISTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/storage-register/register3d.png?raw=true)
+![REGISTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/Modules/storage-register/register3d.png?raw=true)
 <br/>
 
-![REGISTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/storage-register/registerboard.png?raw=true)
+![REGISTER](https://github.com/theWickedWebDev/8-bit-computer/blob/master/Modules/storage-register/registerboard.png?raw=true)
+
+
+## Parts List
+
+... more details to come TODO
+
+### IC's
+
+- `74L245` (1) - Tri-state Buffer [Datasheet/Product](https://www.jameco.com/z/74LS245-Major-Brands-IC-74LS245-Tri-State-Octal-Bus-Transceiver_47212.html)
+
+- `74L173` (2) - 4bit Register [Datasheet](https://www.jameco.com/z/74LS173-Major-Brands-IC-74LS173-4-BIT-D-TYPE-REGISTER-3-STATE-OUTPUT_46922.html)

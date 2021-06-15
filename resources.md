@@ -77,3 +77,9 @@ Graphical tool for designing and simulating logic circuits
 
 ### `Ben Eater`
     https://www.reddit.com/r/beneater/
+
+#### Instruction Set
+    https://github.com/romanhaller/Ben-Eater-8-bit-computer-docs/blob/main/Instructions.pdf
+
+#### 6502 Datasheet for inspiration
+    http://archive.6502.org/datasheets/rockwell_r65c00_microprocessors.pdf
