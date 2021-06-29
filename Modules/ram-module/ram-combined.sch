@@ -2638,11 +2638,11 @@ Text Label 8100 13550 1    39   ~ 0
 MANUAL_DATA_07
 Text Label 13150 13550 1    39   ~ 0
 MANUAL_DATA_00
-Text Label 12250 13550 1    39   ~ 0
+Text Label 12850 13550 1    39   ~ 0
 MANUAL_DATA_01
 Text Label 12550 13550 1    39   ~ 0
 MANUAL_DATA_02
-Text Label 12850 13550 1    39   ~ 0
+Text Label 12250 13550 1    39   ~ 0
 MANUAL_DATA_03
 Text Label 10850 13550 1    39   ~ 0
 MANUAL_DATA_04
@@ -2778,63 +2778,31 @@ Wire Wire Line
 $Comp
 L LED:HDSP-4830_2 BAR3
 U 1 1 638E24AE
-P 5700 11050
-F 0 "BAR3" V 5700 11580 50  0001 L CNN
-F 1 "HDSP-4830_2" V 5745 11580 50  0001 L CNN
-F 2 "Display:HDSP-4830" H 5700 10250 50  0001 C CNN
-F 3 "https://docs.broadcom.com/docs/AV02-1798EN" H 3700 11250 50  0001 C CNN
-	1    5700 11050
+P 5750 10700
+F 0 "BAR3" V 5750 11230 50  0001 L CNN
+F 1 "HDSP-4830_2" V 5795 11230 50  0001 L CNN
+F 2 "Display:HDSP-4830" H 5750 9900 50  0001 C CNN
+F 3 "https://docs.broadcom.com/docs/AV02-1798EN" H 3750 10900 50  0001 C CNN
+	1    5750 10700
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Network08_US RN?
 U 1 1 638E55F8
-P 5700 11450
+P 5750 11100
 AR Path="/60C9B792/638E55F8" Ref="RN?"  Part="1" 
 AR Path="/638E55F8" Ref="RN10"  Part="1" 
-F 0 "RN10" H 5220 11450 50  0001 R CNN
-F 1 "R_Network08_US" H 5220 11495 50  0001 R CNN
-F 2 "Resistor_THT:R_Array_SIP9" V 6175 11450 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5700 11450 50  0001 C CNN
-	1    5700 11450
+F 0 "RN10" H 5270 11100 50  0001 R CNN
+F 1 "R_Network08_US" H 5270 11145 50  0001 R CNN
+F 2 "Resistor_THT:R_Array_SIP9" V 6225 11100 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 5750 11100 50  0001 C CNN
+	1    5750 11100
 	-1   0    0    1   
 $EndComp
-NoConn ~ 5300 11250
-NoConn ~ 5200 11250
-NoConn ~ 5300 10850
-NoConn ~ 5200 10850
-Text Label 6100 10750 1    39   ~ 0
-MANUAL_DATA_00
-Text Label 6000 10750 1    39   ~ 0
-MANUAL_DATA_01
-Text Label 5900 10750 1    39   ~ 0
-MANUAL_DATA_02
-Text Label 5800 10750 1    39   ~ 0
-MANUAL_DATA_03
-Text Label 5700 10750 1    39   ~ 0
-MANUAL_DATA_04
-Text Label 5600 10750 1    39   ~ 0
-MANUAL_DATA_05
-Text Label 5500 10750 1    39   ~ 0
-MANUAL_DATA_06
-Text Label 5400 10750 1    39   ~ 0
-MANUAL_DATA_07
-Wire Wire Line
-	5400 10200 5400 10850
-Wire Wire Line
-	5500 10850 5500 10200
-Wire Wire Line
-	5600 10200 5600 10850
-Wire Wire Line
-	5700 10850 5700 10200
-Wire Wire Line
-	5800 10200 5800 10850
-Wire Wire Line
-	5900 10850 5900 10200
-Wire Wire Line
-	6000 10200 6000 10850
-Wire Wire Line
-	6100 10850 6100 10200
+NoConn ~ 5350 10900
+NoConn ~ 5250 10900
+NoConn ~ 5350 10500
+NoConn ~ 5250 10500
 Text Label 13500 6150 0    50   ~ 0
 A0
 Text Label 13500 6250 0    50   ~ 0
@@ -3083,4 +3051,33 @@ Wire Notes Line
 	7300 6150 7300 11850
 Text Notes 5000 4700 0    50   ~ 10
 SWITCHES
+$Comp
+L power:GND #PWR?
+U 1 1 60E09B61
+P 6150 11300
+AR Path="/60C9B792/60E09B61" Ref="#PWR?"  Part="1" 
+AR Path="/60E09B61" Ref="#PWR0115"  Part="1" 
+F 0 "#PWR0115" H 6150 11050 50  0001 C CNN
+F 1 "GND" H 6155 11127 50  0000 C CNN
+F 2 "" H 6150 11300 50  0001 C CNN
+F 3 "" H 6150 11300 50  0001 C CNN
+	1    6150 11300
+	1    0    0    -1  
+$EndComp
+Text GLabel 6150 10500 1    50   Input ~ 0
+D0
+Text GLabel 6050 10500 1    50   Input ~ 0
+D1
+Text GLabel 5950 10500 1    50   Input ~ 0
+D2
+Text GLabel 5850 10500 1    50   Input ~ 0
+D3
+Text GLabel 5750 10500 1    50   Input ~ 0
+D4
+Text GLabel 5650 10500 1    50   Input ~ 0
+D5
+Text GLabel 5550 10500 1    50   Input ~ 0
+D6
+Text GLabel 5450 10500 1    50   Input ~ 0
+D7
 $EndSCHEMATC
