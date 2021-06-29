@@ -128,34 +128,6 @@ F 3 "" H 6550 4600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6550 4600 6500 4600
-$Comp
-L power:GND #PWR?
-U 1 1 612A8D2A
-P 5300 3450
-AR Path="/60CD6BAA/612A8D2A" Ref="#PWR?"  Part="1" 
-AR Path="/60E7F2E1/612A8D2A" Ref="#PWR?"  Part="1" 
-AR Path="/60F36CA3/612A8D2A" Ref="#PWR?"  Part="1" 
-AR Path="/60FDF246/612A8D2A" Ref="#PWR?"  Part="1" 
-AR Path="/60FEC331/612A8D2A" Ref="#PWR?"  Part="1" 
-AR Path="/61195670/612A8D2A" Ref="#PWR?"  Part="1" 
-AR Path="/607DF653/612A8D2A" Ref="#PWR?"  Part="1" 
-AR Path="/607F76A7/60806785/612A8D2A" Ref="#PWR?"  Part="1" 
-AR Path="/607F76A7/608067C5/612A8D2A" Ref="#PWR?"  Part="1" 
-AR Path="/607F76A7/60806803/612A8D2A" Ref="#PWR?"  Part="1" 
-AR Path="/607F76A7/60875340/612A8D2A" Ref="#PWR?"  Part="1" 
-AR Path="/607F76A7/609A0FBC/612A8D2A" Ref="#PWR?"  Part="1" 
-AR Path="/609CB776/609CDED2/612A8D2A" Ref="#PWR?"  Part="1" 
-AR Path="/608F92AA/6097A55D/612A8D2A" Ref="#PWR?"  Part="1" 
-AR Path="/609CB776/612A8D2A" Ref="#PWR?"  Part="1" 
-AR Path="/611B6BED/612A8D2A" Ref="#PWR0352"  Part="1" 
-AR Path="/612A8D2A" Ref="#PWR0352"  Part="1" 
-F 0 "#PWR0352" H 5300 3200 50  0001 C CNN
-F 1 "GND" V 5305 3322 50  0000 R CNN
-F 2 "" H 5300 3450 50  0001 C CNN
-F 3 "" H 5300 3450 50  0001 C CNN
-	1    5300 3450
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	6500 3300 6500 3350
 Wire Wire Line
@@ -735,14 +707,9 @@ F 3 "" H 6550 3350 50  0001 C CNN
 	1    6550 3350
 	0    -1   -1   0   
 $EndComp
-Connection ~ 5300 3450
 Wire Wire Line
 	5300 3300 5300 3400
-Wire Wire Line
-	5300 3450 5300 3500
 Connection ~ 5300 3400
-Wire Wire Line
-	5300 3400 5300 3450
 Wire Wire Line
 	4800 4700 5300 4700
 Wire Wire Line
@@ -1058,8 +1025,6 @@ Wire Wire Line
 	3950 3250 4700 3250
 Wire Wire Line
 	4700 3250 4700 3700
-Wire Wire Line
-	4700 3700 5300 3700
 Connection ~ 3950 3250
 Text GLabel 7850 4450 3    39   Input ~ 0
 DP_SEG
@@ -1105,19 +1070,73 @@ Text GLabel 2000 6450 2    39   Input ~ 0
 SIGNED
 Text GLabel 4700 3250 2    39   Input ~ 0
 SIGNED
-Text GLabel 5000 3600 0    39   Input ~ 0
+Text GLabel 4950 3800 0    39   Input ~ 0
 HEX
 Text GLabel 2000 6050 2    39   Input ~ 0
 HEX
 $Comp
-L Device:R_US R?
+L Device:R_US R2
 U 1 1 610AB23E
-P 5150 3600
-F 0 "R?" V 5037 3600 50  0001 C CNN
-F 1 "R_US" V 5036 3600 50  0001 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5190 3590 50  0001 C CNN
-F 3 "~" H 5150 3600 50  0001 C CNN
-	1    5150 3600
+P 5100 3600
+F 0 "R2" V 4987 3600 50  0001 C CNN
+F 1 "R_US" V 4986 3600 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5140 3590 50  0001 C CNN
+F 3 "~" H 5100 3600 50  0001 C CNN
+	1    5100 3600
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	5300 3400 5300 3500
+Wire Wire Line
+	4700 3700 5300 3700
+Wire Wire Line
+	4950 3800 5150 3800
+Wire Wire Line
+	5150 3800 5150 3650
+Wire Wire Line
+	5150 3650 5300 3650
+Wire Wire Line
+	5300 3650 5300 3600
+$Comp
+L power:GND #PWR?
+U 1 1 612A8D2A
+P 5000 3400
+AR Path="/60CD6BAA/612A8D2A" Ref="#PWR?"  Part="1" 
+AR Path="/60E7F2E1/612A8D2A" Ref="#PWR?"  Part="1" 
+AR Path="/60F36CA3/612A8D2A" Ref="#PWR?"  Part="1" 
+AR Path="/60FDF246/612A8D2A" Ref="#PWR?"  Part="1" 
+AR Path="/60FEC331/612A8D2A" Ref="#PWR?"  Part="1" 
+AR Path="/61195670/612A8D2A" Ref="#PWR?"  Part="1" 
+AR Path="/607DF653/612A8D2A" Ref="#PWR?"  Part="1" 
+AR Path="/607F76A7/60806785/612A8D2A" Ref="#PWR?"  Part="1" 
+AR Path="/607F76A7/608067C5/612A8D2A" Ref="#PWR?"  Part="1" 
+AR Path="/607F76A7/60806803/612A8D2A" Ref="#PWR?"  Part="1" 
+AR Path="/607F76A7/60875340/612A8D2A" Ref="#PWR?"  Part="1" 
+AR Path="/607F76A7/609A0FBC/612A8D2A" Ref="#PWR?"  Part="1" 
+AR Path="/609CB776/609CDED2/612A8D2A" Ref="#PWR?"  Part="1" 
+AR Path="/608F92AA/6097A55D/612A8D2A" Ref="#PWR?"  Part="1" 
+AR Path="/609CB776/612A8D2A" Ref="#PWR?"  Part="1" 
+AR Path="/611B6BED/612A8D2A" Ref="#PWR0352"  Part="1" 
+AR Path="/612A8D2A" Ref="#PWR0352"  Part="1" 
+F 0 "#PWR0352" H 5000 3150 50  0001 C CNN
+F 1 "GND" V 5005 3272 50  0000 R CNN
+F 2 "" H 5000 3400 50  0001 C CNN
+F 3 "" H 5000 3400 50  0001 C CNN
+	1    5000 3400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 3400 5100 3400
+Wire Wire Line
+	4950 3500 5100 3500
+Wire Wire Line
+	5100 3500 5100 3400
+Connection ~ 5100 3400
+Wire Wire Line
+	5100 3400 5000 3400
+Wire Wire Line
+	4950 3500 4950 3600
+Wire Wire Line
+	5250 3600 5300 3600
+Connection ~ 5300 3600
 $EndSCHEMATC

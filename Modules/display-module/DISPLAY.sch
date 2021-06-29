@@ -1075,10 +1075,10 @@ HEX
 Text GLabel 2000 6050 2    39   Input ~ 0
 HEX
 $Comp
-L Device:R_US R?
+L Device:R_US R2
 U 1 1 610AB23E
 P 5100 3600
-F 0 "R?" V 4987 3600 50  0001 C CNN
+F 0 "R2" V 4987 3600 50  0001 C CNN
 F 1 "R_US" V 4986 3600 50  0001 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5140 3590 50  0001 C CNN
 F 3 "~" H 5100 3600 50  0001 C CNN
@@ -1139,4 +1139,16 @@ Wire Wire Line
 Wire Wire Line
 	5250 3600 5300 3600
 Connection ~ 5300 3600
+Wire Wire Line
+	3250 1650 3250 1500
+Wire Wire Line
+	3250 1500 2850 1500
+Wire Wire Line
+	2850 1500 2850 2550
+Wire Wire Line
+	2850 2550 4300 2550
+Wire Wire Line
+	4300 2550 4300 2050
+Connection ~ 3250 1650
+Connection ~ 4300 2050
 $EndSCHEMATC

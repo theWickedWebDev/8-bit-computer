@@ -1,1653 +1,799 @@
-379671792553000
-Package_DIP
-DIP-4_W7.62mm
-4-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil
+183400780466145
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-2-5.08, 2 pins, pitch 5.08mm, size 10.2x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-2-5.08 pitch 5.08mm size 10.2x9.8mm^2 drill 1.3mm pad 2.6mm
+0
+2
+2
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-2, 2 pins, pitch 5mm, size 10x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-2 pitch 5mm size 10x9.8mm^2 drill 1.3mm pad 2.6mm
+0
+2
+2
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-3-5.08_1x03_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-3-5.08, 3 pins, pitch 5.08mm, size 15.2x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-3-5.08 pitch 5.08mm size 15.2x9.8mm^2 drill 1.3mm pad 2.6mm
+0
+3
+3
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-3, 3 pins, pitch 5mm, size 15x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-3 pitch 5mm size 15x9.8mm^2 drill 1.3mm pad 2.6mm
+0
+3
+3
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-4-5.08_1x04_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-4-5.08, 4 pins, pitch 5.08mm, size 20.3x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-4-5.08 pitch 5.08mm size 20.3x9.8mm^2 drill 1.3mm pad 2.6mm
 0
 4
 4
-Package_DIP
-DIP-4_W7.62mm_LongPads
-4-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), LongPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil LongPads
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-4, 4 pins, pitch 5mm, size 20x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-4 pitch 5mm size 20x9.8mm^2 drill 1.3mm pad 2.6mm
 0
 4
 4
-Package_DIP
-DIP-4_W7.62mm_SMDSocket_SmallPads
-4-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), SMDSocket, SmallPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil SMDSocket SmallPads
-0
-4
-4
-Package_DIP
-DIP-4_W7.62mm_Socket
-4-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket
-0
-4
-4
-Package_DIP
-DIP-4_W7.62mm_Socket_LongPads
-4-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket, LongPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket LongPads
-0
-4
-4
-Package_DIP
-DIP-4_W8.89mm_SMDSocket_LongPads
-4-lead though-hole mounted DIP package, row spacing 8.89 mm (350 mils), SMDSocket, LongPads
-THT DIP DIL PDIP 2.54mm 8.89mm 350mil SMDSocket LongPads
-0
-4
-4
-Package_DIP
-DIP-4_W10.16mm
-4-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils)
-THT DIP DIL PDIP 2.54mm 10.16mm 400mil
-0
-4
-4
-Package_DIP
-DIP-4_W10.16mm_LongPads
-4-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils), LongPads
-THT DIP DIL PDIP 2.54mm 10.16mm 400mil LongPads
-0
-4
-4
-Package_DIP
-DIP-5-6_W7.62mm
-5-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-5-5.08_1x05_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-5-5.08, 5 pins, pitch 5.08mm, size 25.4x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-5-5.08 pitch 5.08mm size 25.4x9.8mm^2 drill 1.3mm pad 2.6mm
 0
 5
 5
-Package_DIP
-DIP-5-6_W7.62mm_LongPads
-5-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), LongPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil LongPads
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-5_1x05_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-5, 5 pins, pitch 5mm, size 25x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-5 pitch 5mm size 25x9.8mm^2 drill 1.3mm pad 2.6mm
 0
 5
 5
-Package_DIP
-DIP-5-6_W7.62mm_SMDSocket_SmallPads
-5-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), SMDSocket, SmallPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil SMDSocket SmallPads
-0
-5
-5
-Package_DIP
-DIP-5-6_W7.62mm_Socket
-5-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket
-0
-5
-5
-Package_DIP
-DIP-5-6_W7.62mm_Socket_LongPads
-5-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket, LongPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket LongPads
-0
-5
-5
-Package_DIP
-DIP-5-6_W8.89mm_SMDSocket_LongPads
-5-lead though-hole mounted DIP package, row spacing 8.89 mm (350 mils), SMDSocket, LongPads
-THT DIP DIL PDIP 2.54mm 8.89mm 350mil SMDSocket LongPads
-0
-5
-5
-Package_DIP
-DIP-5-6_W10.16mm
-5-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils)
-THT DIP DIL PDIP 2.54mm 10.16mm 400mil
-0
-5
-5
-Package_DIP
-DIP-5-6_W10.16mm_LongPads
-5-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils), LongPads
-THT DIP DIL PDIP 2.54mm 10.16mm 400mil LongPads
-0
-5
-5
-Package_DIP
-DIP-6_W7.62mm
-6-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-6-5.08_1x06_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-6-5.08, 6 pins, pitch 5.08mm, size 30.5x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-6-5.08 pitch 5.08mm size 30.5x9.8mm^2 drill 1.3mm pad 2.6mm
 0
 6
 6
-Package_DIP
-DIP-6_W7.62mm_LongPads
-6-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), LongPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil LongPads
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-6_1x06_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-6, 6 pins, pitch 5mm, size 30x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-6 pitch 5mm size 30x9.8mm^2 drill 1.3mm pad 2.6mm
 0
 6
 6
-Package_DIP
-DIP-6_W7.62mm_SMDSocket_SmallPads
-6-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), SMDSocket, SmallPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil SMDSocket SmallPads
-0
-6
-6
-Package_DIP
-DIP-6_W7.62mm_Socket
-6-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket
-0
-6
-6
-Package_DIP
-DIP-6_W7.62mm_Socket_LongPads
-6-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket, LongPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket LongPads
-0
-6
-6
-Package_DIP
-DIP-6_W8.89mm_SMDSocket_LongPads
-6-lead though-hole mounted DIP package, row spacing 8.89 mm (350 mils), SMDSocket, LongPads
-THT DIP DIL PDIP 2.54mm 8.89mm 350mil SMDSocket LongPads
-0
-6
-6
-Package_DIP
-DIP-6_W10.16mm
-6-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils)
-THT DIP DIL PDIP 2.54mm 10.16mm 400mil
-0
-6
-6
-Package_DIP
-DIP-6_W10.16mm_LongPads
-6-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils), LongPads
-THT DIP DIL PDIP 2.54mm 10.16mm 400mil LongPads
-0
-6
-6
-Package_DIP
-DIP-8-16_W7.62mm
-16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil
-0
-8
-8
-Package_DIP
-DIP-8-16_W7.62mm_Socket
-16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket
-0
-8
-8
-Package_DIP
-DIP-8-16_W7.62mm_Socket_LongPads
-16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket, LongPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket LongPads
-0
-8
-8
-Package_DIP
-DIP-8-N6_W7.62mm
-8-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), missing pin 6
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-7-5.08_1x07_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-7-5.08, 7 pins, pitch 5.08mm, size 35.6x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-7-5.08 pitch 5.08mm size 35.6x9.8mm^2 drill 1.3mm pad 2.6mm
 0
 7
 7
-Package_DIP
-DIP-8-N7_W7.62mm
-8-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), missing pin 7
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-7_1x07_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-7, 7 pins, pitch 5mm, size 35x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-7 pitch 5mm size 35x9.8mm^2 drill 1.3mm pad 2.6mm
 0
 7
 7
-Package_DIP
-DIP-8_W7.62mm
-8-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-8-5.08_1x08_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-8-5.08, 8 pins, pitch 5.08mm, size 40.6x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-8-5.08 pitch 5.08mm size 40.6x9.8mm^2 drill 1.3mm pad 2.6mm
 0
 8
 8
-Package_DIP
-DIP-8_W7.62mm_LongPads
-8-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), LongPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil LongPads
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-8_1x08_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-8, 8 pins, pitch 5mm, size 40x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-8 pitch 5mm size 40x9.8mm^2 drill 1.3mm pad 2.6mm
 0
 8
 8
-Package_DIP
-DIP-8_W7.62mm_SMDSocket_SmallPads
-8-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), SMDSocket, SmallPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil SMDSocket SmallPads
-0
-8
-8
-Package_DIP
-DIP-8_W7.62mm_Socket
-8-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket
-0
-8
-8
-Package_DIP
-DIP-8_W7.62mm_Socket_LongPads
-8-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket, LongPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket LongPads
-0
-8
-8
-Package_DIP
-DIP-8_W8.89mm_SMDSocket_LongPads
-8-lead though-hole mounted DIP package, row spacing 8.89 mm (350 mils), SMDSocket, LongPads
-THT DIP DIL PDIP 2.54mm 8.89mm 350mil SMDSocket LongPads
-0
-8
-8
-Package_DIP
-DIP-8_W10.16mm
-8-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils)
-THT DIP DIL PDIP 2.54mm 10.16mm 400mil
-0
-8
-8
-Package_DIP
-DIP-8_W10.16mm_LongPads
-8-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils), LongPads
-THT DIP DIL PDIP 2.54mm 10.16mm 400mil LongPads
-0
-8
-8
-Package_DIP
-DIP-10_W7.62mm
-10-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil
-0
-10
-10
-Package_DIP
-DIP-10_W7.62mm_LongPads
-10-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), LongPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil LongPads
-0
-10
-10
-Package_DIP
-DIP-10_W7.62mm_SMDSocket_SmallPads
-10-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), SMDSocket, SmallPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil SMDSocket SmallPads
-0
-10
-10
-Package_DIP
-DIP-10_W7.62mm_Socket
-10-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket
-0
-10
-10
-Package_DIP
-DIP-10_W7.62mm_Socket_LongPads
-10-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket, LongPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket LongPads
-0
-10
-10
-Package_DIP
-DIP-10_W8.89mm_SMDSocket_LongPads
-10-lead though-hole mounted DIP package, row spacing 8.89 mm (350 mils), SMDSocket, LongPads
-THT DIP DIL PDIP 2.54mm 8.89mm 350mil SMDSocket LongPads
-0
-10
-10
-Package_DIP
-DIP-10_W10.16mm
-10-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils)
-THT DIP DIL PDIP 2.54mm 10.16mm 400mil
-0
-10
-10
-Package_DIP
-DIP-10_W10.16mm_LongPads
-10-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils), LongPads
-THT DIP DIL PDIP 2.54mm 10.16mm 400mil LongPads
-0
-10
-10
-Package_DIP
-DIP-12_W7.62mm
-12-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil
-0
-12
-12
-Package_DIP
-DIP-12_W7.62mm_LongPads
-12-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), LongPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil LongPads
-0
-12
-12
-Package_DIP
-DIP-12_W7.62mm_SMDSocket_SmallPads
-12-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), SMDSocket, SmallPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil SMDSocket SmallPads
-0
-12
-12
-Package_DIP
-DIP-12_W7.62mm_Socket
-12-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket
-0
-12
-12
-Package_DIP
-DIP-12_W7.62mm_Socket_LongPads
-12-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket, LongPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket LongPads
-0
-12
-12
-Package_DIP
-DIP-12_W8.89mm_SMDSocket_LongPads
-12-lead though-hole mounted DIP package, row spacing 8.89 mm (350 mils), SMDSocket, LongPads
-THT DIP DIL PDIP 2.54mm 8.89mm 350mil SMDSocket LongPads
-0
-12
-12
-Package_DIP
-DIP-12_W10.16mm
-12-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils)
-THT DIP DIL PDIP 2.54mm 10.16mm 400mil
-0
-12
-12
-Package_DIP
-DIP-12_W10.16mm_LongPads
-12-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils), LongPads
-THT DIP DIL PDIP 2.54mm 10.16mm 400mil LongPads
-0
-12
-12
-Package_DIP
-DIP-14_W7.62mm
-14-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil
-0
-14
-14
-Package_DIP
-DIP-14_W7.62mm_LongPads
-14-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), LongPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil LongPads
-0
-14
-14
-Package_DIP
-DIP-14_W7.62mm_SMDSocket_SmallPads
-14-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), SMDSocket, SmallPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil SMDSocket SmallPads
-0
-14
-14
-Package_DIP
-DIP-14_W7.62mm_Socket
-14-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket
-0
-14
-14
-Package_DIP
-DIP-14_W7.62mm_Socket_LongPads
-14-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket, LongPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket LongPads
-0
-14
-14
-Package_DIP
-DIP-14_W8.89mm_SMDSocket_LongPads
-14-lead though-hole mounted DIP package, row spacing 8.89 mm (350 mils), SMDSocket, LongPads
-THT DIP DIL PDIP 2.54mm 8.89mm 350mil SMDSocket LongPads
-0
-14
-14
-Package_DIP
-DIP-14_W10.16mm
-14-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils)
-THT DIP DIL PDIP 2.54mm 10.16mm 400mil
-0
-14
-14
-Package_DIP
-DIP-14_W10.16mm_LongPads
-14-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils), LongPads
-THT DIP DIL PDIP 2.54mm 10.16mm 400mil LongPads
-0
-14
-14
-Package_DIP
-DIP-16_W7.62mm
-16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil
-0
-16
-16
-Package_DIP
-DIP-16_W7.62mm_LongPads
-16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), LongPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil LongPads
-0
-16
-16
-Package_DIP
-DIP-16_W7.62mm_SMDSocket_SmallPads
-16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), SMDSocket, SmallPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil SMDSocket SmallPads
-0
-16
-16
-Package_DIP
-DIP-16_W7.62mm_Socket
-16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket
-0
-16
-16
-Package_DIP
-DIP-16_W7.62mm_Socket_LongPads
-16-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket, LongPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket LongPads
-0
-16
-16
-Package_DIP
-DIP-16_W8.89mm_SMDSocket_LongPads
-16-lead though-hole mounted DIP package, row spacing 8.89 mm (350 mils), SMDSocket, LongPads
-THT DIP DIL PDIP 2.54mm 8.89mm 350mil SMDSocket LongPads
-0
-16
-16
-Package_DIP
-DIP-16_W10.16mm
-16-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils)
-THT DIP DIL PDIP 2.54mm 10.16mm 400mil
-0
-16
-16
-Package_DIP
-DIP-16_W10.16mm_LongPads
-16-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils), LongPads
-THT DIP DIL PDIP 2.54mm 10.16mm 400mil LongPads
-0
-16
-16
-Package_DIP
-DIP-18_W7.62mm
-18-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil
-0
-18
-18
-Package_DIP
-DIP-18_W7.62mm_LongPads
-18-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), LongPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil LongPads
-0
-18
-18
-Package_DIP
-DIP-18_W7.62mm_SMDSocket_SmallPads
-18-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), SMDSocket, SmallPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil SMDSocket SmallPads
-0
-18
-18
-Package_DIP
-DIP-18_W7.62mm_Socket
-18-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket
-0
-18
-18
-Package_DIP
-DIP-18_W7.62mm_Socket_LongPads
-18-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket, LongPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket LongPads
-0
-18
-18
-Package_DIP
-DIP-18_W8.89mm_SMDSocket_LongPads
-18-lead though-hole mounted DIP package, row spacing 8.89 mm (350 mils), SMDSocket, LongPads
-THT DIP DIL PDIP 2.54mm 8.89mm 350mil SMDSocket LongPads
-0
-18
-18
-Package_DIP
-DIP-20_W7.62mm
-20-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil
-0
-20
-20
-Package_DIP
-DIP-20_W7.62mm_LongPads
-20-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), LongPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil LongPads
-0
-20
-20
-Package_DIP
-DIP-20_W7.62mm_SMDSocket_SmallPads
-20-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), SMDSocket, SmallPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil SMDSocket SmallPads
-0
-20
-20
-Package_DIP
-DIP-20_W7.62mm_Socket
-20-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket
-0
-20
-20
-Package_DIP
-DIP-20_W7.62mm_Socket_LongPads
-20-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket, LongPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket LongPads
-0
-20
-20
-Package_DIP
-DIP-20_W8.89mm_SMDSocket_LongPads
-20-lead though-hole mounted DIP package, row spacing 8.89 mm (350 mils), SMDSocket, LongPads
-THT DIP DIL PDIP 2.54mm 8.89mm 350mil SMDSocket LongPads
-0
-20
-20
-Package_DIP
-DIP-22_W7.62mm
-22-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil
-0
-22
-22
-Package_DIP
-DIP-22_W7.62mm_LongPads
-22-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), LongPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil LongPads
-0
-22
-22
-Package_DIP
-DIP-22_W7.62mm_SMDSocket_SmallPads
-22-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), SMDSocket, SmallPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil SMDSocket SmallPads
-0
-22
-22
-Package_DIP
-DIP-22_W7.62mm_Socket
-22-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket
-0
-22
-22
-Package_DIP
-DIP-22_W7.62mm_Socket_LongPads
-22-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket, LongPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket LongPads
-0
-22
-22
-Package_DIP
-DIP-22_W8.89mm_SMDSocket_LongPads
-22-lead though-hole mounted DIP package, row spacing 8.89 mm (350 mils), SMDSocket, LongPads
-THT DIP DIL PDIP 2.54mm 8.89mm 350mil SMDSocket LongPads
-0
-22
-22
-Package_DIP
-DIP-22_W10.16mm
-22-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils)
-THT DIP DIL PDIP 2.54mm 10.16mm 400mil
-0
-22
-22
-Package_DIP
-DIP-22_W10.16mm_LongPads
-22-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils), LongPads
-THT DIP DIL PDIP 2.54mm 10.16mm 400mil LongPads
-0
-22
-22
-Package_DIP
-DIP-22_W10.16mm_SMDSocket_SmallPads
-22-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils), SMDSocket, SmallPads
-THT DIP DIL PDIP 2.54mm 10.16mm 400mil SMDSocket SmallPads
-0
-22
-22
-Package_DIP
-DIP-22_W10.16mm_Socket
-22-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils), Socket
-THT DIP DIL PDIP 2.54mm 10.16mm 400mil Socket
-0
-22
-22
-Package_DIP
-DIP-22_W10.16mm_Socket_LongPads
-22-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils), Socket, LongPads
-THT DIP DIL PDIP 2.54mm 10.16mm 400mil Socket LongPads
-0
-22
-22
-Package_DIP
-DIP-22_W11.43mm_SMDSocket_LongPads
-22-lead though-hole mounted DIP package, row spacing 11.43 mm (450 mils), SMDSocket, LongPads
-THT DIP DIL PDIP 2.54mm 11.43mm 450mil SMDSocket LongPads
-0
-22
-22
-Package_DIP
-DIP-24_W7.62mm
-24-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil
-0
-24
-24
-Package_DIP
-DIP-24_W7.62mm_LongPads
-24-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), LongPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil LongPads
-0
-24
-24
-Package_DIP
-DIP-24_W7.62mm_SMDSocket_SmallPads
-24-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), SMDSocket, SmallPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil SMDSocket SmallPads
-0
-24
-24
-Package_DIP
-DIP-24_W7.62mm_Socket
-24-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket
-0
-24
-24
-Package_DIP
-DIP-24_W7.62mm_Socket_LongPads
-24-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket, LongPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket LongPads
-0
-24
-24
-Package_DIP
-DIP-24_W8.89mm_SMDSocket_LongPads
-24-lead though-hole mounted DIP package, row spacing 8.89 mm (350 mils), SMDSocket, LongPads
-THT DIP DIL PDIP 2.54mm 8.89mm 350mil SMDSocket LongPads
-0
-24
-24
-Package_DIP
-DIP-24_W10.16mm
-24-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils)
-THT DIP DIL PDIP 2.54mm 10.16mm 400mil
-0
-24
-24
-Package_DIP
-DIP-24_W10.16mm_LongPads
-24-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils), LongPads
-THT DIP DIL PDIP 2.54mm 10.16mm 400mil LongPads
-0
-24
-24
-Package_DIP
-DIP-24_W10.16mm_SMDSocket_SmallPads
-24-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils), SMDSocket, SmallPads
-THT DIP DIL PDIP 2.54mm 10.16mm 400mil SMDSocket SmallPads
-0
-24
-24
-Package_DIP
-DIP-24_W10.16mm_Socket
-24-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils), Socket
-THT DIP DIL PDIP 2.54mm 10.16mm 400mil Socket
-0
-24
-24
-Package_DIP
-DIP-24_W10.16mm_Socket_LongPads
-24-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils), Socket, LongPads
-THT DIP DIL PDIP 2.54mm 10.16mm 400mil Socket LongPads
-0
-24
-24
-Package_DIP
-DIP-24_W11.43mm_SMDSocket_LongPads
-24-lead though-hole mounted DIP package, row spacing 11.43 mm (450 mils), SMDSocket, LongPads
-THT DIP DIL PDIP 2.54mm 11.43mm 450mil SMDSocket LongPads
-0
-24
-24
-Package_DIP
-DIP-24_W15.24mm
-24-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils)
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil
-0
-24
-24
-Package_DIP
-DIP-24_W15.24mm_LongPads
-24-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), LongPads
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil LongPads
-0
-24
-24
-Package_DIP
-DIP-24_W15.24mm_SMDSocket_SmallPads
-24-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), SMDSocket, SmallPads
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil SMDSocket SmallPads
-0
-24
-24
-Package_DIP
-DIP-24_W15.24mm_Socket
-24-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), Socket
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil Socket
-0
-24
-24
-Package_DIP
-DIP-24_W15.24mm_Socket_LongPads
-24-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), Socket, LongPads
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil Socket LongPads
-0
-24
-24
-Package_DIP
-DIP-24_W16.51mm_SMDSocket_LongPads
-24-lead though-hole mounted DIP package, row spacing 16.51 mm (650 mils), SMDSocket, LongPads
-THT DIP DIL PDIP 2.54mm 16.51mm 650mil SMDSocket LongPads
-0
-24
-24
-Package_DIP
-DIP-28_W7.62mm
-28-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils)
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil
-0
-28
-28
-Package_DIP
-DIP-28_W7.62mm_LongPads
-28-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), LongPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil LongPads
-0
-28
-28
-Package_DIP
-DIP-28_W7.62mm_SMDSocket_SmallPads
-28-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), SMDSocket, SmallPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil SMDSocket SmallPads
-0
-28
-28
-Package_DIP
-DIP-28_W7.62mm_Socket
-28-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket
-0
-28
-28
-Package_DIP
-DIP-28_W7.62mm_Socket_LongPads
-28-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), Socket, LongPads
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Socket LongPads
-0
-28
-28
-Package_DIP
-DIP-28_W8.89mm_SMDSocket_LongPads
-28-lead though-hole mounted DIP package, row spacing 8.89 mm (350 mils), SMDSocket, LongPads
-THT DIP DIL PDIP 2.54mm 8.89mm 350mil SMDSocket LongPads
-0
-28
-28
-Package_DIP
-DIP-28_W15.24mm
-28-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils)
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil
-0
-28
-28
-Package_DIP
-DIP-28_W15.24mm_LongPads
-28-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), LongPads
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil LongPads
-0
-28
-28
-Package_DIP
-DIP-28_W15.24mm_SMDSocket_SmallPads
-28-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), SMDSocket, SmallPads
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil SMDSocket SmallPads
-0
-28
-28
-Package_DIP
-DIP-28_W15.24mm_Socket
-28-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), Socket
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil Socket
-0
-28
-28
-Package_DIP
-DIP-28_W15.24mm_Socket_LongPads
-28-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), Socket, LongPads
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil Socket LongPads
-0
-28
-28
-Package_DIP
-DIP-28_W16.51mm_SMDSocket_LongPads
-28-lead though-hole mounted DIP package, row spacing 16.51 mm (650 mils), SMDSocket, LongPads
-THT DIP DIL PDIP 2.54mm 16.51mm 650mil SMDSocket LongPads
-0
-28
-28
-Package_DIP
-DIP-32_W7.62mm
-32-lead dip package, row spacing 7.62 mm (300 mils)
-DIL DIP PDIP 2.54mm 7.62mm 300mil
-0
-32
-32
-Package_DIP
-DIP-32_W15.24mm
-32-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils)
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil
-0
-32
-32
-Package_DIP
-DIP-32_W15.24mm_LongPads
-32-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), LongPads
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil LongPads
-0
-32
-32
-Package_DIP
-DIP-32_W15.24mm_SMDSocket_SmallPads
-32-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), SMDSocket, SmallPads
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil SMDSocket SmallPads
-0
-32
-32
-Package_DIP
-DIP-32_W15.24mm_Socket
-32-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), Socket
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil Socket
-0
-32
-32
-Package_DIP
-DIP-32_W15.24mm_Socket_LongPads
-32-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), Socket, LongPads
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil Socket LongPads
-0
-32
-32
-Package_DIP
-DIP-32_W16.51mm_SMDSocket_LongPads
-32-lead though-hole mounted DIP package, row spacing 16.51 mm (650 mils), SMDSocket, LongPads
-THT DIP DIL PDIP 2.54mm 16.51mm 650mil SMDSocket LongPads
-0
-32
-32
-Package_DIP
-DIP-40_W15.24mm
-40-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils)
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil
-0
-40
-40
-Package_DIP
-DIP-40_W15.24mm_LongPads
-40-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), LongPads
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil LongPads
-0
-40
-40
-Package_DIP
-DIP-40_W15.24mm_SMDSocket_SmallPads
-40-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), SMDSocket, SmallPads
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil SMDSocket SmallPads
-0
-40
-40
-Package_DIP
-DIP-40_W15.24mm_Socket
-40-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), Socket
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil Socket
-0
-40
-40
-Package_DIP
-DIP-40_W15.24mm_Socket_LongPads
-40-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), Socket, LongPads
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil Socket LongPads
-0
-40
-40
-Package_DIP
-DIP-40_W16.51mm_SMDSocket_LongPads
-40-lead though-hole mounted DIP package, row spacing 16.51 mm (650 mils), SMDSocket, LongPads
-THT DIP DIL PDIP 2.54mm 16.51mm 650mil SMDSocket LongPads
-0
-40
-40
-Package_DIP
-DIP-40_W25.4mm
-40-lead though-hole mounted DIP package, row spacing 25.4 mm (1000 mils)
-THT DIP DIL PDIP 2.54mm 25.4mm 1000mil
-0
-40
-40
-Package_DIP
-DIP-40_W25.4mm_LongPads
-40-lead though-hole mounted DIP package, row spacing 25.4 mm (1000 mils), LongPads
-THT DIP DIL PDIP 2.54mm 25.4mm 1000mil LongPads
-0
-40
-40
-Package_DIP
-DIP-40_W25.4mm_SMDSocket_SmallPads
-40-lead though-hole mounted DIP package, row spacing 25.4 mm (1000 mils), SMDSocket, SmallPads
-THT DIP DIL PDIP 2.54mm 25.4mm 1000mil SMDSocket SmallPads
-0
-40
-40
-Package_DIP
-DIP-40_W25.4mm_Socket
-40-lead though-hole mounted DIP package, row spacing 25.4 mm (1000 mils), Socket
-THT DIP DIL PDIP 2.54mm 25.4mm 1000mil Socket
-0
-40
-40
-Package_DIP
-DIP-40_W25.4mm_Socket_LongPads
-40-lead though-hole mounted DIP package, row spacing 25.4 mm (1000 mils), Socket, LongPads
-THT DIP DIL PDIP 2.54mm 25.4mm 1000mil Socket LongPads
-0
-40
-40
-Package_DIP
-DIP-40_W26.67mm_SMDSocket_LongPads
-40-lead though-hole mounted DIP package, row spacing 26.67 mm (1050 mils), SMDSocket, LongPads
-THT DIP DIL PDIP 2.54mm 26.669999999999998mm 1050mil SMDSocket LongPads
-0
-40
-40
-Package_DIP
-DIP-42_W15.24mm
-42-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils)
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil
-0
-42
-42
-Package_DIP
-DIP-42_W15.24mm_LongPads
-42-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), LongPads
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil LongPads
-0
-42
-42
-Package_DIP
-DIP-42_W15.24mm_SMDSocket_SmallPads
-42-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), SMDSocket, SmallPads
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil SMDSocket SmallPads
-0
-42
-42
-Package_DIP
-DIP-42_W15.24mm_Socket
-42-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), Socket
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil Socket
-0
-42
-42
-Package_DIP
-DIP-42_W15.24mm_Socket_LongPads
-42-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), Socket, LongPads
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil Socket LongPads
-0
-42
-42
-Package_DIP
-DIP-42_W16.51mm_SMDSocket_LongPads
-42-lead though-hole mounted DIP package, row spacing 16.51 mm (650 mils), SMDSocket, LongPads
-THT DIP DIL PDIP 2.54mm 16.51mm 650mil SMDSocket LongPads
-0
-42
-42
-Package_DIP
-DIP-48_W15.24mm
-48-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils)
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil
-0
-48
-48
-Package_DIP
-DIP-48_W15.24mm_LongPads
-48-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), LongPads
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil LongPads
-0
-48
-48
-Package_DIP
-DIP-48_W15.24mm_SMDSocket_SmallPads
-48-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), SMDSocket, SmallPads
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil SMDSocket SmallPads
-0
-48
-48
-Package_DIP
-DIP-48_W15.24mm_Socket
-48-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), Socket
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil Socket
-0
-48
-48
-Package_DIP
-DIP-48_W15.24mm_Socket_LongPads
-48-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), Socket, LongPads
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil Socket LongPads
-0
-48
-48
-Package_DIP
-DIP-48_W16.51mm_SMDSocket_LongPads
-48-lead though-hole mounted DIP package, row spacing 16.51 mm (650 mils), SMDSocket, LongPads
-THT DIP DIL PDIP 2.54mm 16.51mm 650mil SMDSocket LongPads
-0
-48
-48
-Package_DIP
-DIP-64_W15.24mm
-64-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils)
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil
-0
-64
-64
-Package_DIP
-DIP-64_W15.24mm_LongPads
-64-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), LongPads
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil LongPads
-0
-64
-64
-Package_DIP
-DIP-64_W15.24mm_SMDSocket_SmallPads
-64-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), SMDSocket, SmallPads
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil SMDSocket SmallPads
-0
-64
-64
-Package_DIP
-DIP-64_W15.24mm_Socket
-64-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), Socket
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil Socket
-0
-64
-64
-Package_DIP
-DIP-64_W15.24mm_Socket_LongPads
-64-lead though-hole mounted DIP package, row spacing 15.24 mm (600 mils), Socket, LongPads
-THT DIP DIL PDIP 2.54mm 15.24mm 600mil Socket LongPads
-0
-64
-64
-Package_DIP
-DIP-64_W16.51mm_SMDSocket_LongPads
-64-lead though-hole mounted DIP package, row spacing 16.51 mm (650 mils), SMDSocket, LongPads
-THT DIP DIL PDIP 2.54mm 16.51mm 650mil SMDSocket LongPads
-0
-64
-64
-Package_DIP
-DIP-64_W22.86mm
-64-lead though-hole mounted DIP package, row spacing 22.86 mm (900 mils)
-THT DIP DIL PDIP 2.54mm 22.86mm 900mil
-0
-64
-64
-Package_DIP
-DIP-64_W22.86mm_LongPads
-64-lead though-hole mounted DIP package, row spacing 22.86 mm (900 mils), LongPads
-THT DIP DIL PDIP 2.54mm 22.86mm 900mil LongPads
-0
-64
-64
-Package_DIP
-DIP-64_W22.86mm_SMDSocket_SmallPads
-64-lead though-hole mounted DIP package, row spacing 22.86 mm (900 mils), SMDSocket, SmallPads
-THT DIP DIL PDIP 2.54mm 22.86mm 900mil SMDSocket SmallPads
-0
-64
-64
-Package_DIP
-DIP-64_W22.86mm_Socket
-64-lead though-hole mounted DIP package, row spacing 22.86 mm (900 mils), Socket
-THT DIP DIL PDIP 2.54mm 22.86mm 900mil Socket
-0
-64
-64
-Package_DIP
-DIP-64_W22.86mm_Socket_LongPads
-64-lead though-hole mounted DIP package, row spacing 22.86 mm (900 mils), Socket, LongPads
-THT DIP DIL PDIP 2.54mm 22.86mm 900mil Socket LongPads
-0
-64
-64
-Package_DIP
-DIP-64_W24.13mm_SMDSocket_LongPads
-64-lead though-hole mounted DIP package, row spacing 24.13 mm (950 mils), SMDSocket, LongPads
-THT DIP DIL PDIP 2.54mm 24.13mm 950mil SMDSocket LongPads
-0
-64
-64
-Package_DIP
-DIP-64_W25.4mm
-64-lead though-hole mounted DIP package, row spacing 25.4 mm (1000 mils)
-THT DIP DIL PDIP 2.54mm 25.4mm 1000mil
-0
-64
-64
-Package_DIP
-DIP-64_W25.4mm_LongPads
-64-lead though-hole mounted DIP package, row spacing 25.4 mm (1000 mils), LongPads
-THT DIP DIL PDIP 2.54mm 25.4mm 1000mil LongPads
-0
-64
-64
-Package_DIP
-DIP-64_W25.4mm_SMDSocket_SmallPads
-64-lead though-hole mounted DIP package, row spacing 25.4 mm (1000 mils), SMDSocket, SmallPads
-THT DIP DIL PDIP 2.54mm 25.4mm 1000mil SMDSocket SmallPads
-0
-64
-64
-Package_DIP
-DIP-64_W25.4mm_Socket
-64-lead though-hole mounted DIP package, row spacing 25.4 mm (1000 mils), Socket
-THT DIP DIL PDIP 2.54mm 25.4mm 1000mil Socket
-0
-64
-64
-Package_DIP
-DIP-64_W25.4mm_Socket_LongPads
-64-lead though-hole mounted DIP package, row spacing 25.4 mm (1000 mils), Socket, LongPads
-THT DIP DIL PDIP 2.54mm 25.4mm 1000mil Socket LongPads
-0
-64
-64
-Package_DIP
-DIP-64_W26.67mm_SMDSocket_LongPads
-64-lead though-hole mounted DIP package, row spacing 26.67 mm (1050 mils), SMDSocket, LongPads
-THT DIP DIL PDIP 2.54mm 26.669999999999998mm 1050mil SMDSocket LongPads
-0
-64
-64
-Package_DIP
-Fairchild_LSOP-8
-8-Lead, 300\" Wide, Surface Mount Package (https://www.fairchildsemi.com/package-drawings/ML/MLSOP08A.pdf)
-LSOP 2.54mm 300mil
-0
-8
-8
-Package_DIP
-PowerIntegrations_PDIP-8B
-Power Integrations variant of 8-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), LongPads, see https://www.power.com/sites/default/files/product-docs/lnk520.pdf
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil LongPads
-0
-7
-7
-Package_DIP
-PowerIntegrations_PDIP-8C
-Power Integrations variant of 8-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), LongPads, see https://ac-dc.power.com/sites/default/files/product-docs/tinyswitch-iii_family_datasheet.pdf
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil LongPads
-0
-7
-7
-Package_DIP
-PowerIntegrations_SDIP-10C
-PowerIntegrations variant of 10-lead though-hole mounted DIP package, row spacing 7.62 mm (300 mils), LongPads, see https://www.power.com/sites/default/files/product-docs/tophx_family_datasheet.pdf
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil LongPads
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-9-5.08_1x09_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-9-5.08, 9 pins, pitch 5.08mm, size 45.7x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-9-5.08 pitch 5.08mm size 45.7x9.8mm^2 drill 1.3mm pad 2.6mm
 0
 9
 9
-Package_DIP
-PowerIntegrations_SMD-8
-PowerIntegrations variant of 8-lead surface-mounted (SMD) DIP package, row spacing 7.62 mm (300 mils), see https://www.power.com/sites/default/files/product-docs/lnk520.pdf
-SMD DIP DIL PDIP SMDIP 2.54mm 7.62mm 300mil
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-9_1x09_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-9, 9 pins, pitch 5mm, size 45x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-9 pitch 5mm size 45x9.8mm^2 drill 1.3mm pad 2.6mm
 0
-8
-8
-Package_DIP
-PowerIntegrations_SMD-8B
-PowerIntegrations variant of 8-lead surface-mounted (SMD) DIP package, row spacing 7.62 mm (300 mils), see https://www.power.com/sites/default/files/product-docs/lnk520.pdf
-SMD DIP DIL PDIP SMDIP 2.54mm 7.62mm 300mil
+9
+9
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-10-5.08_1x10_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-10-5.08, 10 pins, pitch 5.08mm, size 50.8x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-10-5.08 pitch 5.08mm size 50.8x9.8mm^2 drill 1.3mm pad 2.6mm
 0
-7
-7
-Package_DIP
-PowerIntegrations_SMD-8C
-PowerIntegrations variant of 8-lead surface-mounted (SMD) DIP package, row spacing 7.62 mm (300 mils), see https://ac-dc.power.com/sites/default/files/product-docs/tinyswitch-iii_family_datasheet.pdf
-SMD DIP DIL PDIP SMDIP 2.54mm 7.62mm 300mil
+10
+10
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-10_1x10_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-10, 10 pins, pitch 5mm, size 50x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-10 pitch 5mm size 50x9.8mm^2 drill 1.3mm pad 2.6mm
 0
-7
-7
-Package_DIP
-PowerIntegrations_eDIP-12B
-Power Integrations eDIP-12B, see https://www.power.com/sites/default/files/product-docs/linkswitch-pl_family_datasheet.pdf
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil
+10
+10
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-11-5.08_1x11_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-11-5.08, 11 pins, pitch 5.08mm, size 55.9x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-11-5.08 pitch 5.08mm size 55.9x9.8mm^2 drill 1.3mm pad 2.6mm
 0
 11
 11
-Package_DIP
-SMDIP-4_W7.62mm
-4-lead surface-mounted (SMD) DIP package, row spacing 7.62 mm (300 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 7.62mm 300mil
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-11_1x11_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-11, 11 pins, pitch 5mm, size 55x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-11 pitch 5mm size 55x9.8mm^2 drill 1.3mm pad 2.6mm
 0
-4
-4
-Package_DIP
-SMDIP-4_W9.53mm
-4-lead surface-mounted (SMD) DIP package, row spacing 9.53 mm (375 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 9.53mm 375mil
-0
-4
-4
-Package_DIP
-SMDIP-4_W9.53mm_Clearance8mm
-4-lead surface-mounted (SMD) DIP package, row spacing 9.53 mm (375 mils), Clearance8mm
-SMD DIP DIL PDIP SMDIP 2.54mm 9.53mm 375mil Clearance8mm
-0
-4
-4
-Package_DIP
-SMDIP-4_W11.48mm
-4-lead surface-mounted (SMD) DIP package, row spacing 11.48 mm (451 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 11.48mm 451mil
-0
-4
-4
-Package_DIP
-SMDIP-6_W7.62mm
-6-lead surface-mounted (SMD) DIP package, row spacing 7.62 mm (300 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 7.62mm 300mil
-0
-6
-6
-Package_DIP
-SMDIP-6_W9.53mm
-6-lead surface-mounted (SMD) DIP package, row spacing 9.53 mm (375 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 9.53mm 375mil
-0
-6
-6
-Package_DIP
-SMDIP-6_W9.53mm_Clearance8mm
-6-lead surface-mounted (SMD) DIP package, row spacing 9.53 mm (375 mils), Clearance8mm
-SMD DIP DIL PDIP SMDIP 2.54mm 9.53mm 375mil Clearance8mm
-0
-6
-6
-Package_DIP
-SMDIP-6_W11.48mm
-6-lead surface-mounted (SMD) DIP package, row spacing 11.48 mm (451 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 11.48mm 451mil
-0
-6
-6
-Package_DIP
-SMDIP-8_W7.62mm
-8-lead surface-mounted (SMD) DIP package, row spacing 7.62 mm (300 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 7.62mm 300mil
-0
-8
-8
-Package_DIP
-SMDIP-8_W9.53mm
-8-lead surface-mounted (SMD) DIP package, row spacing 9.53 mm (375 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 9.53mm 375mil
-0
-8
-8
-Package_DIP
-SMDIP-8_W9.53mm_Clearance8mm
-8-lead surface-mounted (SMD) DIP package, row spacing 9.53 mm (375 mils), Clearance8mm
-SMD DIP DIL PDIP SMDIP 2.54mm 9.53mm 375mil Clearance8mm
-0
-8
-8
-Package_DIP
-SMDIP-8_W11.48mm
-8-lead surface-mounted (SMD) DIP package, row spacing 11.48 mm (451 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 11.48mm 451mil
-0
-8
-8
-Package_DIP
-SMDIP-10_W7.62mm
-10-lead surface-mounted (SMD) DIP package, row spacing 7.62 mm (300 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 7.62mm 300mil
-0
-10
-10
-Package_DIP
-SMDIP-10_W9.53mm
-10-lead surface-mounted (SMD) DIP package, row spacing 9.53 mm (375 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 9.53mm 375mil
-0
-10
-10
-Package_DIP
-SMDIP-10_W9.53mm_Clearance8mm
-10-lead surface-mounted (SMD) DIP package, row spacing 9.53 mm (375 mils), Clearance8mm
-SMD DIP DIL PDIP SMDIP 2.54mm 9.53mm 375mil Clearance8mm
-0
-10
-10
-Package_DIP
-SMDIP-10_W11.48mm
-10-lead surface-mounted (SMD) DIP package, row spacing 11.48 mm (451 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 11.48mm 451mil
-0
-10
-10
-Package_DIP
-SMDIP-12_W7.62mm
-12-lead surface-mounted (SMD) DIP package, row spacing 7.62 mm (300 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 7.62mm 300mil
+11
+11
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-12-5.08_1x12_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-12-5.08, 12 pins, pitch 5.08mm, size 61x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-12-5.08 pitch 5.08mm size 61x9.8mm^2 drill 1.3mm pad 2.6mm
 0
 12
 12
-Package_DIP
-SMDIP-12_W9.53mm
-12-lead surface-mounted (SMD) DIP package, row spacing 9.53 mm (375 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 9.53mm 375mil
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-12_1x12_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-12, 12 pins, pitch 5mm, size 60x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-12 pitch 5mm size 60x9.8mm^2 drill 1.3mm pad 2.6mm
 0
 12
 12
-Package_DIP
-SMDIP-12_W9.53mm_Clearance8mm
-12-lead surface-mounted (SMD) DIP package, row spacing 9.53 mm (375 mils), Clearance8mm
-SMD DIP DIL PDIP SMDIP 2.54mm 9.53mm 375mil Clearance8mm
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-13-5.08_1x13_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-13-5.08, 13 pins, pitch 5.08mm, size 66x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-13-5.08 pitch 5.08mm size 66x9.8mm^2 drill 1.3mm pad 2.6mm
 0
-12
-12
-Package_DIP
-SMDIP-12_W11.48mm
-12-lead surface-mounted (SMD) DIP package, row spacing 11.48 mm (451 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 11.48mm 451mil
+13
+13
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-13_1x13_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-13, 13 pins, pitch 5mm, size 65x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-13 pitch 5mm size 65x9.8mm^2 drill 1.3mm pad 2.6mm
 0
-12
-12
-Package_DIP
-SMDIP-14_W7.62mm
-14-lead surface-mounted (SMD) DIP package, row spacing 7.62 mm (300 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 7.62mm 300mil
-0
-14
-14
-Package_DIP
-SMDIP-14_W9.53mm
-14-lead surface-mounted (SMD) DIP package, row spacing 9.53 mm (375 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 9.53mm 375mil
+13
+13
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-14-5.08_1x14_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-14-5.08, 14 pins, pitch 5.08mm, size 71.1x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-14-5.08 pitch 5.08mm size 71.1x9.8mm^2 drill 1.3mm pad 2.6mm
 0
 14
 14
-Package_DIP
-SMDIP-14_W9.53mm_Clearance8mm
-14-lead surface-mounted (SMD) DIP package, row spacing 9.53 mm (375 mils), Clearance8mm
-SMD DIP DIL PDIP SMDIP 2.54mm 9.53mm 375mil Clearance8mm
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-14_1x14_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-14, 14 pins, pitch 5mm, size 70x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-14 pitch 5mm size 70x9.8mm^2 drill 1.3mm pad 2.6mm
 0
 14
 14
-Package_DIP
-SMDIP-14_W11.48mm
-14-lead surface-mounted (SMD) DIP package, row spacing 11.48 mm (451 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 11.48mm 451mil
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-15-5.08_1x15_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-15-5.08, 15 pins, pitch 5.08mm, size 76.2x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-15-5.08 pitch 5.08mm size 76.2x9.8mm^2 drill 1.3mm pad 2.6mm
 0
-14
-14
-Package_DIP
-SMDIP-16_W7.62mm
-16-lead surface-mounted (SMD) DIP package, row spacing 7.62 mm (300 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 7.62mm 300mil
+15
+15
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-15_1x15_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-15, 15 pins, pitch 5mm, size 75x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-15 pitch 5mm size 75x9.8mm^2 drill 1.3mm pad 2.6mm
 0
-16
-16
-Package_DIP
-SMDIP-16_W9.53mm
-16-lead surface-mounted (SMD) DIP package, row spacing 9.53 mm (375 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 9.53mm 375mil
-0
-16
-16
-Package_DIP
-SMDIP-16_W9.53mm_Clearance8mm
-16-lead surface-mounted (SMD) DIP package, row spacing 9.53 mm (375 mils), Clearance8mm
-SMD DIP DIL PDIP SMDIP 2.54mm 9.53mm 375mil Clearance8mm
+15
+15
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-16-5.08_1x16_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-16-5.08, 16 pins, pitch 5.08mm, size 81.3x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-16-5.08 pitch 5.08mm size 81.3x9.8mm^2 drill 1.3mm pad 2.6mm
 0
 16
 16
-Package_DIP
-SMDIP-16_W11.48mm
-16-lead surface-mounted (SMD) DIP package, row spacing 11.48 mm (451 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 11.48mm 451mil
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-1,5-16_1x16_P5.00mm_Horizontal
+Terminal Block Phoenix MKDS-1,5-16, 16 pins, pitch 5mm, size 80x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-1,5-16 pitch 5mm size 80x9.8mm^2 drill 1.3mm pad 2.6mm
 0
 16
 16
-Package_DIP
-SMDIP-18_W7.62mm
-18-lead surface-mounted (SMD) DIP package, row spacing 7.62 mm (300 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 7.62mm 300mil
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-2-5.08, 2 pins, pitch 5.08mm, size 10.2x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-2-5.08 pitch 5.08mm size 10.2x11.2mm^2 drill 1.3mm pad 2.6mm
 0
-18
-18
-Package_DIP
-SMDIP-18_W9.53mm
-18-lead surface-mounted (SMD) DIP package, row spacing 9.53 mm (375 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 9.53mm 375mil
+2
+2
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-3-5.08_1x03_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-3-5.08, 3 pins, pitch 5.08mm, size 15.2x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-3-5.08 pitch 5.08mm size 15.2x11.2mm^2 drill 1.3mm pad 2.6mm
 0
-18
-18
-Package_DIP
-SMDIP-18_W9.53mm_Clearance8mm
-18-lead surface-mounted (SMD) DIP package, row spacing 9.53 mm (375 mils), Clearance8mm
-SMD DIP DIL PDIP SMDIP 2.54mm 9.53mm 375mil Clearance8mm
+3
+3
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-4-5.08_1x04_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-4-5.08, 4 pins, pitch 5.08mm, size 20.3x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-4-5.08 pitch 5.08mm size 20.3x11.2mm^2 drill 1.3mm pad 2.6mm
 0
-18
-18
-Package_DIP
-SMDIP-18_W11.48mm
-18-lead surface-mounted (SMD) DIP package, row spacing 11.48 mm (451 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 11.48mm 451mil
-0
-18
-18
-Package_DIP
-SMDIP-20_W7.62mm
-20-lead surface-mounted (SMD) DIP package, row spacing 7.62 mm (300 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 7.62mm 300mil
-0
-20
-20
-Package_DIP
-SMDIP-20_W9.53mm
-20-lead surface-mounted (SMD) DIP package, row spacing 9.53 mm (375 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 9.53mm 375mil
-0
-20
-20
-Package_DIP
-SMDIP-20_W9.53mm_Clearance8mm
-20-lead surface-mounted (SMD) DIP package, row spacing 9.53 mm (375 mils), Clearance8mm
-SMD DIP DIL PDIP SMDIP 2.54mm 9.53mm 375mil Clearance8mm
-0
-20
-20
-Package_DIP
-SMDIP-20_W11.48mm
-20-lead surface-mounted (SMD) DIP package, row spacing 11.48 mm (451 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 11.48mm 451mil
-0
-20
-20
-Package_DIP
-SMDIP-22_W7.62mm
-22-lead surface-mounted (SMD) DIP package, row spacing 7.62 mm (300 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 7.62mm 300mil
-0
-22
-22
-Package_DIP
-SMDIP-22_W9.53mm
-22-lead surface-mounted (SMD) DIP package, row spacing 9.53 mm (375 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 9.53mm 375mil
-0
-22
-22
-Package_DIP
-SMDIP-22_W9.53mm_Clearance8mm
-22-lead surface-mounted (SMD) DIP package, row spacing 9.53 mm (375 mils), Clearance8mm
-SMD DIP DIL PDIP SMDIP 2.54mm 9.53mm 375mil Clearance8mm
-0
-22
-22
-Package_DIP
-SMDIP-22_W11.48mm
-22-lead surface-mounted (SMD) DIP package, row spacing 11.48 mm (451 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 11.48mm 451mil
-0
-22
-22
-Package_DIP
-SMDIP-24_W7.62mm
-24-lead surface-mounted (SMD) DIP package, row spacing 7.62 mm (300 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 7.62mm 300mil
-0
-24
-24
-Package_DIP
-SMDIP-24_W9.53mm
-24-lead surface-mounted (SMD) DIP package, row spacing 9.53 mm (375 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 9.53mm 375mil
-0
-24
-24
-Package_DIP
-SMDIP-24_W11.48mm
-24-lead surface-mounted (SMD) DIP package, row spacing 11.48 mm (451 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 11.48mm 451mil
-0
-24
-24
-Package_DIP
-SMDIP-24_W15.24mm
-24-lead surface-mounted (SMD) DIP package, row spacing 15.24 mm (600 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 15.24mm 600mil
-0
-24
-24
-Package_DIP
-SMDIP-28_W15.24mm
-28-lead surface-mounted (SMD) DIP package, row spacing 15.24 mm (600 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 15.24mm 600mil
-0
-28
-28
-Package_DIP
-SMDIP-32_W7.62mm
-32-lead surface-mounted (SMD) DIP package, row spacing 7.62 mm (300 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 7.62mm 300mil
-0
-32
-32
-Package_DIP
-SMDIP-32_W9.53mm
-32-lead surface-mounted (SMD) DIP package, row spacing 9.53 mm (375 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 9.53mm 375mil
-0
-32
-32
-Package_DIP
-SMDIP-32_W11.48mm
-32-lead surface-mounted (SMD) DIP package, row spacing 11.48 mm (451 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 11.48mm 451mil
-0
-32
-32
-Package_DIP
-SMDIP-32_W15.24mm
-32-lead surface-mounted (SMD) DIP package, row spacing 15.24 mm (600 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 15.24mm 600mil
-0
-32
-32
-Package_DIP
-SMDIP-40_W15.24mm
-40-lead surface-mounted (SMD) DIP package, row spacing 15.24 mm (600 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 15.24mm 600mil
-0
-40
-40
-Package_DIP
-SMDIP-40_W25.24mm
-40-lead surface-mounted (SMD) DIP package, row spacing 25.24 mm (993 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 25.24mm 993mil
-0
-40
-40
-Package_DIP
-SMDIP-42_W15.24mm
-42-lead surface-mounted (SMD) DIP package, row spacing 15.24 mm (600 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 15.24mm 600mil
-0
-42
-42
-Package_DIP
-SMDIP-48_W15.24mm
-48-lead surface-mounted (SMD) DIP package, row spacing 15.24 mm (600 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 15.24mm 600mil
-0
-48
-48
-Package_DIP
-SMDIP-64_W15.24mm
-64-lead surface-mounted (SMD) DIP package, row spacing 15.24 mm (600 mils)
-SMD DIP DIL PDIP SMDIP 2.54mm 15.24mm 600mil
-0
-64
-64
-Package_DIP
-Toshiba_11-7A9
-Toshiba 11-7A9 package, like 6-lead dip package with missing pin 5, row spacing 7.62 mm (300 mils), https://toshiba.semicon-storage.com/info/docget.jsp?did=1421&prodName=TLP3021(S)
-Toshiba 11-7A9 DIL DIP PDIP 2.54mm 7.62mm 300mil
+4
+4
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-5-5.08_1x05_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-5-5.08, 5 pins, pitch 5.08mm, size 25.4x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-5-5.08 pitch 5.08mm size 25.4x11.2mm^2 drill 1.3mm pad 2.6mm
 0
 5
 5
-Package_DIP
-Vishay_HVM-DIP-3_W7.62mm
-3-lead though-hole mounted high-volatge DIP package (based on standard DIP-4), row spacing 7.62 mm (300 mils), see https://www.vishay.com/docs/91361/hexdip.pdf
-THT DIP DIL PDIP 2.54mm 7.62mm 300mil Vishay HVMDIP HEXDIP
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-6-5.08_1x06_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-6-5.08, 6 pins, pitch 5.08mm, size 30.5x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-6-5.08 pitch 5.08mm size 30.5x11.2mm^2 drill 1.3mm pad 2.6mm
+0
+6
+6
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-7-5.08_1x07_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-7-5.08, 7 pins, pitch 5.08mm, size 35.6x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-7-5.08 pitch 5.08mm size 35.6x11.2mm^2 drill 1.3mm pad 2.6mm
+0
+7
+7
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-8-5.08_1x08_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-8-5.08, 8 pins, pitch 5.08mm, size 40.6x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-8-5.08 pitch 5.08mm size 40.6x11.2mm^2 drill 1.3mm pad 2.6mm
+0
+8
+8
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-9-5.08_1x09_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-9-5.08, 9 pins, pitch 5.08mm, size 45.7x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-9-5.08 pitch 5.08mm size 45.7x11.2mm^2 drill 1.3mm pad 2.6mm
+0
+9
+9
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-10-5.08_1x10_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-10-5.08, 10 pins, pitch 5.08mm, size 50.8x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-10-5.08 pitch 5.08mm size 50.8x11.2mm^2 drill 1.3mm pad 2.6mm
+0
+10
+10
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-11-5.08_1x11_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-11-5.08, 11 pins, pitch 5.08mm, size 55.9x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-11-5.08 pitch 5.08mm size 55.9x11.2mm^2 drill 1.3mm pad 2.6mm
+0
+11
+11
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-12-5.08_1x12_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-12-5.08, 12 pins, pitch 5.08mm, size 61x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-12-5.08 pitch 5.08mm size 61x11.2mm^2 drill 1.3mm pad 2.6mm
+0
+12
+12
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-13-5.08_1x13_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-13-5.08, 13 pins, pitch 5.08mm, size 66x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-13-5.08 pitch 5.08mm size 66x11.2mm^2 drill 1.3mm pad 2.6mm
+0
+13
+13
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-14-5.08_1x14_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-14-5.08, 14 pins, pitch 5.08mm, size 71.1x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-14-5.08 pitch 5.08mm size 71.1x11.2mm^2 drill 1.3mm pad 2.6mm
+0
+14
+14
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-15-5.08_1x15_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-15-5.08, 15 pins, pitch 5.08mm, size 76.2x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-15-5.08 pitch 5.08mm size 76.2x11.2mm^2 drill 1.3mm pad 2.6mm
+0
+15
+15
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MKDS-3-16-5.08_1x16_P5.08mm_Horizontal
+Terminal Block Phoenix MKDS-3-16-5.08, 16 pins, pitch 5.08mm, size 81.3x11.2mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/2138224.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MKDS-3-16-5.08 pitch 5.08mm size 81.3x11.2mm^2 drill 1.3mm pad 2.6mm
+0
+16
+16
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal
+Terminal Block Phoenix MPT-0,5-2-2.54, 2 pins, pitch 2.54mm, size 5.54x6.2mm^2, drill diamater 1.1mm, pad diameter 2.2mm, see http://www.mouser.com/ds/2/324/ItemDetail_1725656-920552.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MPT-0,5-2-2.54 pitch 2.54mm size 5.54x6.2mm^2 drill 1.1mm pad 2.2mm
+0
+2
+2
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MPT-0,5-3-2.54_1x03_P2.54mm_Horizontal
+Terminal Block Phoenix MPT-0,5-3-2.54, 3 pins, pitch 2.54mm, size 8.08x6.2mm^2, drill diamater 1.1mm, pad diameter 2.2mm, see http://www.mouser.com/ds/2/324/ItemDetail_1725656-920552.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MPT-0,5-3-2.54 pitch 2.54mm size 8.08x6.2mm^2 drill 1.1mm pad 2.2mm
+0
+3
+3
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MPT-0,5-4-2.54_1x04_P2.54mm_Horizontal
+Terminal Block Phoenix MPT-0,5-4-2.54, 4 pins, pitch 2.54mm, size 10.6x6.2mm^2, drill diamater 1.1mm, pad diameter 2.2mm, see http://www.mouser.com/ds/2/324/ItemDetail_1725672-916605.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MPT-0,5-4-2.54 pitch 2.54mm size 10.6x6.2mm^2 drill 1.1mm pad 2.2mm
+0
+4
+4
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MPT-0,5-5-2.54_1x05_P2.54mm_Horizontal
+Terminal Block Phoenix MPT-0,5-5-2.54, 5 pins, pitch 2.54mm, size 13.2x6.2mm^2, drill diamater 1.1mm, pad diameter 2.2mm, see http://www.mouser.com/ds/2/324/ItemDetail_1725672-916605.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MPT-0,5-5-2.54 pitch 2.54mm size 13.2x6.2mm^2 drill 1.1mm pad 2.2mm
+0
+5
+5
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MPT-0,5-6-2.54_1x06_P2.54mm_Horizontal
+Terminal Block Phoenix MPT-0,5-6-2.54, 6 pins, pitch 2.54mm, size 15.7x6.2mm^2, drill diamater 1.1mm, pad diameter 2.2mm, see http://www.mouser.com/ds/2/324/ItemDetail_1725672-916605.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MPT-0,5-6-2.54 pitch 2.54mm size 15.7x6.2mm^2 drill 1.1mm pad 2.2mm
+0
+6
+6
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MPT-0,5-7-2.54_1x07_P2.54mm_Horizontal
+Terminal Block Phoenix MPT-0,5-7-2.54, 7 pins, pitch 2.54mm, size 18.2x6.2mm^2, drill diamater 1.1mm, pad diameter 2.2mm, see http://www.mouser.com/ds/2/324/ItemDetail_1725672-916605.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MPT-0,5-7-2.54 pitch 2.54mm size 18.2x6.2mm^2 drill 1.1mm pad 2.2mm
+0
+7
+7
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MPT-0,5-8-2.54_1x08_P2.54mm_Horizontal
+Terminal Block Phoenix MPT-0,5-8-2.54, 8 pins, pitch 2.54mm, size 20.8x6.2mm^2, drill diamater 1.1mm, pad diameter 2.2mm, see http://www.mouser.com/ds/2/324/ItemDetail_1725672-916605.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MPT-0,5-8-2.54 pitch 2.54mm size 20.8x6.2mm^2 drill 1.1mm pad 2.2mm
+0
+8
+8
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MPT-0,5-9-2.54_1x09_P2.54mm_Horizontal
+Terminal Block Phoenix MPT-0,5-9-2.54, 9 pins, pitch 2.54mm, size 23.3x6.2mm^2, drill diamater 1.1mm, pad diameter 2.2mm, see http://www.mouser.com/ds/2/324/ItemDetail_1725672-916605.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MPT-0,5-9-2.54 pitch 2.54mm size 23.3x6.2mm^2 drill 1.1mm pad 2.2mm
+0
+9
+9
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MPT-0,5-10-2.54_1x10_P2.54mm_Horizontal
+Terminal Block Phoenix MPT-0,5-10-2.54, 10 pins, pitch 2.54mm, size 25.9x6.2mm^2, drill diamater 1.1mm, pad diameter 2.2mm, see http://www.mouser.com/ds/2/324/ItemDetail_1725672-916605.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MPT-0,5-10-2.54 pitch 2.54mm size 25.9x6.2mm^2 drill 1.1mm pad 2.2mm
+0
+10
+10
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MPT-0,5-11-2.54_1x11_P2.54mm_Horizontal
+Terminal Block Phoenix MPT-0,5-11-2.54, 11 pins, pitch 2.54mm, size 28.4x6.2mm^2, drill diamater 1.1mm, pad diameter 2.2mm, see http://www.mouser.com/ds/2/324/ItemDetail_1725672-916605.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MPT-0,5-11-2.54 pitch 2.54mm size 28.4x6.2mm^2 drill 1.1mm pad 2.2mm
+0
+11
+11
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_MPT-0,5-12-2.54_1x12_P2.54mm_Horizontal
+Terminal Block Phoenix MPT-0,5-12-2.54, 12 pins, pitch 2.54mm, size 30.9x6.2mm^2, drill diamater 1.1mm, pad diameter 2.2mm, see http://www.mouser.com/ds/2/324/ItemDetail_1725672-916605.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix MPT-0,5-12-2.54 pitch 2.54mm size 30.9x6.2mm^2 drill 1.1mm pad 2.2mm
+0
+12
+12
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-2-3.5-H_1x02_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-2-3.5-H, 2 pins, pitch 3.5mm, size 7x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-2-3.5-H pitch 3.5mm size 7x7.6mm^2 drill 1.2mm pad 2.4mm
+0
+2
+2
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-2-5.0-H_1x02_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-2-5.0-H, 2 pins, pitch 5mm, size 10x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-2-5.0-H pitch 5mm size 10x9mm^2 drill 1.3mm pad 2.6mm
+0
+2
+2
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-3-3.5-H_1x03_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-3-3.5-H, 3 pins, pitch 3.5mm, size 10.5x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-3-3.5-H pitch 3.5mm size 10.5x7.6mm^2 drill 1.2mm pad 2.4mm
+0
+3
+3
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-3-5.0-H_1x03_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-3-5.0-H, 3 pins, pitch 5mm, size 15x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-3-5.0-H pitch 5mm size 15x9mm^2 drill 1.3mm pad 2.6mm
+0
+3
+3
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-4-3.5-H_1x04_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-4-3.5-H, 4 pins, pitch 3.5mm, size 14x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-4-3.5-H pitch 3.5mm size 14x7.6mm^2 drill 1.2mm pad 2.4mm
+0
+4
+4
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-4-5.0-H_1x04_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-4-5.0-H, 4 pins, pitch 5mm, size 20x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-4-5.0-H pitch 5mm size 20x9mm^2 drill 1.3mm pad 2.6mm
+0
+4
+4
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-5-3.5-H_1x05_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-5-3.5-H, 5 pins, pitch 3.5mm, size 17.5x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-5-3.5-H pitch 3.5mm size 17.5x7.6mm^2 drill 1.2mm pad 2.4mm
+0
+5
+5
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-5-5.0-H_1x05_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-5-5.0-H, 5 pins, pitch 5mm, size 25x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-5-5.0-H pitch 5mm size 25x9mm^2 drill 1.3mm pad 2.6mm
+0
+5
+5
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-6-3.5-H_1x06_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-6-3.5-H, 6 pins, pitch 3.5mm, size 21x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-6-3.5-H pitch 3.5mm size 21x7.6mm^2 drill 1.2mm pad 2.4mm
+0
+6
+6
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-6-5.0-H_1x06_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-6-5.0-H, 6 pins, pitch 5mm, size 30x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-6-5.0-H pitch 5mm size 30x9mm^2 drill 1.3mm pad 2.6mm
+0
+6
+6
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-7-3.5-H_1x07_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-7-3.5-H, 7 pins, pitch 3.5mm, size 24.5x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-7-3.5-H pitch 3.5mm size 24.5x7.6mm^2 drill 1.2mm pad 2.4mm
+0
+7
+7
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-7-5.0-H_1x07_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-7-5.0-H, 7 pins, pitch 5mm, size 35x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-7-5.0-H pitch 5mm size 35x9mm^2 drill 1.3mm pad 2.6mm
+0
+7
+7
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-8-3.5-H_1x08_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-8-3.5-H, 8 pins, pitch 3.5mm, size 28x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-8-3.5-H pitch 3.5mm size 28x7.6mm^2 drill 1.2mm pad 2.4mm
+0
+8
+8
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-8-5.0-H_1x08_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-8-5.0-H, 8 pins, pitch 5mm, size 40x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-8-5.0-H pitch 5mm size 40x9mm^2 drill 1.3mm pad 2.6mm
+0
+8
+8
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-9-3.5-H_1x09_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-9-3.5-H, 9 pins, pitch 3.5mm, size 31.5x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-9-3.5-H pitch 3.5mm size 31.5x7.6mm^2 drill 1.2mm pad 2.4mm
+0
+9
+9
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-9-5.0-H_1x09_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-9-5.0-H, 9 pins, pitch 5mm, size 45x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-9-5.0-H pitch 5mm size 45x9mm^2 drill 1.3mm pad 2.6mm
+0
+9
+9
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-10-3.5-H_1x10_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-10-3.5-H, 10 pins, pitch 3.5mm, size 35x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-10-3.5-H pitch 3.5mm size 35x7.6mm^2 drill 1.2mm pad 2.4mm
+0
+10
+10
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-10-5.0-H_1x10_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-10-5.0-H, 10 pins, pitch 5mm, size 50x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-10-5.0-H pitch 5mm size 50x9mm^2 drill 1.3mm pad 2.6mm
+0
+10
+10
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-11-3.5-H_1x11_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-11-3.5-H, 11 pins, pitch 3.5mm, size 38.5x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-11-3.5-H pitch 3.5mm size 38.5x7.6mm^2 drill 1.2mm pad 2.4mm
+0
+11
+11
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-11-5.0-H_1x11_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-11-5.0-H, 11 pins, pitch 5mm, size 55x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-11-5.0-H pitch 5mm size 55x9mm^2 drill 1.3mm pad 2.6mm
+0
+11
+11
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-12-3.5-H_1x12_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-12-3.5-H, 12 pins, pitch 3.5mm, size 42x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-12-3.5-H pitch 3.5mm size 42x7.6mm^2 drill 1.2mm pad 2.4mm
+0
+12
+12
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-12-5.0-H_1x12_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-12-5.0-H, 12 pins, pitch 5mm, size 60x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-12-5.0-H pitch 5mm size 60x9mm^2 drill 1.3mm pad 2.6mm
+0
+12
+12
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-13-3.5-H_1x13_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-13-3.5-H, 13 pins, pitch 3.5mm, size 45.5x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-13-3.5-H pitch 3.5mm size 45.5x7.6mm^2 drill 1.2mm pad 2.4mm
+0
+13
+13
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-13-5.0-H_1x13_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-13-5.0-H, 13 pins, pitch 5mm, size 65x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-13-5.0-H pitch 5mm size 65x9mm^2 drill 1.3mm pad 2.6mm
+0
+13
+13
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-14-3.5-H_1x14_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-14-3.5-H, 14 pins, pitch 3.5mm, size 49x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-14-3.5-H pitch 3.5mm size 49x7.6mm^2 drill 1.2mm pad 2.4mm
+0
+14
+14
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-14-5.0-H_1x14_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-14-5.0-H, 14 pins, pitch 5mm, size 70x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-14-5.0-H pitch 5mm size 70x9mm^2 drill 1.3mm pad 2.6mm
+0
+14
+14
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-15-3.5-H_1x15_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-15-3.5-H, 15 pins, pitch 3.5mm, size 52.5x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-15-3.5-H pitch 3.5mm size 52.5x7.6mm^2 drill 1.2mm pad 2.4mm
+0
+15
+15
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-15-5.0-H_1x15_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-15-5.0-H, 15 pins, pitch 5mm, size 75x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-15-5.0-H pitch 5mm size 75x9mm^2 drill 1.3mm pad 2.6mm
+0
+15
+15
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-16-3.5-H_1x16_P3.50mm_Horizontal
+Terminal Block Phoenix PT-1,5-16-3.5-H, 16 pins, pitch 3.5mm, size 56x7.6mm^2, drill diamater 1.2mm, pad diameter 2.4mm, see , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-16-3.5-H pitch 3.5mm size 56x7.6mm^2 drill 1.2mm pad 2.4mm
+0
+16
+16
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PT-1,5-16-5.0-H_1x16_P5.00mm_Horizontal
+Terminal Block Phoenix PT-1,5-16-5.0-H, 16 pins, pitch 5mm, size 80x9mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.mouser.com/ds/2/324/ItemDetail_1935161-922578.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PT-1,5-16-5.0-H pitch 5mm size 80x9mm^2 drill 1.3mm pad 2.6mm
+0
+16
+16
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-2-2,5-V-SMD_1x02-1MP_P2.50mm_Vertical
+PhoenixContact PTSM0,5 2 2,5mm vertical SMD spring clamp terminal block connector http://www.phoenixcontact.com/us/products/1814702/pdf
+PhoenixContact PTSM0.5 2 2.5mm vertical SMD spring clamp terminal block connector 
 0
 4
 3
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-2-2.5-H-THR_1x02_P2.50mm_Horizontal
+Terminal Block Phoenix PTSM-0,5-2-2.5-H-THR, 2 pins, pitch 2.5mm, size 7.2x10mm^2, drill diamater 1.2mm, pad diameter 3mm, see http://www.produktinfo.conrad.com/datenblaetter/550000-574999/556441-da-01-de-LEITERPLATTENKL__PTSM_0_5__8_2_5_H_THR.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PTSM-0,5-2-2.5-H-THR pitch 2.5mm size 7.2x10mm^2 drill 1.2mm pad 3mm
+0
+4
+2
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-2-2.5-V-THR_1x02_P2.50mm_Vertical
+Terminal Block Phoenix PTSM-0,5-2-2.5-V-THR, vertical (cable from top), 2 pins, pitch 2.5mm, size 5.5x5mm^2, drill diamater 1.2mm, pad diameter 2mm, see http://www.produktinfo.conrad.com/datenblaetter/550000-574999/556444-da-01-de-LEITERPLATTENKL__PTSM_0_5__4_2_5_V_THR.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PTSM-0,5-2-2.5-V-THR vertical pitch 2.5mm size 5.5x5mm^2 drill 1.2mm pad 2mm
+0
+4
+2
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-2-HV-2.5-SMD_1x02-1MP_P2.50mm_Vertical
+PhoenixContact PTSM0,5 2 HV 2,5mm vertical SMD spring clamp terminal block connector http://www.phoenixcontact.com/us/products/1778696/pdf
+2.5mm vertical SMD spring clamp terminal block connector 
+0
+4
+3
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-3-2,5-V-SMD_1x03-1MP_P2.50mm_Vertical
+PhoenixContact PTSM0,5 3 2,5mm vertical SMD spring clamp terminal block connector http://www.phoenixcontact.com/us/products/1814715/pdf
+PhoenixContact PTSM0.5 3 2.5mm vertical SMD spring clamp terminal block connector 
+0
+5
+4
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-3-2.5-H-THR_1x03_P2.50mm_Horizontal
+Terminal Block Phoenix PTSM-0,5-3-2.5-H-THR, 3 pins, pitch 2.5mm, size 9.7x10mm^2, drill diamater 1.2mm, pad diameter 3mm, see http://www.produktinfo.conrad.com/datenblaetter/550000-574999/556441-da-01-de-LEITERPLATTENKL__PTSM_0_5__8_2_5_H_THR.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PTSM-0,5-3-2.5-H-THR pitch 2.5mm size 9.7x10mm^2 drill 1.2mm pad 3mm
+0
+6
+3
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-3-2.5-V-THR_1x03_P2.50mm_Vertical
+Terminal Block Phoenix PTSM-0,5-3-2.5-V-THR, vertical (cable from top), 3 pins, pitch 2.5mm, size 8x5mm^2, drill diamater 1.2mm, pad diameter 2mm, see http://www.produktinfo.conrad.com/datenblaetter/550000-574999/556444-da-01-de-LEITERPLATTENKL__PTSM_0_5__4_2_5_V_THR.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PTSM-0,5-3-2.5-V-THR vertical pitch 2.5mm size 8x5mm^2 drill 1.2mm pad 2mm
+0
+6
+3
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-3-HV-2.5-SMD_1x03-1MP_P2.50mm_Vertical
+PhoenixContact PTSM0,5 3 HV 2,5mm vertical SMD spring clamp terminal block connector http://www.phoenixcontact.com/us/products/1778706/pdf
+2.5mm vertical SMD spring clamp terminal block connector 
+0
+5
+4
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-4-2,5-V-SMD_1x04-1MP_P2.50mm_Vertical
+PhoenixContact PTSM0,5 4 2,5mm vertical SMD spring clamp terminal block connector http://www.phoenixcontact.com/us/products/1814728/pdf
+PhoenixContact PTSM0.5 4 2.5mm vertical SMD spring clamp terminal block connector 
+0
+6
+5
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-4-2.5-H-THR_1x04_P2.50mm_Horizontal
+Terminal Block Phoenix PTSM-0,5-4-2.5-H-THR, 4 pins, pitch 2.5mm, size 12.2x10mm^2, drill diamater 1.2mm, pad diameter 3mm, see http://www.produktinfo.conrad.com/datenblaetter/550000-574999/556441-da-01-de-LEITERPLATTENKL__PTSM_0_5__8_2_5_H_THR.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PTSM-0,5-4-2.5-H-THR pitch 2.5mm size 12.2x10mm^2 drill 1.2mm pad 3mm
+0
+8
+4
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-4-2.5-V-THR_1x04_P2.50mm_Vertical
+Terminal Block Phoenix PTSM-0,5-4-2.5-V-THR, vertical (cable from top), 4 pins, pitch 2.5mm, size 10.5x5mm^2, drill diamater 1.2mm, pad diameter 2mm, see http://www.produktinfo.conrad.com/datenblaetter/550000-574999/556444-da-01-de-LEITERPLATTENKL__PTSM_0_5__4_2_5_V_THR.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PTSM-0,5-4-2.5-V-THR vertical pitch 2.5mm size 10.5x5mm^2 drill 1.2mm pad 2mm
+0
+8
+4
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-4-HV-2.5-SMD_1x04-1MP_P2.50mm_Vertical
+PhoenixContact PTSM0,5 4 HV 2,5mm vertical SMD spring clamp terminal block connector http://www.phoenixcontact.com/us/products/1778719/pdf
+2.5mm vertical SMD spring clamp terminal block connector 
+0
+4
+3
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-5-2,5-V-SMD_1x05-1MP_P2.50mm_Vertical
+PhoenixContact PTSM0,5 5 2,5mm vertical SMD spring clamp terminal block connector http://www.phoenixcontact.com/us/products/1814731/pdf
+PhoenixContact PTSM0.5 5 2.5mm vertical SMD spring clamp terminal block connector 
+0
+7
+6
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-5-2.5-H-THR_1x05_P2.50mm_Horizontal
+Terminal Block Phoenix PTSM-0,5-5-2.5-H-THR, 5 pins, pitch 2.5mm, size 14.7x10mm^2, drill diamater 1.2mm, pad diameter 3mm, see http://www.produktinfo.conrad.com/datenblaetter/550000-574999/556441-da-01-de-LEITERPLATTENKL__PTSM_0_5__8_2_5_H_THR.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PTSM-0,5-5-2.5-H-THR pitch 2.5mm size 14.7x10mm^2 drill 1.2mm pad 3mm
+0
+10
+5
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-5-2.5-V-THR_1x05_P2.50mm_Vertical
+Terminal Block Phoenix PTSM-0,5-5-2.5-V-THR, vertical (cable from top), 5 pins, pitch 2.5mm, size 13x5mm^2, drill diamater 1.2mm, pad diameter 2mm, see http://www.produktinfo.conrad.com/datenblaetter/550000-574999/556444-da-01-de-LEITERPLATTENKL__PTSM_0_5__4_2_5_V_THR.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PTSM-0,5-5-2.5-V-THR vertical pitch 2.5mm size 13x5mm^2 drill 1.2mm pad 2mm
+0
+10
+5
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-5-HV-2.5-SMD_1x05-1MP_P2.50mm_Vertical
+PhoenixContact PTSM0,5 5 HV 2,5mm vertical SMD spring clamp terminal block connector http://www.phoenixcontact.com/us/products/1778722/pdf
+2.5mm vertical SMD spring clamp terminal block connector 
+0
+7
+6
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-6-2,5-V-SMD_1x06-1MP_P2.50mm_Vertical
+PhoenixContact PTSM0,5 6 2,5mm vertical SMD spring clamp terminal block connector http://www.phoenixcontact.com/us/products/1814744/pdf
+PhoenixContact PTSM0.5 6 2.5mm vertical SMD spring clamp terminal block connector 
+0
+8
+7
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-6-2.5-H-THR_1x06_P2.50mm_Horizontal
+Terminal Block Phoenix PTSM-0,5-6-2.5-H-THR, 6 pins, pitch 2.5mm, size 17.2x10mm^2, drill diamater 1.2mm, pad diameter 3mm, see http://www.produktinfo.conrad.com/datenblaetter/550000-574999/556441-da-01-de-LEITERPLATTENKL__PTSM_0_5__8_2_5_H_THR.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PTSM-0,5-6-2.5-H-THR pitch 2.5mm size 17.2x10mm^2 drill 1.2mm pad 3mm
+0
+12
+6
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-6-2.5-V-THR_1x06_P2.50mm_Vertical
+Terminal Block Phoenix PTSM-0,5-6-2.5-V-THR, vertical (cable from top), 6 pins, pitch 2.5mm, size 15.5x5mm^2, drill diamater 1.2mm, pad diameter 2mm, see http://www.produktinfo.conrad.com/datenblaetter/550000-574999/556444-da-01-de-LEITERPLATTENKL__PTSM_0_5__4_2_5_V_THR.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PTSM-0,5-6-2.5-V-THR vertical pitch 2.5mm size 15.5x5mm^2 drill 1.2mm pad 2mm
+0
+12
+6
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-6-HV-2.5-SMD_1x06-1MP_P2.50mm_Vertical
+PhoenixContact PTSM0,5 6 HV 2,5mm vertical SMD spring clamp terminal block connector http://www.phoenixcontact.com/us/products/1778735/pdf
+2.5mm vertical SMD spring clamp terminal block connector 
+0
+8
+7
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-7-2,5-V-SMD_1x07-1MP_P2.50mm_Vertical
+PhoenixContact PTSM0,5 7 2,5mm vertical SMD spring clamp terminal block connector http://www.phoenixcontact.com/us/products/1814757/pdf
+PhoenixContact PTSM0.5 7 2.5mm vertical SMD spring clamp terminal block connector 
+0
+9
+8
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-7-2.5-H-THR_1x07_P2.50mm_Horizontal
+Terminal Block Phoenix PTSM-0,5-7-2.5-H-THR, 7 pins, pitch 2.5mm, size 19.7x10mm^2, drill diamater 1.2mm, pad diameter 3mm, see http://www.produktinfo.conrad.com/datenblaetter/550000-574999/556441-da-01-de-LEITERPLATTENKL__PTSM_0_5__8_2_5_H_THR.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PTSM-0,5-7-2.5-H-THR pitch 2.5mm size 19.7x10mm^2 drill 1.2mm pad 3mm
+0
+14
+7
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-7-2.5-V-THR_1x07_P2.50mm_Vertical
+Terminal Block Phoenix PTSM-0,5-7-2.5-V-THR, vertical (cable from top), 7 pins, pitch 2.5mm, size 18x5mm^2, drill diamater 1.2mm, pad diameter 2mm, see http://www.produktinfo.conrad.com/datenblaetter/550000-574999/556444-da-01-de-LEITERPLATTENKL__PTSM_0_5__4_2_5_V_THR.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PTSM-0,5-7-2.5-V-THR vertical pitch 2.5mm size 18x5mm^2 drill 1.2mm pad 2mm
+0
+14
+7
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-7-HV-2.5-SMD_1x07-1MP_P2.50mm_Vertical
+PhoenixContact PTSM0,5 7 HV 2,5mm vertical SMD spring clamp terminal block connector http://www.phoenixcontact.com/us/products/1778748/pdf
+2.5mm vertical SMD spring clamp terminal block connector 
+0
+9
+8
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-8-2,5-V-SMD_1x08-1MP_P2.50mm_Vertical
+PhoenixContact PTSM0,5 8 2,5mm vertical SMD spring clamp terminal block connector http://www.phoenixcontact.com/us/products/1814760/pdf
+PhoenixContact PTSM0.5 8 2.5mm vertical SMD spring clamp terminal block connector 
+0
+10
+9
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-8-2.5-H-THR_1x08_P2.50mm_Horizontal
+Terminal Block Phoenix PTSM-0,5-8-2.5-H-THR, 8 pins, pitch 2.5mm, size 22.2x10mm^2, drill diamater 1.2mm, pad diameter 3mm, see http://www.produktinfo.conrad.com/datenblaetter/550000-574999/556441-da-01-de-LEITERPLATTENKL__PTSM_0_5__8_2_5_H_THR.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PTSM-0,5-8-2.5-H-THR pitch 2.5mm size 22.2x10mm^2 drill 1.2mm pad 3mm
+0
+16
+8
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-8-2.5-V-THR_1x08_P2.50mm_Vertical
+Terminal Block Phoenix PTSM-0,5-8-2.5-V-THR, vertical (cable from top), 8 pins, pitch 2.5mm, size 20.5x5mm^2, drill diamater 1.2mm, pad diameter 2mm, see http://www.produktinfo.conrad.com/datenblaetter/550000-574999/556444-da-01-de-LEITERPLATTENKL__PTSM_0_5__4_2_5_V_THR.pdf, script-generated with , script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix
+THT Terminal Block Phoenix PTSM-0,5-8-2.5-V-THR vertical pitch 2.5mm size 20.5x5mm^2 drill 1.2mm pad 2mm
+0
+16
+8
+TerminalBlock_Phoenix
+TerminalBlock_Phoenix_PTSM-0,5-8-HV-2.5-SMD_1x08-1MP_P2.50mm_Vertical
+PhoenixContact PTSM0,5 8 HV 2,5mm vertical SMD spring clamp terminal block connector http://www.phoenixcontact.com/us/products/1778751/pdf
+2.5mm vertical SMD spring clamp terminal block connector 
+0
+10
+9
