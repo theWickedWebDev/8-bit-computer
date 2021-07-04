@@ -1362,23 +1362,6 @@ NoConn ~ 6400 7450
 NoConn ~ 6300 7450
 NoConn ~ 6200 7450
 NoConn ~ 6100 7450
-$Comp
-L power:GND #PWR?
-U 1 1 60EC44B7
-P 5750 7350
-AR Path="/60CD6BAA/607C44AD/60EC44B7" Ref="#PWR?"  Part="1" 
-AR Path="/60E7F2E1/60EC44B7" Ref="#PWR?"  Part="1" 
-AR Path="/60EC44B7" Ref="#PWR0122"  Part="1" 
-AR Path="/60D6223D/60EC44B7" Ref="#PWR?"  Part="1" 
-AR Path="/617258A4/60EC44B7" Ref="#PWR?"  Part="1" 
-AR Path="/60C79FC4/60EC44B7" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0122" H 5750 7100 50  0001 C CNN
-F 1 "GND" H 5850 7200 50  0000 R CNN
-F 2 "" H 5750 7350 50  0001 C CNN
-F 3 "" H 5750 7350 50  0001 C CNN
-	1    5750 7350
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	5750 7350 5750 7450
 Wire Wire Line
@@ -1963,10 +1946,6 @@ Text GLabel 1200 2650 2    47   Output ~ 0
 TONE_OCTAVE_1
 Text GLabel 1200 2550 2    47   Output ~ 0
 TONE_OCTAVE_2
-Text GLabel 1200 3850 2    47   Output ~ 0
-OUT_MUX_EN
-Text GLabel 1200 4750 2    47   Output ~ 0
-IN_MUX_EN
 Text GLabel 1200 5550 2    59   Input ~ 0
 SET_CLOCK_FREQ
 Text GLabel 1200 2350 2    50   Output ~ 0
@@ -2150,4 +2129,25 @@ Connection ~ 1150 900
 Wire Wire Line
 	1150 1200 900  1200
 Connection ~ 1150 1200
+Text GLabel 1200 3850 2    47   Output ~ 0
+OUT_MUX_EN
+Text GLabel 1200 4750 2    47   Output ~ 0
+IN_MUX_EN
+$Comp
+L power:GND #PWR?
+U 1 1 60EC44B7
+P 5750 7350
+AR Path="/60CD6BAA/607C44AD/60EC44B7" Ref="#PWR?"  Part="1" 
+AR Path="/60E7F2E1/60EC44B7" Ref="#PWR?"  Part="1" 
+AR Path="/60EC44B7" Ref="#PWR0122"  Part="1" 
+AR Path="/60D6223D/60EC44B7" Ref="#PWR?"  Part="1" 
+AR Path="/617258A4/60EC44B7" Ref="#PWR?"  Part="1" 
+AR Path="/60C79FC4/60EC44B7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0122" H 5750 7100 50  0001 C CNN
+F 1 "GND" H 5850 7200 50  0000 R CNN
+F 2 "" H 5750 7350 50  0001 C CNN
+F 3 "" H 5750 7350 50  0001 C CNN
+	1    5750 7350
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
