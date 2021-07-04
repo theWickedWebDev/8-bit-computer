@@ -1,0 +1,15 @@
+{
+  "name": "8bitcpu-compiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hexdump-nodejs": "^0.1.0",
+    "shelljs": "^0.8.4"
+  }
+}
