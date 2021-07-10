@@ -2,39 +2,42 @@ const fs = require('fs');
 const shell = require('shelljs')
 const readline = require('readline');
 const { hexdump, writeToBin } = require('./util');
-const { ROM1, ROM2, ROM3, CHIP_ONE, CHIP_TWO, CHIP_THREE } = require('./opcodes/chips');
 
 const opcodes = {
+    CHIP_ONE_INACTIVE, CHIP_TWO_INACTIVE, CHIP_THREE_INACTIVE,
     //
-    NOOP,
-    LDA,
-    OUT,
-    ADD,
-    SUB,
-    STA,
-    LDI,
-    JMP,
-    JC,
-    JZ,
-    HLT
+    NOOP, LDA, OUT, ADD, SUB, STA, LDI, JMP, JC, JZ, HLT
 } = require('./opcodes');
 
+// MAIN
 const MICROCODE = [
     NOOP,
 ];
+
+
+
+
+//
+//
+//
+//
+// Fill chips with NOOP
+const ROM1 = new Array(32768).fill(CHIP_ONE_INACTIVE);
+const ROM2 = new Array(32768).fill(CHIP_TWO_INACTIVE >> 8);
+const ROM3 = new Array(32768).fill(CHIP_THREE_INACTIVE >> 16);
 
 // Parse Instruction into each ROM chip
 for (let i = 0; i < MICROCODE.length; i++) {
     for (let step = 0; step < MICROCODE[i].length; step++) {
         ROM1[((i + 1)*128 - 128) + step] = MICROCODE[i][step] & 0xff
             ? (MICROCODE[i][step] & 0xff)
-            : CHIP_ONE().INACTIVE >> 0;
+            : CHIP_ONE_INACTIVE >> 0;
         ROM2[((i + 1)*128 - 128) + step] = MICROCODE[i][step] >> 8 & 0xff
             ? (MICROCODE[i][step] >> 8 & 0xff)
-            : CHIP_TWO().INACTIVE >> 8;
+            : CHIP_TWO_INACTIVE >> 8;
         ROM3[((i + 1)*128 - 128) + step] = MICROCODE[i][step] >> 16 & 0xff
             ? (MICROCODE[i][step] >> 16 & 0xff)
-            : CHIP_THREE().INACTIVE >> 16;
+            : CHIP_THREE_INACTIVE >> 16;
     }
 }
 
