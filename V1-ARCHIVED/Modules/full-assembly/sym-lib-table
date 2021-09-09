@@ -1,0 +1,7 @@
+(sym_lib_table
+  (lib (name DISPLAY-rescue)(type Legacy)(uri /Users/stephenyoung/Documents/8-bit-computer/modules/display-module/DISPLAY-rescue.lib)(options "")(descr ""))
+  (lib (name full-assembly-rescue)(type Legacy)(uri ${KIPRJMOD}/full-assembly-rescue.lib)(options "")(descr ""))
+  (lib (name ram-combined-rescue)(type Legacy)(uri /Users/stephenyoung/KiCad/8-bit-computer/v2-modules/ram/ram-combined-rescue.lib)(options "")(descr ""))
+  (lib (name CLOCK-rescue)(type Legacy)(uri /Users/stephenyoung/KiCad/8-bit-computer/v2-modules/crystal-clock/CLOCK-rescue.lib)(options "")(descr ""))
+  (lib (name control-rescue)(type Legacy)(uri /Users/stephenyoung/KiCad/8-bit-computer/v2-modules/control/control-rescue.lib)(options "")(descr ""))
+)

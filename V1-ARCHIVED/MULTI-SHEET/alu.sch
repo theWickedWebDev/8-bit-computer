@@ -1,0 +1,186 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 28 28
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 6100 1850 0    50   Input ~ 0
+ALU_S0
+Text HLabel 6100 1950 0    50   Input ~ 0
+ALU_S1
+Text HLabel 6100 2050 0    50   Input ~ 0
+ALU_S2
+Text HLabel 6100 2150 0    50   Input ~ 0
+ALU_S3
+Text HLabel 7050 3750 2    50   Output ~ 0
+CARRY
+Text HLabel 7050 3850 2    50   Output ~ 0
+EQ
+Text HLabel 7050 3950 2    50   Output ~ 0
+GT
+$Sheet
+S 6100 1600 900  2750
+U 61456FA3
+F0 "ALU 181" 50
+F1 "dual-181.sch" 50
+F2 "ALU_MODE" I L 6100 1700 50 
+F3 "ALU_S3" I L 6100 2150 50 
+F4 "ALU_S2" I L 6100 2050 50 
+F5 "ALU_S1" I L 6100 1950 50 
+F6 "ALU_S0" I L 6100 1850 50 
+F7 "B3" I L 6100 3600 50 
+F8 "B2" I L 6100 3500 50 
+F9 "B1" I L 6100 3400 50 
+F10 "B0" I L 6100 3300 50 
+F11 "A3" I L 6100 2700 50 
+F12 "A2" I L 6100 2600 50 
+F13 "A1" I L 6100 2500 50 
+F14 "A0" I L 6100 2400 50 
+F15 "F3" O R 7000 2450 50 
+F16 "F2" O R 7000 2350 50 
+F17 "F1" O R 7000 2250 50 
+F18 "F0" O R 7000 2150 50 
+F19 "B7" I L 6100 4000 50 
+F20 "B6" I L 6100 3900 50 
+F21 "B5" I L 6100 3800 50 
+F22 "B4" I L 6100 3700 50 
+F23 "A7" I L 6100 3100 50 
+F24 "A6" I L 6100 3000 50 
+F25 "A5" I L 6100 2900 50 
+F26 "A4" I L 6100 2800 50 
+F27 "F7" O R 7000 2850 50 
+F28 "F6" O R 7000 2750 50 
+F29 "F5" O R 7000 2650 50 
+F30 "F4" O R 7000 2550 50 
+F31 "CARRY" O R 7000 3750 50 
+F32 "GT" O R 7000 3950 50 
+F33 "EQ" O R 7000 3850 50 
+$EndSheet
+$Comp
+L power:VCC #PWR012
+U 1 1 61447BFB
+P 7550 3050
+F 0 "#PWR012" H 7550 2900 50  0001 C CNN
+F 1 "VCC" V 7565 3177 50  0000 L CNN
+F 2 "" H 7550 3050 50  0001 C CNN
+F 3 "" H 7550 3050 50  0001 C CNN
+	1    7550 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 61443A66
+P 8050 3450
+F 0 "#PWR014" H 8050 3200 50  0001 C CNN
+F 1 "GND" H 8055 3277 50  0000 C CNN
+F 2 "" H 8050 3450 50  0001 C CNN
+F 3 "" H 8050 3450 50  0001 C CNN
+	1    8050 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR013
+U 1 1 61443A5C
+P 8050 1850
+F 0 "#PWR013" H 8050 1700 50  0001 C CNN
+F 1 "VCC" H 8065 2023 50  0000 C CNN
+F 2 "" H 8050 1850 50  0001 C CNN
+F 3 "" H 8050 1850 50  0001 C CNN
+	1    8050 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS245 U7
+U 1 1 61443A52
+P 8050 2650
+F 0 "U7" H 8050 2450 50  0000 C CNN
+F 1 "74LS245" H 8050 2350 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm" H 8050 2650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 8050 2650 50  0001 C CNN
+	1    8050 2650
+	1    0    0    -1  
+$EndComp
+Text HLabel 7550 3150 0    50   Input ~ 0
+ALU_OUT
+Text HLabel 6100 1700 0    50   Input ~ 0
+ALU_MODE
+Wire Wire Line
+	7000 2150 7550 2150
+Wire Wire Line
+	7550 2250 7000 2250
+Wire Wire Line
+	7550 2350 7000 2350
+Wire Wire Line
+	7000 2450 7550 2450
+Wire Wire Line
+	7550 2550 7000 2550
+Wire Wire Line
+	7000 2650 7550 2650
+Wire Wire Line
+	7550 2750 7000 2750
+Wire Wire Line
+	7000 2850 7550 2850
+Text HLabel 6100 2400 0    59   Input ~ 0
+A0
+Text HLabel 6100 2500 0    59   Input ~ 0
+A1
+Text HLabel 6100 2600 0    59   Input ~ 0
+A2
+Text HLabel 6100 2700 0    59   Input ~ 0
+A3
+Text HLabel 6100 2800 0    59   Input ~ 0
+A4
+Text HLabel 6100 2900 0    59   Input ~ 0
+A5
+Text HLabel 6100 3000 0    59   Input ~ 0
+A6
+Text HLabel 6100 3100 0    59   Input ~ 0
+A7
+Text HLabel 6100 3300 0    59   Input ~ 0
+B0
+Text HLabel 6100 3500 0    59   Input ~ 0
+B2
+Text HLabel 6100 3600 0    59   Input ~ 0
+B3
+Text HLabel 6100 3700 0    59   Input ~ 0
+B4
+Text HLabel 6100 3800 0    59   Input ~ 0
+B5
+Text HLabel 6100 3900 0    59   Input ~ 0
+B6
+Text HLabel 6100 4000 0    59   Input ~ 0
+B7
+Text HLabel 6100 3400 0    59   Input ~ 0
+B1
+Wire Wire Line
+	7050 3750 7000 3750
+Wire Wire Line
+	7000 3850 7050 3850
+Wire Wire Line
+	7050 3950 7000 3950
+Text GLabel 8550 2150 2    47   3State ~ 0
+BUS_00
+Text GLabel 8550 2250 2    47   3State ~ 0
+BUS_01
+Text GLabel 8550 2350 2    47   3State ~ 0
+BUS_02
+Text GLabel 8550 2450 2    47   3State ~ 0
+BUS_03
+Text GLabel 8550 2550 2    47   3State ~ 0
+BUS_04
+Text GLabel 8550 2650 2    47   3State ~ 0
+BUS_05
+Text GLabel 8550 2750 2    47   3State ~ 0
+BUS_06
+Text GLabel 8550 2850 2    47   3State ~ 0
+BUS_07
+$EndSCHEMATC

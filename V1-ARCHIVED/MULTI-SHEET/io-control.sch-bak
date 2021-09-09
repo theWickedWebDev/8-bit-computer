@@ -1,0 +1,962 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 27 28
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 7000 2100 0    50   Input ~ 0
+IORQ
+Text HLabel 3150 5150 0    50   Input ~ 0
+MEMRQ
+Text HLabel 11250 2300 0    50   Input ~ 0
+READ
+Text HLabel 7000 2300 0    50   Input ~ 0
+WRITE
+$Comp
+L 74xx:74LS04 U48
+U 1 1 63A655D5
+P 2850 6000
+F 0 "U48" H 2850 6225 50  0001 C CNN
+F 1 "74LS04" H 2850 6226 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 2850 6000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 2850 6000 50  0001 C CNN
+	1    2850 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U48
+U 2 1 63A6602E
+P 7900 2200
+F 0 "U48" H 7900 2425 50  0001 C CNN
+F 1 "74LS04" H 7900 2426 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 7900 2200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 7900 2200 50  0001 C CNN
+	2    7900 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U48
+U 7 1 63A66604
+P 3200 2850
+F 0 "U48" H 3430 2896 50  0000 L CNN
+F 1 "74LS04" H 3430 2805 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3200 2850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 3200 2850 50  0001 C CNN
+	7    3200 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U49
+U 1 1 63A675A4
+P 3450 5250
+F 0 "U49" H 3450 5575 50  0000 C CNN
+F 1 "74LS08" H 3450 5484 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3450 5250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 3450 5250 50  0001 C CNN
+	1    3450 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U49
+U 2 1 63A686B4
+P 3450 5900
+F 0 "U49" H 3450 6225 50  0000 C CNN
+F 1 "74LS08" H 3450 6134 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 3450 5900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 3450 5900 50  0001 C CNN
+	2    3450 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U49
+U 5 1 63A691C7
+P 4050 2850
+F 0 "U49" H 4280 2896 50  0000 L CNN
+F 1 "74LS08" H 4280 2805 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 4050 2850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 4050 2850 50  0001 C CNN
+	5    4050 2850
+	1    0    0    -1  
+$EndComp
+Text HLabel 3150 5350 0    47   Input ~ 0
+MAR_15
+Text Label 3950 5900 0    47   ~ 0
+RAM_ENABLE
+Text HLabel 3150 5800 0    50   Input ~ 0
+MEMRQ
+Text HLabel 2550 6000 0    47   Input ~ 0
+MAR_15
+Text Label 3950 5250 0    47   ~ 0
+ROM_ENABLE
+$Comp
+L power:GND #PWR038
+U 1 1 63AD11AE
+P 4050 3350
+F 0 "#PWR038" H 4050 3100 50  0001 C CNN
+F 1 "GND" H 4055 3177 50  0000 C CNN
+F 2 "" H 4050 3350 50  0001 C CNN
+F 3 "" H 4050 3350 50  0001 C CNN
+	1    4050 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 63AD1A2E
+P 3200 3350
+F 0 "#PWR010" H 3200 3100 50  0001 C CNN
+F 1 "GND" H 3205 3177 50  0000 C CNN
+F 2 "" H 3200 3350 50  0001 C CNN
+F 3 "" H 3200 3350 50  0001 C CNN
+	1    3200 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR011
+U 1 1 63AD22E6
+P 4050 2350
+F 0 "#PWR011" H 4050 2200 50  0001 C CNN
+F 1 "VCC" H 4065 2523 50  0000 C CNN
+F 2 "" H 4050 2350 50  0001 C CNN
+F 3 "" H 4050 2350 50  0001 C CNN
+	1    4050 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR09
+U 1 1 63AD2A7E
+P 3200 2350
+F 0 "#PWR09" H 3200 2200 50  0001 C CNN
+F 1 "VCC" H 3215 2523 50  0000 C CNN
+F 2 "" H 3200 2350 50  0001 C CNN
+F 3 "" H 3200 2350 50  0001 C CNN
+	1    3200 2350
+	1    0    0    -1  
+$EndComp
+Text HLabel 11250 2100 0    50   Input ~ 0
+IORQ
+$Comp
+L 74xx:74LS04 U46
+U 3 1 63B577BD
+P 12150 2200
+F 0 "U46" H 12150 2425 50  0001 C CNN
+F 1 "74LS04" H 12150 2426 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 12150 2200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 12150 2200 50  0001 C CNN
+	3    12150 2200
+	1    0    0    -1  
+$EndComp
+Text Label 13800 1900 0    47   ~ 0
+INPUT_00
+Text Label 13800 2000 0    47   ~ 0
+INPUT_01
+Text Label 13800 2100 0    47   ~ 0
+INPUT_02
+Text Label 9550 1900 0    47   ~ 0
+OUTPUT_00
+Text Label 9550 2000 0    47   ~ 0
+OUTPUT_01
+Text Label 9550 2100 0    47   ~ 0
+OUTPUT_02
+Text Label 9550 2200 0    47   ~ 0
+OUTPUT_03
+$Comp
+L 74xx:74LS245 U51
+U 1 1 63B7932B
+P 6900 3800
+F 0 "U51" H 6900 4000 50  0000 C CNN
+F 1 "74LS245" H 6900 3550 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm" H 6900 3800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 6900 3800 50  0001 C CNN
+	1    6900 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR040
+U 1 1 63B84798
+P 6900 4600
+F 0 "#PWR040" H 6900 4350 50  0001 C CNN
+F 1 "GND" H 6905 4427 50  0000 C CNN
+F 2 "" H 6900 4600 50  0001 C CNN
+F 3 "" H 6900 4600 50  0001 C CNN
+	1    6900 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR039
+U 1 1 63B84CE2
+P 6900 3000
+F 0 "#PWR039" H 6900 2850 50  0001 C CNN
+F 1 "VCC" H 6915 3173 50  0000 C CNN
+F 2 "" H 6900 3000 50  0001 C CNN
+F 3 "" H 6900 3000 50  0001 C CNN
+	1    6900 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS374 U52
+U 1 1 63B86363
+P 6950 7050
+F 0 "U52" H 6950 7000 50  0000 C CNN
+F 1 "74LS374" H 7000 6750 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm" H 6950 7050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS374" H 6950 7050 50  0001 C CNN
+	1    6950 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR041
+U 1 1 63B87204
+P 6950 6250
+F 0 "#PWR041" H 6950 6100 50  0001 C CNN
+F 1 "VCC" H 6965 6423 50  0000 C CNN
+F 2 "" H 6950 6250 50  0001 C CNN
+F 3 "" H 6950 6250 50  0001 C CNN
+	1    6950 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR042
+U 1 1 63B8774F
+P 6950 7850
+F 0 "#PWR042" H 6950 7600 50  0001 C CNN
+F 1 "GND" H 6955 7677 50  0000 C CNN
+F 2 "" H 6950 7850 50  0001 C CNN
+F 3 "" H 6950 7850 50  0001 C CNN
+	1    6950 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS139 U50
+U 1 1 63B8C01C
+P 9050 2000
+F 0 "U50" H 9050 2367 50  0000 C CNN
+F 1 "74LS139" H 9050 2276 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 9050 2000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74ls139a.pdf" H 9050 2000 50  0001 C CNN
+	1    9050 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS139 U50
+U 2 1 63B8CAAB
+P 13300 2000
+F 0 "U50" H 13300 2367 50  0000 C CNN
+F 1 "74LS139" H 13300 2276 50  0000 C CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 13300 2000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74ls139a.pdf" H 13300 2000 50  0001 C CNN
+	2    13300 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS139 U50
+U 3 1 63B8DA70
+P 4900 2850
+F 0 "U50" H 5130 2896 50  0000 L CNN
+F 1 "74LS139" H 5130 2805 50  0000 L CNN
+F 2 "Package_DIP:DIP-16_W7.62mm" H 4900 2850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74ls139a.pdf" H 4900 2850 50  0001 C CNN
+	3    4900 2850
+	1    0    0    -1  
+$EndComp
+Text HLabel 12800 2000 0    47   Input ~ 0
+MAR_01
+Text HLabel 12800 1900 0    47   Input ~ 0
+MAR_00
+Text HLabel 8550 2000 0    47   Input ~ 0
+MAR_01
+Text HLabel 8550 1900 0    47   Input ~ 0
+MAR_00
+$Comp
+L 74xx:74LS08 U49
+U 3 1 63B9A010
+P 7300 2200
+F 0 "U49" H 7300 2525 50  0000 C CNN
+F 1 "74LS08" H 7300 2434 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 7300 2200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 7300 2200 50  0001 C CNN
+	3    7300 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U49
+U 4 1 63B9BB62
+P 11550 2200
+F 0 "U49" H 11550 2525 50  0001 C CNN
+F 1 "74LS08" H 11550 2434 50  0001 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 11550 2200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 11550 2200 50  0001 C CNN
+	4    11550 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR050
+U 1 1 63BAB7A9
+P 4900 3350
+F 0 "#PWR050" H 4900 3100 50  0001 C CNN
+F 1 "GND" H 4905 3177 50  0000 C CNN
+F 2 "" H 4900 3350 50  0001 C CNN
+F 3 "" H 4900 3350 50  0001 C CNN
+	1    4900 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR043
+U 1 1 63BABB49
+P 4900 2350
+F 0 "#PWR043" H 4900 2200 50  0001 C CNN
+F 1 "VCC" H 4915 2523 50  0000 C CNN
+F 2 "" H 4900 2350 50  0001 C CNN
+F 3 "" H 4900 2350 50  0001 C CNN
+	1    4900 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS245 U53
+U 1 1 63BCE200
+P 9050 3750
+F 0 "U53" H 9050 3950 50  0000 C CNN
+F 1 "74LS245" H 9050 3500 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm" H 9050 3750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 9050 3750 50  0001 C CNN
+	1    9050 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR056
+U 1 1 63BCE20A
+P 9050 4550
+F 0 "#PWR056" H 9050 4300 50  0001 C CNN
+F 1 "GND" H 9055 4377 50  0000 C CNN
+F 2 "" H 9050 4550 50  0001 C CNN
+F 3 "" H 9050 4550 50  0001 C CNN
+	1    9050 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR055
+U 1 1 63BCE214
+P 9050 2950
+F 0 "#PWR055" H 9050 2800 50  0001 C CNN
+F 1 "VCC" H 9065 3123 50  0000 C CNN
+F 2 "" H 9050 2950 50  0001 C CNN
+F 3 "" H 9050 2950 50  0001 C CNN
+	1    9050 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS245 U55
+U 1 1 63BD3B76
+P 11200 3750
+F 0 "U55" H 11200 3950 50  0000 C CNN
+F 1 "74LS245" H 11200 3500 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm" H 11200 3750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 11200 3750 50  0001 C CNN
+	1    11200 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR062
+U 1 1 63BD3B80
+P 11200 4550
+F 0 "#PWR062" H 11200 4300 50  0001 C CNN
+F 1 "GND" H 11205 4377 50  0000 C CNN
+F 2 "" H 11200 4550 50  0001 C CNN
+F 3 "" H 11200 4550 50  0001 C CNN
+	1    11200 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR061
+U 1 1 63BD3B8A
+P 11200 2950
+F 0 "#PWR061" H 11200 2800 50  0001 C CNN
+F 1 "VCC" H 11215 3123 50  0000 C CNN
+F 2 "" H 11200 2950 50  0001 C CNN
+F 3 "" H 11200 2950 50  0001 C CNN
+	1    11200 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS245 U57
+U 1 1 63BD3B94
+P 13300 3750
+F 0 "U57" H 13300 3950 50  0000 C CNN
+F 1 "74LS245" H 13300 3500 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm" H 13300 3750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 13300 3750 50  0001 C CNN
+	1    13300 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR068
+U 1 1 63BD3B9E
+P 13300 4550
+F 0 "#PWR068" H 13300 4300 50  0001 C CNN
+F 1 "GND" H 13305 4377 50  0000 C CNN
+F 2 "" H 13300 4550 50  0001 C CNN
+F 3 "" H 13300 4550 50  0001 C CNN
+	1    13300 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR067
+U 1 1 63BD3BA8
+P 13300 2950
+F 0 "#PWR067" H 13300 2800 50  0001 C CNN
+F 1 "VCC" H 13315 3123 50  0000 C CNN
+F 2 "" H 13300 2950 50  0001 C CNN
+F 3 "" H 13300 2950 50  0001 C CNN
+	1    13300 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS374 U54
+U 1 1 63BE6B57
+P 9100 7050
+F 0 "U54" H 9100 7000 50  0000 C CNN
+F 1 "74LS374" H 9150 6750 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm" H 9100 7050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS374" H 9100 7050 50  0001 C CNN
+	1    9100 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR057
+U 1 1 63BE6B61
+P 9100 6250
+F 0 "#PWR057" H 9100 6100 50  0001 C CNN
+F 1 "VCC" H 9115 6423 50  0000 C CNN
+F 2 "" H 9100 6250 50  0001 C CNN
+F 3 "" H 9100 6250 50  0001 C CNN
+	1    9100 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR058
+U 1 1 63BE6B6B
+P 9100 7850
+F 0 "#PWR058" H 9100 7600 50  0001 C CNN
+F 1 "GND" H 9105 7677 50  0000 C CNN
+F 2 "" H 9100 7850 50  0001 C CNN
+F 3 "" H 9100 7850 50  0001 C CNN
+	1    9100 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS374 U56
+U 1 1 63BE9C0B
+P 11250 7050
+F 0 "U56" H 11250 7000 50  0000 C CNN
+F 1 "74LS374" H 11300 6750 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm" H 11250 7050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS374" H 11250 7050 50  0001 C CNN
+	1    11250 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR063
+U 1 1 63BE9C15
+P 11250 6250
+F 0 "#PWR063" H 11250 6100 50  0001 C CNN
+F 1 "VCC" H 11265 6423 50  0000 C CNN
+F 2 "" H 11250 6250 50  0001 C CNN
+F 3 "" H 11250 6250 50  0001 C CNN
+	1    11250 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR064
+U 1 1 63BE9C1F
+P 11250 7850
+F 0 "#PWR064" H 11250 7600 50  0001 C CNN
+F 1 "GND" H 11255 7677 50  0000 C CNN
+F 2 "" H 11250 7850 50  0001 C CNN
+F 3 "" H 11250 7850 50  0001 C CNN
+	1    11250 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS374 U58
+U 1 1 63BE9C29
+P 13350 7050
+F 0 "U58" H 13350 7000 50  0000 C CNN
+F 1 "74LS374" H 13400 6750 50  0000 C CNN
+F 2 "Package_DIP:DIP-20_W7.62mm" H 13350 7050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS374" H 13350 7050 50  0001 C CNN
+	1    13350 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR069
+U 1 1 63BE9C33
+P 13350 6250
+F 0 "#PWR069" H 13350 6100 50  0001 C CNN
+F 1 "VCC" H 13365 6423 50  0000 C CNN
+F 2 "" H 13350 6250 50  0001 C CNN
+F 3 "" H 13350 6250 50  0001 C CNN
+	1    13350 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR070
+U 1 1 63BE9C3D
+P 13350 7850
+F 0 "#PWR070" H 13350 7600 50  0001 C CNN
+F 1 "GND" H 13355 7677 50  0000 C CNN
+F 2 "" H 13350 7850 50  0001 C CNN
+F 3 "" H 13350 7850 50  0001 C CNN
+	1    13350 7850
+	1    0    0    -1  
+$EndComp
+Text Label 6250 4300 2    47   ~ 0
+INPUT_00
+Text Label 8400 4250 2    47   ~ 0
+INPUT_01
+Text Label 10500 4250 2    47   ~ 0
+INPUT_02
+Text Label 6300 7450 2    47   ~ 0
+OUTPUT_00
+Wire Wire Line
+	6250 4300 6400 4300
+Text Label 8450 7450 2    47   ~ 0
+OUTPUT_01
+Wire Wire Line
+	8400 4250 8550 4250
+Text Label 10600 7450 2    47   ~ 0
+OUTPUT_02
+Wire Wire Line
+	10500 4250 10700 4250
+Text Label 12750 7450 2    47   ~ 0
+OUTPUT_03
+Wire Wire Line
+	12750 7450 12850 7450
+Wire Wire Line
+	10600 7450 10750 7450
+Wire Wire Line
+	8450 7450 8600 7450
+Wire Wire Line
+	6300 7450 6450 7450
+$Comp
+L power:GND #PWR052
+U 1 1 63C08EAF
+P 6450 7550
+F 0 "#PWR052" H 6450 7300 50  0001 C CNN
+F 1 "GND" V 6455 7422 50  0000 R CNN
+F 2 "" H 6450 7550 50  0001 C CNN
+F 3 "" H 6450 7550 50  0001 C CNN
+	1    6450 7550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR054
+U 1 1 63C093AC
+P 8600 7550
+F 0 "#PWR054" H 8600 7300 50  0001 C CNN
+F 1 "GND" V 8605 7422 50  0000 R CNN
+F 2 "" H 8600 7550 50  0001 C CNN
+F 3 "" H 8600 7550 50  0001 C CNN
+	1    8600 7550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR060
+U 1 1 63C0982D
+P 10750 7550
+F 0 "#PWR060" H 10750 7300 50  0001 C CNN
+F 1 "GND" V 10755 7422 50  0000 R CNN
+F 2 "" H 10750 7550 50  0001 C CNN
+F 3 "" H 10750 7550 50  0001 C CNN
+	1    10750 7550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR066
+U 1 1 63C09C19
+P 12850 7550
+F 0 "#PWR066" H 12850 7300 50  0001 C CNN
+F 1 "GND" V 12855 7422 50  0000 R CNN
+F 2 "" H 12850 7550 50  0001 C CNN
+F 3 "" H 12850 7550 50  0001 C CNN
+	1    12850 7550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR051
+U 1 1 63C0A8AB
+P 6400 4200
+F 0 "#PWR051" H 6400 4050 50  0001 C CNN
+F 1 "VCC" V 6415 4327 50  0000 L CNN
+F 2 "" H 6400 4200 50  0001 C CNN
+F 3 "" H 6400 4200 50  0001 C CNN
+	1    6400 4200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR053
+U 1 1 63C0B06B
+P 8550 4150
+F 0 "#PWR053" H 8550 4000 50  0001 C CNN
+F 1 "VCC" V 8565 4277 50  0000 L CNN
+F 2 "" H 8550 4150 50  0001 C CNN
+F 3 "" H 8550 4150 50  0001 C CNN
+	1    8550 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR059
+U 1 1 63C0B605
+P 10700 4150
+F 0 "#PWR059" H 10700 4000 50  0001 C CNN
+F 1 "VCC" V 10715 4277 50  0000 L CNN
+F 2 "" H 10700 4150 50  0001 C CNN
+F 3 "" H 10700 4150 50  0001 C CNN
+	1    10700 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR065
+U 1 1 63C0BD9D
+P 12800 4150
+F 0 "#PWR065" H 12800 4000 50  0001 C CNN
+F 1 "VCC" V 12815 4277 50  0000 L CNN
+F 2 "" H 12800 4150 50  0001 C CNN
+F 3 "" H 12800 4150 50  0001 C CNN
+	1    12800 4150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J11
+U 1 1 63C9CD08
+P 7650 6850
+F 0 "J11" H 7730 6796 50  0000 L CNN
+F 1 "Conn_01x08" H 7730 6751 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 7650 6850 50  0001 C CNN
+F 3 "~" H 7650 6850 50  0001 C CNN
+	1    7650 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J13
+U 1 1 63C9E864
+P 9800 6850
+F 0 "J13" H 9880 6796 50  0000 L CNN
+F 1 "Conn_01x08" H 9880 6751 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 9800 6850 50  0001 C CNN
+F 3 "~" H 9800 6850 50  0001 C CNN
+	1    9800 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J15
+U 1 1 63C9FB1A
+P 11950 6850
+F 0 "J15" H 12030 6796 50  0000 L CNN
+F 1 "Conn_01x08" H 12030 6751 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 11950 6850 50  0001 C CNN
+F 3 "~" H 11950 6850 50  0001 C CNN
+	1    11950 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J17
+U 1 1 63CA0267
+P 14050 6850
+F 0 "J17" H 14130 6796 50  0000 L CNN
+F 1 "Conn_01x08" H 14130 6751 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 14050 6850 50  0001 C CNN
+F 3 "~" H 14050 6850 50  0001 C CNN
+	1    14050 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J16
+U 1 1 63CA0870
+P 12600 3650
+F 0 "J16" H 12518 3117 50  0000 C CNN
+F 1 "Conn_01x08" H 12680 3551 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 12600 3650 50  0001 C CNN
+F 3 "~" H 12600 3650 50  0001 C CNN
+	1    12600 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J14
+U 1 1 63CA3052
+P 10500 3650
+F 0 "J14" H 10418 3117 50  0000 C CNN
+F 1 "Conn_01x08" H 10580 3551 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 10500 3650 50  0001 C CNN
+F 3 "~" H 10500 3650 50  0001 C CNN
+	1    10500 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J12
+U 1 1 63CA3B4B
+P 8350 3650
+F 0 "J12" H 8268 3117 50  0000 C CNN
+F 1 "Conn_01x08" H 8430 3551 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 8350 3650 50  0001 C CNN
+F 3 "~" H 8350 3650 50  0001 C CNN
+	1    8350 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 J3
+U 1 1 63CA5547
+P 6200 3700
+F 0 "J3" H 6118 3167 50  0000 C CNN
+F 1 "Conn_01x08" H 6280 3601 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 6200 3700 50  0001 C CNN
+F 3 "~" H 6200 3700 50  0001 C CNN
+	1    6200 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J18
+U 1 1 63D247C0
+P 4700 5550
+F 0 "J18" H 4780 5542 50  0001 L CNN
+F 1 "Conn_01x02" H 4780 5451 50  0001 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 4700 5550 50  0001 C CNN
+F 3 "~" H 4700 5550 50  0001 C CNN
+	1    4700 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 5550 4500 5250
+Wire Wire Line
+	3750 5250 4500 5250
+Wire Wire Line
+	4500 5900 4500 5650
+Wire Wire Line
+	3750 5900 4500 5900
+$Comp
+L Connector:Screw_Terminal_01x02 J19
+U 1 1 63FDE887
+P 4700 4700
+F 0 "J19" H 4780 4692 50  0001 L CNN
+F 1 "Conn_01x02" H 4780 4601 50  0001 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 4700 4700 50  0001 C CNN
+F 3 "~" H 4700 4700 50  0001 C CNN
+	1    4700 4700
+	1    0    0    -1  
+$EndComp
+Text HLabel 4500 4700 0    50   Input ~ 0
+WRITE
+Text HLabel 4500 4800 0    50   Input ~ 0
+READ
+Wire Wire Line
+	8200 2200 8550 2200
+Wire Wire Line
+	12450 2200 12800 2200
+$Comp
+L 74xx:74LS04 U?
+U 4 1 6516B91B
+P 14750 4850
+AR Path="/64BE4D8C/6516B91B" Ref="U?"  Part="1" 
+AR Path="/63979288/6516B91B" Ref="U48"  Part="4" 
+F 0 "U48" H 14750 4533 50  0000 C CNN
+F 1 "74LS04" H 14750 4624 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 14750 4850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 14750 4850 50  0001 C CNN
+	4    14750 4850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3650 7200 3750 7200
+Wire Wire Line
+	3750 7200 3750 7350
+$Comp
+L Device:R_Small_US R?
+U 1 1 65172D99
+P 3750 7450
+AR Path="/65172D99" Ref="R?"  Part="1" 
+AR Path="/64BE4D8C/65172D99" Ref="R?"  Part="1" 
+AR Path="/63979288/65172D99" Ref="R1"  Part="1" 
+F 0 "R1" H 3818 7450 50  0001 L CNN
+F 1 "R_Small_US" H 3818 7405 50  0001 L CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 3750 7450 50  0001 C CNN
+F 3 "~" H 3750 7450 50  0001 C CNN
+	1    3750 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 65172D9F
+P 3750 7550
+AR Path="/65172D9F" Ref="#PWR?"  Part="1" 
+AR Path="/64BE4D8C/65172D9F" Ref="#PWR?"  Part="1" 
+AR Path="/63979288/65172D9F" Ref="#PWR091"  Part="1" 
+F 0 "#PWR091" H 3750 7300 50  0001 C CNN
+F 1 "GND" H 3755 7377 50  0000 C CNN
+F 2 "" H 3750 7550 50  0001 C CNN
+F 3 "" H 3750 7550 50  0001 C CNN
+	1    3750 7550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J?
+U 1 1 65172DA5
+P 3950 7100
+AR Path="/64BE4D8C/65172DA5" Ref="J?"  Part="1" 
+AR Path="/63979288/65172DA5" Ref="J6"  Part="1" 
+F 0 "J6" H 4030 7092 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 4030 7001 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal" H 3950 7100 50  0001 C CNN
+F 3 "~" H 3950 7100 50  0001 C CNN
+	1    3950 7100
+	1    0    0    -1  
+$EndComp
+Connection ~ 3750 7200
+Wire Wire Line
+	3750 7200 3750 7100
+NoConn ~ 13800 2200
+Wire Wire Line
+	14450 4850 12600 4850
+Wire Wire Line
+	12600 4850 12600 4250
+Wire Wire Line
+	12600 4250 12800 4250
+Text GLabel 3650 7200 0    47   Output ~ 0
+NMI
+Text GLabel 15050 4850 2    47   Input ~ 0
+INTERRUPT
+Text GLabel 7400 3300 2    47   3State ~ 0
+BUS_00
+Text GLabel 7400 3400 2    47   3State ~ 0
+BUS_01
+Text GLabel 7400 3500 2    47   3State ~ 0
+BUS_02
+Text GLabel 7400 3600 2    47   3State ~ 0
+BUS_03
+Text GLabel 7400 3700 2    47   3State ~ 0
+BUS_04
+Text GLabel 7400 3800 2    47   3State ~ 0
+BUS_05
+Text GLabel 7400 3900 2    47   3State ~ 0
+BUS_06
+Text GLabel 7400 4000 2    47   3State ~ 0
+BUS_07
+Text GLabel 9550 3250 2    47   3State ~ 0
+BUS_00
+Text GLabel 9550 3350 2    47   3State ~ 0
+BUS_01
+Text GLabel 9550 3450 2    47   3State ~ 0
+BUS_02
+Text GLabel 9550 3550 2    47   3State ~ 0
+BUS_03
+Text GLabel 9550 3650 2    47   3State ~ 0
+BUS_04
+Text GLabel 9550 3750 2    47   3State ~ 0
+BUS_05
+Text GLabel 9550 3850 2    47   3State ~ 0
+BUS_06
+Text GLabel 9550 3950 2    47   3State ~ 0
+BUS_07
+Text GLabel 11700 3250 2    47   3State ~ 0
+BUS_00
+Text GLabel 11700 3350 2    47   3State ~ 0
+BUS_01
+Text GLabel 11700 3450 2    47   3State ~ 0
+BUS_02
+Text GLabel 11700 3550 2    47   3State ~ 0
+BUS_03
+Text GLabel 11700 3650 2    47   3State ~ 0
+BUS_04
+Text GLabel 11700 3750 2    47   3State ~ 0
+BUS_05
+Text GLabel 11700 3850 2    47   3State ~ 0
+BUS_06
+Text GLabel 11700 3950 2    47   3State ~ 0
+BUS_07
+Text GLabel 13800 3250 2    47   3State ~ 0
+BUS_00
+Text GLabel 13800 3350 2    47   3State ~ 0
+BUS_01
+Text GLabel 13800 3450 2    47   3State ~ 0
+BUS_02
+Text GLabel 13800 3550 2    47   3State ~ 0
+BUS_03
+Text GLabel 13800 3650 2    47   3State ~ 0
+BUS_04
+Text GLabel 13800 3750 2    47   3State ~ 0
+BUS_05
+Text GLabel 13800 3850 2    47   3State ~ 0
+BUS_06
+Text GLabel 13800 3950 2    47   3State ~ 0
+BUS_07
+Text GLabel 6450 6550 0    47   3State ~ 0
+BUS_00
+Text GLabel 6450 6650 0    47   3State ~ 0
+BUS_01
+Text GLabel 6450 6750 0    47   3State ~ 0
+BUS_02
+Text GLabel 6450 6850 0    47   3State ~ 0
+BUS_03
+Text GLabel 6450 6950 0    47   3State ~ 0
+BUS_04
+Text GLabel 6450 7050 0    47   3State ~ 0
+BUS_05
+Text GLabel 6450 7150 0    47   3State ~ 0
+BUS_06
+Text GLabel 6450 7250 0    47   3State ~ 0
+BUS_07
+Text GLabel 8600 6550 0    47   3State ~ 0
+BUS_00
+Text GLabel 8600 6650 0    47   3State ~ 0
+BUS_01
+Text GLabel 8600 6750 0    47   3State ~ 0
+BUS_02
+Text GLabel 8600 6850 0    47   3State ~ 0
+BUS_03
+Text GLabel 8600 6950 0    47   3State ~ 0
+BUS_04
+Text GLabel 8600 7050 0    47   3State ~ 0
+BUS_05
+Text GLabel 8600 7150 0    47   3State ~ 0
+BUS_06
+Text GLabel 8600 7250 0    47   3State ~ 0
+BUS_07
+Text GLabel 10750 6550 0    47   3State ~ 0
+BUS_00
+Text GLabel 10750 6650 0    47   3State ~ 0
+BUS_01
+Text GLabel 10750 6750 0    47   3State ~ 0
+BUS_02
+Text GLabel 10750 6850 0    47   3State ~ 0
+BUS_03
+Text GLabel 10750 6950 0    47   3State ~ 0
+BUS_04
+Text GLabel 10750 7050 0    47   3State ~ 0
+BUS_05
+Text GLabel 10750 7150 0    47   3State ~ 0
+BUS_06
+Text GLabel 10750 7250 0    47   3State ~ 0
+BUS_07
+Text GLabel 12850 6550 0    47   3State ~ 0
+BUS_00
+Text GLabel 12850 6650 0    47   3State ~ 0
+BUS_01
+Text GLabel 12850 6750 0    47   3State ~ 0
+BUS_02
+Text GLabel 12850 6850 0    47   3State ~ 0
+BUS_03
+Text GLabel 12850 6950 0    47   3State ~ 0
+BUS_04
+Text GLabel 12850 7050 0    47   3State ~ 0
+BUS_05
+Text GLabel 12850 7150 0    47   3State ~ 0
+BUS_06
+Text GLabel 12850 7250 0    47   3State ~ 0
+BUS_07
+$EndSCHEMATC

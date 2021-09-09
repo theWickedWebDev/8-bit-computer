@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name breadboard-prototype-register-rescue)(type Legacy)(uri ${KIPRJMOD}/breadboard-prototype-register-rescue.lib)(options "")(descr ""))
+)

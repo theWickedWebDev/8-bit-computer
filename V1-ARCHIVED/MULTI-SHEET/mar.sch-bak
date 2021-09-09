@@ -1,0 +1,225 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 9 28
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 4400 2300 950  1350
+U 61615DEA
+F0 "MAR LSB Register" 50
+F1 "register.sch" 50
+F2 "EN" I L 4400 2450 50 
+F3 "D0" I L 4400 2700 50 
+F4 "D1" I L 4400 2800 50 
+F5 "D2" I L 4400 2900 50 
+F6 "D3" I L 4400 3000 50 
+F7 "Q0" O R 5350 2500 50 
+F8 "Q1" O R 5350 2600 50 
+F9 "Q2" O R 5350 2700 50 
+F10 "Q3" O R 5350 2800 50 
+F11 "D4" I L 4400 3100 50 
+F12 "D5" I L 4400 3200 50 
+F13 "D6" I L 4400 3300 50 
+F14 "D7" I L 4400 3400 50 
+F15 "Q4" O R 5350 2900 50 
+F16 "Q5" O R 5350 3000 50 
+F17 "Q6" O R 5350 3100 50 
+F18 "Q7" O R 5350 3200 50 
+$EndSheet
+Text HLabel 3650 2450 0    50   Input ~ 0
+MAR_LSB_IN
+Text HLabel 5450 2500 2    50   Output ~ 0
+MAR_00
+Wire Wire Line
+	5450 2500 5350 2500
+Text HLabel 5450 2600 2    50   Output ~ 0
+MAR_01
+Wire Wire Line
+	5450 2600 5350 2600
+Wire Wire Line
+	5450 2700 5350 2700
+Text HLabel 5450 2800 2    50   Output ~ 0
+MAR_03
+Wire Wire Line
+	5450 2800 5350 2800
+Text HLabel 5450 2900 2    50   Output ~ 0
+MAR_04
+Wire Wire Line
+	5450 2900 5350 2900
+Text HLabel 5450 3000 2    50   Output ~ 0
+MAR_05
+Wire Wire Line
+	5450 3000 5350 3000
+Text HLabel 5450 3100 2    50   Output ~ 0
+MAR_06
+Wire Wire Line
+	5450 3100 5350 3100
+Text HLabel 5450 3200 2    50   Output ~ 0
+MAR_07
+Wire Wire Line
+	5450 3200 5350 3200
+Text HLabel 5450 2700 2    50   Output ~ 0
+MAR_02
+$Sheet
+S 4400 4150 950  1350
+U 6161B339
+F0 "sheet6161B339" 50
+F1 "register.sch" 50
+F2 "EN" I L 4400 4300 50 
+F3 "D0" I L 4400 4550 50 
+F4 "D1" I L 4400 4650 50 
+F5 "D2" I L 4400 4750 50 
+F6 "D3" I L 4400 4850 50 
+F7 "Q0" O R 5350 4350 50 
+F8 "Q1" O R 5350 4450 50 
+F9 "Q2" O R 5350 4550 50 
+F10 "Q3" O R 5350 4650 50 
+F11 "D4" I L 4400 4950 50 
+F12 "D5" I L 4400 5050 50 
+F13 "D6" I L 4400 5150 50 
+F14 "D7" I L 4400 5250 50 
+F15 "Q4" O R 5350 4750 50 
+F16 "Q5" O R 5350 4850 50 
+F17 "Q6" O R 5350 4950 50 
+F18 "Q7" O R 5350 5050 50 
+$EndSheet
+Text HLabel 3650 4300 0    50   Input ~ 0
+MAR_MSB_IN
+Text HLabel 5450 4350 2    50   Output ~ 0
+MAR_08
+Wire Wire Line
+	5450 4350 5350 4350
+Text HLabel 5450 4450 2    50   Output ~ 0
+MAR_09
+Wire Wire Line
+	5450 4450 5350 4450
+Wire Wire Line
+	5450 4550 5350 4550
+Text HLabel 5450 4650 2    50   Output ~ 0
+MAR_11
+Wire Wire Line
+	5450 4650 5350 4650
+Text HLabel 5450 4750 2    50   Output ~ 0
+MAR_12
+Wire Wire Line
+	5450 4750 5350 4750
+Text HLabel 5450 4850 2    50   Output ~ 0
+MAR_13
+Wire Wire Line
+	5450 4850 5350 4850
+Text HLabel 5450 4950 2    50   Output ~ 0
+MAR_14
+Wire Wire Line
+	5450 4950 5350 4950
+Text HLabel 5450 5050 2    50   Output ~ 0
+MAR_15
+Wire Wire Line
+	5450 5050 5350 5050
+Text HLabel 5450 4550 2    50   Output ~ 0
+MAR_10
+$Comp
+L 74xx:74LS04 U44
+U 1 1 63321D88
+P 4050 2450
+F 0 "U44" H 4050 2767 50  0000 C CNN
+F 1 "74LS04" H 4050 2676 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 4050 2450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 4050 2450 50  0001 C CNN
+	1    4050 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U10
+U 2 1 633227E4
+P 4050 4300
+F 0 "U10" H 4050 4617 50  0000 C CNN
+F 1 "74LS04" H 4050 4526 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 4050 4300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 4050 4300 50  0001 C CNN
+	2    4050 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U44
+U 7 1 633231E6
+P 4800 1550
+F 0 "U44" V 4433 1550 50  0000 C CNN
+F 1 "74LS04" V 4524 1550 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm" H 4800 1550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 4800 1550 50  0001 C CNN
+	7    4800 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 63324344
+P 4300 1550
+F 0 "#PWR03" H 4300 1300 50  0001 C CNN
+F 1 "GND" V 4305 1422 50  0000 R CNN
+F 2 "" H 4300 1550 50  0001 C CNN
+F 3 "" H 4300 1550 50  0001 C CNN
+	1    4300 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR04
+U 1 1 633254F8
+P 5300 1550
+F 0 "#PWR04" H 5300 1400 50  0001 C CNN
+F 1 "VCC" V 5315 1678 50  0000 L CNN
+F 2 "" H 5300 1550 50  0001 C CNN
+F 3 "" H 5300 1550 50  0001 C CNN
+	1    5300 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4350 2450 4400 2450
+Wire Wire Line
+	3650 2450 3750 2450
+Wire Wire Line
+	4350 4300 4400 4300
+Wire Wire Line
+	3750 4300 3650 4300
+Text GLabel 4400 4550 0    47   3State ~ 0
+BUS_00
+Text GLabel 4400 4650 0    47   3State ~ 0
+BUS_01
+Text GLabel 4400 4750 0    47   3State ~ 0
+BUS_02
+Text GLabel 4400 4850 0    47   3State ~ 0
+BUS_03
+Text GLabel 4400 4950 0    47   3State ~ 0
+BUS_04
+Text GLabel 4400 5050 0    47   3State ~ 0
+BUS_05
+Text GLabel 4400 5150 0    47   3State ~ 0
+BUS_06
+Text GLabel 4400 5250 0    47   3State ~ 0
+BUS_07
+Text GLabel 4400 2700 0    47   3State ~ 0
+BUS_00
+Text GLabel 4400 2800 0    47   3State ~ 0
+BUS_01
+Text GLabel 4400 2900 0    47   3State ~ 0
+BUS_02
+Text GLabel 4400 3000 0    47   3State ~ 0
+BUS_03
+Text GLabel 4400 3100 0    47   3State ~ 0
+BUS_04
+Text GLabel 4400 3200 0    47   3State ~ 0
+BUS_05
+Text GLabel 4400 3300 0    47   3State ~ 0
+BUS_06
+Text GLabel 4400 3400 0    47   3State ~ 0
+BUS_07
+$EndSCHEMATC
