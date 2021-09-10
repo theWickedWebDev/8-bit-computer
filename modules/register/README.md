@@ -11,7 +11,7 @@
 
 ![Register](https://github.com/theWickedWebDev/8-bit-computer/blob/master/modules/register/schematic.svg?raw=true)
 
-![Register](https://github.com/theWickedWebDev/8-bit-computer/blob/master/modules/register/fabrication.svg?raw=true)
+![Register](https://github.com/theWickedWebDev/8-bit-computer/blob/master/modules/register/fabrication.png?raw=true)
 
 ### Details
 
