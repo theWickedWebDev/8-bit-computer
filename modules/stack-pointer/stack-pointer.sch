@@ -1,0 +1,321 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D1
+U 1 1 613A6B76
+P -1850 2400
+F 0 "D1" V -1811 2282 50  0001 R CNN
+F 1 "19-217/GHC-YR1S2/3T" V -1902 2282 50  0001 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H -1850 2400 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf" H -1850 2400 50  0001 C CNN
+F 4 "C72043" V -1850 2400 50  0001 C CNN "JLCPCB"
+F 5 "GRN" H -1750 2300 50  0000 R CNN "Color"
+	1    -1850 2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small_US R1
+U 1 1 613A7842
+P -1850 2650
+F 0 "R1" H -1782 2696 50  0001 L CNN
+F 1 "0402WGF1001TCE" H -1782 2605 50  0001 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H -1850 2650 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf" H -1850 2650 50  0001 C CNN
+F 4 "±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS" H -1850 2650 50  0001 C CNN "Description"
+F 5 "C11702" H -1850 2650 50  0001 C CNN "JLCPCB"
+	1    -1850 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR011
+U 1 1 613A82C7
+P -1850 2750
+F 0 "#PWR011" H -1850 2500 50  0001 C CNN
+F 1 "GND" H -1845 2577 50  0000 C CNN
+F 2 "" H -1850 2750 50  0001 C CNN
+F 3 "" H -1850 2750 50  0001 C CNN
+	1    -1850 2750
+	1    0    0    -1  
+$EndComp
+Text GLabel -1850 2250 1    50   Input ~ 0
+A0
+$Comp
+L Device:C C1
+U 1 1 6146F84E
+P -450 2500
+F 0 "C1" H -450 2400 50  0000 L CNN
+F 1 "CL05A106MQ5NUNC" H -335 2455 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H -412 2350 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810191215_Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf" H -450 2500 50  0001 C CNN
+F 4 "C15525" H -450 2500 50  0001 C CNN "JLCPCB"
+F 5 "X5R 6.3V ±20% 10uF 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS" H -450 2500 50  0001 C CNN "Description"
+F 6 "10µf" V -300 2500 50  0000 C CNN "C"
+	1    -450 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 6146FF3B
+P -450 2650
+F 0 "#PWR04" H -450 2400 50  0001 C CNN
+F 1 "GND" H -445 2477 50  0000 C CNN
+F 2 "" H -450 2650 50  0001 C CNN
+F 3 "" H -450 2650 50  0001 C CNN
+	1    -450 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR03
+U 1 1 614704D9
+P -450 2350
+F 0 "#PWR03" H -450 2200 50  0001 C CNN
+F 1 "VCC" H -435 2523 50  0000 C CNN
+F 2 "" H -450 2350 50  0001 C CNN
+F 3 "" H -450 2350 50  0001 C CNN
+	1    -450 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C5
+U 1 1 61812E70
+P -1400 2450
+F 0 "C5" H -1309 2496 50  0000 L CNN
+F 1 "SMD-ECAP-5x5.8" H -1309 2405 50  0001 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.8" H -1400 2450 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810010225_Lelon-VZS101M1ATR-0506_C140924.pdf" H -1400 2450 50  0001 C CNN
+F 4 "100µf" H -1309 2405 50  0000 L CNN "C"
+F 5 "C140924" H -1400 2450 50  0001 C CNN "JLCPCB"
+F 6 "- - 5mm 100uF 10V -45℃~+105℃ ±20% 5.8mm 2000hrs 105℃ SMD,5x5.8mm Aluminum Electrolytic Capacitors - SMD ROHS" H -1400 2450 50  0001 C CNN "Description"
+	1    -1400 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR014
+U 1 1 618136D3
+P -1400 2350
+F 0 "#PWR014" H -1400 2200 50  0001 C CNN
+F 1 "VCC" H -1385 2523 50  0000 C CNN
+F 2 "" H -1400 2350 50  0001 C CNN
+F 3 "" H -1400 2350 50  0001 C CNN
+	1    -1400 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 61813B72
+P -1400 2550
+F 0 "#PWR015" H -1400 2300 50  0001 C CNN
+F 1 "GND" H -1395 2377 50  0000 C CNN
+F 2 "" H -1400 2550 50  0001 C CNN
+F 3 "" H -1400 2550 50  0001 C CNN
+	1    -1400 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR031
+U 1 1 61C8D5C3
+P -850 2800
+F 0 "#PWR031" H -850 2550 50  0001 C CNN
+F 1 "GND" H -845 2627 50  0000 C CNN
+F 2 "" H -850 2800 50  0001 C CNN
+F 3 "" H -850 2800 50  0001 C CNN
+	1    -850 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R9
+U 1 1 61C8D5CF
+P -850 2700
+F 0 "R9" H -782 2746 50  0001 L CNN
+F 1 "0402WGF1001TCE" H -782 2655 50  0001 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" H -850 2700 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf" H -850 2700 50  0001 C CNN
+F 4 "±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS" H -850 2700 50  0001 C CNN "Description"
+F 5 "C11702" H -850 2700 50  0001 C CNN "JLCPCB"
+	1    -850 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D9
+U 1 1 61C8D5DB
+P -850 2450
+F 0 "D9" V -811 2332 50  0001 R CNN
+F 1 "19-217/BHC-ZL1M2RY/3T" V -902 2332 50  0001 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H -850 2450 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-BHC-ZL1M2RY-3T_C72041.pdf" H -850 2450 50  0001 C CNN
+F 4 "C72041" V -850 2450 50  0001 C CNN "JLCPCB"
+F 5 "BLU" H -750 2350 50  0000 R CNN "Color"
+	1    -850 2450
+	0    -1   -1   0   
+$EndComp
+Text Notes -2300 4750 0    118  ~ 0
+8bit Register
+Text Notes -2300 5050 0    55   ~ 0
+This will latch in data from the Data BUS\nwith the rising edge of the clock and a\nHIGH signal on EN line
+Text GLabel -850 2300 1    50   Input ~ 0
+EN
+$Comp
+L 74xx:74LS283 U?
+U 1 1 61661312
+P 1250 1550
+F 0 "U?" H 1250 2531 50  0000 C CNN
+F 1 "74LS283" H 1250 2440 50  0000 C CNN
+F 2 "" H 1250 1550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS283" H 1250 1550 50  0001 C CNN
+	1    1250 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS193 U?
+U 1 1 61661FF9
+P 5100 2150
+F 0 "U?" H 5100 2250 50  0000 C CNN
+F 1 "SN74HC193DR" H 5450 2750 50  0000 C CNN
+F 2 "Package_SO:SO-16_3.9x9.9mm_P1.27mm" H 5100 2150 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1809051731_Texas-Instruments-SN74HC193DR_C80043.pdf" H 5100 2150 50  0001 C CNN
+F 4 "Binary Counter - SOIC-16_150mil 74 Series ROHS" H 5100 2150 50  0001 C CNN "Description"
+F 5 "C80043" H 5100 2150 50  0001 C CNN "JLCPCB"
+	1    5100 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616632D5
+P 5100 2950
+F 0 "#PWR?" H 5100 2700 50  0001 C CNN
+F 1 "GND" H 5105 2777 50  0000 C CNN
+F 2 "" H 5100 2950 50  0001 C CNN
+F 3 "" H 5100 2950 50  0001 C CNN
+	1    5100 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 61663BB6
+P 5100 1450
+F 0 "#PWR?" H 5100 1300 50  0001 C CNN
+F 1 "VCC" H 5115 1623 50  0000 C CNN
+F 2 "" H 5100 1450 50  0001 C CNN
+F 3 "" H 5100 1450 50  0001 C CNN
+	1    5100 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS193 U?
+U 1 1 616649E1
+P 6900 2150
+F 0 "U?" H 6900 2250 50  0000 C CNN
+F 1 "SN74HC193DR" H 7250 2750 50  0000 C CNN
+F 2 "Package_SO:SO-16_3.9x9.9mm_P1.27mm" H 6900 2150 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1809051731_Texas-Instruments-SN74HC193DR_C80043.pdf" H 6900 2150 50  0001 C CNN
+F 4 "Binary Counter - SOIC-16_150mil 74 Series ROHS" H 6900 2150 50  0001 C CNN "Description"
+F 5 "C80043" H 6900 2150 50  0001 C CNN "JLCPCB"
+	1    6900 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616649EB
+P 6900 2950
+F 0 "#PWR?" H 6900 2700 50  0001 C CNN
+F 1 "GND" H 6905 2777 50  0000 C CNN
+F 2 "" H 6900 2950 50  0001 C CNN
+F 3 "" H 6900 2950 50  0001 C CNN
+	1    6900 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 616649F5
+P 6900 1450
+F 0 "#PWR?" H 6900 1300 50  0001 C CNN
+F 1 "VCC" H 6915 1623 50  0000 C CNN
+F 2 "" H 6900 1450 50  0001 C CNN
+F 3 "" H 6900 1450 50  0001 C CNN
+	1    6900 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS193 U?
+U 1 1 616685E4
+P 8700 2150
+F 0 "U?" H 8700 2250 50  0000 C CNN
+F 1 "SN74HC193DR" H 9050 2750 50  0000 C CNN
+F 2 "Package_SO:SO-16_3.9x9.9mm_P1.27mm" H 8700 2150 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1809051731_Texas-Instruments-SN74HC193DR_C80043.pdf" H 8700 2150 50  0001 C CNN
+F 4 "Binary Counter - SOIC-16_150mil 74 Series ROHS" H 8700 2150 50  0001 C CNN "Description"
+F 5 "C80043" H 8700 2150 50  0001 C CNN "JLCPCB"
+	1    8700 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 616685EE
+P 8700 2950
+F 0 "#PWR?" H 8700 2700 50  0001 C CNN
+F 1 "GND" H 8705 2777 50  0000 C CNN
+F 2 "" H 8700 2950 50  0001 C CNN
+F 3 "" H 8700 2950 50  0001 C CNN
+	1    8700 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 616685F8
+P 8700 1450
+F 0 "#PWR?" H 8700 1300 50  0001 C CNN
+F 1 "VCC" H 8715 1623 50  0000 C CNN
+F 2 "" H 8700 1450 50  0001 C CNN
+F 3 "" H 8700 1450 50  0001 C CNN
+	1    8700 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS193 U?
+U 1 1 61668604
+P 10500 2150
+F 0 "U?" H 10500 2250 50  0000 C CNN
+F 1 "SN74HC193DR" H 10850 2750 50  0000 C CNN
+F 2 "Package_SO:SO-16_3.9x9.9mm_P1.27mm" H 10500 2150 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1809051731_Texas-Instruments-SN74HC193DR_C80043.pdf" H 10500 2150 50  0001 C CNN
+F 4 "Binary Counter - SOIC-16_150mil 74 Series ROHS" H 10500 2150 50  0001 C CNN "Description"
+F 5 "C80043" H 10500 2150 50  0001 C CNN "JLCPCB"
+	1    10500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6166860E
+P 10500 2950
+F 0 "#PWR?" H 10500 2700 50  0001 C CNN
+F 1 "GND" H 10505 2777 50  0000 C CNN
+F 2 "" H 10500 2950 50  0001 C CNN
+F 3 "" H 10500 2950 50  0001 C CNN
+	1    10500 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 61668618
+P 10500 1450
+F 0 "#PWR?" H 10500 1300 50  0001 C CNN
+F 1 "VCC" H 10515 1623 50  0000 C CNN
+F 2 "" H 10500 1450 50  0001 C CNN
+F 3 "" H 10500 1450 50  0001 C CNN
+	1    10500 1450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
