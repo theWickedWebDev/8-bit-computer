@@ -1,0 +1,242 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L JLCPCB:74HC194D,653 U?
+U 1 1 61C9E4D9
+P 2900 2150
+AR Path="/61C9E4D9" Ref="U?"  Part="1" 
+AR Path="/61C9D0FB/61C9E4D9" Ref="U11"  Part="1" 
+F 0 "U11" H 2950 2100 50  0000 C CNN
+F 1 "74HC194D,653" H 3250 2950 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 2900 2150 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/2007022033_Nexperia-74HC194D,653_C546685.pdf" H 2900 2150 50  0001 C CNN
+F 4 "C546685" H 2900 2150 50  0001 C CNN "JCLC"
+F 5 "SHL/SHR" V 3300 2000 50  0000 C CNN "Label"
+	1    2900 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 61C9E4DF
+P 2900 1250
+AR Path="/61C9E4DF" Ref="#PWR?"  Part="1" 
+AR Path="/61C9D0FB/61C9E4DF" Ref="#PWR027"  Part="1" 
+F 0 "#PWR027" H 2900 1100 50  0001 C CNN
+F 1 "VCC" H 2915 1423 50  0000 C CNN
+F 2 "" H 2900 1250 50  0001 C CNN
+F 3 "" H 2900 1250 50  0001 C CNN
+	1    2900 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61C9E4E5
+P 2900 3150
+AR Path="/61C9E4E5" Ref="#PWR?"  Part="1" 
+AR Path="/61C9D0FB/61C9E4E5" Ref="#PWR028"  Part="1" 
+F 0 "#PWR028" H 2900 2900 50  0001 C CNN
+F 1 "GND" H 2905 2977 50  0000 C CNN
+F 2 "" H 2900 3150 50  0001 C CNN
+F 3 "" H 2900 3150 50  0001 C CNN
+	1    2900 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L JLCPCB:74HC194D,653 U?
+U 1 1 61C9E4ED
+P 2900 4800
+AR Path="/61C9E4ED" Ref="U?"  Part="1" 
+AR Path="/61C9D0FB/61C9E4ED" Ref="U12"  Part="1" 
+F 0 "U12" H 2950 4750 50  0000 C CNN
+F 1 "74HC194D,653" H 3250 5600 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 2900 4800 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/2007022033_Nexperia-74HC194D,653_C546685.pdf" H 2900 4800 50  0001 C CNN
+F 4 "C546685" H 2900 4800 50  0001 C CNN "JCLC"
+F 5 "SHL/SHR" V 3300 4650 50  0000 C CNN "Label"
+	1    2900 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 61C9E4F3
+P 2900 3900
+AR Path="/61C9E4F3" Ref="#PWR?"  Part="1" 
+AR Path="/61C9D0FB/61C9E4F3" Ref="#PWR029"  Part="1" 
+F 0 "#PWR029" H 2900 3750 50  0001 C CNN
+F 1 "VCC" H 2915 4073 50  0000 C CNN
+F 2 "" H 2900 3900 50  0001 C CNN
+F 3 "" H 2900 3900 50  0001 C CNN
+	1    2900 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61C9E4F9
+P 2900 5800
+AR Path="/61C9E4F9" Ref="#PWR?"  Part="1" 
+AR Path="/61C9D0FB/61C9E4F9" Ref="#PWR030"  Part="1" 
+F 0 "#PWR030" H 2900 5550 50  0001 C CNN
+F 1 "GND" H 2905 5627 50  0000 C CNN
+F 2 "" H 2900 5800 50  0001 C CNN
+F 3 "" H 2900 5800 50  0001 C CNN
+	1    2900 5800
+	1    0    0    -1  
+$EndComp
+Text HLabel 1200 2650 0    50   Input ~ 0
+CLOCK
+Text HLabel 1200 2850 0    50   Input ~ 0
+RESET
+Wire Wire Line
+	2400 2650 1400 2650
+Wire Wire Line
+	1200 2850 1300 2850
+Wire Wire Line
+	1300 2850 1300 5500
+Wire Wire Line
+	1300 5500 2400 5500
+Connection ~ 1300 2850
+Wire Wire Line
+	1300 2850 2400 2850
+Wire Wire Line
+	2400 5300 1400 5300
+Wire Wire Line
+	1400 5300 1400 2650
+Connection ~ 1400 2650
+Wire Wire Line
+	1400 2650 1200 2650
+Text HLabel 1200 2350 0    50   Input ~ 0
+S0
+Text HLabel 1200 2450 0    50   Input ~ 0
+S1
+Wire Wire Line
+	1200 2350 1500 2350
+Wire Wire Line
+	2400 2450 1600 2450
+Wire Wire Line
+	1500 2350 1500 5000
+Wire Wire Line
+	1500 5000 2400 5000
+Connection ~ 1500 2350
+Wire Wire Line
+	1500 2350 2400 2350
+Wire Wire Line
+	2400 5100 1600 5100
+Wire Wire Line
+	1600 5100 1600 2450
+Connection ~ 1600 2450
+Wire Wire Line
+	1600 2450 1200 2450
+Text HLabel 2400 4200 0    50   Input ~ 0
+D4
+Text HLabel 2400 4300 0    50   Input ~ 0
+D5
+Text HLabel 2400 4400 0    50   Input ~ 0
+D6
+Text HLabel 2400 4500 0    50   Input ~ 0
+D7
+Wire Wire Line
+	3400 1850 3800 1850
+Wire Wire Line
+	3800 1850 3800 3450
+Wire Wire Line
+	3800 3450 2000 3450
+Wire Wire Line
+	2000 3450 2000 4700
+Wire Wire Line
+	2000 4700 2400 4700
+$Comp
+L power:GND #PWR?
+U 1 1 61CB3313
+P 2200 2050
+AR Path="/61CB3313" Ref="#PWR?"  Part="1" 
+AR Path="/61C9D0FB/61CB3313" Ref="#PWR026"  Part="1" 
+F 0 "#PWR026" H 2200 1800 50  0001 C CNN
+F 1 "GND" V 2205 1922 50  0000 R CNN
+F 2 "" H 2200 2050 50  0001 C CNN
+F 3 "" H 2200 2050 50  0001 C CNN
+	1    2200 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2200 2050 2400 2050
+Wire Wire Line
+	2400 2150 2250 2150
+Wire Wire Line
+	2250 2150 2250 3550
+Wire Wire Line
+	2250 3550 3800 3550
+Wire Wire Line
+	3800 3550 3800 4200
+Wire Wire Line
+	3800 4200 3400 4200
+$Comp
+L power:GND #PWR?
+U 1 1 61CB76BA
+P 2150 4800
+AR Path="/61CB76BA" Ref="#PWR?"  Part="1" 
+AR Path="/61C9D0FB/61CB76BA" Ref="#PWR025"  Part="1" 
+F 0 "#PWR025" H 2150 4550 50  0001 C CNN
+F 1 "GND" V 2155 4672 50  0000 R CNN
+F 2 "" H 2150 4800 50  0001 C CNN
+F 3 "" H 2150 4800 50  0001 C CNN
+	1    2150 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2150 4800 2400 4800
+Text HLabel 2400 1550 0    50   Input ~ 0
+D0
+Text HLabel 2400 1650 0    50   Input ~ 0
+D1
+Text HLabel 2400 1750 0    50   Input ~ 0
+D2
+Text HLabel 2400 1850 0    50   Input ~ 0
+D3
+Wire Wire Line
+	3400 1550 3950 1550
+Wire Wire Line
+	3950 1650 3400 1650
+Wire Wire Line
+	3950 1750 3400 1750
+Wire Wire Line
+	3950 1850 3800 1850
+Connection ~ 3800 1850
+Text HLabel 3950 1550 2    50   Output ~ 0
+Q0
+Text HLabel 3950 1650 2    50   Output ~ 0
+Q1
+Text HLabel 3950 1750 2    50   Output ~ 0
+Q2
+Text HLabel 3950 1850 2    50   Output ~ 0
+Q3
+Wire Wire Line
+	3400 4300 3950 4300
+Wire Wire Line
+	3950 4400 3400 4400
+Wire Wire Line
+	3950 4500 3400 4500
+Wire Wire Line
+	3950 4200 3800 4200
+Text HLabel 3950 4200 2    50   Output ~ 0
+Q4
+Text HLabel 3950 4300 2    50   Output ~ 0
+Q5
+Text HLabel 3950 4400 2    50   Output ~ 0
+Q6
+Text HLabel 3950 4500 2    50   Output ~ 0
+Q7
+Connection ~ 3800 4200
+$EndSCHEMATC
