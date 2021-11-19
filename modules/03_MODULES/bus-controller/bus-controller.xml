@@ -1,0 +1,1657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/Users/stephenyoung/KiCad/8-bit-computer/modules/bus-controller/bus-controller.sch</source>
+    <date>Thursday, September 30, 2021 at 04:10:02 PM</date>
+    <tool>Eeschema (5.1.10-1-10_14)</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>bus-controller.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="D9">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6143DFBA</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6143DFC6</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>CL05A106MQ5NUNC</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810191215_Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf</datasheet>
+      <fields>
+        <field name="C">10µf</field>
+        <field name="Description">X5R 6.3V ±20% 10uF 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS</field>
+        <field name="JLCPCB">C15525</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61477051</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>SMD-ECAP-5x5.8</value>
+      <footprint>Capacitor_SMD:CP_Elec_5x5.8</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810010225_Lelon-VZS101M1ATR-0506_C140924.pdf</datasheet>
+      <fields>
+        <field name="C">100µf</field>
+        <field name="Description">- - 5mm 100uF 10V -45℃~+105℃ ±20% 5.8mm 2000hrs 105℃ SMD,5x5.8mm Aluminum Electrolytic Capacitors - SMD ROHS</field>
+        <field name="JLCPCB">C140924</field>
+      </fields>
+      <libsource lib="Device" part="CP1_Small" description="Polarized capacitor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61812E70</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61C8D566</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>19-217/BHC-ZL1M2RY/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-BHC-ZL1M2RY-3T_C72041.pdf</datasheet>
+      <fields>
+        <field name="Color">BLU</field>
+        <field name="JLCPCB">C72041</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61CA6000</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>CD4514BM96</value>
+      <footprint>Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2003172104_Texas-Instruments-CD4514BM96_C496122.pdf</datasheet>
+      <fields>
+        <field name="Description">SOIC-24 Signal Switches, Multiplexers, Decoders ROHS</field>
+        <field name="JLCPCB">C496122</field>
+      </fields>
+      <libsource lib="4xxx_IEEE" part="4514" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613D65B4</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>CD4515BM96</value>
+      <footprint>Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1912111437_Texas-Instruments-CD4515BM96_C368608.pdf</datasheet>
+      <fields>
+        <field name="Description">Decoder/Demultiplexer 3V ~ 18V 1 x 4：16 DoublePower 4000B SOIC-24 Signal Switches, Multiplexers, Decoders ROHS</field>
+        <field name="JLCPCB">C368608</field>
+      </fields>
+      <libsource lib="4xxx_IEEE" part="4515" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613D98D3</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613E7BB5</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>19-217/BHC-ZL1M2RY/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-BHC-ZL1M2RY-3T_C72041.pdf</datasheet>
+      <fields>
+        <field name="Color">BLU</field>
+        <field name="JLCPCB">C72041</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613E7BC1</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613E8D4C</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>19-217/BHC-ZL1M2RY/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-BHC-ZL1M2RY-3T_C72041.pdf</datasheet>
+      <fields>
+        <field name="Color">BLU</field>
+        <field name="JLCPCB">C72041</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613E8D58</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613E8D6F</tstamp>
+    </comp>
+    <comp ref="D7">
+      <value>19-217/BHC-ZL1M2RY/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-BHC-ZL1M2RY-3T_C72041.pdf</datasheet>
+      <fields>
+        <field name="Color">BLU</field>
+        <field name="JLCPCB">C72041</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613E8D7B</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613EB4E5</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>19-217/BHC-ZL1M2RY/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-BHC-ZL1M2RY-3T_C72041.pdf</datasheet>
+      <fields>
+        <field name="Color">BLU</field>
+        <field name="JLCPCB">C72041</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613EB4F1</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613EB507</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>19-217/BHC-ZL1M2RY/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-BHC-ZL1M2RY-3T_C72041.pdf</datasheet>
+      <fields>
+        <field name="Color">BLU</field>
+        <field name="JLCPCB">C72041</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613EB513</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613EB529</tstamp>
+    </comp>
+    <comp ref="D6">
+      <value>19-217/BHC-ZL1M2RY/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-BHC-ZL1M2RY-3T_C72041.pdf</datasheet>
+      <fields>
+        <field name="Color">BLU</field>
+        <field name="JLCPCB">C72041</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613EB535</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613EB54B</tstamp>
+    </comp>
+    <comp ref="D8">
+      <value>19-217/BHC-ZL1M2RY/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-BHC-ZL1M2RY-3T_C72041.pdf</datasheet>
+      <fields>
+        <field name="Color">BLU</field>
+        <field name="JLCPCB">C72041</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613EB557</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x30</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x30_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x30" description="Generic connector, single row, 01x30, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>613F3061</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>CL05A106MQ5NUNC</value>
+      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1810191215_Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf</datasheet>
+      <fields>
+        <field name="C">10µf</field>
+        <field name="Description">X5R 6.3V ±20% 10uF 0402 Multilayer Ceramic Capacitors MLCC - SMD/SMT ROHS</field>
+        <field name="JLCPCB">C15525</field>
+      </fields>
+      <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6142F11A</tstamp>
+    </comp>
+    <comp ref="D10">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61437E6F</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61437E7B</tstamp>
+    </comp>
+    <comp ref="D11">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61439436</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61439442</tstamp>
+    </comp>
+    <comp ref="D12">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61439458</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61439464</tstamp>
+    </comp>
+    <comp ref="D13">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6143B61B</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6143B627</tstamp>
+    </comp>
+    <comp ref="D14">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6143B63D</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6143B649</tstamp>
+    </comp>
+    <comp ref="D15">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6143B65F</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6143B66B</tstamp>
+    </comp>
+    <comp ref="D16">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6143B681</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6143B68D</tstamp>
+    </comp>
+    <comp ref="D17">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61440A7E</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61440A8A</tstamp>
+    </comp>
+    <comp ref="D18">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61440AA0</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61440AAC</tstamp>
+    </comp>
+    <comp ref="D19">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61440AC2</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61440ACE</tstamp>
+    </comp>
+    <comp ref="D20">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61440AE4</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61440AF0</tstamp>
+    </comp>
+    <comp ref="D21">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61440B06</tstamp>
+    </comp>
+    <comp ref="R21">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61440B12</tstamp>
+    </comp>
+    <comp ref="D22">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61440B28</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61440B34</tstamp>
+    </comp>
+    <comp ref="D23">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61440B4A</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>61440B56</tstamp>
+    </comp>
+    <comp ref="D24">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150AA23</tstamp>
+    </comp>
+    <comp ref="R24">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150AA2F</tstamp>
+    </comp>
+    <comp ref="D25">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150AA54</tstamp>
+    </comp>
+    <comp ref="R25">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150AA60</tstamp>
+    </comp>
+    <comp ref="D26">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150AA76</tstamp>
+    </comp>
+    <comp ref="R26">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150AA82</tstamp>
+    </comp>
+    <comp ref="D27">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150AA98</tstamp>
+    </comp>
+    <comp ref="R27">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150AAA4</tstamp>
+    </comp>
+    <comp ref="D28">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150AABA</tstamp>
+    </comp>
+    <comp ref="R28">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150AAC6</tstamp>
+    </comp>
+    <comp ref="D29">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150AADC</tstamp>
+    </comp>
+    <comp ref="R29">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150AAE8</tstamp>
+    </comp>
+    <comp ref="D30">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150AAFE</tstamp>
+    </comp>
+    <comp ref="R30">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150AB0A</tstamp>
+    </comp>
+    <comp ref="D31">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150AB20</tstamp>
+    </comp>
+    <comp ref="R31">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150AB2C</tstamp>
+    </comp>
+    <comp ref="D32">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150AB42</tstamp>
+    </comp>
+    <comp ref="R32">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150AB4E</tstamp>
+    </comp>
+    <comp ref="D33">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150AB64</tstamp>
+    </comp>
+    <comp ref="R33">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150AB70</tstamp>
+    </comp>
+    <comp ref="D34">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150AB86</tstamp>
+    </comp>
+    <comp ref="R34">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150AB92</tstamp>
+    </comp>
+    <comp ref="D35">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150ABA8</tstamp>
+    </comp>
+    <comp ref="R35">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150ABB4</tstamp>
+    </comp>
+    <comp ref="D36">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150ABCA</tstamp>
+    </comp>
+    <comp ref="R36">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150ABD6</tstamp>
+    </comp>
+    <comp ref="D37">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150ABEC</tstamp>
+    </comp>
+    <comp ref="R37">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150ABF8</tstamp>
+    </comp>
+    <comp ref="D38">
+      <value>19-217/GHC-YR1S2/3T</value>
+      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811101510_Everlight-Elec-19-217-GHC-YR1S2-3T_C72043.pdf</datasheet>
+      <fields>
+        <field name="Color">GRN</field>
+        <field name="JLCPCB">C72043</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150AC0E</tstamp>
+    </comp>
+    <comp ref="R38">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6150AC1A</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x10</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x10" description="Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6158BE92</tstamp>
+    </comp>
+    <comp ref="R39">
+      <value>0402WGF1001TCE</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/1811132311_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf</datasheet>
+      <fields>
+        <field name="Description">±1% 1/16W ±100ppm/℃ 1kΩ 0402 Chip Resistor - Surface Mount ROHS</field>
+        <field name="JLCPCB">C11702</field>
+      </fields>
+      <libsource lib="Device" part="R_Small_US" description="Resistor, small US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>615D30D0</tstamp>
+    </comp>
+    <comp ref="D39">
+      <value>NCD0805R1</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2008201032_Foshan-NationStar-Optoelectronics-NCD0805R1_C84256.pdf</datasheet>
+      <fields>
+        <field name="Color">RED</field>
+        <field name="JLCPCB">C84256</field>
+      </fields>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>615D30DC</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="4xxx_IEEE" part="4514">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">4514</field>
+      </fields>
+      <pins>
+        <pin num="1" name="EL" type="input"/>
+        <pin num="2" name="A0" type="input"/>
+        <pin num="3" name="A1" type="input"/>
+        <pin num="4" name="Q7" type="output"/>
+        <pin num="5" name="Q6" type="output"/>
+        <pin num="6" name="Q5" type="output"/>
+        <pin num="7" name="Q4" type="output"/>
+        <pin num="8" name="Q3" type="output"/>
+        <pin num="9" name="Q1" type="output"/>
+        <pin num="10" name="Q2" type="output"/>
+        <pin num="11" name="Q0" type="output"/>
+        <pin num="12" name="Vss" type="power_in"/>
+        <pin num="13" name="Q13" type="output"/>
+        <pin num="14" name="Q12" type="output"/>
+        <pin num="15" name="Q15" type="output"/>
+        <pin num="16" name="Q14" type="output"/>
+        <pin num="17" name="Q9" type="output"/>
+        <pin num="18" name="Q8" type="output"/>
+        <pin num="19" name="Q11" type="output"/>
+        <pin num="20" name="Q10" type="output"/>
+        <pin num="21" name="A2" type="input"/>
+        <pin num="22" name="A3" type="input"/>
+        <pin num="23" name="~EN" type="input"/>
+        <pin num="24" name="Vdd" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="4xxx_IEEE" part="4515">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">4515</field>
+      </fields>
+      <pins>
+        <pin num="1" name="EL" type="input"/>
+        <pin num="2" name="A0" type="input"/>
+        <pin num="3" name="A1" type="input"/>
+        <pin num="4" name="~Q7" type="output"/>
+        <pin num="5" name="~Q6" type="output"/>
+        <pin num="6" name="~Q5" type="output"/>
+        <pin num="7" name="~Q4" type="output"/>
+        <pin num="8" name="~Q3" type="output"/>
+        <pin num="9" name="~Q1" type="output"/>
+        <pin num="10" name="~Q2" type="output"/>
+        <pin num="11" name="~Q0" type="output"/>
+        <pin num="12" name="Vss" type="power_in"/>
+        <pin num="13" name="~Q13" type="output"/>
+        <pin num="14" name="~Q12" type="output"/>
+        <pin num="15" name="~Q15" type="output"/>
+        <pin num="16" name="~Q14" type="output"/>
+        <pin num="17" name="~Q9" type="output"/>
+        <pin num="18" name="~Q8" type="output"/>
+        <pin num="19" name="~Q11" type="output"/>
+        <pin num="20" name="~Q10" type="output"/>
+        <pin num="21" name="A2" type="input"/>
+        <pin num="22" name="A3" type="input"/>
+        <pin num="23" name="~EN" type="input"/>
+        <pin num="24" name="Vdd" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x10">
+      <description>Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x10</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector_Generic" part="Conn_01x30">
+      <description>Generic connector, single row, 01x30, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x30</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+        <pin num="11" name="Pin_11" type="passive"/>
+        <pin num="12" name="Pin_12" type="passive"/>
+        <pin num="13" name="Pin_13" type="passive"/>
+        <pin num="14" name="Pin_14" type="passive"/>
+        <pin num="15" name="Pin_15" type="passive"/>
+        <pin num="16" name="Pin_16" type="passive"/>
+        <pin num="17" name="Pin_17" type="passive"/>
+        <pin num="18" name="Pin_18" type="passive"/>
+        <pin num="19" name="Pin_19" type="passive"/>
+        <pin num="20" name="Pin_20" type="passive"/>
+        <pin num="21" name="Pin_21" type="passive"/>
+        <pin num="22" name="Pin_22" type="passive"/>
+        <pin num="23" name="Pin_23" type="passive"/>
+        <pin num="24" name="Pin_24" type="passive"/>
+        <pin num="25" name="Pin_25" type="passive"/>
+        <pin num="26" name="Pin_26" type="passive"/>
+        <pin num="27" name="Pin_27" type="passive"/>
+        <pin num="28" name="Pin_28" type="passive"/>
+        <pin num="29" name="Pin_29" type="passive"/>
+        <pin num="30" name="Pin_30" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="C">
+      <description>Unpolarized capacitor</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="CP1_Small">
+      <description>Polarized capacitor, small US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP1_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_Small_US">
+      <description>Resistor, small US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small_US</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="4xxx_IEEE">
+      <uri>/Library/Application Support/kicad/library/4xxx_IEEE.lib</uri>
+    </library>
+    <library logical="Connector_Generic">
+      <uri>/Library/Application Support/kicad/library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/Library/Application Support/kicad/library/Device.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(D9-Pad1)">
+      <node ref="D9" pin="1"/>
+      <node ref="R9" pin="1"/>
+    </net>
+    <net code="2" name="GND">
+      <node ref="R39" pin="2"/>
+      <node ref="R9" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="J2" pin="9"/>
+      <node ref="C1" pin="2"/>
+      <node ref="R38" pin="2"/>
+      <node ref="R1" pin="2"/>
+      <node ref="R37" pin="2"/>
+      <node ref="U1" pin="12"/>
+      <node ref="R36" pin="2"/>
+      <node ref="R35" pin="2"/>
+      <node ref="R34" pin="2"/>
+      <node ref="R33" pin="2"/>
+      <node ref="U1" pin="23"/>
+      <node ref="R32" pin="2"/>
+      <node ref="R31" pin="2"/>
+      <node ref="R30" pin="2"/>
+      <node ref="R29" pin="2"/>
+      <node ref="R28" pin="2"/>
+      <node ref="U2" pin="12"/>
+      <node ref="R27" pin="2"/>
+      <node ref="R26" pin="2"/>
+      <node ref="R25" pin="2"/>
+      <node ref="U2" pin="23"/>
+      <node ref="R24" pin="2"/>
+      <node ref="R23" pin="2"/>
+      <node ref="R22" pin="2"/>
+      <node ref="R21" pin="2"/>
+      <node ref="R20" pin="2"/>
+      <node ref="R19" pin="2"/>
+      <node ref="R18" pin="2"/>
+      <node ref="R17" pin="2"/>
+      <node ref="R16" pin="2"/>
+      <node ref="R3" pin="2"/>
+      <node ref="R15" pin="2"/>
+      <node ref="R5" pin="2"/>
+      <node ref="R14" pin="2"/>
+      <node ref="R7" pin="2"/>
+      <node ref="R13" pin="2"/>
+      <node ref="R12" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="R11" pin="2"/>
+      <node ref="R4" pin="2"/>
+      <node ref="R10" pin="2"/>
+      <node ref="R6" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="R8" pin="2"/>
+    </net>
+    <net code="3" name="VCC">
+      <node ref="D39" pin="2"/>
+      <node ref="U2" pin="24"/>
+      <node ref="U2" pin="1"/>
+      <node ref="U1" pin="24"/>
+      <node ref="C3" pin="1"/>
+      <node ref="U1" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="J2" pin="10"/>
+    </net>
+    <net code="4" name="Net-(D1-Pad1)">
+      <node ref="R1" pin="1"/>
+      <node ref="D1" pin="1"/>
+    </net>
+    <net code="5" name="I2">
+      <node ref="J1" pin="2"/>
+      <node ref="D10" pin="2"/>
+      <node ref="U1" pin="10"/>
+    </net>
+    <net code="6" name="Net-(U1-Pad11)">
+      <node ref="U1" pin="11"/>
+    </net>
+    <net code="7" name="I13">
+      <node ref="D21" pin="2"/>
+      <node ref="J1" pin="13"/>
+      <node ref="U1" pin="13"/>
+    </net>
+    <net code="8" name="I12">
+      <node ref="D20" pin="2"/>
+      <node ref="U1" pin="14"/>
+      <node ref="J1" pin="12"/>
+    </net>
+    <net code="9" name="I15">
+      <node ref="U1" pin="15"/>
+      <node ref="J1" pin="15"/>
+      <node ref="D23" pin="2"/>
+    </net>
+    <net code="10" name="I14">
+      <node ref="U1" pin="16"/>
+      <node ref="J1" pin="14"/>
+      <node ref="D22" pin="2"/>
+    </net>
+    <net code="11" name="I9">
+      <node ref="D17" pin="2"/>
+      <node ref="U1" pin="17"/>
+      <node ref="J1" pin="9"/>
+    </net>
+    <net code="12" name="I8">
+      <node ref="J1" pin="8"/>
+      <node ref="D16" pin="2"/>
+      <node ref="U1" pin="18"/>
+    </net>
+    <net code="13" name="I11">
+      <node ref="J1" pin="11"/>
+      <node ref="U1" pin="19"/>
+      <node ref="D19" pin="2"/>
+    </net>
+    <net code="14" name="IS0">
+      <node ref="D7" pin="2"/>
+      <node ref="J2" pin="1"/>
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="15" name="I10">
+      <node ref="J1" pin="10"/>
+      <node ref="U1" pin="20"/>
+      <node ref="D18" pin="2"/>
+    </net>
+    <net code="16" name="IS2">
+      <node ref="D3" pin="2"/>
+      <node ref="U1" pin="21"/>
+      <node ref="J2" pin="3"/>
+    </net>
+    <net code="17" name="IS3">
+      <node ref="U1" pin="22"/>
+      <node ref="D1" pin="2"/>
+      <node ref="J2" pin="4"/>
+    </net>
+    <net code="18" name="IS1">
+      <node ref="D5" pin="2"/>
+      <node ref="J2" pin="2"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="19" name="I7">
+      <node ref="J1" pin="7"/>
+      <node ref="D15" pin="2"/>
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="20" name="I6">
+      <node ref="J1" pin="6"/>
+      <node ref="D14" pin="2"/>
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="21" name="I5">
+      <node ref="J1" pin="5"/>
+      <node ref="D13" pin="2"/>
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="22" name="I4">
+      <node ref="U1" pin="7"/>
+      <node ref="J1" pin="4"/>
+      <node ref="D12" pin="2"/>
+    </net>
+    <net code="23" name="I3">
+      <node ref="J1" pin="3"/>
+      <node ref="U1" pin="8"/>
+      <node ref="D11" pin="2"/>
+    </net>
+    <net code="24" name="I1">
+      <node ref="J1" pin="1"/>
+      <node ref="U1" pin="9"/>
+      <node ref="D9" pin="2"/>
+    </net>
+    <net code="25" name="O2">
+      <node ref="U2" pin="10"/>
+      <node ref="J1" pin="17"/>
+      <node ref="D25" pin="2"/>
+    </net>
+    <net code="26" name="Net-(U2-Pad11)">
+      <node ref="U2" pin="11"/>
+    </net>
+    <net code="27" name="O13">
+      <node ref="D36" pin="2"/>
+      <node ref="J1" pin="28"/>
+      <node ref="U2" pin="13"/>
+    </net>
+    <net code="28" name="O12">
+      <node ref="U2" pin="14"/>
+      <node ref="D35" pin="2"/>
+      <node ref="J1" pin="27"/>
+    </net>
+    <net code="29" name="O15">
+      <node ref="U2" pin="15"/>
+      <node ref="J1" pin="30"/>
+      <node ref="D38" pin="2"/>
+    </net>
+    <net code="30" name="O14">
+      <node ref="U2" pin="16"/>
+      <node ref="D37" pin="2"/>
+      <node ref="J1" pin="29"/>
+    </net>
+    <net code="31" name="O9">
+      <node ref="J1" pin="24"/>
+      <node ref="U2" pin="17"/>
+      <node ref="D32" pin="2"/>
+    </net>
+    <net code="32" name="O8">
+      <node ref="U2" pin="18"/>
+      <node ref="D31" pin="2"/>
+      <node ref="J1" pin="23"/>
+    </net>
+    <net code="33" name="O11">
+      <node ref="U2" pin="19"/>
+      <node ref="J1" pin="26"/>
+      <node ref="D34" pin="2"/>
+    </net>
+    <net code="34" name="OS0">
+      <node ref="D8" pin="2"/>
+      <node ref="J2" pin="5"/>
+      <node ref="U2" pin="2"/>
+    </net>
+    <net code="35" name="O10">
+      <node ref="J1" pin="25"/>
+      <node ref="D33" pin="2"/>
+      <node ref="U2" pin="20"/>
+    </net>
+    <net code="36" name="OS2">
+      <node ref="D4" pin="2"/>
+      <node ref="J2" pin="7"/>
+      <node ref="U2" pin="21"/>
+    </net>
+    <net code="37" name="OS3">
+      <node ref="J2" pin="8"/>
+      <node ref="D2" pin="2"/>
+      <node ref="U2" pin="22"/>
+    </net>
+    <net code="38" name="OS1">
+      <node ref="U2" pin="3"/>
+      <node ref="D6" pin="2"/>
+      <node ref="J2" pin="6"/>
+    </net>
+    <net code="39" name="O7">
+      <node ref="J1" pin="22"/>
+      <node ref="U2" pin="4"/>
+      <node ref="D30" pin="2"/>
+    </net>
+    <net code="40" name="O6">
+      <node ref="J1" pin="21"/>
+      <node ref="U2" pin="5"/>
+      <node ref="D29" pin="2"/>
+    </net>
+    <net code="41" name="O5">
+      <node ref="J1" pin="20"/>
+      <node ref="U2" pin="6"/>
+      <node ref="D28" pin="2"/>
+    </net>
+    <net code="42" name="O4">
+      <node ref="U2" pin="7"/>
+      <node ref="D27" pin="2"/>
+      <node ref="J1" pin="19"/>
+    </net>
+    <net code="43" name="O3">
+      <node ref="U2" pin="8"/>
+      <node ref="J1" pin="18"/>
+      <node ref="D26" pin="2"/>
+    </net>
+    <net code="44" name="O1">
+      <node ref="U2" pin="9"/>
+      <node ref="J1" pin="16"/>
+      <node ref="D24" pin="2"/>
+    </net>
+    <net code="45" name="Net-(D3-Pad1)">
+      <node ref="D3" pin="1"/>
+      <node ref="R3" pin="1"/>
+    </net>
+    <net code="46" name="Net-(D5-Pad1)">
+      <node ref="R5" pin="1"/>
+      <node ref="D5" pin="1"/>
+    </net>
+    <net code="47" name="Net-(D7-Pad1)">
+      <node ref="D7" pin="1"/>
+      <node ref="R7" pin="1"/>
+    </net>
+    <net code="48" name="Net-(D2-Pad1)">
+      <node ref="D2" pin="1"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="49" name="Net-(D4-Pad1)">
+      <node ref="D4" pin="1"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="50" name="Net-(D6-Pad1)">
+      <node ref="R6" pin="1"/>
+      <node ref="D6" pin="1"/>
+    </net>
+    <net code="51" name="Net-(D8-Pad1)">
+      <node ref="R8" pin="1"/>
+      <node ref="D8" pin="1"/>
+    </net>
+    <net code="52" name="Net-(D10-Pad1)">
+      <node ref="R10" pin="1"/>
+      <node ref="D10" pin="1"/>
+    </net>
+    <net code="53" name="Net-(D11-Pad1)">
+      <node ref="R11" pin="1"/>
+      <node ref="D11" pin="1"/>
+    </net>
+    <net code="54" name="Net-(D12-Pad1)">
+      <node ref="R12" pin="1"/>
+      <node ref="D12" pin="1"/>
+    </net>
+    <net code="55" name="Net-(D13-Pad1)">
+      <node ref="D13" pin="1"/>
+      <node ref="R13" pin="1"/>
+    </net>
+    <net code="56" name="Net-(D14-Pad1)">
+      <node ref="R14" pin="1"/>
+      <node ref="D14" pin="1"/>
+    </net>
+    <net code="57" name="Net-(D15-Pad1)">
+      <node ref="D15" pin="1"/>
+      <node ref="R15" pin="1"/>
+    </net>
+    <net code="58" name="Net-(D16-Pad1)">
+      <node ref="D16" pin="1"/>
+      <node ref="R16" pin="1"/>
+    </net>
+    <net code="59" name="Net-(D17-Pad1)">
+      <node ref="R17" pin="1"/>
+      <node ref="D17" pin="1"/>
+    </net>
+    <net code="60" name="Net-(D18-Pad1)">
+      <node ref="D18" pin="1"/>
+      <node ref="R18" pin="1"/>
+    </net>
+    <net code="61" name="Net-(D19-Pad1)">
+      <node ref="R19" pin="1"/>
+      <node ref="D19" pin="1"/>
+    </net>
+    <net code="62" name="Net-(D20-Pad1)">
+      <node ref="D20" pin="1"/>
+      <node ref="R20" pin="1"/>
+    </net>
+    <net code="63" name="Net-(D21-Pad1)">
+      <node ref="R21" pin="1"/>
+      <node ref="D21" pin="1"/>
+    </net>
+    <net code="64" name="Net-(D22-Pad1)">
+      <node ref="R22" pin="1"/>
+      <node ref="D22" pin="1"/>
+    </net>
+    <net code="65" name="Net-(D23-Pad1)">
+      <node ref="R23" pin="1"/>
+      <node ref="D23" pin="1"/>
+    </net>
+    <net code="66" name="Net-(D24-Pad1)">
+      <node ref="D24" pin="1"/>
+      <node ref="R24" pin="1"/>
+    </net>
+    <net code="67" name="Net-(D25-Pad1)">
+      <node ref="R25" pin="1"/>
+      <node ref="D25" pin="1"/>
+    </net>
+    <net code="68" name="Net-(D26-Pad1)">
+      <node ref="R26" pin="1"/>
+      <node ref="D26" pin="1"/>
+    </net>
+    <net code="69" name="Net-(D27-Pad1)">
+      <node ref="R27" pin="1"/>
+      <node ref="D27" pin="1"/>
+    </net>
+    <net code="70" name="Net-(D28-Pad1)">
+      <node ref="D28" pin="1"/>
+      <node ref="R28" pin="1"/>
+    </net>
+    <net code="71" name="Net-(D29-Pad1)">
+      <node ref="D29" pin="1"/>
+      <node ref="R29" pin="1"/>
+    </net>
+    <net code="72" name="Net-(D30-Pad1)">
+      <node ref="D30" pin="1"/>
+      <node ref="R30" pin="1"/>
+    </net>
+    <net code="73" name="Net-(D31-Pad1)">
+      <node ref="D31" pin="1"/>
+      <node ref="R31" pin="1"/>
+    </net>
+    <net code="74" name="Net-(D32-Pad1)">
+      <node ref="D32" pin="1"/>
+      <node ref="R32" pin="1"/>
+    </net>
+    <net code="75" name="Net-(D33-Pad1)">
+      <node ref="D33" pin="1"/>
+      <node ref="R33" pin="1"/>
+    </net>
+    <net code="76" name="Net-(D34-Pad1)">
+      <node ref="D34" pin="1"/>
+      <node ref="R34" pin="1"/>
+    </net>
+    <net code="77" name="Net-(D35-Pad1)">
+      <node ref="R35" pin="1"/>
+      <node ref="D35" pin="1"/>
+    </net>
+    <net code="78" name="Net-(D36-Pad1)">
+      <node ref="R36" pin="1"/>
+      <node ref="D36" pin="1"/>
+    </net>
+    <net code="79" name="Net-(D37-Pad1)">
+      <node ref="R37" pin="1"/>
+      <node ref="D37" pin="1"/>
+    </net>
+    <net code="80" name="Net-(D38-Pad1)">
+      <node ref="R38" pin="1"/>
+      <node ref="D38" pin="1"/>
+    </net>
+    <net code="81" name="Net-(D39-Pad1)">
+      <node ref="R39" pin="1"/>
+      <node ref="D39" pin="1"/>
+    </net>
+  </nets>
+</export>

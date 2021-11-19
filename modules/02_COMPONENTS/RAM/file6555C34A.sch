@@ -1,0 +1,168 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L JLCPCB:IS61WV25616BLL-10TLI U?
+U 1 1 6556073F
+P 7150 2550
+F 0 "U?" H 7150 4213 50  0000 C CNN
+F 1 "IS61WV25616BLL-10TLI" H 7150 4122 50  0000 C CNN
+F 2 "Package_SO:TSOP-II-44_10.16x18.41mm_P0.8mm" H 7150 4500 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810101110_ISSI-Integrated-Silicon-Solution-IS61WV25616BLL-10TLI_C53825.pdf" H 7150 4500 50  0001 C CNN
+F 4 "C53825" H 7150 4031 50  0000 C CNN "JCLC"
+F 5 "SRAM" H 7150 3940 50  0000 C CNN "D"
+	1    7150 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L JLCPCB:IS61WV25616BLL-10TLI U?
+U 1 1 65564B4C
+P 9100 2600
+F 0 "U?" H 9100 4263 50  0000 C CNN
+F 1 "IS61WV25616BLL-10TLI" H 9100 4172 50  0000 C CNN
+F 2 "Package_SO:TSOP-II-44_10.16x18.41mm_P0.8mm" H 9100 4550 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1810101110_ISSI-Integrated-Silicon-Solution-IS61WV25616BLL-10TLI_C53825.pdf" H 9100 4550 50  0001 C CNN
+F 4 "C53825" H 9100 4081 50  0000 C CNN "JCLC"
+F 5 "SRAM" H 9100 3990 50  0000 C CNN "D"
+	1    9100 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS157 U?
+U 1 1 6558C082
+P 4500 3650
+F 0 "U?" H 4550 4050 50  0000 C CNN
+F 1 "74LS157" H 4750 4450 50  0000 C CNN
+F 2 "" H 4500 3650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS157" H 4500 3650 50  0001 C CNN
+	1    4500 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3050 5700 3050
+Wire Wire Line
+	6550 3150 5850 3150
+Wire Wire Line
+	5500 3150 5500 3350
+Wire Wire Line
+	5500 3350 5000 3350
+Wire Wire Line
+	5850 3150 5850 3950
+Wire Wire Line
+	5850 3950 8300 3950
+Wire Wire Line
+	8300 3950 8300 3200
+Wire Wire Line
+	8300 3200 8500 3200
+Connection ~ 5850 3150
+Wire Wire Line
+	5850 3150 5500 3150
+Wire Wire Line
+	8500 3100 8200 3100
+Wire Wire Line
+	8200 3100 8200 4050
+Wire Wire Line
+	8200 4050 5700 4050
+Wire Wire Line
+	5700 4050 5700 3050
+Connection ~ 5700 3050
+Wire Wire Line
+	5700 3050 6550 3050
+Text GLabel 4000 3050 0    50   Input ~ 0
+C0
+Text GLabel 4000 3150 0    50   Input ~ 0
+D0
+Text GLabel 4000 3350 0    50   Input ~ 0
+C1
+Text GLabel 4000 3450 0    50   Input ~ 0
+D1
+Text GLabel 4000 4250 0    50   Input ~ 0
+SELECT
+Wire Wire Line
+	4000 4350 3850 4350
+Wire Wire Line
+	3850 4350 3850 4550
+$Comp
+L power:GND #PWR?
+U 1 1 6559A532
+P 3850 4550
+F 0 "#PWR?" H 3850 4300 50  0001 C CNN
+F 1 "GND" H 3855 4377 50  0000 C CNN
+F 2 "" H 3850 4550 50  0001 C CNN
+F 3 "" H 3850 4550 50  0001 C CNN
+	1    3850 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6559AD93
+P 4500 4650
+F 0 "#PWR?" H 4500 4400 50  0001 C CNN
+F 1 "GND" H 4505 4477 50  0000 C CNN
+F 2 "" H 4500 4650 50  0001 C CNN
+F 3 "" H 4500 4650 50  0001 C CNN
+	1    4500 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 6559B721
+P 4500 2750
+F 0 "#PWR?" H 4500 2600 50  0001 C CNN
+F 1 "VCC" H 4515 2923 50  0000 C CNN
+F 2 "" H 4500 2750 50  0001 C CNN
+F 3 "" H 4500 2750 50  0001 C CNN
+	1    4500 2750
+	1    0    0    -1  
+$EndComp
+Text Notes 7050 2300 0    118  ~ 0
+1
+Text Notes 9050 2300 0    118  ~ 0
+2
+$Comp
+L 74xx:74LS04 U?
+U 1 1 655A973F
+P 6900 4500
+F 0 "U?" H 6850 4500 50  0000 C CNN
+F 1 "74LS04" H 6900 4726 50  0001 C CNN
+F 2 "" H 6900 4500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 6900 4500 50  0001 C CNN
+	1    6900 4500
+	1    0    0    -1  
+$EndComp
+Text GLabel 5600 4500 0    50   Input ~ 0
+RAM
+Wire Wire Line
+	7200 4500 8100 4500
+Wire Wire Line
+	8100 4500 8100 3500
+Wire Wire Line
+	8100 3500 8500 3500
+Wire Wire Line
+	6550 3450 6000 3450
+Wire Wire Line
+	6000 3450 6000 4500
+Wire Wire Line
+	5600 4500 6000 4500
+Connection ~ 6000 4500
+Wire Wire Line
+	6000 4500 6600 4500
+NoConn ~ 4000 3650
+NoConn ~ 4000 3750
+NoConn ~ 4000 3950
+NoConn ~ 4000 4050
+NoConn ~ 5000 3650
+NoConn ~ 5000 3950
+$EndSCHEMATC

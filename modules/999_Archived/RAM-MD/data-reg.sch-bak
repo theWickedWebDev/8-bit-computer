@@ -1,0 +1,429 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L JLCPCB:74HC157PW,118 U74
+U 1 1 61D23D44
+P 3300 2550
+F 0 "U74" H 3300 2750 50  0000 C CNN
+F 1 "74HC157PW,118" H 3000 1700 50  0001 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 3300 2550 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1806030046_Nexperia-74HC157PW,118_C148201.pdf" H 3300 2550 50  0001 C CNN
+F 4 "C148201" H 3300 2550 50  0001 C CNN "JCLC"
+F 5 "MUX" H 3300 2550 50  0000 C CNN "L"
+F 6 "74HC157" H 3550 3350 50  0000 C CNN "L2"
+	1    3300 2550
+	1    0    0    -1  
+$EndComp
+Text HLabel 2800 3150 0    50   Input ~ 0
+PROG
+$Comp
+L power:VCC #PWR066
+U 1 1 61D2B48A
+P 3300 1650
+F 0 "#PWR066" H 3300 1500 50  0001 C CNN
+F 1 "VCC" H 3315 1823 50  0000 C CNN
+F 2 "" H 3300 1650 50  0001 C CNN
+F 3 "" H 3300 1650 50  0001 C CNN
+	1    3300 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR067
+U 1 1 61D2BD58
+P 3300 3550
+F 0 "#PWR067" H 3300 3300 50  0001 C CNN
+F 1 "GND" H 3305 3377 50  0000 C CNN
+F 2 "" H 3300 3550 50  0001 C CNN
+F 3 "" H 3300 3550 50  0001 C CNN
+	1    3300 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L JLCPCB:74HC157PW,118 U75
+U 1 1 61D3290A
+P 5300 2550
+F 0 "U75" H 5300 2750 50  0000 C CNN
+F 1 "74HC157PW,118" H 5000 1700 50  0001 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 5300 2550 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1806030046_Nexperia-74HC157PW,118_C148201.pdf" H 5300 2550 50  0001 C CNN
+F 4 "C148201" H 5300 2550 50  0001 C CNN "JCLC"
+F 5 "MUX" H 5300 2550 50  0000 C CNN "L"
+F 6 "74HC157" H 5550 3350 50  0000 C CNN "L2"
+	1    5300 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR068
+U 1 1 61D32914
+P 5300 1650
+F 0 "#PWR068" H 5300 1500 50  0001 C CNN
+F 1 "VCC" H 5315 1823 50  0000 C CNN
+F 2 "" H 5300 1650 50  0001 C CNN
+F 3 "" H 5300 1650 50  0001 C CNN
+	1    5300 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR069
+U 1 1 61D3291E
+P 5300 3550
+F 0 "#PWR069" H 5300 3300 50  0001 C CNN
+F 1 "GND" H 5305 3377 50  0000 C CNN
+F 2 "" H 5300 3550 50  0001 C CNN
+F 3 "" H 5300 3550 50  0001 C CNN
+	1    5300 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L JLCPCB:74HC157PW,118 U76
+U 1 1 61D34FDB
+P 7500 2550
+F 0 "U76" H 7500 2750 50  0000 C CNN
+F 1 "74HC157PW,118" H 7200 1700 50  0001 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 7500 2550 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1806030046_Nexperia-74HC157PW,118_C148201.pdf" H 7500 2550 50  0001 C CNN
+F 4 "C148201" H 7500 2550 50  0001 C CNN "JCLC"
+F 5 "MUX" H 7500 2550 50  0000 C CNN "L"
+F 6 "74HC157" H 7750 3350 50  0000 C CNN "L2"
+	1    7500 2550
+	1    0    0    -1  
+$EndComp
+Text HLabel 7000 3150 0    50   Input ~ 0
+PROG
+$Comp
+L power:VCC #PWR070
+U 1 1 61D34FE6
+P 7500 1650
+F 0 "#PWR070" H 7500 1500 50  0001 C CNN
+F 1 "VCC" H 7515 1823 50  0000 C CNN
+F 2 "" H 7500 1650 50  0001 C CNN
+F 3 "" H 7500 1650 50  0001 C CNN
+	1    7500 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR071
+U 1 1 61D34FF0
+P 7500 3550
+F 0 "#PWR071" H 7500 3300 50  0001 C CNN
+F 1 "GND" H 7505 3377 50  0000 C CNN
+F 2 "" H 7500 3550 50  0001 C CNN
+F 3 "" H 7500 3550 50  0001 C CNN
+	1    7500 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L JLCPCB:74HC157PW,118 U77
+U 1 1 61D35005
+P 9500 2550
+F 0 "U77" H 9500 2750 50  0000 C CNN
+F 1 "74HC157PW,118" H 9200 1700 50  0001 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 9500 2550 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/lcsc/1806030046_Nexperia-74HC157PW,118_C148201.pdf" H 9500 2550 50  0001 C CNN
+F 4 "C148201" H 9500 2550 50  0001 C CNN "JCLC"
+F 5 "MUX" H 9500 2550 50  0000 C CNN "L"
+F 6 "74HC157" H 9750 3350 50  0000 C CNN "L2"
+	1    9500 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR072
+U 1 1 61D3500F
+P 9500 1650
+F 0 "#PWR072" H 9500 1500 50  0001 C CNN
+F 1 "VCC" H 9515 1823 50  0000 C CNN
+F 2 "" H 9500 1650 50  0001 C CNN
+F 3 "" H 9500 1650 50  0001 C CNN
+	1    9500 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR073
+U 1 1 61D35019
+P 9500 3550
+F 0 "#PWR073" H 9500 3300 50  0001 C CNN
+F 1 "GND" H 9505 3377 50  0000 C CNN
+F 2 "" H 9500 3550 50  0001 C CNN
+F 3 "" H 9500 3550 50  0001 C CNN
+	1    9500 3550
+	1    0    0    -1  
+$EndComp
+Text HLabel 4800 3150 0    50   Input ~ 0
+PROG
+Text HLabel 9000 3150 0    50   Input ~ 0
+PROG
+Text HLabel 3800 1950 2    50   Output ~ 0
+WD0
+Text HLabel 3800 2250 2    50   Output ~ 0
+WD1
+Text HLabel 3800 2550 2    50   Output ~ 0
+WD2
+Text HLabel 3800 2850 2    50   Output ~ 0
+WD3
+Text HLabel 5800 1950 2    50   Output ~ 0
+WD4
+Text HLabel 5800 2250 2    50   Output ~ 0
+WD5
+Text HLabel 5800 2550 2    50   Output ~ 0
+WD6
+Text HLabel 5800 2850 2    50   Output ~ 0
+WD7
+Text HLabel 8000 1950 2    50   Output ~ 0
+WD8
+Text HLabel 8000 2250 2    50   Output ~ 0
+WD9
+Text HLabel 8000 2550 2    50   Output ~ 0
+WD10
+Text HLabel 8000 2850 2    50   Output ~ 0
+WD11
+Text HLabel 10000 1950 2    50   Output ~ 0
+WD12
+Text HLabel 10000 2250 2    50   Output ~ 0
+WD13
+Text HLabel 10000 2550 2    50   Output ~ 0
+WD14
+Text HLabel 10000 2850 2    50   Output ~ 0
+WD15
+Text Label 2800 1950 2    50   ~ 0
+BUS0
+Text Label 2800 2250 2    50   ~ 0
+BUS1
+Text Label 2800 2550 2    50   ~ 0
+BUS2
+Text Label 2800 2850 2    50   ~ 0
+BUS3
+Text Label 4800 1950 2    50   ~ 0
+BUS4
+Text Label 4800 2250 2    50   ~ 0
+BUS5
+Text Label 4800 2550 2    50   ~ 0
+BUS6
+Text Label 4800 2850 2    50   ~ 0
+BUS7
+Text Label 7000 1950 2    50   ~ 0
+BUS8
+Text Label 7000 2250 2    50   ~ 0
+BUS9
+Text Label 7000 2550 2    50   ~ 0
+BUS10
+Text Label 7000 2850 2    50   ~ 0
+BUS11
+Text Label 9000 1950 2    50   ~ 0
+BUS12
+Text Label 9000 2250 2    50   ~ 0
+BUS13
+Text Label 9000 2550 2    50   ~ 0
+BUS14
+Text Label 9000 2850 2    50   ~ 0
+BUS15
+Text Label 2800 2050 2    50   ~ 0
+MD0
+Text Label 2800 2350 2    50   ~ 0
+MD1
+Text Label 2800 2650 2    50   ~ 0
+MD2
+Text Label 2800 2950 2    50   ~ 0
+MD3
+Text Label 4800 2050 2    50   ~ 0
+MD4
+Text Label 4800 2350 2    50   ~ 0
+MD5
+Text Label 4800 2650 2    50   ~ 0
+MD6
+Text Label 4800 2950 2    50   ~ 0
+MD7
+Text Label 7000 2050 2    50   ~ 0
+MD8
+Text Label 7000 2350 2    50   ~ 0
+MD9
+Text Label 7000 2650 2    50   ~ 0
+MD10
+Text Label 7000 2950 2    50   ~ 0
+MD11
+Text Label 9000 2050 2    50   ~ 0
+MD12
+Text Label 9000 2350 2    50   ~ 0
+MD13
+Text Label 9000 2650 2    50   ~ 0
+MD14
+Text Label 9000 2950 2    50   ~ 0
+MD15
+$Comp
+L Connector_Generic:Conn_01x16 J?
+U 1 1 61D4B1F9
+P 6200 4950
+AR Path="/62788605/61D4B1F9" Ref="J?"  Part="1" 
+AR Path="/61D21C21/61D4B1F9" Ref="J6"  Part="1" 
+F 0 "J6" V 6325 4896 50  0001 C CNN
+F 1 "Conn_01x16" V 6326 4896 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 6200 4950 50  0001 C CNN
+F 3 "~" H 6200 4950 50  0001 C CNN
+F 4 "Prog Data Bus" V 6300 4900 50  0000 C CNN "L"
+	1    6200 4950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5300 5250 5300 5150
+Wire Wire Line
+	5200 5250 5200 5150
+Wire Wire Line
+	5100 5250 5100 5150
+Wire Wire Line
+	5000 5250 5000 5150
+Wire Wire Line
+	4900 5250 4900 5150
+Wire Wire Line
+	4800 5250 4800 5150
+Wire Wire Line
+	4700 5250 4700 5150
+Wire Wire Line
+	4600 5250 4600 5150
+Wire Wire Line
+	4500 5250 4500 5150
+Wire Wire Line
+	4400 5250 4400 5150
+Wire Wire Line
+	4300 5250 4300 5150
+Wire Wire Line
+	4200 5250 4200 5150
+Wire Wire Line
+	4100 5250 4100 5150
+Wire Wire Line
+	4000 5250 4000 5150
+Wire Wire Line
+	3900 5250 3900 5150
+Wire Wire Line
+	3800 5250 3800 5150
+$Comp
+L Connector_Generic:Conn_01x16 J?
+U 1 1 61D4B230
+P 4500 4950
+AR Path="/61D4B230" Ref="J?"  Part="1" 
+AR Path="/62788605/61D4B230" Ref="J?"  Part="1" 
+AR Path="/61D21C21/61D4B230" Ref="J5"  Part="1" 
+F 0 "J5" V 4625 4896 50  0001 C CNN
+F 1 "Conn_01x16" V 4626 4896 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 4500 4950 50  0001 C CNN
+F 3 "~" H 4500 4950 50  0001 C CNN
+F 4 "Data Bus" V 4600 4950 50  0000 C CNN "L"
+	1    4500 4950
+	0    -1   -1   0   
+$EndComp
+Text Label 3800 5250 3    50   ~ 0
+BUS0
+Text Label 3900 5250 3    50   ~ 0
+BUS1
+Text Label 4000 5250 3    50   ~ 0
+BUS2
+Text Label 4100 5250 3    50   ~ 0
+BUS3
+Text Label 4200 5250 3    50   ~ 0
+BUS4
+Text Label 4300 5250 3    50   ~ 0
+BUS5
+Text Label 4400 5250 3    50   ~ 0
+BUS6
+Text Label 4500 5250 3    50   ~ 0
+BUS7
+Text Label 4600 5250 3    50   ~ 0
+BUS8
+Text Label 4700 5250 3    50   ~ 0
+BUS9
+Text Label 4800 5250 3    50   ~ 0
+BUS10
+Text Label 4900 5250 3    50   ~ 0
+BUS11
+Text Label 5000 5250 3    50   ~ 0
+BUS12
+Text Label 5100 5250 3    50   ~ 0
+BUS13
+Text Label 5200 5250 3    50   ~ 0
+BUS14
+Text Label 5300 5250 3    50   ~ 0
+BUS15
+Text Label 5500 5250 3    50   ~ 0
+MD0
+Text Label 5700 5250 3    50   ~ 0
+MD2
+Text Label 5800 5250 3    50   ~ 0
+MD3
+Text Label 5900 5250 3    50   ~ 0
+MD4
+Text Label 6000 5250 3    50   ~ 0
+MD5
+Text Label 6100 5250 3    50   ~ 0
+MD6
+Text Label 6200 5250 3    50   ~ 0
+MD7
+Text Label 6300 5250 3    50   ~ 0
+MD8
+Text Label 6400 5250 3    50   ~ 0
+MD9
+Text Label 6500 5250 3    50   ~ 0
+MD10
+Text Label 6600 5250 3    50   ~ 0
+MD11
+Text Label 6700 5250 3    50   ~ 0
+MD12
+Text Label 6800 5250 3    50   ~ 0
+MD13
+Text Label 6900 5250 3    50   ~ 0
+MD14
+Text Label 7000 5250 3    50   ~ 0
+MD15
+Text Label 5600 5250 3    50   ~ 0
+MD1
+Wire Wire Line
+	7000 5250 7000 5150
+Wire Wire Line
+	6900 5250 6900 5150
+Wire Wire Line
+	6800 5250 6800 5150
+Wire Wire Line
+	6700 5250 6700 5150
+Wire Wire Line
+	6600 5250 6600 5150
+Wire Wire Line
+	6500 5250 6500 5150
+Wire Wire Line
+	6400 5250 6400 5150
+Wire Wire Line
+	6300 5250 6300 5150
+Wire Wire Line
+	6200 5250 6200 5150
+Wire Wire Line
+	6100 5250 6100 5150
+Wire Wire Line
+	6000 5250 6000 5150
+Wire Wire Line
+	5900 5250 5900 5150
+Wire Wire Line
+	5800 5250 5800 5150
+Wire Wire Line
+	5700 5250 5700 5150
+Wire Wire Line
+	5600 5250 5600 5150
+Wire Wire Line
+	5500 5250 5500 5150
+Text HLabel 2800 3250 0    50   Input ~ 0
+~WE
+Text HLabel 4800 3250 0    50   Input ~ 0
+~WE
+Text HLabel 7000 3250 0    50   Input ~ 0
+~WE
+Text HLabel 9000 3250 0    50   Input ~ 0
+~WE
+$EndSCHEMATC
