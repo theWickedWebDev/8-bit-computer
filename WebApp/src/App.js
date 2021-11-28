@@ -1,5 +1,7 @@
 import { Layout, Menu, Breadcrumb, Table, Typography } from 'antd';
 import { useState } from 'react';
+
+import { CopyOutlined, LaptopOutlined, BarsOutlined, CodeOutlined, BuildOutlined } from '@ant-design/icons';
 import opcodes from './data/opcodes';
 import { opcodeTableCols } from './tables/opcode';
 import Instructions from './components/instructions';
@@ -40,11 +42,11 @@ function App() {
     <Layout className="layout">
     <Header>
       <Menu onSelect={({ key }) => setPage(key)} theme="dark" mode="horizontal" defaultSelectedKeys={[page]}>
-        <Menu.Item key="instructions">Instructions</Menu.Item>
-        <Menu.Item key="opcodes">OpCodes</Menu.Item>
-        <Menu.Item key="assembler">Assembler</Menu.Item>
-        <Menu.Item key="hardware">Hardware</Menu.Item>
-        <Menu.Item key="resources">Resources</Menu.Item>
+        <Menu.Item key="instructions"><CodeOutlined/> Instructions</Menu.Item>
+        <Menu.Item key="opcodes"><BarsOutlined /> OpCodes</Menu.Item>
+        <Menu.Item key="assembler"><BuildOutlined /> Assembler</Menu.Item>
+        <Menu.Item key="hardware"><LaptopOutlined /> Hardware</Menu.Item>
+        <Menu.Item key="resources"><CopyOutlined /> Resources</Menu.Item>
       </Menu>
     </Header>
     <Content style={{ padding: '0 50px' }}>
