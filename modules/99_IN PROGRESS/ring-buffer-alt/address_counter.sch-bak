@@ -1,0 +1,245 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74LS193 U?
+U 1 1 64EA8C50
+P 4850 4000
+AR Path="/64EA8C50" Ref="U?"  Part="1" 
+AR Path="/64EA42CB/64EA8C50" Ref="U7"  Part="1" 
+AR Path="/64EB2967/64EA8C50" Ref="U9"  Part="1" 
+F 0 "U9" H 5100 4750 50  0000 C CNN
+F 1 "74LS193" H 5100 4600 50  0000 C CNN
+F 2 "Package_SO:SO-16_5.3x10.2mm_P1.27mm" H 4850 4000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74ls193.pdf" H 4850 4000 50  0001 C CNN
+	1    4850 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS193 U?
+U 1 1 64EA8C56
+P 6900 4000
+AR Path="/64EA8C56" Ref="U?"  Part="1" 
+AR Path="/64EA42CB/64EA8C56" Ref="U8"  Part="1" 
+AR Path="/64EB2967/64EA8C56" Ref="U10"  Part="1" 
+F 0 "U10" H 7150 4750 50  0000 C CNN
+F 1 "74LS193" H 7150 4600 50  0000 C CNN
+F 2 "Package_SO:SO-16_5.3x10.2mm_P1.27mm" H 6900 4000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn74ls193.pdf" H 6900 4000 50  0001 C CNN
+	1    6900 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 64EA8C5C
+P 4850 3300
+AR Path="/64EA8C5C" Ref="#PWR?"  Part="1" 
+AR Path="/64EA42CB/64EA8C5C" Ref="#PWR024"  Part="1" 
+AR Path="/64EB2967/64EA8C5C" Ref="#PWR034"  Part="1" 
+F 0 "#PWR034" H 4850 3150 50  0001 C CNN
+F 1 "VCC" H 4865 3473 50  0000 C CNN
+F 2 "" H 4850 3300 50  0001 C CNN
+F 3 "" H 4850 3300 50  0001 C CNN
+	1    4850 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 64EA8C62
+P 6900 3300
+AR Path="/64EA8C62" Ref="#PWR?"  Part="1" 
+AR Path="/64EA42CB/64EA8C62" Ref="#PWR029"  Part="1" 
+AR Path="/64EB2967/64EA8C62" Ref="#PWR039"  Part="1" 
+F 0 "#PWR039" H 6900 3150 50  0001 C CNN
+F 1 "VCC" H 6915 3473 50  0000 C CNN
+F 2 "" H 6900 3300 50  0001 C CNN
+F 3 "" H 6900 3300 50  0001 C CNN
+	1    6900 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64EA8C68
+P 4850 4800
+AR Path="/64EA8C68" Ref="#PWR?"  Part="1" 
+AR Path="/64EA42CB/64EA8C68" Ref="#PWR025"  Part="1" 
+AR Path="/64EB2967/64EA8C68" Ref="#PWR035"  Part="1" 
+F 0 "#PWR035" H 4850 4550 50  0001 C CNN
+F 1 "GND" H 4855 4627 50  0000 C CNN
+F 2 "" H 4850 4800 50  0001 C CNN
+F 3 "" H 4850 4800 50  0001 C CNN
+	1    4850 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64EA8C6E
+P 6900 4800
+AR Path="/64EA8C6E" Ref="#PWR?"  Part="1" 
+AR Path="/64EA42CB/64EA8C6E" Ref="#PWR030"  Part="1" 
+AR Path="/64EB2967/64EA8C6E" Ref="#PWR040"  Part="1" 
+F 0 "#PWR040" H 6900 4550 50  0001 C CNN
+F 1 "GND" H 6905 4627 50  0000 C CNN
+F 2 "" H 6900 4800 50  0001 C CNN
+F 3 "" H 6900 4800 50  0001 C CNN
+	1    6900 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 4100 5800 4100
+Wire Wire Line
+	5800 4100 5800 4300
+Wire Wire Line
+	5800 4300 6400 4300
+$Comp
+L power:GND #PWR?
+U 1 1 64EA8C7F
+P 4250 3750
+AR Path="/64EA8C7F" Ref="#PWR?"  Part="1" 
+AR Path="/64EA42CB/64EA8C7F" Ref="#PWR021"  Part="1" 
+AR Path="/64EB2967/64EA8C7F" Ref="#PWR031"  Part="1" 
+F 0 "#PWR031" H 4250 3500 50  0001 C CNN
+F 1 "GND" V 4255 3622 50  0000 R CNN
+F 2 "" H 4250 3750 50  0001 C CNN
+F 3 "" H 4250 3750 50  0001 C CNN
+	1    4250 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 3750 4350 3750
+Wire Wire Line
+	4350 3750 4350 3700
+Connection ~ 4350 3700
+Wire Wire Line
+	4350 3700 4350 3600
+Connection ~ 4350 3750
+Wire Wire Line
+	4350 3750 4350 3800
+Connection ~ 4350 3800
+Wire Wire Line
+	4350 3800 4350 3900
+$Comp
+L power:GND #PWR?
+U 1 1 64EA8C8D
+P 6300 3750
+AR Path="/64EA8C8D" Ref="#PWR?"  Part="1" 
+AR Path="/64EA42CB/64EA8C8D" Ref="#PWR026"  Part="1" 
+AR Path="/64EB2967/64EA8C8D" Ref="#PWR036"  Part="1" 
+F 0 "#PWR036" H 6300 3500 50  0001 C CNN
+F 1 "GND" V 6305 3622 50  0000 R CNN
+F 2 "" H 6300 3750 50  0001 C CNN
+F 3 "" H 6300 3750 50  0001 C CNN
+	1    6300 3750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6300 3750 6400 3750
+Wire Wire Line
+	6400 3750 6400 3700
+Connection ~ 6400 3700
+Wire Wire Line
+	6400 3700 6400 3600
+Wire Wire Line
+	6400 3900 6400 3800
+Connection ~ 6400 3750
+Connection ~ 6400 3800
+Wire Wire Line
+	6400 3800 6400 3750
+NoConn ~ 7400 4100
+NoConn ~ 7400 4300
+$Comp
+L power:GND #PWR?
+U 1 1 64EA8C9D
+P 6400 4500
+AR Path="/64EA8C9D" Ref="#PWR?"  Part="1" 
+AR Path="/64EA42CB/64EA8C9D" Ref="#PWR028"  Part="1" 
+AR Path="/64EB2967/64EA8C9D" Ref="#PWR038"  Part="1" 
+F 0 "#PWR038" H 6400 4250 50  0001 C CNN
+F 1 "GND" V 6405 4372 50  0000 R CNN
+F 2 "" H 6400 4500 50  0001 C CNN
+F 3 "" H 6400 4500 50  0001 C CNN
+	1    6400 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64EA8CA3
+P 4350 4500
+AR Path="/64EA8CA3" Ref="#PWR?"  Part="1" 
+AR Path="/64EA42CB/64EA8CA3" Ref="#PWR023"  Part="1" 
+AR Path="/64EB2967/64EA8CA3" Ref="#PWR033"  Part="1" 
+F 0 "#PWR033" H 4350 4250 50  0001 C CNN
+F 1 "GND" V 4355 4372 50  0000 R CNN
+F 2 "" H 4350 4500 50  0001 C CNN
+F 3 "" H 4350 4500 50  0001 C CNN
+	1    4350 4500
+	0    1    1    0   
+$EndComp
+NoConn ~ 5350 4300
+$Comp
+L power:VCC #PWR?
+U 1 1 64EA8CAB
+P 4350 4400
+AR Path="/64EA8CAB" Ref="#PWR?"  Part="1" 
+AR Path="/64EA42CB/64EA8CAB" Ref="#PWR022"  Part="1" 
+AR Path="/64EB2967/64EA8CAB" Ref="#PWR032"  Part="1" 
+F 0 "#PWR032" H 4350 4250 50  0001 C CNN
+F 1 "VCC" V 4365 4527 50  0000 L CNN
+F 2 "" H 4350 4400 50  0001 C CNN
+F 3 "" H 4350 4400 50  0001 C CNN
+	1    4350 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 64EA8CB1
+P 6400 4400
+AR Path="/64EA8CB1" Ref="#PWR?"  Part="1" 
+AR Path="/64EA42CB/64EA8CB1" Ref="#PWR027"  Part="1" 
+AR Path="/64EB2967/64EA8CB1" Ref="#PWR037"  Part="1" 
+F 0 "#PWR037" H 6400 4250 50  0001 C CNN
+F 1 "VCC" V 6415 4527 50  0000 L CNN
+F 2 "" H 6400 4400 50  0001 C CNN
+F 3 "" H 6400 4400 50  0001 C CNN
+	1    6400 4400
+	0    -1   -1   0   
+$EndComp
+Text HLabel 4350 4300 0    39   Input ~ 0
+~COUNT_UP
+Text HLabel 5350 3600 2    50   Output ~ 0
+A0
+Text HLabel 5350 3700 2    50   Output ~ 0
+A1
+Text HLabel 5350 3800 2    50   Output ~ 0
+A2
+Text HLabel 5350 3900 2    50   Output ~ 0
+A3
+Text HLabel 7400 3600 2    50   Output ~ 0
+A4
+Text HLabel 7400 3700 2    50   Output ~ 0
+A5
+Text HLabel 7400 3800 2    50   Output ~ 0
+A6
+Text HLabel 7400 3900 2    50   Output ~ 0
+A7
+Wire Wire Line
+	6400 4100 6300 4100
+Text HLabel 6300 4100 0    39   Input ~ 0
+~LOAD
+Text HLabel 4250 4100 0    39   Input ~ 0
+~LOAD
+Wire Wire Line
+	4250 4100 4350 4100
+$EndSCHEMATC

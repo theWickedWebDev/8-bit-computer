@@ -68,6 +68,40 @@ function hexdump(byteArray) {
     console.log(lines.join('\n'));
 }
 
+
+function dataOnlyDump(byteArray) {
+    const buffer = new Uint8Array(Buffer.from(byteArray));
+    let lines = []
+    console.log(buffer.length);
+    for (let i = 0; i < buffer.length; i += 16) {
+        let block = buffer.slice(i, i + 16) // cut buffer into blocks of 16
+        let hexArray = []
+        let padding = ''
+
+        for (let value of block) {
+            hexArray.push(value)
+        }
+
+        // if block is less than 16 bytes, calculate remaining space
+        if (hexArray.length < 16) {
+            let space = 16 - hexArray.length
+            padding = ' '.repeat(space * 2 + space + (hexArray.length < 9 ? 1 : 0)) // calculate extra space if 8 or less
+        }
+
+        let hexString =
+        hexArray.length > 8
+            ? hexArray.slice(0, 8).join(',') + ',' + hexArray.slice(8).join(',')
+            : hexArray.join(',')
+
+        // let line = `${address}  ${hexString}  ${padding}|${asciiString}|`
+        let line = `${hexString}`
+
+        lines.push(line)
+    }
+    let file = lines.join(',');
+    console.log(file);
+}
+
 const writeToBin = (byteArray, name) => {
     const fs = require('fs');
     const data = new Uint8Array(Buffer.from(byteArray));
@@ -77,5 +111,6 @@ const writeToBin = (byteArray, name) => {
 module.exports = {
     hexdump,
     writeToBin,
-    chardump
+    chardump,
+    dataOnlyDump
 }

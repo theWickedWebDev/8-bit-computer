@@ -1,0 +1,42 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 7 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 4400 7900 0    118  ~ 0
+Return from Interrupt\n\n1. Restore PC => Mem  => SP\n2. Restore Flags => Mem  => SP\n3. Load MAR with PC\n4. Fetch Instruction\n5. Execute
+Text Notes 4450 4700 0    118  ~ 0
+1.  Increment SP\n2.  PC Out | Transfer Register In\n3.  SP Address Out | MAR In\n4.  TX MSB Out | MEM Write\n5.  Increment SP\n6.  SP Address Out | MAR In\n7.  TX LSB Out | MEM Write\n8.  Increment SP\n9.  SP Address Out | MAR In\n10. Flags Reg Out | MEM Write\n11. Load Interrupt Address** into PC | Clear Interrupt Flag(?)\n12. PC Out | MAR In\n13. Memory Out | Instruction Register In\n\n\nLoad Interrupt Address** - This is a hardwired address unique to each interrupt
+Text Notes 4500 1600 0    197  ~ 0
+Enter Interrupt\n
+Wire Notes Line
+	4350 2450 4100 2450
+Text Notes 4050 2500 2    118  ~ 0
+STORE PC
+Wire Notes Line
+	4350 3100 4350 3600
+Wire Notes Line
+	4350 3350 4100 3350
+Text Notes 4050 3400 2    118  ~ 0
+STORE FLAGS
+Wire Notes Line
+	4350 3650 4350 4150
+Wire Notes Line
+	4350 3900 4100 3900
+Text Notes 4050 3950 2    118  ~ 0
+FETCH INTERRUPT SUBROUTINE
+Wire Notes Line
+	4350 1850 4350 3050
+Text HLabel 3100 1700 0    118  Input ~ 0
+~INTERRUPT_HANDLER_EN
+$EndSCHEMATC

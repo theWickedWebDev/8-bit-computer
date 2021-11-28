@@ -1,4 +1,11 @@
-19235765264589427
+19239037775860427
+8-bit-computer
+1x99_pinheader
+
+
+0
+99
+99
 8-bit-computer
 Diode_Array_1x08
 DIODE 8 
@@ -6,6 +13,13 @@ Through hole pin header THT 2x08 2.54mm double row
 0
 16
 16
+8-bit-computer
+LM3281
+
+
+0
+6
+6
 8-bit-computer
 SMD_SW_SPDT_JLCPCB
 
@@ -32,7 +46,7 @@ diode-array-sockets
 
 
 0
-264
+280
 24
 8-bit-computer
 mouse-bite-1mm-slot
