@@ -15,9 +15,10 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && react-snapshot && cp -R build ../docs",
+    "build": "react-scripts build && react-snapshot",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "npm run build && gh-pages -d build"
   },
   "homepage": "https://thewickedwebdev.github.io/8-bit-computer/",
   "eslintConfig": {
