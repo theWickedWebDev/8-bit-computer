@@ -9,16 +9,30 @@ const { Header, Content, Footer } = Layout;
 const { Text } = Typography;
 
 function App() {
-  const [page, setPage] = useState("instructions");
+  const [page, setPage] = useState("opcodes");
 
   let mainContent = <div/>
   if (page === 'opcodes') {
     mainContent = (
-    <Table
-      columns={opcodeTableCols}
-      dataSource={opcodes}
-      pagination={false}
-    />
+      <div style={{ paddingTop: 40 }}>
+        <h1>Opcodes</h1>
+        <h3>Fetch Instruction</h3>
+        <Text>Each instruction starts with the following 3 operations.</Text><br/><br/>
+        {[
+            "Assert Program Countert(PC) to Address Bus | Load Memory Address Register(MAR) | Set Code Segment(CS) register active",
+            "Assert memory data | Load instruction",
+            "Increment Program Counter"
+          ].map((operation, i) => (
+            <div><Text><Text code>{i}</Text> {operation}</Text></div>
+          ))}
+        <br/>
+        <br/>
+        <Table
+          columns={opcodeTableCols}
+          dataSource={opcodes}
+          pagination={false}
+        />
+      </div>
     );
   }
 

@@ -1,3 +1,9 @@
+const FETCH = [
+    "Assert Program Countert(PC) to Address Bus | Load Memory Address Register(MAR)",
+    "Assert memory data | Load instruction",
+    "Increment Program Counter"
+];
+
 export default [
     {
         key: '0x00',
@@ -5,7 +11,7 @@ export default [
         mnemonic: "NOOP",
         color: "blue",
         description: 'No operation',
-        cycles: 3
+        operations: [],
     },
     {
         key: '0x01',
@@ -14,7 +20,9 @@ export default [
         color: "red",
         description: 'Copy data from register* to Accumulator',
         details: 'Registers(r) = a, c, d, e, f, x, sp, pc',
-        cycles: 5
+        operations: [
+            "Assert %r to data bus | Enable Load A"
+        ],
     },
     {
         key: '0x02',
@@ -23,7 +31,11 @@ export default [
         color: "red",
         description: 'Copy immediate data to Accumulator',
         details: 'h, b, d',
-        cycles: 5
+        operations: [
+            "Assert PC to Address Bus | Load Memory Address Register(MAR)",
+            "Assert Memory Data to Bus | Enable Load A",
+            "Increment PC",
+        ],
     },
     {
         key: '0x03',
@@ -31,8 +43,16 @@ export default [
         mnemonic: "MOV a, $mem",
         color: "red",
         description: 'Copy memory data to Accumulator',
-        details: '$dd:ff, $dd:ffff',
-        cycles: 5
+        details: '$dd:ffff',
+        operations: [
+            "Assert PC to Address Bus | Load Memory Address Register(MAR)",
+            "Assert Memory Data to Bus | Enable TX LSB",
+            "Increment PC | Assert PC to Address Bus | Load Memory Address Register(MAR)",
+            "Assert Memory Data to Bus | Enable TX MSB",
+            "Assert TX Address bus | Load Memory Address Register(MAR)",
+            "Assert Memory Data Bus | Enable Load A",
+            "Increment PC",
+        ],
     },
     {
         key: '0x04',
@@ -41,7 +61,9 @@ export default [
         color: "red",
         description: 'Copy data from register* to C register',
         details: 'Registers(r) = a, c, d, e, f, x, sp, pc',
-        cycles: 5
+        operations: [
+            "Assert %r to data bus | Enable Load C"
+        ],
     },
     {
         key: '0x05',
@@ -50,7 +72,11 @@ export default [
         color: "red",
         description: 'Copy immediate data to C register',
         details: 'h, b, d',
-        cycles: 5
+        operations: [
+            "Assert PC to Address Bus | Load Memory Address Register(MAR)",
+            "Assert Memory Data to Bus | Enable Load C",
+            "Increment PC",
+        ],
     },
     {
         key: '0x06',
@@ -59,7 +85,11 @@ export default [
         color: "red",
         description: 'Copy memory data to C register',
         details: '$dd:ff, $dd:ffff',
-        cycles: 5
+        operations: [
+            "Assert PC to Address Bus | Load Memory Address Register(MAR)",
+            "Assert Memory Data to Bus | Enable Load C",
+            "Increment PC",
+        ],
     },
     {
         key: '0x07',
@@ -68,7 +98,9 @@ export default [
         color: "red",
         description: 'Copy data from register* to D register',
         details: 'Registers(r) = a, c, d, e, f, x, sp, pc',
-        cycles: 5
+        operations: [
+            "Assert %r to data bus | Enable Load D",
+        ],
     },
     {
         key: '0x08',
@@ -77,7 +109,11 @@ export default [
         color: "red",
         description: 'Copy immediate data to D register',
         details: 'h, b, d',
-        cycles: 5
+        operations: [
+            "Assert PC to Address Bus | Load Memory Address Register(MAR)",
+            "Assert Memory Data to Bus | Enable Load D",
+            "Increment PC",
+        ],
     },
     {
         key: '0x09',
@@ -86,7 +122,11 @@ export default [
         color: "red",
         description: 'Copy memory data to D register',
         details: '$dd:ff, $dd:ffff',
-        cycles: 5
+        operations: [
+            "Assert PC to Address Bus | Load Memory Address Register(MAR)",
+            "Assert Memory Data to Bus | Enable Load D",
+            "Increment PC",
+        ],
     },
     {
         key: '0x0A',
@@ -95,7 +135,9 @@ export default [
         color: "red",
         description: 'Copy data from register* to E register',
         details: 'Registers(r) = a, c, d, e, f, x, sp, pc',
-        cycles: 5
+        operations: [
+            "Assert %r to data bus | Enable Load E"
+        ],
     },
     {
         key: '0x0B',
@@ -104,7 +146,11 @@ export default [
         color: "red",
         description: 'Copy immediate data to E register',
         details: 'h, b, d',
-        cycles: 5
+        operations: [
+            "Assert PC to Address Bus | Load Memory Address Register(MAR)",
+            "Assert Memory Data to Bus | Enable Load E",
+            "Increment PC",
+        ],
     },
     {
         key: '0x0C',
@@ -113,7 +159,11 @@ export default [
         color: "red",
         description: 'Copy memory data to E register',
         details: '$dd:ff, $dd:ffff',
-        cycles: 5
+        operations: [
+            "Assert PC to Address Bus | Load Memory Address Register(MAR)",
+            "Assert Memory Data to Bus | Enable Load E",
+            "Increment PC",
+        ],
     },
     {
         key: '0x0D',
@@ -122,7 +172,9 @@ export default [
         color: "red",
         description: 'Copy data from register* to F register',
         details: 'Registers(r) = a, c, d, e, f, x, sp, pc',
-        cycles: 5
+        operations: [
+            "Assert %r to data bus | Enable Load F"
+        ],
     },
     {
         key: '0x0E',
@@ -131,7 +183,11 @@ export default [
         color: "red",
         description: 'Copy immediate data to F register',
         details: 'h, b, d',
-        cycles: 5
+        operations: [
+            "Assert PC to Address Bus | Load Memory Address Register(MAR)",
+            "Assert Memory Data to Bus | Enable Load F",
+            "Increment PC",
+        ],
     },
     {
         key: '0x0F',
@@ -140,7 +196,11 @@ export default [
         color: "red",
         description: 'Copy memory data to F register',
         details: '$dd:ff, $dd:ffff',
-        cycles: 5
+        operations: [
+            "Assert PC to Address Bus | Load Memory Address Register(MAR)",
+            "Assert Memory Data to Bus | Enable Load F",
+            "Increment PC",
+        ],
     },
     {
         key: '0x10',
@@ -149,7 +209,9 @@ export default [
         color: "red",
         description: 'Copy data from register* to Constant(x) register',
         details: 'Registers(r) = a, c, d, e, f, x, sp, pc',
-        cycles: 5
+        operations: [
+            "Assert %r to data bus | Enable Load X"
+        ],
     },
     {
         key: '0x11',
@@ -158,7 +220,11 @@ export default [
         color: "red",
         description: 'Copy immediate data to Constant(x) register',
         details: 'h, b, d',
-        cycles: 5
+        operations: [
+            "Assert PC to Address Bus | Load Memory Address Register(MAR)",
+            "Assert Memory Data to Bus | Enable Load X",
+            "Increment PC",
+        ],
     },
     {
         key: '0x12',
@@ -167,7 +233,11 @@ export default [
         color: "red",
         description: 'Copy memory data to Constant(x) register',
         details: '$dd:ff, $dd:ffff',
-        cycles: 5
+        operations: [
+            "Assert PC to Address Bus | Load Memory Address Register(MAR)",
+            "Assert Memory Data to Bus | Enable Load X",
+            "Increment PC",
+        ],
     },
     {
         key: '0x13',
@@ -176,7 +246,7 @@ export default [
         color: "red",
         description: 'Copy data from register* to Stack Pointer(sp) register',
         details: 'Registers(r) = a, c, d, e, f, x, sp, pc',
-        cycles: 5
+        operations: [],
     },
     {
         key: '0x14',
@@ -185,7 +255,7 @@ export default [
         color: "red",
         description: 'Copy immediate data to Stack Pointer(sp) register',
         details: 'h, b, d',
-        cycles: 5
+        operations: [],
     },
     {
         key: '0x15',
@@ -194,7 +264,7 @@ export default [
         color: "red",
         description: 'Copy memory data to Stack Pointer(sp) register',
         details: '$dd:ff, $dd:ffff',
-        cycles: 5
+        operations: [],
     },
     {
         key: '0x16',
@@ -203,7 +273,7 @@ export default [
         color: "red",
         description: 'Copy data from register* to Program Counter(pc) register',
         details: 'Registers(r) = a, c, d, e, f, x, sp, pc',
-        cycles: 5
+        operations: [],
     },
     {
         key: '0x17',
@@ -212,7 +282,6 @@ export default [
         color: "red",
         description: 'Copy immediate data to Program Counter(pc) register',
         details: 'h, b, d',
-        cycles: 5
     },
     {
         key: '0x18',
@@ -221,7 +290,6 @@ export default [
         color: "red",
         description: 'Copy memory data to Program Counter(pc) register',
         details: '$dd:ff, $dd:ffff',
-        cycles: 5
     },
     {
         key: '0x19',
@@ -230,7 +298,6 @@ export default [
         color: "red",
         description: 'Copy immediate data to Data Segment(ds) register',
         details: '0xf',
-        cycles: 5
     },
     {
         key: '0x1A',
@@ -239,7 +306,6 @@ export default [
         color: "red",
         description: '',
         details: '',
-        cycles: 5
     },
     {
         key: '0x1B',
@@ -248,7 +314,6 @@ export default [
         color: "red",
         description: 'Copies 2 GPRs data (MSB and LSB), into the Stack Pointer(sp)',
         details: 'ac, ad, ae, af, ca, cd, ce, cf, da, dc, de, df, ea, ec, ed, ef, fa, fc, fd, fe',
-        cycles: 5
     },
     {
         key: '0x1C',
@@ -257,7 +322,6 @@ export default [
         color: "red",
         description: "Copies 1 GPRs data into the Stack Pointer's least significant byte setting the MSB to 0x0",
         details: 'a, c, d, e, f, x',
-        cycles: 5
     },
     {
         key: '0x1D',
@@ -266,7 +330,6 @@ export default [
         color: "red",
         description: "Copies 1 GPRs data into the Stack Pointer's most significant byte setting the LSB to 0x0",
         details: 'a, c, d, e, f, x',
-        cycles: 5
     },
     {
         key: '0x1E',
@@ -275,7 +338,6 @@ export default [
         color: "purple",
         description: 'Adds an immediate value to the Accumulator',
         details: '',
-        cycles: 5
     },
     {
         key: '0x1F',
@@ -284,7 +346,6 @@ export default [
         color: "purple",
         description: 'Adds the value of any GPR(r) to the Accumulator',
         details: 'a, c, d, e, f, x',
-        cycles: 5
     },
     {
         key: '0x20',
@@ -293,7 +354,6 @@ export default [
         color: "purple",
         description: 'Adds the 8bit value stored at the memory address given to the accumulator',
         details: '0xff',
-        cycles: 5
     },
     {
         key: '0x21',
@@ -302,7 +362,6 @@ export default [
         color: "purple",
         description: 'Subtracts an immediate value from the Accumulator',
         details: '',
-        cycles: 5
     },
     {
         key: '0x22',
@@ -311,7 +370,6 @@ export default [
         color: "purple",
         description: 'Subtracts the value of any GPR(r) from the Accumulator',
         details: '',
-        cycles: 5
     },
     {
         key: '0x23',
@@ -320,7 +378,6 @@ export default [
         color: "purple",
         description: 'Subtracts the 8bit value stored at the memory address given from the accumulator',
         details: '',
-        cycles: 5
     },
     {
         key: '0x24',
@@ -329,7 +386,6 @@ export default [
         color: "purple",
         description: 'Subtracts 1 from the accumulator',
         details: '',
-        cycles: 5
     },
     {
         key: '0x25',
@@ -338,7 +394,6 @@ export default [
         color: "purple",
         description: 'Bitwise NOT on the accumulator. Inverts.',
         details: '',
-        cycles: 5
     },
     {
         key: '0x26',
@@ -347,7 +402,6 @@ export default [
         color: "purple",
         description: 'Bitwise AND with an immediate value',
         details: '',
-        cycles: 5
     },
     {
         key: '0x27',
@@ -356,7 +410,6 @@ export default [
         color: "purple",
         description: 'Performs a bitwise AND against another GPR',
         details: '',
-        cycles: 5
     },
     {
         key: '0x28',
@@ -365,7 +418,6 @@ export default [
         color: "purple",
         description: 'Performs a bitwise AND against the value stored in RAM, at the given address, to the accumulator',
         details: '',
-        cycles: 5
     },
     {
         key: '0x29',
@@ -374,7 +426,6 @@ export default [
         color: "purple",
         description: 'Bitwise NAND with an immediate value',
         details: '',
-        cycles: 5
     },
     {
         key: '0x2A',
@@ -383,7 +434,6 @@ export default [
         color: "purple",
         description: 'Performs a bitwise NAND against another GPR',
         details: '',
-        cycles: 5
     },
     {
         key: '0x2B',
@@ -392,7 +442,6 @@ export default [
         color: "purple",
         description: 'Performs a bitwise NAND against the value stored in RAM, at the given address, to the accumulator',
         details: '',
-        cycles: 5
     },
     {
         key: '0x2C',
@@ -401,7 +450,6 @@ export default [
         color: "purple",
         description: 'Bitwise OR with an immediate value',
         details: '',
-        cycles: 5
     },
     {
         key: '0x2D',
@@ -410,7 +458,6 @@ export default [
         color: "purple",
         description: 'Performs a bitwise OR against another GPR',
         details: '',
-        cycles: 5
     },
     {
         key: '0x2E',
@@ -419,7 +466,6 @@ export default [
         color: "purple",
         description: 'Performs a bitwise OR against the value stored in RAM, at the given address, to the accumulator',
         details: '',
-        cycles: 5
     },
     {
         key: '0x2F',
@@ -428,7 +474,6 @@ export default [
         color: "purple",
         description: 'Bitwise NOR with an immediate value',
         details: '',
-        cycles: 5
     },
     {
         key: '0x30',
@@ -437,7 +482,6 @@ export default [
         color: "purple",
         description: 'Performs a bitwise NOR against another GPR',
         details: '',
-        cycles: 5
     },
     {
         key: '0x31',
@@ -446,7 +490,6 @@ export default [
         color: "purple",
         description: 'Performs a bitwise NOR against the value stored in RAM, at the given address, to the accumulator',
         details: '',
-        cycles: 5
     },
     {
         key: '0x32',
@@ -455,7 +498,6 @@ export default [
         color: "purple",
         description: 'Bitwise XOR with an immediate value',
         details: '',
-        cycles: 5
     },
     {
         key: '0x33',
@@ -464,7 +506,6 @@ export default [
         color: "purple",
         description: 'Performs a bitwise XOR against another GPR',
         details: '',
-        cycles: 5
     },
     {
         key: '0x34',
@@ -473,7 +514,6 @@ export default [
         color: "purple",
         description: 'Performs a bitwise XOR against the value stored in RAM, at the given address, to the accumulator',
         details: '',
-        cycles: 5
     },
     {
         key: '0x35',
@@ -482,7 +522,6 @@ export default [
         color: "purple",
         description: 'Bitwise XNOR with an immediate value',
         details: '',
-        cycles: 5
     },
     {
         key: '0x36',
@@ -491,7 +530,6 @@ export default [
         color: "purple",
         description: 'Performs a bitwise XNOR against another GPR',
         details: '',
-        cycles: 5
     },
     {
         key: '0x37',
@@ -500,7 +538,6 @@ export default [
         color: "purple",
         description: 'Performs a bitwise XNOR against the value stored in RAM, at the given address, to the accumulator',
         details: '',
-        cycles: 5
     },
     {
         key: '0x38',
@@ -509,7 +546,6 @@ export default [
         color: "purple",
         description: "Compare immediate value with accumulator",
         details: '',
-        cycles: 5
     },
     {
         key: '0x39',
@@ -518,7 +554,6 @@ export default [
         color: "purple",
         description: "Compare register value with accumulator",
         details: 'a, c, d, e, f, x',
-        cycles: 5
     },
     {
         key: '0x3A',
@@ -527,7 +562,6 @@ export default [
         color: "purple",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x3B',
@@ -536,7 +570,6 @@ export default [
         color: "purple",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x3C',
@@ -545,7 +578,6 @@ export default [
         color: "purple",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x3D',
@@ -554,7 +586,6 @@ export default [
         color: "purple",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x3E',
@@ -563,7 +594,6 @@ export default [
         color: "purple",
         description: "Shifts the accumulator left one bit, puts 0x0 into LSB.",
         details: '',
-        cycles: 5
     },
     {
         key: '0x3F',
@@ -572,7 +602,6 @@ export default [
         color: "purple",
         description: "Shifts the accumulator right one bit, puts 0x0 into MSB.",
         details: '',
-        cycles: 5
     },
     {
         key: '0x40',
@@ -581,7 +610,6 @@ export default [
         color: "purple",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x41',
@@ -590,7 +618,6 @@ export default [
         color: "blue",
         description: "Pushes a register onto the stack",
         details: '',
-        cycles: 5
     },
     {
         key: '0x42',
@@ -599,7 +626,6 @@ export default [
         color: "blue",
         description: "Pulls the value from the stack into a register",
         details: '',
-        cycles: 5
     },
     {
         key: '0x43',
@@ -608,7 +634,6 @@ export default [
         color: "",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x44',
@@ -617,7 +642,6 @@ export default [
         color: "",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x45',
@@ -626,7 +650,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x46',
@@ -635,7 +658,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x47',
@@ -644,7 +666,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x48',
@@ -653,7 +674,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x49',
@@ -662,7 +682,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x4A',
@@ -671,7 +690,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x4B',
@@ -680,7 +698,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x4C',
@@ -689,7 +706,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x4D',
@@ -698,7 +714,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x4E',
@@ -707,7 +722,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x4F',
@@ -716,7 +730,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x50',
@@ -725,7 +738,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x51',
@@ -734,7 +746,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x52',
@@ -743,7 +754,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x53',
@@ -752,7 +762,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x54',
@@ -761,7 +770,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x55',
@@ -770,7 +778,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x56',
@@ -779,7 +786,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x57',
@@ -788,7 +794,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x58',
@@ -797,7 +802,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x59',
@@ -806,7 +810,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x5A',
@@ -815,7 +818,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x5B',
@@ -824,7 +826,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x5C',
@@ -833,7 +834,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x5D',
@@ -842,7 +842,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x5E',
@@ -851,7 +850,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x5F',
@@ -860,7 +858,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x60',
@@ -869,7 +866,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x61',
@@ -878,7 +874,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x62',
@@ -887,7 +882,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x63',
@@ -896,7 +890,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x64',
@@ -905,7 +898,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x65',
@@ -914,7 +906,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x66',
@@ -923,7 +914,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x67',
@@ -932,7 +922,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x68',
@@ -941,7 +930,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x69',
@@ -950,7 +938,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x6A',
@@ -959,7 +946,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x6B',
@@ -968,7 +954,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x6C',
@@ -977,7 +962,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x6D',
@@ -986,7 +970,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x6E',
@@ -995,7 +978,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x6F',
@@ -1004,7 +986,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x70',
@@ -1013,7 +994,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x71',
@@ -1022,7 +1002,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x72',
@@ -1031,7 +1010,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x73',
@@ -1040,7 +1018,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x74',
@@ -1049,7 +1026,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x75',
@@ -1058,7 +1034,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x76',
@@ -1067,7 +1042,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x77',
@@ -1076,7 +1050,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x78',
@@ -1085,7 +1058,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x79',
@@ -1094,7 +1066,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x7A',
@@ -1103,7 +1074,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x7B',
@@ -1112,7 +1082,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x7C',
@@ -1121,7 +1090,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x7D',
@@ -1130,7 +1098,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x7E',
@@ -1139,7 +1106,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x7F',
@@ -1148,7 +1114,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
     {
         key: '0x80',
@@ -1157,7 +1122,6 @@ export default [
         color: "green",
         description: "",
         details: '',
-        cycles: 5
     },
 
     {
@@ -1167,7 +1131,6 @@ export default [
         color: "blue",
         description: "Sends a byte from accumulator out on given port",
         details: '',
-        cycles: 5
     },
     {
         key: '0x82',
@@ -1176,7 +1139,6 @@ export default [
         color: "blue",
         description: "Sends a byte from accumulator out on given port",
         details: '',
-        cycles: 5
     },
     {
         key: '0x83',
@@ -1185,7 +1147,6 @@ export default [
         color: "blue",
         description: "Sends a byte from accumulator out on given port",
         details: '',
-        cycles: 5
     },
     {
         key: '0x84',
@@ -1194,7 +1155,6 @@ export default [
         color: "blue",
         description: "Reads a byte from given port into a register",
         details: 'a, c, d, e, f, x',
-        cycles: 5
     },
     {
         key: '0x85',
@@ -1203,7 +1163,6 @@ export default [
         color: "blue",
         description: "Sends accumulator out on Serial Port",
         details: '',
-        cycles: 5
     },
     {
         key: '0x86',
@@ -1212,14 +1171,7 @@ export default [
         color: "blue",
         description: "Reads a byte from serial port into the accumulator",
         details: '',
-        cycles: 5
     },
-
-
-
-
-
-
     {
         key: '0xFC',
         opcode: 0xFC,
@@ -1227,7 +1179,6 @@ export default [
         color: "blue",
         description: "Returns from Interrupt",
         details: '',
-        cycles: 2
     },
 
     {
@@ -1237,7 +1188,6 @@ export default [
         color: "blue",
         description: "Returns from subroutine",
         details: '',
-        cycles: 2
     },
 
     {
@@ -1247,7 +1197,6 @@ export default [
         color: "volcano",
         description: "Resets the computer setting PC to 0x0:0 and clearing registers.",
         details: '',
-        cycles: 2
     },
     {
         key: '0xFF',
@@ -1256,6 +1205,5 @@ export default [
         color: "volcano",
         description: "Halts the computers CPU",
         details: '',
-        cycles: 2
     },
 ];

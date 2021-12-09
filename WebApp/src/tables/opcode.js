@@ -226,8 +226,8 @@ export const opcodeTableCols = [
       ],
       onFilter: (value, record) => record.mnemonic.includes(value),
       filterSearch: true,
-      width: '40%',
       key: 'mnemonic',
+      width: 100,
       render: (text, { color }) => <Tag color={color}>{text}</Tag>,
     },
     {
@@ -250,10 +250,30 @@ export const opcodeTableCols = [
       ),
     },
     {
+      title: 'Operations',
+      key: 'operations',
+      width: '50%',
+      dataIndex: 'operations',
+      render: operations => {
+        if (!operations) return null;
+        return (
+          <div>
+            <div><Text><Text code>[0..2]</Text>Fetch Instruction</Text></div>
+            {
+              operations.map((operation, i) => (
+                <div><Text><Text code>{i + 3}</Text> {operation}</Text></div>
+              ))
+            }
+          </div>
+        );
+      }
+    },
+    {
       title: 'Clock Cycles',
       key: 'cycles',
       dataIndex: 'cycles',
       sorter: (a, b) => a.cycles - b.cycles,
       sortDirections: ['descend', 'ascend'],
+      render: (a, d) => d.operations ? <Text>{d.operations.length + 3}</Text> : null
     }
-  ];
+];
