@@ -1,0 +1,397 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L 74xx:74LS04 U10
+U 1 1 61CCB64A
+P 4400 2200
+F 0 "U10" H 4400 2517 50  0000 C CNN
+F 1 "74LS04" H 4400 2426 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4400 2200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 4400 2200 50  0001 C CNN
+	1    4400 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U10
+U 2 1 61CCBE94
+P 4400 2700
+F 0 "U10" H 4400 3017 50  0000 C CNN
+F 1 "74LS04" H 4400 2926 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4400 2700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 4400 2700 50  0001 C CNN
+	2    4400 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U13
+U 3 1 61CCC7B0
+P 4400 3200
+F 0 "U13" H 4400 3517 50  0000 C CNN
+F 1 "74LS04" H 4400 3426 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4400 3200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 4400 3200 50  0001 C CNN
+	3    4400 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U10
+U 4 1 61CCD216
+P 4400 3700
+F 0 "U10" H 4400 4017 50  0000 C CNN
+F 1 "74LS04" H 4400 3926 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4400 3700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 4400 3700 50  0001 C CNN
+	4    4400 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U10
+U 5 1 61CCDADD
+P 4400 4200
+F 0 "U10" H 4400 4517 50  0000 C CNN
+F 1 "74LS04" H 4400 4426 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4400 4200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 4400 4200 50  0001 C CNN
+	5    4400 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U10
+U 6 1 61CCF241
+P 4400 4700
+F 0 "U10" H 4400 5017 50  0000 C CNN
+F 1 "74LS04" H 4400 4926 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4400 4700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 4400 4700 50  0001 C CNN
+	6    4400 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U10
+U 7 1 61CD02B0
+P 7750 2300
+F 0 "U10" H 7980 2346 50  0000 L CNN
+F 1 "74LS04" H 7980 2255 50  0000 L CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 7750 2300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 7750 2300 50  0001 C CNN
+	7    7750 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U13
+U 1 1 61CD0F84
+P 4400 5200
+F 0 "U13" H 4400 5517 50  0000 C CNN
+F 1 "74LS04" H 4400 5426 50  0000 C CNN
+F 2 "" H 4400 5200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 4400 5200 50  0001 C CNN
+	1    4400 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U13
+U 2 1 61CD2796
+P 4400 5700
+F 0 "U13" H 4400 6017 50  0000 C CNN
+F 1 "74LS04" H 4400 5926 50  0000 C CNN
+F 2 "" H 4400 5700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 4400 5700 50  0001 C CNN
+	2    4400 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U13
+U 4 1 61CD41B2
+P 8200 4050
+F 0 "U13" H 8200 4367 50  0000 C CNN
+F 1 "74LS04" H 8200 4276 50  0000 C CNN
+F 2 "" H 8200 4050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 8200 4050 50  0001 C CNN
+	4    8200 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U13
+U 5 1 61CD5361
+P 8200 4550
+F 0 "U13" H 8200 4867 50  0000 C CNN
+F 1 "74LS04" H 8200 4776 50  0000 C CNN
+F 2 "" H 8200 4550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 8200 4550 50  0001 C CNN
+	5    8200 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U13
+U 6 1 61CD68D0
+P 8200 5050
+F 0 "U13" H 8200 5367 50  0000 C CNN
+F 1 "74LS04" H 8200 5276 50  0000 C CNN
+F 2 "" H 8200 5050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 8200 5050 50  0001 C CNN
+	6    8200 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U13
+U 7 1 61CD8443
+P 8550 2300
+F 0 "U13" H 8780 2346 50  0000 L CNN
+F 1 "74LS04" H 8780 2255 50  0000 L CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 8550 2300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 8550 2300 50  0001 C CNN
+	7    8550 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR034
+U 1 1 61CDA7E0
+P 8550 1800
+F 0 "#PWR034" H 8550 1650 50  0001 C CNN
+F 1 "VCC" H 8565 1973 50  0000 C CNN
+F 2 "" H 8550 1800 50  0001 C CNN
+F 3 "" H 8550 1800 50  0001 C CNN
+	1    8550 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR032
+U 1 1 61CDAE45
+P 7750 1800
+F 0 "#PWR032" H 7750 1650 50  0001 C CNN
+F 1 "VCC" H 7765 1973 50  0000 C CNN
+F 2 "" H 7750 1800 50  0001 C CNN
+F 3 "" H 7750 1800 50  0001 C CNN
+	1    7750 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR033
+U 1 1 61CDBA8C
+P 7750 2800
+F 0 "#PWR033" H 7750 2550 50  0001 C CNN
+F 1 "GND" H 7755 2627 50  0000 C CNN
+F 2 "" H 7750 2800 50  0001 C CNN
+F 3 "" H 7750 2800 50  0001 C CNN
+	1    7750 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR035
+U 1 1 61CDBE8D
+P 8550 2800
+F 0 "#PWR035" H 8550 2550 50  0001 C CNN
+F 1 "GND" H 8555 2627 50  0000 C CNN
+F 2 "" H 8550 2800 50  0001 C CNN
+F 3 "" H 8550 2800 50  0001 C CNN
+	1    8550 2800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8500 3550
+NoConn ~ 8500 4050
+NoConn ~ 8500 4550
+NoConn ~ 8500 5050
+$Comp
+L power:VCC #PWR031
+U 1 1 61CDDEB3
+P 7700 4300
+F 0 "#PWR031" H 7700 4150 50  0001 C CNN
+F 1 "VCC" V 7715 4427 50  0000 L CNN
+F 2 "" H 7700 4300 50  0001 C CNN
+F 3 "" H 7700 4300 50  0001 C CNN
+	1    7700 4300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7900 3550 7900 4050
+Connection ~ 7900 4050
+Wire Wire Line
+	7900 4050 7900 4300
+Connection ~ 7900 4550
+Wire Wire Line
+	7900 4550 7900 5050
+Wire Wire Line
+	7900 4300 7700 4300
+Connection ~ 7900 4300
+Wire Wire Line
+	7900 4300 7900 4550
+Text HLabel 3900 2200 0    50   Input ~ 0
+A0
+Text HLabel 3900 2700 0    50   Input ~ 0
+A1
+Text HLabel 3900 3200 0    50   Input ~ 0
+A2
+Text HLabel 3900 3700 0    50   Input ~ 0
+A3
+Text HLabel 3900 4200 0    50   Input ~ 0
+A4
+Text HLabel 3900 4700 0    50   Input ~ 0
+A5
+Text HLabel 3900 5200 0    50   Input ~ 0
+A6
+Text HLabel 3900 5700 0    50   Input ~ 0
+A7
+Wire Wire Line
+	3900 2200 4100 2200
+Wire Wire Line
+	3900 2700 4100 2700
+Wire Wire Line
+	3900 3200 4100 3200
+Wire Wire Line
+	4100 3700 3900 3700
+Wire Wire Line
+	3900 4200 4100 4200
+Wire Wire Line
+	4100 4700 3900 4700
+Wire Wire Line
+	3900 5200 4100 5200
+Wire Wire Line
+	4100 5700 3900 5700
+$Comp
+L 74xx:74LS245 U14
+U 1 1 61CF9802
+P 6300 3700
+F 0 "U14" H 6300 3550 50  0000 C CNN
+F 1 "74LS245" H 6500 4400 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x5mm_P0.5mm" H 6300 3700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 6300 3700 50  0001 C CNN
+	1    6300 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2200 5550 2200
+Wire Wire Line
+	5550 2200 5550 3200
+Wire Wire Line
+	5550 3200 5800 3200
+Wire Wire Line
+	5800 3300 5450 3300
+Wire Wire Line
+	5450 3300 5450 2700
+Wire Wire Line
+	5450 2700 4700 2700
+Wire Wire Line
+	4700 3200 5350 3200
+Wire Wire Line
+	5350 3200 5350 3400
+Wire Wire Line
+	5350 3400 5800 3400
+Wire Wire Line
+	5800 3500 5100 3500
+Wire Wire Line
+	5100 3500 5100 3700
+Wire Wire Line
+	5100 3700 4700 3700
+Wire Wire Line
+	4700 4200 5250 4200
+Wire Wire Line
+	5250 4200 5250 3600
+Wire Wire Line
+	5250 3600 5800 3600
+Wire Wire Line
+	5800 3700 5350 3700
+Wire Wire Line
+	5350 3700 5350 4700
+Wire Wire Line
+	5350 4700 4700 4700
+Wire Wire Line
+	4700 5200 5450 5200
+Wire Wire Line
+	5450 5200 5450 3800
+Wire Wire Line
+	5450 3800 5800 3800
+Wire Wire Line
+	5800 3900 5550 3900
+Wire Wire Line
+	5550 3900 5550 5700
+Wire Wire Line
+	5550 5700 4700 5700
+$Comp
+L power:VCC #PWR028
+U 1 1 61CFF310
+P 5800 4100
+F 0 "#PWR028" H 5800 3950 50  0001 C CNN
+F 1 "VCC" V 5900 4150 50  0000 L CNN
+F 2 "" H 5800 4100 50  0001 C CNN
+F 3 "" H 5800 4100 50  0001 C CNN
+	1    5800 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR029
+U 1 1 61CFFF52
+P 6300 2900
+F 0 "#PWR029" H 6300 2750 50  0001 C CNN
+F 1 "VCC" H 6315 3073 50  0000 C CNN
+F 2 "" H 6300 2900 50  0001 C CNN
+F 3 "" H 6300 2900 50  0001 C CNN
+	1    6300 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR030
+U 1 1 61D003C4
+P 6300 4500
+F 0 "#PWR030" H 6300 4250 50  0001 C CNN
+F 1 "GND" H 6305 4327 50  0000 C CNN
+F 2 "" H 6300 4500 50  0001 C CNN
+F 3 "" H 6300 4500 50  0001 C CNN
+	1    6300 4500
+	1    0    0    -1  
+$EndComp
+Text HLabel 6950 3200 2    50   Output ~ 0
+!A0
+Text HLabel 6950 3300 2    50   Output ~ 0
+!A1
+Text HLabel 6950 3400 2    50   Output ~ 0
+!A2
+Text HLabel 6950 3500 2    50   Output ~ 0
+!A3
+Text HLabel 6950 3600 2    50   Output ~ 0
+!A4
+Text HLabel 6950 3700 2    50   Output ~ 0
+!A5
+Text HLabel 6950 3800 2    50   Output ~ 0
+!A6
+Text HLabel 6950 3900 2    50   Output ~ 0
+!A7
+Wire Wire Line
+	6800 3200 6950 3200
+Wire Wire Line
+	6800 3300 6950 3300
+Wire Wire Line
+	6800 3400 6950 3400
+Wire Wire Line
+	6800 3500 6950 3500
+Wire Wire Line
+	6800 3600 6950 3600
+Wire Wire Line
+	6800 3700 6950 3700
+Wire Wire Line
+	6800 3800 6950 3800
+Wire Wire Line
+	6800 3900 6950 3900
+Text HLabel 6000 4750 0    50   Input ~ 0
+~NOT_OUT
+Wire Wire Line
+	5800 4200 5750 4200
+Wire Wire Line
+	5750 4200 5750 4450
+Wire Wire Line
+	5750 4450 6000 4450
+Wire Wire Line
+	6000 4450 6000 4750
+$EndSCHEMATC

@@ -1,0 +1,1478 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 1 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x08 J1
+U 1 1 61BBBAF2
+P 1100 1450
+F 0 "J1" V 1018 962 50  0001 R CNN
+F 1 "Conn_01x08" V 973 962 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 1100 1450 50  0001 C CNN
+F 3 "~" H 1100 1450 50  0001 C CNN
+F 4 "A Data" V 1200 1550 50  0000 R CNN "L"
+	1    1100 1450
+	0    -1   -1   0   
+$EndComp
+Text GLabel 800  1650 3    50   Input ~ 0
+A0
+Text GLabel 900  1650 3    50   Input ~ 0
+A1
+Text GLabel 1000 1650 3    50   Input ~ 0
+A2
+Text GLabel 1100 1650 3    50   Input ~ 0
+A3
+Text GLabel 1200 1650 3    50   Input ~ 0
+A4
+Text GLabel 1300 1650 3    50   Input ~ 0
+A5
+Text GLabel 1400 1650 3    50   Input ~ 0
+A6
+Text GLabel 1500 1650 3    50   Input ~ 0
+A7
+$Comp
+L Connector_Generic:Conn_01x08 J2
+U 1 1 61BBF4F6
+P 2000 1450
+F 0 "J2" V 1918 962 50  0001 R CNN
+F 1 "Conn_01x08" V 1873 962 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 2000 1450 50  0001 C CNN
+F 3 "~" H 2000 1450 50  0001 C CNN
+F 4 "B Data" V 2100 1550 50  0000 R CNN "L"
+	1    2000 1450
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1700 1650 3    50   Input ~ 0
+B0
+Text GLabel 1800 1650 3    50   Input ~ 0
+B1
+Text GLabel 1900 1650 3    50   Input ~ 0
+B2
+Text GLabel 2000 1650 3    50   Input ~ 0
+B3
+Text GLabel 2100 1650 3    50   Input ~ 0
+B4
+Text GLabel 2200 1650 3    50   Input ~ 0
+B5
+Text GLabel 2300 1650 3    50   Input ~ 0
+B6
+Text GLabel 2400 1650 3    50   Input ~ 0
+B7
+$Comp
+L Connector_Generic:Conn_01x08 J3
+U 1 1 61BC52E0
+P 2900 1450
+F 0 "J3" V 2818 962 50  0001 R CNN
+F 1 "Conn_01x08" V 2773 962 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 2900 1450 50  0001 C CNN
+F 3 "~" H 2900 1450 50  0001 C CNN
+F 4 "Result Data" V 3000 1600 50  0000 R CNN "L"
+	1    2900 1450
+	0    -1   -1   0   
+$EndComp
+Text GLabel 2600 1650 3    50   Output ~ 0
+Q0
+Text GLabel 2700 1650 3    50   Output ~ 0
+Q1
+Text GLabel 2800 1650 3    50   Output ~ 0
+Q2
+Text GLabel 2900 1650 3    50   Output ~ 0
+Q3
+Text GLabel 3000 1650 3    50   Output ~ 0
+Q4
+Text GLabel 3100 1650 3    50   Output ~ 0
+Q5
+Text GLabel 3200 1650 3    50   Output ~ 0
+Q6
+Text GLabel 3300 1650 3    50   Output ~ 0
+Q7
+$Sheet
+S 5600 9450 900  1950
+U 61C3E7EF
+F0 "AND" 50
+F1 "AND.sch" 50
+F2 "A0" I L 5600 9550 50 
+F3 "B0" I L 5600 10350 50 
+F4 "A1" I L 5600 9650 50 
+F5 "B1" I L 5600 10450 50 
+F6 "A2" I L 5600 9750 50 
+F7 "B2" I L 5600 10550 50 
+F8 "A3" I L 5600 9850 50 
+F9 "B3" I L 5600 10650 50 
+F10 "A4" I L 5600 9950 50 
+F11 "B4" I L 5600 10750 50 
+F12 "A5" I L 5600 10050 50 
+F13 "B5" I L 5600 10850 50 
+F14 "A6" I L 5600 10150 50 
+F15 "B6" I L 5600 10950 50 
+F16 "A7" I L 5600 10250 50 
+F17 "B7" I L 5600 11050 50 
+F18 "~AND_OUT" I L 5600 11250 50 
+F19 "Q0" O R 6500 9550 50 
+F20 "Q1" O R 6500 9650 50 
+F21 "Q2" O R 6500 9750 50 
+F22 "Q3" O R 6500 9850 50 
+F23 "Q4" O R 6500 9950 50 
+F24 "Q5" O R 6500 10050 50 
+F25 "Q6" O R 6500 10150 50 
+F26 "Q7" O R 6500 10250 50 
+$EndSheet
+Text GLabel 5350 9550 0    50   Input ~ 0
+A0
+Text GLabel 5350 9650 0    50   Input ~ 0
+A1
+Text GLabel 5350 9750 0    50   Input ~ 0
+A2
+Text GLabel 5350 9850 0    50   Input ~ 0
+A3
+Text GLabel 5350 9950 0    50   Input ~ 0
+A4
+Text GLabel 5350 10050 0    50   Input ~ 0
+A5
+Text GLabel 5350 10150 0    50   Input ~ 0
+A6
+Text GLabel 5350 10250 0    50   Input ~ 0
+A7
+Wire Wire Line
+	5350 9550 5600 9550
+Wire Wire Line
+	5350 9650 5600 9650
+Wire Wire Line
+	5350 9750 5600 9750
+Wire Wire Line
+	5350 9850 5600 9850
+Wire Wire Line
+	5350 9950 5600 9950
+Wire Wire Line
+	5350 10050 5600 10050
+Wire Wire Line
+	5350 10150 5600 10150
+Wire Wire Line
+	5350 10250 5600 10250
+Wire Wire Line
+	5350 10350 5600 10350
+Wire Wire Line
+	5350 10450 5600 10450
+Wire Wire Line
+	5350 10550 5600 10550
+Wire Wire Line
+	5350 10650 5600 10650
+Wire Wire Line
+	5350 10750 5600 10750
+Wire Wire Line
+	5350 10850 5600 10850
+Wire Wire Line
+	5350 10950 5600 10950
+Wire Wire Line
+	5350 11050 5600 11050
+Text GLabel 5350 10350 0    50   Input ~ 0
+B0
+Text GLabel 5350 10450 0    50   Input ~ 0
+B1
+Text GLabel 5350 10550 0    50   Input ~ 0
+B2
+Text GLabel 5350 10650 0    50   Input ~ 0
+B3
+Text GLabel 5350 10750 0    50   Input ~ 0
+B4
+Text GLabel 5350 10850 0    50   Input ~ 0
+B5
+Text GLabel 5350 10950 0    50   Input ~ 0
+B6
+Text GLabel 5350 11050 0    50   Input ~ 0
+B7
+Text GLabel 6700 9550 2    50   Output ~ 0
+Q0
+Text GLabel 6700 9650 2    50   Output ~ 0
+Q1
+Text GLabel 6700 9750 2    50   Output ~ 0
+Q2
+Text GLabel 6700 9850 2    50   Output ~ 0
+Q3
+Text GLabel 6700 9950 2    50   Output ~ 0
+Q4
+Text GLabel 6700 10050 2    50   Output ~ 0
+Q5
+Text GLabel 6700 10150 2    50   Output ~ 0
+Q6
+Text GLabel 6700 10250 2    50   Output ~ 0
+Q7
+Wire Wire Line
+	6500 9550 6700 9550
+Wire Wire Line
+	6500 9650 6700 9650
+Wire Wire Line
+	6500 9750 6700 9750
+Wire Wire Line
+	6500 9850 6700 9850
+Wire Wire Line
+	6500 9950 6700 9950
+Wire Wire Line
+	6500 10050 6700 10050
+Wire Wire Line
+	6500 10150 6700 10150
+Wire Wire Line
+	6500 10250 6700 10250
+Wire Wire Line
+	5350 11250 5600 11250
+$Sheet
+S 7400 9450 900  1950
+U 61C603BE
+F0 "OR" 50
+F1 "OR.sch" 50
+F2 "A0" I L 7400 9550 50 
+F3 "B0" I L 7400 10350 50 
+F4 "A1" I L 7400 9650 50 
+F5 "B1" I L 7400 10450 50 
+F6 "A2" I L 7400 9750 50 
+F7 "B2" I L 7400 10550 50 
+F8 "A3" I L 7400 9850 50 
+F9 "B3" I L 7400 10650 50 
+F10 "A4" I L 7400 9950 50 
+F11 "B4" I L 7400 10750 50 
+F12 "A5" I L 7400 10050 50 
+F13 "B5" I L 7400 10850 50 
+F14 "A6" I L 7400 10150 50 
+F15 "B6" I L 7400 10950 50 
+F16 "A7" I L 7400 10250 50 
+F17 "B7" I L 7400 11050 50 
+F18 "Q0" O R 8300 9550 50 
+F19 "Q1" O R 8300 9650 50 
+F20 "Q2" O R 8300 9750 50 
+F21 "Q3" O R 8300 9850 50 
+F22 "Q4" O R 8300 9950 50 
+F23 "Q5" O R 8300 10050 50 
+F24 "Q6" O R 8300 10150 50 
+F25 "Q7" O R 8300 10250 50 
+F26 "~OR_OUT" I L 7400 11250 50 
+$EndSheet
+Text GLabel 7150 9550 0    50   Input ~ 0
+A0
+Text GLabel 7150 9650 0    50   Input ~ 0
+A1
+Text GLabel 7150 9750 0    50   Input ~ 0
+A2
+Text GLabel 7150 9850 0    50   Input ~ 0
+A3
+Text GLabel 7150 9950 0    50   Input ~ 0
+A4
+Text GLabel 7150 10050 0    50   Input ~ 0
+A5
+Text GLabel 7150 10150 0    50   Input ~ 0
+A6
+Text GLabel 7150 10250 0    50   Input ~ 0
+A7
+Wire Wire Line
+	7150 9550 7400 9550
+Wire Wire Line
+	7150 9650 7400 9650
+Wire Wire Line
+	7150 9750 7400 9750
+Wire Wire Line
+	7150 9850 7400 9850
+Wire Wire Line
+	7150 9950 7400 9950
+Wire Wire Line
+	7150 10050 7400 10050
+Wire Wire Line
+	7150 10150 7400 10150
+Wire Wire Line
+	7150 10250 7400 10250
+Wire Wire Line
+	7150 10350 7400 10350
+Wire Wire Line
+	7150 10450 7400 10450
+Wire Wire Line
+	7150 10550 7400 10550
+Wire Wire Line
+	7150 10650 7400 10650
+Wire Wire Line
+	7150 10750 7400 10750
+Wire Wire Line
+	7150 10850 7400 10850
+Wire Wire Line
+	7150 10950 7400 10950
+Wire Wire Line
+	7150 11050 7400 11050
+Text GLabel 7150 10350 0    50   Input ~ 0
+B0
+Text GLabel 7150 10450 0    50   Input ~ 0
+B1
+Text GLabel 7150 10550 0    50   Input ~ 0
+B2
+Text GLabel 7150 10650 0    50   Input ~ 0
+B3
+Text GLabel 7150 10750 0    50   Input ~ 0
+B4
+Text GLabel 7150 10850 0    50   Input ~ 0
+B5
+Text GLabel 7150 10950 0    50   Input ~ 0
+B6
+Text GLabel 7150 11050 0    50   Input ~ 0
+B7
+Wire Wire Line
+	7150 11250 7400 11250
+Text GLabel 8500 9550 2    50   Output ~ 0
+Q0
+Text GLabel 8500 9650 2    50   Output ~ 0
+Q1
+Text GLabel 8500 9750 2    50   Output ~ 0
+Q2
+Text GLabel 8500 9850 2    50   Output ~ 0
+Q3
+Text GLabel 8500 9950 2    50   Output ~ 0
+Q4
+Text GLabel 8500 10050 2    50   Output ~ 0
+Q5
+Text GLabel 8500 10150 2    50   Output ~ 0
+Q6
+Text GLabel 8500 10250 2    50   Output ~ 0
+Q7
+Wire Wire Line
+	8300 9550 8500 9550
+Wire Wire Line
+	8300 9650 8500 9650
+Wire Wire Line
+	8300 9750 8500 9750
+Wire Wire Line
+	8300 9850 8500 9850
+Wire Wire Line
+	8300 9950 8500 9950
+Wire Wire Line
+	8300 10050 8500 10050
+Wire Wire Line
+	8300 10150 8500 10150
+Wire Wire Line
+	8300 10250 8500 10250
+$Sheet
+S 9250 9450 950  1950
+U 61C9114A
+F0 "XOR" 50
+F1 "XOR.sch" 50
+F2 "A0" I L 9250 9550 50 
+F3 "B0" I L 9250 10350 50 
+F4 "A1" I L 9250 9650 50 
+F5 "B1" I L 9250 10450 50 
+F6 "A2" I L 9250 9750 50 
+F7 "B2" I L 9250 10550 50 
+F8 "A3" I L 9250 9850 50 
+F9 "B3" I L 9250 10650 50 
+F10 "A4" I L 9250 9950 50 
+F11 "B4" I L 9250 10750 50 
+F12 "A5" I L 9250 10050 50 
+F13 "B5" I L 9250 10850 50 
+F14 "A6" I L 9250 10150 50 
+F15 "B6" I L 9250 10950 50 
+F16 "A7" I L 9250 10250 50 
+F17 "B7" I L 9250 11050 50 
+F18 "~XOR_OUT" I L 9250 11250 50 
+F19 "Q0" O R 10200 9550 50 
+F20 "Q1" O R 10200 9650 50 
+F21 "Q2" O R 10200 9750 50 
+F22 "Q3" O R 10200 9850 50 
+F23 "Q4" O R 10200 9950 50 
+F24 "Q5" O R 10200 10050 50 
+F25 "Q6" O R 10200 10150 50 
+F26 "Q7" O R 10200 10250 50 
+$EndSheet
+Text GLabel 9000 9550 0    50   Input ~ 0
+A0
+Text GLabel 9000 9650 0    50   Input ~ 0
+A1
+Text GLabel 9000 9750 0    50   Input ~ 0
+A2
+Text GLabel 9000 9850 0    50   Input ~ 0
+A3
+Text GLabel 9000 9950 0    50   Input ~ 0
+A4
+Text GLabel 9000 10050 0    50   Input ~ 0
+A5
+Text GLabel 9000 10150 0    50   Input ~ 0
+A6
+Text GLabel 9000 10250 0    50   Input ~ 0
+A7
+Wire Wire Line
+	9000 9550 9250 9550
+Wire Wire Line
+	9000 9650 9250 9650
+Wire Wire Line
+	9000 9750 9250 9750
+Wire Wire Line
+	9000 9850 9250 9850
+Wire Wire Line
+	9000 9950 9250 9950
+Wire Wire Line
+	9000 10050 9250 10050
+Wire Wire Line
+	9000 10150 9250 10150
+Wire Wire Line
+	9000 10250 9250 10250
+Wire Wire Line
+	9000 10350 9250 10350
+Wire Wire Line
+	9000 10450 9250 10450
+Wire Wire Line
+	9000 10550 9250 10550
+Wire Wire Line
+	9000 10650 9250 10650
+Wire Wire Line
+	9000 10750 9250 10750
+Wire Wire Line
+	9000 10850 9250 10850
+Wire Wire Line
+	9000 10950 9250 10950
+Wire Wire Line
+	9000 11050 9250 11050
+Text GLabel 9000 10350 0    50   Input ~ 0
+B0
+Text GLabel 9000 10450 0    50   Input ~ 0
+B1
+Text GLabel 9000 10550 0    50   Input ~ 0
+B2
+Text GLabel 9000 10650 0    50   Input ~ 0
+B3
+Text GLabel 9000 10750 0    50   Input ~ 0
+B4
+Text GLabel 9000 10850 0    50   Input ~ 0
+B5
+Text GLabel 9000 10950 0    50   Input ~ 0
+B6
+Text GLabel 9000 11050 0    50   Input ~ 0
+B7
+Wire Wire Line
+	9000 11250 9250 11250
+Text GLabel 10400 9550 2    50   Output ~ 0
+Q0
+Text GLabel 10400 9650 2    50   Output ~ 0
+Q1
+Text GLabel 10400 9750 2    50   Output ~ 0
+Q2
+Text GLabel 10400 9850 2    50   Output ~ 0
+Q3
+Text GLabel 10400 9950 2    50   Output ~ 0
+Q4
+Text GLabel 10400 10050 2    50   Output ~ 0
+Q5
+Text GLabel 10400 10150 2    50   Output ~ 0
+Q6
+Text GLabel 10400 10250 2    50   Output ~ 0
+Q7
+Wire Wire Line
+	10200 9550 10400 9550
+Wire Wire Line
+	10200 9650 10400 9650
+Wire Wire Line
+	10200 9750 10400 9750
+Wire Wire Line
+	10200 9850 10400 9850
+Wire Wire Line
+	10200 9950 10400 9950
+Wire Wire Line
+	10200 10050 10400 10050
+Wire Wire Line
+	10200 10150 10400 10150
+Wire Wire Line
+	10200 10250 10400 10250
+Text GLabel 2250 2700 2    39   Output ~ 0
+~MUX_AND
+$Sheet
+S 16150 9900 800  1300
+U 61CC9577
+F0 "NOT" 50
+F1 "NOT.sch" 50
+F2 "A0" I L 16150 10100 50 
+F3 "A1" I L 16150 10200 50 
+F4 "A2" I L 16150 10300 50 
+F5 "A3" I L 16150 10400 50 
+F6 "A4" I L 16150 10500 50 
+F7 "A5" I L 16150 10600 50 
+F8 "A6" I L 16150 10700 50 
+F9 "A7" I L 16150 10800 50 
+F10 "!A0" O R 16950 10100 50 
+F11 "!A1" O R 16950 10200 50 
+F12 "!A2" O R 16950 10300 50 
+F13 "!A3" O R 16950 10400 50 
+F14 "!A4" O R 16950 10500 50 
+F15 "!A5" O R 16950 10600 50 
+F16 "!A6" O R 16950 10700 50 
+F17 "!A7" O R 16950 10800 50 
+F18 "~NOT_OUT" I L 16150 11000 50 
+$EndSheet
+Wire Wire Line
+	15900 10100 16150 10100
+Wire Wire Line
+	15900 10200 16150 10200
+Wire Wire Line
+	15900 10300 16150 10300
+Wire Wire Line
+	15900 10400 16150 10400
+Wire Wire Line
+	15900 10500 16150 10500
+Wire Wire Line
+	15900 10600 16150 10600
+Wire Wire Line
+	15900 10700 16150 10700
+Wire Wire Line
+	15900 10800 16150 10800
+Text GLabel 15900 10100 0    50   Input ~ 0
+Q0
+Text GLabel 15900 10200 0    50   Input ~ 0
+Q1
+Text GLabel 15900 10300 0    50   Input ~ 0
+Q2
+Text GLabel 15900 10400 0    50   Input ~ 0
+Q3
+Text GLabel 15900 10500 0    50   Input ~ 0
+Q4
+Text GLabel 15900 10600 0    50   Input ~ 0
+Q5
+Text GLabel 15900 10700 0    50   Input ~ 0
+Q6
+Text GLabel 15900 10800 0    50   Input ~ 0
+Q7
+$Comp
+L 74xx:74LS245 U11
+U 1 1 61D43ED5
+P 19100 10550
+F 0 "U11" H 19100 10750 50  0000 C CNN
+F 1 "74LS245" H 19350 11250 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x5mm_P0.5mm" H 19100 10550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 19100 10550 50  0001 C CNN
+	1    19100 10550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR023
+U 1 1 61D43EDF
+P 19100 9750
+F 0 "#PWR023" H 19100 9600 50  0001 C CNN
+F 1 "VCC" H 19115 9923 50  0000 C CNN
+F 2 "" H 19100 9750 50  0001 C CNN
+F 3 "" H 19100 9750 50  0001 C CNN
+	1    19100 9750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR024
+U 1 1 61D43EE9
+P 19100 11350
+F 0 "#PWR024" H 19100 11100 50  0001 C CNN
+F 1 "GND" H 19105 11177 50  0000 C CNN
+F 2 "" H 19100 11350 50  0001 C CNN
+F 3 "" H 19100 11350 50  0001 C CNN
+	1    19100 11350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR022
+U 1 1 61D43EF3
+P 18600 10950
+F 0 "#PWR022" H 18600 10800 50  0001 C CNN
+F 1 "VCC" V 18600 11100 50  0000 L CNN
+F 2 "" H 18600 10950 50  0001 C CNN
+F 3 "" H 18600 10950 50  0001 C CNN
+	1    18600 10950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	18350 10050 18600 10050
+Wire Wire Line
+	18350 10150 18600 10150
+Wire Wire Line
+	18350 10250 18600 10250
+Wire Wire Line
+	18350 10350 18600 10350
+Wire Wire Line
+	18350 10450 18600 10450
+Wire Wire Line
+	18350 10550 18600 10550
+Wire Wire Line
+	18350 10650 18600 10650
+Wire Wire Line
+	18350 10750 18600 10750
+Wire Wire Line
+	19600 10050 19800 10050
+Wire Wire Line
+	19600 10150 19800 10150
+Wire Wire Line
+	19600 10250 19800 10250
+Wire Wire Line
+	19600 10350 19800 10350
+Wire Wire Line
+	19600 10450 19800 10450
+Wire Wire Line
+	19600 10550 19800 10550
+Wire Wire Line
+	19600 10650 19800 10650
+Wire Wire Line
+	19600 10750 19800 10750
+Text GLabel 18350 10050 0    50   Input ~ 0
+Q0
+Text GLabel 18350 10150 0    50   Input ~ 0
+Q1
+Text GLabel 18350 10250 0    50   Input ~ 0
+Q2
+Text GLabel 18350 10350 0    50   Input ~ 0
+Q3
+Text GLabel 18350 10450 0    50   Input ~ 0
+Q4
+Text GLabel 18350 10550 0    50   Input ~ 0
+Q5
+Text GLabel 18350 10650 0    50   Input ~ 0
+Q6
+Text GLabel 18350 10750 0    50   Input ~ 0
+Q7
+$Sheet
+S 12300 9800 1150 1700
+U 61DC4EFC
+F0 "SHIFTER" 50
+F1 "SHIFTER.sch" 50
+F2 "A0" I L 12300 9900 50 
+F3 "A1" I L 12300 10000 50 
+F4 "A2" I L 12300 10100 50 
+F5 "A3" I L 12300 10200 50 
+F6 "A4" I L 12300 10300 50 
+F7 "A5" I L 12300 10400 50 
+F8 "A6" I L 12300 10500 50 
+F9 "A7" I L 12300 10600 50 
+F10 "Q0" O R 13450 9900 50 
+F11 "Q1" O R 13450 10000 50 
+F12 "Q2" O R 13450 10100 50 
+F13 "Q3" O R 13450 10200 50 
+F14 "Q4" O R 13450 10300 50 
+F15 "Q5" O R 13450 10400 50 
+F16 "Q6" O R 13450 10500 50 
+F17 "Q7" O R 13450 10600 50 
+F18 "LOGICAL_CARRY_OUT" O R 13450 11400 50 
+F19 "SEL0" I L 12300 10850 50 
+F20 "SEL1" I L 12300 10950 50 
+F21 "~ROTATE_OUT" I L 12300 11250 50 
+F22 "~SHIFT_OUT" I L 12300 11150 50 
+$EndSheet
+Text GLabel 13650 9900 2    50   Output ~ 0
+Q0
+Text GLabel 13650 10000 2    50   Output ~ 0
+Q1
+Text GLabel 13650 10100 2    50   Output ~ 0
+Q2
+Text GLabel 13650 10200 2    50   Output ~ 0
+Q3
+Text GLabel 13650 10300 2    50   Output ~ 0
+Q4
+Text GLabel 13650 10400 2    50   Output ~ 0
+Q5
+Text GLabel 13650 10500 2    50   Output ~ 0
+Q6
+Text GLabel 13650 10600 2    50   Output ~ 0
+Q7
+Wire Wire Line
+	13450 9900 13650 9900
+Wire Wire Line
+	13450 10000 13650 10000
+Wire Wire Line
+	13450 10100 13650 10100
+Wire Wire Line
+	13450 10200 13650 10200
+Wire Wire Line
+	13450 10300 13650 10300
+Wire Wire Line
+	13450 10400 13650 10400
+Wire Wire Line
+	13450 10500 13650 10500
+Wire Wire Line
+	13450 10600 13650 10600
+Text GLabel 2250 3000 2    39   Output ~ 0
+~MUX_SHIFT_OUT
+Text GLabel 2250 3100 2    39   Output ~ 0
+~MUX_ROTATE_OUT
+Text GLabel 12050 9900 0    50   Input ~ 0
+A0
+Text GLabel 12050 10000 0    50   Input ~ 0
+A1
+Text GLabel 12050 10100 0    50   Input ~ 0
+A2
+Text GLabel 12050 10200 0    50   Input ~ 0
+A3
+Text GLabel 12050 10300 0    50   Input ~ 0
+A4
+Text GLabel 12050 10400 0    50   Input ~ 0
+A5
+Text GLabel 12050 10500 0    50   Input ~ 0
+A6
+Text GLabel 12050 10600 0    50   Input ~ 0
+A7
+Wire Wire Line
+	12050 9900 12300 9900
+Wire Wire Line
+	12050 10000 12300 10000
+Wire Wire Line
+	12050 10100 12300 10100
+Wire Wire Line
+	12050 10200 12300 10200
+Wire Wire Line
+	12050 10300 12300 10300
+Wire Wire Line
+	12050 10400 12300 10400
+Wire Wire Line
+	12050 10500 12300 10500
+Wire Wire Line
+	12050 10600 12300 10600
+Text Notes 7450 8950 0    118  ~ 0
+BOOLEAN
+Text Notes 12100 9150 0    118  ~ 0
+BITWISE
+Wire Notes Line
+	4850 11800 10700 11800
+Wire Notes Line
+	4850 8650 10700 8650
+Wire Notes Line
+	10800 8900 10800 11800
+Wire Notes Line
+	10800 11800 14000 11800
+Wire Notes Line
+	14000 11800 14000 8900
+Wire Notes Line
+	10800 8900 14000 8900
+Text Notes 16150 9700 0    118  ~ 0
+Inverted
+Text Notes 9300 8450 0    197  ~ 0
+LOGIC
+Text Notes 21300 7750 0    118  ~ 0
+A\nNOT A\nAND\nNAND\nOR\nNOR\nXOR\nXNOR\nSHL\nSHR\nROR\nROL\nSHL4\nSHR4\nROL4
+Text Notes 16850 8850 0    197  ~ 0
+OUTPUT
+Text Notes 7500 4650 0    197  ~ 0
+ARITHMETIC
+Text Notes 21300 4800 0    118  ~ 0
+A + 1\nA - 1\nA + B\nA - B
+$Sheet
+S 9500 5100 1300 2650
+U 62800928
+F0 "ADDER" 50
+F1 "ADDER.sch" 50
+F2 "A0" I L 9500 5250 50 
+F3 "A1" I L 9500 5350 50 
+F4 "A2" I L 9500 5450 50 
+F5 "A3" I L 9500 5550 50 
+F6 "A4" I L 9500 5650 50 
+F7 "A5" I L 9500 5750 50 
+F8 "A6" I L 9500 5850 50 
+F9 "A7" I L 9500 5950 50 
+F10 "B7" I L 9500 6900 50 
+F11 "B6" I L 9500 6800 50 
+F12 "B5" I L 9500 6700 50 
+F13 "B4" I L 9500 6600 50 
+F14 "B3" I L 9500 6500 50 
+F15 "B2" I L 9500 6400 50 
+F16 "B1" I L 9500 6300 50 
+F17 "B0" I L 9500 6200 50 
+F18 "CI" I L 9500 7350 50 
+F19 "MUX_SEL" I L 9500 7150 50 
+F20 "SUM0" O R 10800 5500 50 
+F21 "SUM1" O R 10800 5600 50 
+F22 "SUM2" O R 10800 5700 50 
+F23 "SUM3" O R 10800 5800 50 
+F24 "SUM4" O R 10800 5900 50 
+F25 "SUM5" O R 10800 6000 50 
+F26 "SUM6" O R 10800 6100 50 
+F27 "SUM7" O R 10800 6200 50 
+F28 "TWOS_COMP" I L 9500 7250 50 
+F29 "~ADDER_OUT" I L 9500 7600 50 
+F30 "ADDER_CARRY_OUT" O R 10800 7400 50 
+$EndSheet
+Text GLabel 9350 5250 0    50   Input ~ 0
+A0
+Text GLabel 9350 5350 0    50   Input ~ 0
+A1
+Text GLabel 9350 5450 0    50   Input ~ 0
+A2
+Text GLabel 9350 5550 0    50   Input ~ 0
+A3
+Text GLabel 9350 5650 0    50   Input ~ 0
+A4
+Text GLabel 9350 5750 0    50   Input ~ 0
+A5
+Text GLabel 9350 5850 0    50   Input ~ 0
+A6
+Text GLabel 9350 5950 0    50   Input ~ 0
+A7
+Wire Wire Line
+	9350 5250 9500 5250
+Wire Wire Line
+	9350 5350 9500 5350
+Wire Wire Line
+	9350 5450 9500 5450
+Wire Wire Line
+	9350 5550 9500 5550
+Wire Wire Line
+	9350 5650 9500 5650
+Wire Wire Line
+	9350 5750 9500 5750
+Wire Wire Line
+	9350 5850 9500 5850
+Wire Wire Line
+	9350 5950 9500 5950
+Wire Wire Line
+	9350 6200 9500 6200
+Wire Wire Line
+	9350 6300 9500 6300
+Wire Wire Line
+	9350 6400 9500 6400
+Wire Wire Line
+	9350 6500 9500 6500
+Wire Wire Line
+	9350 6600 9500 6600
+Wire Wire Line
+	9350 6700 9500 6700
+Wire Wire Line
+	9350 6800 9500 6800
+Wire Wire Line
+	9350 6900 9500 6900
+Text GLabel 9350 6200 0    50   Input ~ 0
+B0
+Text GLabel 9350 6300 0    50   Input ~ 0
+B1
+Text GLabel 9350 6400 0    50   Input ~ 0
+B2
+Text GLabel 9350 6500 0    50   Input ~ 0
+B3
+Text GLabel 9350 6600 0    50   Input ~ 0
+B4
+Text GLabel 9350 6700 0    50   Input ~ 0
+B5
+Text GLabel 9350 6800 0    50   Input ~ 0
+B6
+Text GLabel 9350 6900 0    50   Input ~ 0
+B7
+Text GLabel 10950 5500 2    50   Output ~ 0
+Q0
+Text GLabel 10950 5600 2    50   Output ~ 0
+Q1
+Text GLabel 10950 5700 2    50   Output ~ 0
+Q2
+Text GLabel 10950 5800 2    50   Output ~ 0
+Q3
+Text GLabel 10950 5900 2    50   Output ~ 0
+Q4
+Text GLabel 10950 6000 2    50   Output ~ 0
+Q5
+Text GLabel 10950 6100 2    50   Output ~ 0
+Q6
+Text GLabel 10950 6200 2    50   Output ~ 0
+Q7
+Wire Wire Line
+	10800 5500 10950 5500
+Wire Wire Line
+	10800 5600 10950 5600
+Wire Wire Line
+	10800 5700 10950 5700
+Wire Wire Line
+	10800 5800 10950 5800
+Wire Wire Line
+	10800 5900 10950 5900
+Wire Wire Line
+	10800 6000 10950 6000
+Wire Wire Line
+	10800 6100 10950 6100
+Wire Wire Line
+	10800 6200 10950 6200
+$Comp
+L power:VCC #PWR067
+U 1 1 61E89FC2
+P 1750 2400
+F 0 "#PWR067" H 1750 2250 50  0001 C CNN
+F 1 "VCC" H 1765 2573 50  0000 C CNN
+F 2 "" H 1750 2400 50  0001 C CNN
+F 3 "" H 1750 2400 50  0001 C CNN
+	1    1750 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR068
+U 1 1 61E8A2AD
+P 1750 3700
+F 0 "#PWR068" H 1750 3450 50  0001 C CNN
+F 1 "GND" H 1755 3527 50  0000 C CNN
+F 2 "" H 1750 3700 50  0001 C CNN
+F 3 "" H 1750 3700 50  0001 C CNN
+	1    1750 3700
+	1    0    0    -1  
+$EndComp
+Text Notes 18500 1350 0    50   ~ 0
+DEC A:  MUX_SEL: 1, TC: 0, CI: 0
+Text Notes 18550 1800 0    50   ~ 0
+INC A:  MUX_SEL: 1, TC: 1, CI: 1
+Text Notes 18500 1500 0    50   ~ 0
+A - B:  MUX_SEL: 0, TC: 1, CI: 1
+Text Notes 18500 1650 0    50   ~ 0
+A + B:  MUX_SEL: 0, TC: 0, CI: 0
+Text Notes 18300 1950 0    50   ~ 0
+A - B - Ci:  MUX_SEL: 0, TC: 1, CI: ?
+Text Notes 18300 2100 0    50   ~ 0
+A + B + Cf:  MUX_SEL: 0, TC: 0, CI: ?
+Wire Wire Line
+	9200 7150 9500 7150
+Wire Wire Line
+	9200 7250 9500 7250
+Wire Wire Line
+	12050 11150 12300 11150
+Wire Wire Line
+	12050 11250 12300 11250
+Text GLabel 2250 2800 2    39   Output ~ 0
+~MUX_OR
+Text GLabel 2250 2900 2    39   Output ~ 0
+~MUX_XOR
+Text GLabel 19800 10050 2    50   Output ~ 0
+OUT0
+Text GLabel 19800 10150 2    50   Output ~ 0
+OUT1
+Text GLabel 19800 10250 2    50   Output ~ 0
+OUT2
+Text GLabel 19800 10350 2    50   Output ~ 0
+OUT3
+Text GLabel 19800 10450 2    50   Output ~ 0
+OUT4
+Text GLabel 19800 10550 2    50   Output ~ 0
+OUT5
+Text GLabel 19800 10650 2    50   Output ~ 0
+OUT6
+Text GLabel 19800 10750 2    50   Output ~ 0
+OUT7
+Wire Wire Line
+	16950 10100 17150 10100
+Wire Wire Line
+	16950 10200 17150 10200
+Wire Wire Line
+	16950 10300 17150 10300
+Wire Wire Line
+	16950 10400 17150 10400
+Wire Wire Line
+	16950 10500 17150 10500
+Wire Wire Line
+	16950 10600 17150 10600
+Wire Wire Line
+	16950 10700 17150 10700
+Wire Wire Line
+	16950 10800 17150 10800
+Text GLabel 17150 10100 2    50   Output ~ 0
+OUT0
+Text GLabel 17150 10200 2    50   Output ~ 0
+OUT1
+Text GLabel 17150 10300 2    50   Output ~ 0
+OUT2
+Text GLabel 17150 10400 2    50   Output ~ 0
+OUT3
+Text GLabel 17150 10500 2    50   Output ~ 0
+OUT4
+Text GLabel 17150 10600 2    50   Output ~ 0
+OUT5
+Text GLabel 17150 10700 2    50   Output ~ 0
+OUT6
+Text GLabel 17150 10800 2    50   Output ~ 0
+OUT7
+Wire Notes Line
+	11300 8000 11300 4900
+Wire Wire Line
+	9200 7600 9500 7600
+Wire Wire Line
+	12050 10850 12300 10850
+Wire Wire Line
+	12300 10950 12050 10950
+Text GLabel 1250 2700 0    50   Input ~ 0
+EEPROM_0
+Text GLabel 1250 2800 0    50   Input ~ 0
+EEPROM_1
+Text GLabel 1250 2900 0    50   Input ~ 0
+EEPROM_2
+Text GLabel 3900 1650 3    50   Input ~ 0
+EEPROM_4
+Text GLabel 4000 1650 3    50   Input ~ 0
+EEPROM_5
+Text GLabel 4100 1650 3    50   Input ~ 0
+EEPROM_6
+Text GLabel 4200 1650 3    50   Input ~ 0
+EEPROM_7
+Wire Wire Line
+	15500 11000 15650 11000
+Wire Wire Line
+	15650 11000 15650 11500
+Connection ~ 15650 11000
+Wire Wire Line
+	15650 11000 16150 11000
+Wire Wire Line
+	18250 11050 18600 11050
+$Comp
+L 74xx:74LS04 U?
+U 3 1 61D67D54
+P 17950 11050
+AR Path="/61CC9577/61D67D54" Ref="U?"  Part="3" 
+AR Path="/61D67D54" Ref="U10"  Part="3" 
+F 0 "U10" H 17950 11275 50  0000 C CNN
+F 1 "74LS04" H 17950 11276 50  0001 C CNN
+F 2 "" H 17950 11050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 17950 11050 50  0001 C CNN
+	3    17950 11050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	17650 11050 17500 11050
+Wire Wire Line
+	17500 11050 17500 11500
+Wire Wire Line
+	17500 11500 15650 11500
+$Comp
+L Connector_Generic:Conn_01x10 J4
+U 1 1 634DE8CA
+P 3900 1450
+F 0 "J4" V 3818 962 50  0001 R CNN
+F 1 "Conn_01x10" V 3773 962 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical" H 3900 1450 50  0001 C CNN
+F 3 "~" H 3900 1450 50  0001 C CNN
+F 4 "Control Word" V 4000 1650 50  0000 R CNN "L"
+	1    3900 1450
+	0    -1   -1   0   
+$EndComp
+Text GLabel 3500 1650 3    50   Input ~ 0
+EEPROM_0
+Text GLabel 3600 1650 3    50   Input ~ 0
+EEPROM_1
+Text GLabel 3700 1650 3    50   Input ~ 0
+EEPROM_2
+Text GLabel 12050 10850 0    50   Input ~ 0
+EEPROM_4
+Text GLabel 12050 10950 0    50   Input ~ 0
+EEPROM_5
+Text GLabel 1250 3200 0    50   Input ~ 0
+EEPROM_7
+Text GLabel 9200 7600 0    50   Input ~ 0
+EEPROM_7
+Text GLabel 9200 7150 0    50   Input ~ 0
+EEPROM_0
+Text GLabel 9200 7250 0    50   Input ~ 0
+EEPROM_1
+Text GLabel 5500 6500 0    50   Input ~ 0
+EEPROM_2
+$Comp
+L 74xx:74LS138 U12
+U 1 1 6398679A
+P 1750 3000
+F 0 "U12" H 1750 3000 50  0000 C CNN
+F 1 "74LS138" H 1950 3500 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 1750 3000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS138" H 1750 3000 50  0001 C CNN
+	1    1750 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0124
+U 1 1 63A018DF
+P 1250 3300
+F 0 "#PWR0124" H 1250 3150 50  0001 C CNN
+F 1 "VCC" V 1250 3500 50  0000 C CNN
+F 2 "" H 1250 3300 50  0001 C CNN
+F 3 "" H 1250 3300 50  0001 C CNN
+	1    1250 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0125
+U 1 1 63A02203
+P 1250 3400
+F 0 "#PWR0125" H 1250 3150 50  0001 C CNN
+F 1 "GND" V 1250 3200 50  0000 C CNN
+F 2 "" H 1250 3400 50  0001 C CNN
+F 3 "" H 1250 3400 50  0001 C CNN
+	1    1250 3400
+	0    1    1    0   
+$EndComp
+Text GLabel 15500 11000 0    50   Input ~ 0
+EEPROM_6
+Text Notes 21050 2650 0    50   ~ 0
+MSB: 1 (Logic)\nMSB-1: Invert Bit\n\n10xxx000 AND\n11xxx000 NAND\n10xxx001 OR\n11xxx001 NOR\n10xxx010 XOR\n11xxx010 XNOR\n1100x011 SHL\n1101x011 SHL4\n1110x011 SHR\n1111x011 SHR4\n1110x100 ROR\n1100x100 ROL\n1011x100 ROR4
+Text Notes 21050 3700 0    50   ~ 0
+MSB: 0(Arithmetic)\n\nMUX_SEL:2\nTWOS_COMP:1\nCARRY_IN: 0\n\n01xxx100 DEC\n01xxx011 SUB\n01xxx000 ADD\n01xxx111 INC\n01xx1010 ADC\n01xx1000 SUBB\n
+Wire Notes Line
+	20550 9000 14250 9000
+Wire Notes Line
+	14250 9000 14250 11750
+Wire Notes Line
+	14250 11750 20550 11750
+Wire Notes Line
+	20550 9000 20550 11750
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 63E09D40
+P 4300 1250
+F 0 "#FLG0101" H 4300 1325 50  0001 C CNN
+F 1 "PWR_FLAG" V 4300 1600 50  0000 C CNN
+F 2 "" H 4300 1250 50  0001 C CNN
+F 3 "~" H 4300 1250 50  0001 C CNN
+	1    4300 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 63E0BE51
+P 4400 1250
+F 0 "#FLG0102" H 4400 1325 50  0001 C CNN
+F 1 "PWR_FLAG" V 4400 1600 50  0000 C CNN
+F 2 "" H 4400 1250 50  0001 C CNN
+F 3 "~" H 4400 1250 50  0001 C CNN
+	1    4400 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 1650 4300 1250
+$Comp
+L power:GND #PWR0128
+U 1 1 63E26D1A
+P 4300 2150
+F 0 "#PWR0128" H 4300 1900 50  0001 C CNN
+F 1 "GND" V 4300 1900 50  0000 C CNN
+F 2 "" H 4300 2150 50  0001 C CNN
+F 3 "" H 4300 2150 50  0001 C CNN
+	1    4300 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2150 4300 1650
+Connection ~ 4300 1650
+$Comp
+L power:VCC #PWR0129
+U 1 1 63E34BC8
+P 4400 2200
+F 0 "#PWR0129" H 4400 2050 50  0001 C CNN
+F 1 "VCC" V 4400 2400 50  0000 C CNN
+F 2 "" H 4400 2200 50  0001 C CNN
+F 3 "" H 4400 2200 50  0001 C CNN
+	1    4400 2200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4400 1250 4400 1650
+Connection ~ 4400 1650
+Wire Wire Line
+	4400 1650 4400 2200
+Text GLabel 5350 11250 0    39   Input ~ 0
+~MUX_AND
+Text GLabel 12050 11150 0    39   Input ~ 0
+~MUX_SHIFT_OUT
+Text GLabel 12050 11250 0    39   Input ~ 0
+~MUX_ROTATE_OUT
+Text GLabel 7150 11250 0    39   Input ~ 0
+~MUX_OR
+Text GLabel 9000 11250 0    39   Input ~ 0
+~MUX_XOR
+NoConn ~ 2250 3200
+NoConn ~ 2250 3300
+NoConn ~ 2250 3400
+NoConn ~ 3800 1650
+Text GLabel 3800 1650 3    50   Input ~ 0
+EEPROM_3
+Text GLabel 5500 6700 0    50   Input ~ 0
+EEPROM_3
+$Comp
+L 74xx:74LS08 U33
+U 1 1 640EC9EE
+P 8250 7350
+F 0 "U33" H 8250 7675 50  0000 C CNN
+F 1 "74LS08" H 8250 7584 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 8250 7350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 8250 7350 50  0001 C CNN
+	1    8250 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U33
+U 2 1 640EE5E3
+P 6700 6600
+F 0 "U33" H 6700 6925 50  0000 C CNN
+F 1 "74LS08" H 6700 6834 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 6700 6600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 6700 6600 50  0001 C CNN
+	2    6700 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U33
+U 3 1 640EF086
+P 6700 7150
+F 0 "U33" H 6700 7475 50  0000 C CNN
+F 1 "74LS08" H 6700 7384 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 6700 7150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 6700 7150 50  0001 C CNN
+	3    6700 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U33
+U 4 1 640F0B23
+P 17700 4750
+F 0 "U33" H 17700 5075 50  0000 C CNN
+F 1 "74LS08" H 17700 4984 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 17700 4750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 17700 4750 50  0001 C CNN
+	4    17700 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U33
+U 5 1 640F17DA
+P 17700 5550
+F 0 "U33" H 17930 5596 50  0000 L CNN
+F 1 "74LS08" H 17930 5505 50  0000 L CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 17700 5550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 17700 5550 50  0001 C CNN
+	5    17700 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U32
+U 1 1 640F355C
+P 7550 7450
+F 0 "U32" H 7550 7767 50  0000 C CNN
+F 1 "74LS04" H 7550 7676 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 7550 7450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 7550 7450 50  0001 C CNN
+	1    7550 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U32
+U 2 1 640F503E
+P 5950 6700
+F 0 "U32" H 6050 6600 50  0000 C CNN
+F 1 "74LS04" H 5950 6500 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5950 6700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 5950 6700 50  0001 C CNN
+	2    5950 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U32
+U 3 1 640F631B
+P 18700 4200
+F 0 "U32" H 18700 4517 50  0000 C CNN
+F 1 "74LS04" H 18700 4426 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 18700 4200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 18700 4200 50  0001 C CNN
+	3    18700 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U32
+U 4 1 640F6DDF
+P 18700 4700
+F 0 "U32" H 18700 5017 50  0000 C CNN
+F 1 "74LS04" H 18700 4926 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 18700 4700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 18700 4700 50  0001 C CNN
+	4    18700 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U32
+U 5 1 640F7B05
+P 18700 5200
+F 0 "U32" H 18700 5517 50  0000 C CNN
+F 1 "74LS04" H 18700 5426 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 18700 5200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 18700 5200 50  0001 C CNN
+	5    18700 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U32
+U 6 1 640F90F5
+P 18700 5650
+F 0 "U32" H 18700 5967 50  0000 C CNN
+F 1 "74LS04" H 18700 5876 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 18700 5650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 18700 5650 50  0001 C CNN
+	6    18700 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U32
+U 7 1 640FA13B
+P 18650 6500
+F 0 "U32" H 18880 6546 50  0000 L CNN
+F 1 "74LS04" H 18880 6455 50  0000 L CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 18650 6500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 18650 6500 50  0001 C CNN
+	7    18650 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS32 U34
+U 1 1 640FB3CB
+P 7500 6850
+F 0 "U34" H 7500 7175 50  0000 C CNN
+F 1 "74LS32" H 7500 7084 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 7500 6850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 7500 6850 50  0001 C CNN
+	1    7500 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS32 U34
+U 3 1 640FCAE3
+P 19600 4450
+F 0 "U34" H 19600 4775 50  0000 C CNN
+F 1 "74LS32" H 19600 4684 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 19600 4450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 19600 4450 50  0001 C CNN
+	3    19600 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS32 U34
+U 2 1 640FDE14
+P 19600 3750
+F 0 "U34" H 19600 4075 50  0000 C CNN
+F 1 "74LS32" H 19600 3984 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 19600 3750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 19600 3750 50  0001 C CNN
+	2    19600 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS32 U34
+U 4 1 640FF0A8
+P 19600 5050
+F 0 "U34" H 19600 5375 50  0000 C CNN
+F 1 "74LS32" H 19600 5284 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 19600 5050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 19600 5050 50  0001 C CNN
+	4    19600 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS32 U34
+U 5 1 641009C6
+P 19650 5900
+F 0 "U34" H 19880 5946 50  0000 L CNN
+F 1 "74LS32" H 19880 5855 50  0000 L CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 19650 5900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 19650 5900 50  0001 C CNN
+	5    19650 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 7450 7950 7450
+Wire Wire Line
+	7800 6850 7850 6850
+Wire Wire Line
+	7850 6850 7850 7250
+Wire Wire Line
+	7850 7250 7950 7250
+Wire Wire Line
+	7000 6600 7100 6600
+Wire Wire Line
+	7100 6600 7100 6750
+Wire Wire Line
+	7100 6750 7200 6750
+Wire Wire Line
+	7200 6950 7100 6950
+Wire Wire Line
+	7100 6950 7100 7150
+Wire Wire Line
+	7100 7150 7000 7150
+Wire Wire Line
+	6250 6700 6400 6700
+Wire Wire Line
+	5500 6700 5600 6700
+Wire Wire Line
+	5600 6700 5600 7050
+Wire Wire Line
+	5600 7050 6400 7050
+Connection ~ 5600 6700
+Wire Wire Line
+	5600 6700 5650 6700
+Wire Wire Line
+	6400 6500 5500 6500
+Text GLabel 5500 7250 0    50   Input ~ 0
+CF
+Wire Wire Line
+	5500 7250 6400 7250
+Text GLabel 7150 7450 0    50   Input ~ 0
+EEPROM_7
+Wire Wire Line
+	7150 7450 7250 7450
+Text Notes 5150 7800 0    98   ~ 0
+Arithmetic Carry In Logic
+Wire Wire Line
+	8550 7350 9500 7350
+Wire Notes Line
+	4850 4900 4850 8000
+Wire Notes Line
+	4850 4900 11300 4900
+Wire Notes Line
+	4850 8000 11300 8000
+Text Notes 6000 5050 0    39   ~ 8
+Carry In Logic
+Text Notes 6000 5550 0    39   ~ 0
+EEPROM2 (Two’s Complement)\nEEPROM3 (ADC/SBB active)\nEEPROM7 (Assert Adder to ALU Bus)\nCF (Current Carry Flag Status)\n\na) If twos complement, or\nb) if ADC or SBB, and current carry flag status is active
+Text Notes 5050 6050 0    50   ~ 0
+MSB: 0(Arithmetic)\n\nMUX_SEL:2\nTWOS_COMP:1\nCARRY_IN: 0\n\n01xxx100 DEC\n01xxx011 SUB\n01xxx000 ADD\n01xxx111 INC\n01xx1010 ADC\n01xx1000 SUBB\n
+Text Notes 5050 5050 0    39   ~ 8
+Control
+Text Notes 14400 9600 0    50   ~ 0
+Q[0..7]: ALU Data bus lines\n\nEEPROM6: If 0, the output is inverted,\nelse normal output
+Text Notes 14400 9200 0    39   ~ 8
+Control
+Wire Notes Line
+	10700 8650 10700 11800
+Wire Notes Line
+	4850 8650 4850 11800
+Text Notes 5200 8950 0    59   ~ 12
+Functions
+Text Notes 5200 9100 0    59   ~ 0
+AND | OR | XOR
+Text Notes 10900 9300 0    59   ~ 12
+Control
+Text Notes 10900 10050 0    47   ~ 0
+~SHIFT_OUT~ - Active low, asserts a shift\n~MUX_ROTATE_OUT~ - Active low, asserts a rotate\nLOGICAL_CARRY_OUT - Status of last bit shifted out\n\nEEPROM_4 / EEPROM_5\n0x0: SHL\n0x1: SHL4\n0x2: SHR\n0x3: SHR4 
+$Sheet
+S 8800 12450 2450 2950
+U 64694D66
+F0 "FLAGS" 39
+F1 "FLAGS.sch" 39
+F2 "RESULT0" I L 8800 12750 50 
+F3 "RESULT1" I L 8800 12850 50 
+F4 "RESULT2" I L 8800 12950 50 
+F5 "RESULT3" I L 8800 13050 50 
+F6 "RESULT4" I L 8800 13150 50 
+F7 "RESULT5" I L 8800 13250 50 
+F8 "RESULT6" I L 8800 13350 50 
+F9 "RESULT7" I L 8800 13450 50 
+F10 "ARITHMETIC_CARRY_OUT" I L 8800 14450 50 
+F11 "LOGICAL_CARRY_OUT" I L 8800 14350 50 
+F12 "~LATCH_FLAGS" I L 8800 14850 50 
+F13 "CLOCK" I L 8800 15050 50 
+F14 "BUS0" I L 8800 13850 50 
+F15 "RESTORE_FLAGS" I L 8800 14700 50 
+F16 "B7" I L 8800 13600 50 
+F17 "A7" I L 8800 13700 50 
+F18 "BUS1" I L 8800 13950 50 
+F19 "BUS2" I L 8800 14050 50 
+F20 "BUS3" I L 8800 14150 50 
+F21 "CF" O R 11250 12750 50 
+F22 "SF" O R 11250 12850 50 
+F23 "OF" O R 11250 12950 50 
+F24 "ZF" O R 11250 13050 50 
+$EndSheet
+Text Notes 9650 12350 0    197  ~ 0
+FLAGS
+$EndSCHEMATC

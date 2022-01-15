@@ -108,7 +108,28 @@ const writeToBin = (byteArray, name) => {
     fs.writeFile(name + '.bin', data, () => {});
 }
 
+const fillByteWithLeadingZeros = (byte = 0b1000_0000, size = 8) => {
+    var n = byte.toString(2);
+    let zeros = '';
+
+    switch (size) {
+        case 8:
+            zeros = "00000000";
+            break;
+        case 16:
+            zeros = "0000000000000000";
+            break;
+        default:
+            zeros = "00000000";
+                
+    }
+
+    n = zeros.substr(n.length) + n;
+    return n;
+};
+
 module.exports = {
+    fillByteWithLeadingZeros,
     hexdump,
     writeToBin,
     chardump,

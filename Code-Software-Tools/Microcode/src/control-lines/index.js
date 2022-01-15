@@ -10,14 +10,15 @@ const RG_7 = 0b0111 << 4; // Unused
 
 // LOW Byte of Control Word
 // WRITE GROUP SELECTORS (Active State - MSB = 0)
-const WG_0 =                    0b0000 << 4;  // 
-const WG_1 =                    0b0001 << 4;  // 
-const WG_2 =                    0b0010 << 4;  // 
-const WG_3_ALU_MODE_0 =         0b0011 << 4;  // ALU - Arithmetic
-const WG_4_ALU_MODE_1 =         0b0100 << 4;  // ALU - Logic / Bitwise
-const WG_5_ALU_MODE_0_w_CARRY = 0b0101 << 4;  // ALU - Arithmetic w/ Carry
-const WG_6 =                    0b0110 << 4;  // Unused
-const WG_7 =                    0b0111 << 4;  // Unused
+const WG_0 =                         0b0000 << 4;  // 
+const WG_1 =                         0b0001 << 4;  // 
+const WG_2 =                         0b0010 << 4;  // 
+const WG_3_ALU_MODE_0_Cn0 =          0b0011 << 4;  // ALU - Carry in 0
+const WG_4_ALU_MODE_1_Cn1 =          0b0100 << 4;  // ALU - Logic / Bitwise
+const WG_5_ALU_MODE_0_w_CARRY_Cn1 =  0b0101 << 4;  // ALU - Conditional Carry in
+const WG_6_ALU_MODE_0_Cn1 =          0b0110 << 4;  // ALU - Carry in 1
+//NOTE: DO CF OR FUNC:1111
+const WG_7 =                     0b0111 << 4;  // Unused
 
 /*
 ---------------------------------------------
@@ -60,19 +61,19 @@ const LD_SP  = () => WG_1           ^ 0b1011;
 const LD_X16  = () => WG_1          ^ 0b1100;
 const SET_CLOCK_FREQ  = () => WG_1  ^ 0b1101;
 const MEM_WRITE = () => WG_1        ^ 0b1110; // Writes to RAM & Sets MemMode to HIGH (data)
-const LD_INST_REG = () => WG_1      ^ 0b1111; // UNUSED CURENTLY
+const LD_INST_REG = () => WG_1      ^ 0b1111; // TODO: Hookup in hardware
 
 // Group 2
-const ALU_LOAD_A  = () => WG_2                     ^ 0b0000;
-const ALU_SHL_A   = () => WG_2                     ^ 0b0001;
-const ALU_SHR_A   = () => WG_2                     ^ 000010;
-const ALU_LOAD_B  = () => WG_2                     ^ 0b0011;
-const LD_FLAGS    = () => WG_2                     ^ 0b0100; // 4: TODO
-const LD_TX_LSB   = () => WG_2                     ^ 0b0101; // 5: TODO
-const LD_TX_MSB   = () => WG_2                     ^ 0b0110; // 5: TODO
+const ALU_LOAD_A         = () => WG_2              ^ 0b0000;
+const ALU_SHL_A          = () => WG_2              ^ 0b0001;
+const ALU_SHR_A          = () => WG_2              ^ 000010;
+const ALU_LOAD_B         = () => WG_2              ^ 0b0011;
+const LD_FLAGS           = () => WG_2              ^ 0b0100; // 4: TODO
+const LD_TX_LSB          = () => WG_2              ^ 0b0101; // 5: TODO
+const LD_TX_MSB          = () => WG_2              ^ 0b0110; // 5: 
 
 // Group 3/4/5 (ALU functions)
-const ALU_NOOP    = () => WG_3_ALU_MODE_0          ^ 0b0000;
+const ALU_INC_A    = () => WG_3_ALU_MODE_0         ^ 0b0000;
 const ALU_ADD     = () => WG_3_ALU_MODE_0          ^ 0b1001;
 const ALU_ADDC    = () => WG_5_ALU_MODE_0_w_CARRY  ^ 0b1001;
 const ALU_SUB     = () => WG_3_ALU_MODE_0          ^ 0b0110;
@@ -101,33 +102,35 @@ const OUT_F_DATA   = () => RG_0 ^ 0b1001;
 const OUT_F_LSB    = () => RG_0 ^ 0b1010;
 const OUT_F_MSB    = () => RG_0 ^ 0b1011;
 const OUT_X1_DATA  = () => RG_0 ^ 0b1100;
-const OUT_X1_LSB   = () => RG_0 ^ 0b1101;
-const OUT_X1_MSB   = () => RG_0 ^ 0b1110;
-const OUT_X2_DATA  = () => RG_0 ^ 0b1111;
+const OUT_X2_DATA  = () => RG_0 ^ 0b1101;
+const OUT_XX_ADDR  = () => RG_0 ^ 0b1110; // (XX) [X2][X1] - two registers, one 16bit assertion
+// const asdf  = () => RG_0 ^ 0b1111;              // Unused
 
-const OUT_X2_LSB      = () => RG_1 ^ 0b0000;
-const OUT_X2_MSB      = () => RG_1 ^ 0b0001;
-const OUT_Q_DATA      = () => RG_1 ^ 0b0010; // Constant (Q)
-const OUT_Q_LSB       = () => RG_1 ^ 0b0011; // Constant (Q)
-const OUT_Q_MSB       = () => RG_1 ^ 0b0100; // Constant (Q)
-// const asdfasdfasdf    = () => RG_1 ^ 0b0101; // *************toodo use me
-const INC_SP          = () => RG_1 ^ 0b0110;
-const DEC_SP          = () => RG_1 ^ 0b0111;
-const OUT_SP_ADDR     = () => RG_1 ^ 0b1000; // Maybe unused?
-const OUT_SP_BUS      = () => RG_1 ^ 0b1001;
-const OUT_X16_ADDR    = () => RG_1 ^ 0b1010;
-const OUT_X16_BUS     = () => RG_1 ^ 0b1011;
-const PC_INC          = () => RG_1 ^ 0b1100;
-const PC_DEC          = () => RG_1 ^ 0b1101;
-const OUT_PC_ADDR     = () => RG_1 ^ 0b1110;
-const OUT_PC_BUS      = () => RG_1 ^ 0b1111;
+// const asdf  = () => RG_1 ^ 0b0000;              // Unused
+// const asdf   = () => RG_1 ^ 0b0001;             // Unused
+const OUT_Q_DATA   = () => RG_1 ^ 0b0010; // Constant(Q)
+const OUT_Q_LSB    = () => RG_1 ^ 0b0011; // Constant(Q)
+const OUT_Q_MSB    = () => RG_1 ^ 0b0100; // Constant(Q)
+// const asdf    = () => RG_1 ^ 0b0101;            // Unused
+const INC_SP       = () => RG_1 ^ 0b0110;
+const DEC_SP       = () => RG_1 ^ 0b0111; // NEEDS TO HAVE CARRY IN SET HIGH
+const OUT_SP_ADDR  = () => RG_1 ^ 0b1000;           // Maybe unused?
+const OUT_SP_BUS   = () => RG_1 ^ 0b1001;
+const OUT_X16_ADDR = () => RG_1 ^ 0b1010;
+const OUT_X16_BUS  = () => RG_1 ^ 0b1011;
+const INC_PC       = () => RG_1 ^ 0b1100;
+const DEC_PC       = () => RG_1 ^ 0b1101;
+const OUT_PC_ADDR  = () => RG_1 ^ 0b1110;
+const OUT_PC_BUS   = () => RG_1 ^ 0b1111;
 
-const ALU_OUT           = () => RG_2 ^ 0b0000;
-const ALU_A_OUT         = () => RG_2 ^ 0b0001;
-const OUT_MEM_CS_CODE   = () => RG_2 ^ 0b0010;
-const OUT_MEM_DS_DATA   = () => RG_2 ^ 0b0011;
-const OUT_TX_ADDR       = () => RG_2 ^ 0b0100;
-const OUT_TX_BUS        = () => RG_2 ^ 0b0101;
+const ALU_OUT                  = () => RG_2 ^ 0b0000;
+const ALU_A_OUT                = () => RG_2 ^ 0b0001;
+const OUT_MEM_CS_CODE          = () => RG_2 ^ 0b0010;
+const OUT_MEM_DS_DATA          = () => RG_2 ^ 0b0011;
+const OUT_MEM_CS_CODE_INC_PC   = () => RG_2 ^ 0b0100; // TODO: Add hardware
+const OUT_MEM_DS_DATA_INC_PC   = () => RG_2 ^ 0b0101; // TODO: Add hardware
+const OUT_TX_ADDR              = () => RG_2 ^ 0b0110;
+const OUT_TX_BUS               = () => RG_2 ^ 0b0111;
 
 module.exports = {
     writeGroup: {
@@ -168,7 +171,7 @@ module.exports = {
         LD_FLAGS,
         LD_TX_LSB,
         LD_TX_MSB,
-        ALU_NOOP,
+        ALU_INC_A,
         ALU_ADD,
         ALU_ADDC,
         ALU_SUB,
@@ -197,11 +200,8 @@ module.exports = {
         OUT_F_LSB,
         OUT_F_MSB,
         OUT_X1_DATA,
-        OUT_X1_LSB,
-        OUT_X1_MSB,
+        OUT_XX_ADDR,
         OUT_X2_DATA,
-        OUT_X2_LSB,
-        OUT_X2_MSB,
         OUT_Q_DATA,
         OUT_Q_LSB,
         OUT_Q_MSB,
@@ -211,8 +211,8 @@ module.exports = {
         OUT_SP_BUS,
         OUT_X16_ADDR,
         OUT_X16_BUS,
-        PC_INC,
-        PC_DEC,
+        INC_PC,
+        DEC_PC,
         OUT_PC_ADDR,
         OUT_PC_BUS,
         ALU_OUT,
@@ -221,5 +221,7 @@ module.exports = {
         OUT_MEM_DS_DATA,
         OUT_TX_ADDR,
         OUT_TX_BUS,
+        OUT_MEM_CS_CODE_INC_PC,
+        OUT_MEM_DS_DATA_INC_PC,
     }
-};
+};``

@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name clockv2-rescue)(type Legacy)(uri ${KIPRJMOD}/clockv2-rescue.lib)(options "")(descr ""))
-)

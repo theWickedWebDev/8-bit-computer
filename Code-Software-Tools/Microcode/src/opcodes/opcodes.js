@@ -2,7 +2,7 @@ const writeGroup = require('../control-lines').writeGroup;
 const readGroup = require('../control-lines').readGroup;
 const partials = require('./partials');
 
-const { FETCH_INSTRUCTION, GET_IMMEDIATE_8BIT_CODE_VALUE, GET_8BIT_DATA_AT_IMMEDIATE_ADDRESS } = partials;
+const { FETCH, FETCH_BYTE_AT_IMMEDIATE_ADDRESS } = partials;
 
 MOV_A_imm = {
     label: 'mov a, imm',
@@ -11,9 +11,9 @@ MOV_A_imm = {
     destination: 'A',
     opcode: 0x1,
     operations: [
-        ...FETCH_INSTRUCTION,
-        ...GET_IMMEDIATE_8BIT_CODE_VALUE,
-        { read: readGroup.OUT_X1_DATA(), write: writeGroup.ALU_LOAD_A(), description: 'Asserts Scratch1 to Data Bus and Loads it into A Register' },
+        ...FETCH,    
+        { read: readGroup.OUT_PC_BUS(), write: writeGroup.LD_MAR(), description: 'Output PC to address bus and load into MAR'},
+        { read: readGroup.OUT_MEM_CS_CODE_INC_PC(), write: writeGroup.LD_X1(), description: 'Output Memory at $CS:PC and load into A Register and Increment PC'},
     ]
 };
 
@@ -24,7 +24,7 @@ MOV_A_C = {
     destination: 'A',
     opcode: 0x2,
     operations: [
-        ...FETCH_INSTRUCTION,
+        ...FETCH,
         { read: readGroup.OUT_C_DATA(), write: writeGroup.ALU_LOAD_A(), description: 'Asserts C Reg to Data Bus and Loads it into A Register' },
     ]
 };
@@ -36,7 +36,7 @@ MOV_A_D = {
     destination: 'A',
     opcode: 0x3,
     operations: [
-        ...FETCH_INSTRUCTION,
+        ...FETCH,
         { read: readGroup.OUT_D_DATA(), write: writeGroup.ALU_LOAD_A(), description: 'Asserts D Reg to Data Bus and Loads it into A Register' },
     ]
 };
@@ -48,7 +48,7 @@ MOV_A_E = {
     destination: 'A',
     opcode: 0x4,
     operations: [
-        ...FETCH_INSTRUCTION,
+        ...FETCH,
         { read: readGroup.OUT_E_DATA(), write: writeGroup.ALU_LOAD_A(), description: 'Asserts E Reg to Data Bus and Loads it into A Register' },
     ]
 };
@@ -60,7 +60,7 @@ MOV_A_F = {
     destination: 'A',
     opcode: 0x5,
     operations: [
-        ...FETCH_INSTRUCTION,
+        ...FETCH,
         { read: readGroup.OUT_F_DATA(), write: writeGroup.ALU_LOAD_A(), description: 'Asserts F Reg to Data Bus and Loads it into A Register' },
     ]
 };
@@ -69,37 +69,23 @@ MOV_A_mem = {
     mnemonic: 'MOV a, mem',
     opcode: 0x3,
     operations: [
-        ...FETCH_INSTRUCTION,
-        ...GET_8BIT_DATA_AT_IMMEDIATE_ADDRESS,
+        ...FETCH,
+        ...FETCH_BYTE_AT_IMMEDIATE_ADDRESS,
         { read: readGroup.OUT_MEM_DS_DATA(), write: writeGroup.ALU_LOAD_A(), description: 'Asserts Memory out to bus and loads into A register' }
     ]
 };
 
 // TODO:
-ADD_A_imm = {
-    mnemonic: 'ADD a, imm',
-    opcode: 0x4,
-    operations: [
-        ...FETCH_INSTRUCTION,
-    ]
-};
-
-// TODO:
-ADD_A_r = {
-    mnemonic: 'ADD a, r',
+DEC_A = {
+    label: 'mov a, r',
+    mnemonic: 'MOV',
+    operand: 'F',
+    destination: 'A',
     opcode: 0x5,
     operations: [
-        ...FETCH_INSTRUCTION,
-    ]
-};
-
-// TODO:
-ADD_A_mem = {
-    mnemonic: 'ADD a, mem',
-    opcode: 0x6,
-    operations: [
-        ...FETCH_INSTRUCTION,
-    ]
+        ...FETCH,
+        { write: writeGroup.ALU_DEC_A(), description: 'Decrements Accumulator by 1' }
+    ],
 };
 
 module.exports = {
@@ -109,7 +95,5 @@ module.exports = {
     MOV_A_E,
     MOV_A_F,
     MOV_A_mem,
-    ADD_A_imm,
-    ADD_A_r,
-    ADD_A_mem
+    DEC_A
 };

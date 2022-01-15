@@ -1,0 +1,1668 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 1400 3100 0    50   Input ~ 0
+TWOS_COMP
+Text GLabel 1400 3300 0    50   Input ~ 0
+ADC_SBB
+$Comp
+L 74xx:74LS08 U33
+U 1 1 640EC9EE
+P 4150 3950
+F 0 "U33" H 4150 4275 50  0000 C CNN
+F 1 "74LS08" H 4150 4184 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4150 3950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 4150 3950 50  0001 C CNN
+	1    4150 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U33
+U 2 1 640EE5E3
+P 2600 3200
+F 0 "U33" H 2600 3525 50  0000 C CNN
+F 1 "74LS08" H 2600 3434 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2600 3200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 2600 3200 50  0001 C CNN
+	2    2600 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U33
+U 3 1 640EF086
+P 2600 3750
+F 0 "U33" H 2600 4075 50  0000 C CNN
+F 1 "74LS08" H 2600 3984 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 2600 3750 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 2600 3750 50  0001 C CNN
+	3    2600 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U32
+U 1 1 640F355C
+P 3450 4050
+F 0 "U32" H 3450 4367 50  0000 C CNN
+F 1 "74LS04" H 3450 4276 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 3450 4050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 3450 4050 50  0001 C CNN
+	1    3450 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U32
+U 2 1 64EC9953
+P 1850 3300
+F 0 "U32" H 1950 3200 50  0000 C CNN
+F 1 "74LS04" H 1850 3100 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 1850 3300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 1850 3300 50  0001 C CNN
+	2    1850 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS32 U34
+U 1 1 64EC9954
+P 3400 3450
+F 0 "U34" H 3400 3775 50  0000 C CNN
+F 1 "74LS32" H 3400 3684 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 3400 3450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3400 3450 50  0001 C CNN
+	1    3400 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4050 3850 4050
+Wire Wire Line
+	3700 3450 3750 3450
+Wire Wire Line
+	3750 3450 3750 3850
+Wire Wire Line
+	3750 3850 3850 3850
+Wire Wire Line
+	2900 3200 3000 3200
+Wire Wire Line
+	3000 3200 3000 3350
+Wire Wire Line
+	3000 3350 3100 3350
+Wire Wire Line
+	3100 3550 3000 3550
+Wire Wire Line
+	3000 3550 3000 3750
+Wire Wire Line
+	3000 3750 2900 3750
+Wire Wire Line
+	2150 3300 2300 3300
+Wire Wire Line
+	1400 3300 1500 3300
+Wire Wire Line
+	1500 3300 1500 3650
+Wire Wire Line
+	1500 3650 2300 3650
+Connection ~ 1500 3300
+Wire Wire Line
+	1500 3300 1550 3300
+Wire Wire Line
+	2300 3100 1400 3100
+Wire Wire Line
+	2100 3850 2300 3850
+Text GLabel 3050 4050 0    50   Input ~ 0
+~ADDER_OUT
+Wire Wire Line
+	3050 4050 3150 4050
+Text Notes 2150 2750 0    98   ~ 0
+Arithmetic Carry In Logic
+Text Notes 900  3950 0    39   ~ 8
+Carry In Logic
+Text Notes 900  4450 0    39   ~ 0
+EEPROM2 (Two’s Complement)\nEEPROM3 (ADC/SBB active)\nEEPROM7 (Assert Adder to ALU Bus)\nCF (Current Carry Flag Status)\n\na) If twos complement, or\nb) if ADC or SBB, and current carry flag status is active
+Text Notes 12300 2400 0    50   ~ 0
+MSB: 0(Arithmetic)\n\nMUX_SEL:2\nTWOS_COMP:1\nCARRY_IN: 0\n\n01xxx100 DEC\n01xxx011 SUB\n01xxx000 ADD\n01xxx111 INC\n01xx1010 ADC\n01xx1000 SUBB\n
+Text Notes 12300 1400 0    39   ~ 8
+Control
+$Comp
+L Connector_Generic:Conn_01x08 J1
+U 1 1 61BBBAF2
+P 1100 1250
+F 0 "J1" V 1018 762 50  0001 R CNN
+F 1 "Conn_01x08" V 973 762 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 1100 1250 50  0001 C CNN
+F 3 "~" H 1100 1250 50  0001 C CNN
+F 4 "A Data" V 1200 1350 50  0000 R CNN "L"
+	1    1100 1250
+	0    -1   -1   0   
+$EndComp
+Text GLabel 800  1450 3    50   Input ~ 0
+A0
+Text GLabel 900  1450 3    50   Input ~ 0
+A1
+Text GLabel 1000 1450 3    50   Input ~ 0
+A2
+Text GLabel 1100 1450 3    50   Input ~ 0
+A3
+Text GLabel 1200 1450 3    50   Input ~ 0
+A4
+Text GLabel 1300 1450 3    50   Input ~ 0
+A5
+Text GLabel 1400 1450 3    50   Input ~ 0
+A6
+Text GLabel 1500 1450 3    50   Input ~ 0
+A7
+$Comp
+L Connector_Generic:Conn_01x08 J2
+U 1 1 61BBF4F6
+P 2000 1250
+F 0 "J2" V 1918 762 50  0001 R CNN
+F 1 "Conn_01x08" V 1873 762 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 2000 1250 50  0001 C CNN
+F 3 "~" H 2000 1250 50  0001 C CNN
+F 4 "B Data" V 2100 1350 50  0000 R CNN "L"
+	1    2000 1250
+	0    -1   -1   0   
+$EndComp
+Text GLabel 1700 1450 3    50   Input ~ 0
+B0
+Text GLabel 1800 1450 3    50   Input ~ 0
+B1
+Text GLabel 1900 1450 3    50   Input ~ 0
+B2
+Text GLabel 2000 1450 3    50   Input ~ 0
+B3
+Text GLabel 2100 1450 3    50   Input ~ 0
+B4
+Text GLabel 2200 1450 3    50   Input ~ 0
+B5
+Text GLabel 2300 1450 3    50   Input ~ 0
+B6
+Text GLabel 2400 1450 3    50   Input ~ 0
+B7
+$Comp
+L Connector_Generic:Conn_01x08 J3
+U 1 1 61BC52E0
+P 2900 1250
+F 0 "J3" V 2818 762 50  0001 R CNN
+F 1 "Conn_01x08" V 2773 762 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 2900 1250 50  0001 C CNN
+F 3 "~" H 2900 1250 50  0001 C CNN
+F 4 "Result Data" V 3000 1400 50  0000 R CNN "L"
+	1    2900 1250
+	0    -1   -1   0   
+$EndComp
+Text Notes 12300 3250 0    118  ~ 0
+A + 1\nA - 1\nA + B\nA - B
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 63E09D40
+P 4100 1150
+F 0 "#FLG0101" H 4100 1225 50  0001 C CNN
+F 1 "PWR_FLAG" V 4100 1500 50  0000 C CNN
+F 2 "" H 4100 1150 50  0001 C CNN
+F 3 "~" H 4100 1150 50  0001 C CNN
+	1    4100 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 63E0BE51
+P 4200 1150
+F 0 "#FLG0102" H 4200 1225 50  0001 C CNN
+F 1 "PWR_FLAG" V 4200 1500 50  0000 C CNN
+F 2 "" H 4200 1150 50  0001 C CNN
+F 3 "~" H 4200 1150 50  0001 C CNN
+	1    4200 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0128
+U 1 1 63E26D1A
+P 4100 1500
+F 0 "#PWR0128" H 4100 1250 50  0001 C CNN
+F 1 "GND" V 4100 1250 50  0000 C CNN
+F 2 "" H 4100 1500 50  0001 C CNN
+F 3 "" H 4100 1500 50  0001 C CNN
+	1    4100 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0129
+U 1 1 63E34BC8
+P 4200 1500
+F 0 "#PWR0129" H 4200 1350 50  0001 C CNN
+F 1 "VCC" V 4200 1700 50  0000 C CNN
+F 2 "" H 4200 1500 50  0001 C CNN
+F 3 "" H 4200 1500 50  0001 C CNN
+	1    4200 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L 74xx:74LS32 U34
+U 5 1 641009C6
+P 15050 7300
+F 0 "U34" H 15280 7346 50  0000 L CNN
+F 1 "74LS32" H 15280 7255 50  0000 L CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 15050 7300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 15050 7300 50  0001 C CNN
+	5    15050 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS32 U34
+U 4 1 640FF0A8
+P 15300 6000
+F 0 "U34" H 15300 6325 50  0000 C CNN
+F 1 "74LS32" H 15300 6234 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 15300 6000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 15300 6000 50  0001 C CNN
+	4    15300 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS32 U34
+U 2 1 640FDE14
+P 15300 4850
+F 0 "U34" H 15300 5175 50  0000 C CNN
+F 1 "74LS32" H 15300 5084 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 15300 4850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 15300 4850 50  0001 C CNN
+	2    15300 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS32 U34
+U 3 1 640FCAE3
+P 15300 5400
+F 0 "U34" H 15300 5725 50  0000 C CNN
+F 1 "74LS32" H 15300 5634 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 15300 5400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 15300 5400 50  0001 C CNN
+	3    15300 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U32
+U 7 1 640FA13B
+P 14200 7300
+F 0 "U32" H 14430 7346 50  0000 L CNN
+F 1 "74LS04" H 14430 7255 50  0000 L CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 14200 7300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 14200 7300 50  0001 C CNN
+	7    14200 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U32
+U 6 1 640F90F5
+P 14250 6100
+F 0 "U32" H 14250 6417 50  0000 C CNN
+F 1 "74LS04" H 14250 6326 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 14250 6100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 14250 6100 50  0001 C CNN
+	6    14250 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U32
+U 5 1 640F7B05
+P 14250 5650
+F 0 "U32" H 14250 5967 50  0000 C CNN
+F 1 "74LS04" H 14250 5876 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 14250 5650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 14250 5650 50  0001 C CNN
+	5    14250 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U32
+U 4 1 640F6DDF
+P 14250 5150
+F 0 "U32" H 14250 5467 50  0000 C CNN
+F 1 "74LS04" H 14250 5376 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 14250 5150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 14250 5150 50  0001 C CNN
+	4    14250 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS04 U32
+U 3 1 640F631B
+P 14250 4650
+F 0 "U32" H 14250 4967 50  0000 C CNN
+F 1 "74LS04" H 14250 4876 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 14250 4650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS04" H 14250 4650 50  0001 C CNN
+	3    14250 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U33
+U 5 1 640F17DA
+P 13400 7300
+F 0 "U33" H 13630 7346 50  0000 L CNN
+F 1 "74LS08" H 13630 7255 50  0000 L CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 13400 7300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 13400 7300 50  0001 C CNN
+	5    13400 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS08 U33
+U 4 1 640F0B23
+P 13400 6150
+F 0 "U33" H 13400 6475 50  0000 C CNN
+F 1 "74LS08" H 13400 6384 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 13400 6150 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 13400 6150 50  0001 C CNN
+	4    13400 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 6850 9400 6850
+Wire Wire Line
+	9350 6550 9350 6850
+$Comp
+L power:GND #PWR?
+U 1 1 64F729A5
+P 2350 7400
+AR Path="/62800928/64F729A5" Ref="#PWR?"  Part="1" 
+AR Path="/64F729A5" Ref="#PWR09"  Part="1" 
+F 0 "#PWR09" H 2350 7150 50  0001 C CNN
+F 1 "GND" V 2350 7200 50  0000 C CNN
+F 2 "" H 2350 7400 50  0001 C CNN
+F 3 "" H 2350 7400 50  0001 C CNN
+	1    2350 7400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64F729AB
+P 2350 9750
+AR Path="/62800928/64F729AB" Ref="#PWR?"  Part="1" 
+AR Path="/64F729AB" Ref="#PWR010"  Part="1" 
+F 0 "#PWR010" H 2350 9500 50  0001 C CNN
+F 1 "GND" V 2350 9550 50  0000 C CNN
+F 2 "" H 2350 9750 50  0001 C CNN
+F 3 "" H 2350 9750 50  0001 C CNN
+	1    2350 9750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1750 9650 2350 9650
+Text GLabel 4700 9900 2    50   Output ~ 0
+OP7
+Text GLabel 4700 9350 2    50   Output ~ 0
+OP6
+Text GLabel 4700 8800 2    50   Output ~ 0
+OP5
+Text GLabel 4700 8250 2    50   Output ~ 0
+OP4
+Text GLabel 4700 7650 2    50   Output ~ 0
+OP3
+Text GLabel 4700 7100 2    50   Output ~ 0
+OP2
+Text GLabel 4700 6550 2    50   Output ~ 0
+OP1
+Text GLabel 4700 6000 2    50   Output ~ 0
+OP0
+Wire Wire Line
+	10400 6000 10750 6000
+Wire Wire Line
+	7350 6050 7700 6050
+Wire Wire Line
+	7700 5250 7700 6050
+Wire Wire Line
+	9550 5250 7700 5250
+Wire Wire Line
+	9550 5800 9550 5250
+Wire Wire Line
+	10400 5800 9550 5800
+Wire Wire Line
+	10400 6000 10400 5800
+Wire Wire Line
+	10350 6100 10750 6100
+Wire Wire Line
+	7350 6150 7750 6150
+Wire Wire Line
+	10350 5850 10350 6100
+Wire Wire Line
+	9500 5850 10350 5850
+Wire Wire Line
+	9500 5300 9500 5850
+Wire Wire Line
+	7750 5300 9500 5300
+Wire Wire Line
+	7750 6150 7750 5300
+Wire Wire Line
+	10300 6200 10750 6200
+Wire Wire Line
+	7350 6250 7800 6250
+Wire Wire Line
+	7800 5350 7800 6250
+Wire Wire Line
+	9450 5350 7800 5350
+Wire Wire Line
+	9450 5900 9450 5350
+Wire Wire Line
+	10300 5900 9450 5900
+Wire Wire Line
+	10300 6200 10300 5900
+Wire Wire Line
+	10250 6300 10750 6300
+Wire Wire Line
+	7350 6350 7850 6350
+Wire Wire Line
+	7850 5400 7850 6350
+Wire Wire Line
+	9400 5400 7850 5400
+Wire Wire Line
+	9400 5950 9400 5400
+Wire Wire Line
+	10250 5950 9400 5950
+Wire Wire Line
+	10250 6300 10250 5950
+Wire Wire Line
+	10150 6400 10750 6400
+Wire Wire Line
+	9300 6050 10150 6050
+Wire Wire Line
+	10150 6400 10150 6050
+Wire Wire Line
+	10050 6500 10750 6500
+Wire Wire Line
+	9300 6150 10050 6150
+Wire Wire Line
+	10050 6150 10050 6500
+Wire Wire Line
+	9950 6600 10750 6600
+Wire Wire Line
+	9300 6250 9950 6250
+Wire Wire Line
+	9950 6600 9950 6250
+Wire Wire Line
+	9850 6700 10750 6700
+Wire Wire Line
+	9300 6350 9850 6350
+Wire Wire Line
+	9850 6350 9850 6700
+Wire Wire Line
+	11750 6700 11950 6700
+Wire Wire Line
+	11750 6600 11950 6600
+Wire Wire Line
+	11750 6500 11950 6500
+Wire Wire Line
+	11750 6400 11950 6400
+Wire Wire Line
+	11750 6300 11950 6300
+Wire Wire Line
+	11750 6200 11950 6200
+Wire Wire Line
+	11750 6100 11950 6100
+Wire Wire Line
+	11750 6000 11950 6000
+Wire Wire Line
+	10650 7000 10750 7000
+Wire Wire Line
+	10650 7100 10650 7000
+Wire Wire Line
+	10600 7100 10650 7100
+$Comp
+L power:VCC #PWR023
+U 1 1 64F729F6
+P 10750 6900
+AR Path="/64F729F6" Ref="#PWR023"  Part="1" 
+AR Path="/62800928/64F729F6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR023" H 10750 6750 50  0001 C CNN
+F 1 "VCC" V 10750 7050 50  0000 L CNN
+F 2 "" H 10750 6900 50  0001 C CNN
+F 3 "" H 10750 6900 50  0001 C CNN
+	1    10750 6900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR025
+U 1 1 64F729FC
+P 11250 7300
+AR Path="/64F729FC" Ref="#PWR025"  Part="1" 
+AR Path="/62800928/64F729FC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR025" H 11250 7050 50  0001 C CNN
+F 1 "GND" H 11255 7127 50  0000 C CNN
+F 2 "" H 11250 7300 50  0001 C CNN
+F 3 "" H 11250 7300 50  0001 C CNN
+	1    11250 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR024
+U 1 1 64F72A02
+P 11250 5700
+AR Path="/64F72A02" Ref="#PWR024"  Part="1" 
+AR Path="/62800928/64F72A02" Ref="#PWR?"  Part="1" 
+F 0 "#PWR024" H 11250 5550 50  0001 C CNN
+F 1 "VCC" H 11265 5873 50  0000 C CNN
+F 2 "" H 11250 5700 50  0001 C CNN
+F 3 "" H 11250 5700 50  0001 C CNN
+	1    11250 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS245 U7
+U 1 1 64F72A08
+P 11250 6500
+AR Path="/64F72A08" Ref="U7"  Part="1" 
+AR Path="/62800928/64F72A08" Ref="U?"  Part="1" 
+F 0 "U7" H 11250 6700 50  0000 C CNN
+F 1 "74LS245" H 11500 7200 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 11250 6500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS245" H 11250 6500 50  0001 C CNN
+	1    11250 6500
+	1    0    0    -1  
+$EndComp
+Text Notes 13600 2900 0    50   ~ 0
+A + B + Cf:  MUX_SEL: 0, TC: 0, CI: ?
+Text Notes 13600 2800 0    50   ~ 0
+A - B - Ci:  MUX_SEL: 0, TC: 1, CI: ?
+Text Notes 13600 2400 0    50   ~ 0
+A + B:  MUX_SEL: 0, TC: 0, CI: 0
+Text Notes 13600 2150 0    50   ~ 0
+A - B:  MUX_SEL: 0, TC: 1, CI: 1
+Text Notes 13600 2550 0    50   ~ 0
+INC A:  MUX_SEL: 1, TC: 1, CI: 1
+Wire Wire Line
+	1750 5650 1500 5650
+Wire Wire Line
+	1750 7300 1750 9650
+Wire Wire Line
+	1750 7300 1750 5650
+Connection ~ 1750 7300
+Wire Wire Line
+	2350 7300 1750 7300
+Wire Wire Line
+	1500 5400 3700 5400
+Text Notes 13600 2000 0    50   ~ 0
+DEC A:  MUX_SEL: 1, TC: 0, CI: 0
+$Comp
+L power:VCC #PWR?
+U 1 1 64F72A4A
+P 2200 6200
+AR Path="/62800928/64F72A4A" Ref="#PWR?"  Part="1" 
+AR Path="/64F72A4A" Ref="#PWR01"  Part="1" 
+F 0 "#PWR01" H 2200 6050 50  0001 C CNN
+F 1 "VCC" V 2215 6327 50  0000 L CNN
+F 2 "" H 2200 6200 50  0001 C CNN
+F 3 "" H 2200 6200 50  0001 C CNN
+	1    2200 6200
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3350 9350 3550 9350
+Wire Wire Line
+	3550 10000 3900 10000
+Wire Wire Line
+	3550 9350 3550 10000
+Wire Wire Line
+	3350 9050 3650 9050
+Wire Wire Line
+	3650 9450 3900 9450
+Wire Wire Line
+	3650 9450 3650 9050
+Wire Wire Line
+	3350 8750 3600 8750
+Wire Wire Line
+	3600 8900 3900 8900
+Wire Wire Line
+	3600 8750 3600 8900
+Wire Wire Line
+	3350 8450 3600 8450
+Wire Wire Line
+	3600 8350 3900 8350
+Wire Wire Line
+	3600 8350 3600 8450
+Wire Wire Line
+	3450 7750 3900 7750
+Wire Wire Line
+	3450 7000 3450 7750
+Wire Wire Line
+	3350 6700 3600 6700
+Wire Wire Line
+	3600 7200 3900 7200
+Wire Wire Line
+	3600 6700 3600 7200
+Wire Wire Line
+	3350 6400 3650 6400
+Wire Wire Line
+	3650 6650 3900 6650
+Wire Wire Line
+	3650 6400 3650 6650
+Wire Wire Line
+	3350 6100 3900 6100
+Wire Wire Line
+	3450 7000 3350 7000
+$Comp
+L power:VCC #PWR?
+U 1 1 64F72A6E
+P 2850 8150
+AR Path="/62800928/64F72A6E" Ref="#PWR?"  Part="1" 
+AR Path="/64F72A6E" Ref="#PWR013"  Part="1" 
+F 0 "#PWR013" H 2850 8000 50  0001 C CNN
+F 1 "VCC" H 2865 8323 50  0000 C CNN
+F 2 "" H 2850 8150 50  0001 C CNN
+F 3 "" H 2850 8150 50  0001 C CNN
+	1    2850 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64F72A74
+P 2850 10050
+AR Path="/62800928/64F72A74" Ref="#PWR?"  Part="1" 
+AR Path="/64F72A74" Ref="#PWR014"  Part="1" 
+F 0 "#PWR014" H 2850 9800 50  0001 C CNN
+F 1 "GND" H 2855 9877 50  0000 C CNN
+F 2 "" H 2850 10050 50  0001 C CNN
+F 3 "" H 2850 10050 50  0001 C CNN
+	1    2850 10050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS157 U?
+U 1 1 64F72A7A
+P 2850 9050
+AR Path="/62800928/64F72A7A" Ref="U?"  Part="1" 
+AR Path="/64F72A7A" Ref="U2"  Part="1" 
+F 0 "U2" H 2850 9100 50  0000 C CNN
+F 1 "74LS157" H 3100 9850 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 2850 9050 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS157" H 2850 9050 50  0001 C CNN
+	1    2850 9050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 64F72A80
+P 2850 5800
+AR Path="/62800928/64F72A80" Ref="#PWR?"  Part="1" 
+AR Path="/64F72A80" Ref="#PWR011"  Part="1" 
+F 0 "#PWR011" H 2850 5650 50  0001 C CNN
+F 1 "VCC" H 2865 5973 50  0000 C CNN
+F 2 "" H 2850 5800 50  0001 C CNN
+F 3 "" H 2850 5800 50  0001 C CNN
+	1    2850 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64F72A86
+P 2850 7700
+AR Path="/62800928/64F72A86" Ref="#PWR?"  Part="1" 
+AR Path="/64F72A86" Ref="#PWR012"  Part="1" 
+F 0 "#PWR012" H 2850 7450 50  0001 C CNN
+F 1 "GND" H 2855 7527 50  0000 C CNN
+F 2 "" H 2850 7700 50  0001 C CNN
+F 3 "" H 2850 7700 50  0001 C CNN
+	1    2850 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS157 U?
+U 1 1 64F72A8C
+P 2850 6700
+AR Path="/62800928/64F72A8C" Ref="U?"  Part="1" 
+AR Path="/64F72A8C" Ref="U1"  Part="1" 
+F 0 "U1" H 2850 6750 50  0000 C CNN
+F 1 "74LS157" H 3100 7500 50  0000 C CNN
+F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 2850 6700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS157" H 2850 6700 50  0001 C CNN
+	1    2850 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS86 U?
+U 1 1 64F72A92
+P 4200 6000
+AR Path="/62800928/64F72A92" Ref="U?"  Part="1" 
+AR Path="/64F72A92" Ref="U3"  Part="1" 
+F 0 "U3" H 4200 6325 50  0000 C CNN
+F 1 "74LS86" H 4200 6234 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4200 6000 50  0001 C CNN
+F 3 "74xx/74ls86.pdf" H 4200 6000 50  0001 C CNN
+	1    4200 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS86 U?
+U 2 1 64F72A98
+P 4200 6550
+AR Path="/62800928/64F72A98" Ref="U?"  Part="2" 
+AR Path="/64F72A98" Ref="U3"  Part="2" 
+F 0 "U3" H 4200 6875 50  0000 C CNN
+F 1 "74LS86" H 4200 6784 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4200 6550 50  0001 C CNN
+F 3 "74xx/74ls86.pdf" H 4200 6550 50  0001 C CNN
+	2    4200 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS86 U?
+U 3 1 64F72A9E
+P 4200 7100
+AR Path="/62800928/64F72A9E" Ref="U?"  Part="3" 
+AR Path="/64F72A9E" Ref="U3"  Part="3" 
+F 0 "U3" H 4200 7425 50  0000 C CNN
+F 1 "74LS86" H 4200 7334 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4200 7100 50  0001 C CNN
+F 3 "74xx/74ls86.pdf" H 4200 7100 50  0001 C CNN
+	3    4200 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS86 U?
+U 4 1 64F72AA4
+P 4200 7650
+AR Path="/62800928/64F72AA4" Ref="U?"  Part="4" 
+AR Path="/64F72AA4" Ref="U3"  Part="4" 
+F 0 "U3" H 4200 7975 50  0000 C CNN
+F 1 "74LS86" H 4200 7884 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4200 7650 50  0001 C CNN
+F 3 "74xx/74ls86.pdf" H 4200 7650 50  0001 C CNN
+	4    4200 7650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS86 U?
+U 1 1 64F72AAA
+P 4200 8250
+AR Path="/62800928/64F72AAA" Ref="U?"  Part="1" 
+AR Path="/64F72AAA" Ref="U4"  Part="1" 
+F 0 "U4" H 4200 8575 50  0000 C CNN
+F 1 "74LS86" H 4200 8484 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4200 8250 50  0001 C CNN
+F 3 "74xx/74ls86.pdf" H 4200 8250 50  0001 C CNN
+	1    4200 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS86 U?
+U 2 1 64F72AB0
+P 4200 8800
+AR Path="/62800928/64F72AB0" Ref="U?"  Part="2" 
+AR Path="/64F72AB0" Ref="U4"  Part="2" 
+F 0 "U4" H 4200 9125 50  0000 C CNN
+F 1 "74LS86" H 4200 9034 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4200 8800 50  0001 C CNN
+F 3 "74xx/74ls86.pdf" H 4200 8800 50  0001 C CNN
+	2    4200 8800
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS86 U?
+U 3 1 64F72AB6
+P 4200 9350
+AR Path="/62800928/64F72AB6" Ref="U?"  Part="3" 
+AR Path="/64F72AB6" Ref="U4"  Part="3" 
+F 0 "U4" H 4200 9675 50  0000 C CNN
+F 1 "74LS86" H 4200 9584 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4200 9350 50  0001 C CNN
+F 3 "74xx/74ls86.pdf" H 4200 9350 50  0001 C CNN
+	3    4200 9350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS86 U?
+U 4 1 64F72ABC
+P 4200 9900
+AR Path="/62800928/64F72ABC" Ref="U?"  Part="4" 
+AR Path="/64F72ABC" Ref="U4"  Part="4" 
+F 0 "U4" H 4200 10225 50  0000 C CNN
+F 1 "74LS86" H 4200 10134 50  0000 C CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 4200 9900 50  0001 C CNN
+F 3 "74xx/74ls86.pdf" H 4200 9900 50  0001 C CNN
+	4    4200 9900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 5900 3700 5400
+Connection ~ 3700 5900
+Wire Wire Line
+	3700 5900 3900 5900
+Wire Wire Line
+	3700 9800 3900 9800
+Wire Wire Line
+	3700 9250 3700 9800
+Connection ~ 3700 9250
+Wire Wire Line
+	3700 9250 3900 9250
+Wire Wire Line
+	3700 8700 3700 9250
+Connection ~ 3700 8700
+Wire Wire Line
+	3900 8700 3700 8700
+Wire Wire Line
+	3700 8150 3700 8700
+Connection ~ 3700 8150
+Wire Wire Line
+	3700 8150 3900 8150
+Wire Wire Line
+	3700 7550 3700 8150
+Connection ~ 3700 7550
+Wire Wire Line
+	3900 7550 3700 7550
+Wire Wire Line
+	3700 5900 3700 6450
+Connection ~ 3700 6450
+Wire Wire Line
+	3700 6450 3900 6450
+Wire Wire Line
+	3700 7000 3700 7550
+Wire Wire Line
+	3700 6450 3700 7000
+Connection ~ 3700 7000
+Wire Wire Line
+	3900 7000 3700 7000
+Wire Wire Line
+	4500 6000 4700 6000
+Wire Wire Line
+	4500 6550 4700 6550
+Wire Wire Line
+	4500 7100 4700 7100
+Wire Wire Line
+	4700 7650 4500 7650
+Wire Wire Line
+	4700 8250 4500 8250
+Wire Wire Line
+	4700 8800 4500 8800
+Wire Wire Line
+	4700 9900 4500 9900
+Wire Wire Line
+	4500 9350 4700 9350
+$Comp
+L power:GND #PWR?
+U 1 1 64F72AE9
+P 6050 10100
+AR Path="/62800928/64F72AE9" Ref="#PWR?"  Part="1" 
+AR Path="/64F72AE9" Ref="#PWR018"  Part="1" 
+F 0 "#PWR018" H 6050 9850 50  0001 C CNN
+F 1 "GND" H 6055 9927 50  0000 C CNN
+F 2 "" H 6050 10100 50  0001 C CNN
+F 3 "" H 6050 10100 50  0001 C CNN
+	1    6050 10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64F72AEF
+P 5600 10100
+AR Path="/62800928/64F72AEF" Ref="#PWR?"  Part="1" 
+AR Path="/64F72AEF" Ref="#PWR016"  Part="1" 
+F 0 "#PWR016" H 5600 9850 50  0001 C CNN
+F 1 "GND" H 5605 9927 50  0000 C CNN
+F 2 "" H 5600 10100 50  0001 C CNN
+F 3 "" H 5600 10100 50  0001 C CNN
+	1    5600 10100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 64F72AF5
+P 5600 9100
+AR Path="/62800928/64F72AF5" Ref="#PWR?"  Part="1" 
+AR Path="/64F72AF5" Ref="#PWR015"  Part="1" 
+F 0 "#PWR015" H 5600 8950 50  0001 C CNN
+F 1 "VCC" H 5615 9273 50  0000 C CNN
+F 2 "" H 5600 9100 50  0001 C CNN
+F 3 "" H 5600 9100 50  0001 C CNN
+	1    5600 9100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 64F72AFB
+P 6050 9100
+AR Path="/62800928/64F72AFB" Ref="#PWR?"  Part="1" 
+AR Path="/64F72AFB" Ref="#PWR017"  Part="1" 
+F 0 "#PWR017" H 6050 8950 50  0001 C CNN
+F 1 "VCC" H 6065 9273 50  0000 C CNN
+F 2 "" H 6050 9100 50  0001 C CNN
+F 3 "" H 6050 9100 50  0001 C CNN
+	1    6050 9100
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS86 U?
+U 5 1 64F72B01
+P 6050 9600
+AR Path="/62800928/64F72B01" Ref="U?"  Part="5" 
+AR Path="/64F72B01" Ref="U4"  Part="5" 
+F 0 "U4" H 6100 9950 50  0000 L CNN
+F 1 "74LS86" H 5950 9600 50  0000 L CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 6050 9600 50  0001 C CNN
+F 3 "74xx/74ls86.pdf" H 6050 9600 50  0001 C CNN
+	5    6050 9600
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS86 U?
+U 5 1 64F72B07
+P 5600 9600
+AR Path="/62800928/64F72B07" Ref="U?"  Part="5" 
+AR Path="/64F72B07" Ref="U3"  Part="5" 
+F 0 "U3" H 5700 10000 50  0000 L CNN
+F 1 "74LS86" H 5500 9600 50  0000 L CNN
+F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 5600 9600 50  0001 C CNN
+F 3 "74xx/74ls86.pdf" H 5600 9600 50  0001 C CNN
+	5    5600 9600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 6550 9300 6550
+Wire Wire Line
+	7900 6550 7350 6550
+Wire Wire Line
+	7900 6050 7900 6550
+Wire Wire Line
+	8300 6050 7900 6050
+Wire Wire Line
+	6150 7050 6350 7050
+Wire Wire Line
+	6150 6950 6350 6950
+Wire Wire Line
+	6150 6850 6350 6850
+Wire Wire Line
+	6150 6750 6350 6750
+Wire Wire Line
+	8150 7050 8300 7050
+Wire Wire Line
+	8150 6950 8300 6950
+Wire Wire Line
+	8150 6850 8300 6850
+Wire Wire Line
+	8150 6750 8300 6750
+Text GLabel 8150 7050 0    50   Input ~ 0
+OP7
+Text GLabel 8150 6950 0    50   Input ~ 0
+OP6
+Text GLabel 8150 6850 0    50   Input ~ 0
+OP5
+Text GLabel 8150 6750 0    50   Input ~ 0
+OP4
+Text GLabel 6150 7050 0    50   Input ~ 0
+OP3
+Text GLabel 6150 6950 0    50   Input ~ 0
+OP2
+Text GLabel 6150 6850 0    50   Input ~ 0
+OP1
+Text GLabel 6150 6750 0    50   Input ~ 0
+OP0
+Wire Wire Line
+	8150 6550 8300 6550
+Wire Wire Line
+	8150 6450 8300 6450
+Wire Wire Line
+	8150 6350 8300 6350
+Wire Wire Line
+	8150 6250 8300 6250
+Wire Wire Line
+	6150 6550 6350 6550
+Wire Wire Line
+	6150 6450 6350 6450
+Wire Wire Line
+	6150 6350 6350 6350
+Wire Wire Line
+	6150 6250 6350 6250
+$Comp
+L power:GND #PWR?
+U 1 1 64F72B31
+P 8800 7350
+AR Path="/62800928/64F72B31" Ref="#PWR?"  Part="1" 
+AR Path="/64F72B31" Ref="#PWR022"  Part="1" 
+F 0 "#PWR022" H 8800 7100 50  0001 C CNN
+F 1 "GND" H 8805 7177 50  0000 C CNN
+F 2 "" H 8800 7350 50  0001 C CNN
+F 3 "" H 8800 7350 50  0001 C CNN
+	1    8800 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 64F72B37
+P 8800 5750
+AR Path="/62800928/64F72B37" Ref="#PWR?"  Part="1" 
+AR Path="/64F72B37" Ref="#PWR021"  Part="1" 
+F 0 "#PWR021" H 8800 5600 50  0001 C CNN
+F 1 "VCC" H 8815 5923 50  0000 C CNN
+F 2 "" H 8800 5750 50  0001 C CNN
+F 3 "" H 8800 5750 50  0001 C CNN
+	1    8800 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS283 U?
+U 1 1 64F72B3D
+P 8800 6550
+AR Path="/62800928/64F72B3D" Ref="U?"  Part="1" 
+AR Path="/64F72B3D" Ref="U6"  Part="1" 
+F 0 "U6" H 8800 6600 50  0000 C CNN
+F 1 "74LS283" H 9000 7250 50  0000 C CNN
+F 2 "Package_SO:SOIC-16W_5.3x10.2mm_P1.27mm" H 8800 6550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS283" H 8800 6550 50  0001 C CNN
+	1    8800 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 64F72B43
+P 6850 7350
+AR Path="/62800928/64F72B43" Ref="#PWR?"  Part="1" 
+AR Path="/64F72B43" Ref="#PWR020"  Part="1" 
+F 0 "#PWR020" H 6850 7100 50  0001 C CNN
+F 1 "GND" H 6855 7177 50  0000 C CNN
+F 2 "" H 6850 7350 50  0001 C CNN
+F 3 "" H 6850 7350 50  0001 C CNN
+	1    6850 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 64F72B49
+P 6850 5750
+AR Path="/62800928/64F72B49" Ref="#PWR?"  Part="1" 
+AR Path="/64F72B49" Ref="#PWR019"  Part="1" 
+F 0 "#PWR019" H 6850 5600 50  0001 C CNN
+F 1 "VCC" H 6865 5923 50  0000 C CNN
+F 2 "" H 6850 5750 50  0001 C CNN
+F 3 "" H 6850 5750 50  0001 C CNN
+	1    6850 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx:74LS283 U?
+U 1 1 64F72B4F
+P 6850 6550
+AR Path="/62800928/64F72B4F" Ref="U?"  Part="1" 
+AR Path="/64F72B4F" Ref="U5"  Part="1" 
+F 0 "U5" H 6850 6600 50  0000 C CNN
+F 1 "74LS283" H 7050 7250 50  0000 C CNN
+F 2 "Package_SO:SOIC-16W_5.3x10.2mm_P1.27mm" H 6850 6550 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS283" H 6850 6550 50  0001 C CNN
+	1    6850 6550
+	1    0    0    -1  
+$EndComp
+Text GLabel 1500 5400 0    50   Input ~ 0
+TWOS_COMP
+Text GLabel 1500 5650 0    50   Input ~ 0
+OP_MUX_SEL
+Text GLabel 6150 6250 0    50   Input ~ 0
+A0
+Text GLabel 6150 6350 0    50   Input ~ 0
+A1
+Text GLabel 6150 6450 0    50   Input ~ 0
+A2
+Text GLabel 6150 6550 0    50   Input ~ 0
+A3
+Text GLabel 8150 6250 0    50   Input ~ 0
+A4
+Text GLabel 8150 6350 0    50   Input ~ 0
+A5
+Text GLabel 8150 6450 0    50   Input ~ 0
+A6
+Text GLabel 8150 6550 0    50   Input ~ 0
+A7
+Text GLabel 2200 6100 0    50   Input ~ 0
+B0
+Text GLabel 2200 6400 0    50   Input ~ 0
+B1
+Text GLabel 2200 6700 0    50   Input ~ 0
+B2
+Text GLabel 2200 7000 0    50   Input ~ 0
+B3
+Text GLabel 2200 8450 0    50   Input ~ 0
+B4
+Text GLabel 2200 8750 0    50   Input ~ 0
+B5
+Text GLabel 2200 9050 0    50   Input ~ 0
+B6
+Text GLabel 2200 9350 0    50   Input ~ 0
+B7
+Wire Wire Line
+	2200 6100 2350 6100
+Wire Wire Line
+	2200 6200 2350 6200
+Wire Wire Line
+	2200 7000 2350 7000
+Wire Wire Line
+	2200 6400 2350 6400
+Wire Wire Line
+	2200 6500 2350 6500
+Wire Wire Line
+	2200 7100 2350 7100
+Wire Wire Line
+	2200 6700 2350 6700
+Wire Wire Line
+	2200 6800 2350 6800
+Wire Wire Line
+	2200 8450 2350 8450
+Wire Wire Line
+	2200 8550 2350 8550
+Wire Wire Line
+	2200 9350 2350 9350
+Wire Wire Line
+	2200 8750 2350 8750
+Wire Wire Line
+	2200 8850 2350 8850
+Wire Wire Line
+	2200 9450 2350 9450
+Wire Wire Line
+	2200 9050 2350 9050
+Wire Wire Line
+	2200 9150 2350 9150
+$Comp
+L power:VCC #PWR?
+U 1 1 6525FB6D
+P 2200 6500
+AR Path="/62800928/6525FB6D" Ref="#PWR?"  Part="1" 
+AR Path="/6525FB6D" Ref="#PWR02"  Part="1" 
+F 0 "#PWR02" H 2200 6350 50  0001 C CNN
+F 1 "VCC" V 2215 6627 50  0000 L CNN
+F 2 "" H 2200 6500 50  0001 C CNN
+F 3 "" H 2200 6500 50  0001 C CNN
+	1    2200 6500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 65260127
+P 2200 6800
+AR Path="/62800928/65260127" Ref="#PWR?"  Part="1" 
+AR Path="/65260127" Ref="#PWR03"  Part="1" 
+F 0 "#PWR03" H 2200 6650 50  0001 C CNN
+F 1 "VCC" V 2215 6927 50  0000 L CNN
+F 2 "" H 2200 6800 50  0001 C CNN
+F 3 "" H 2200 6800 50  0001 C CNN
+	1    2200 6800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 65260719
+P 2200 7100
+AR Path="/62800928/65260719" Ref="#PWR?"  Part="1" 
+AR Path="/65260719" Ref="#PWR04"  Part="1" 
+F 0 "#PWR04" H 2200 6950 50  0001 C CNN
+F 1 "VCC" V 2215 7227 50  0000 L CNN
+F 2 "" H 2200 7100 50  0001 C CNN
+F 3 "" H 2200 7100 50  0001 C CNN
+	1    2200 7100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 65260C2A
+P 2200 8550
+AR Path="/62800928/65260C2A" Ref="#PWR?"  Part="1" 
+AR Path="/65260C2A" Ref="#PWR05"  Part="1" 
+F 0 "#PWR05" H 2200 8400 50  0001 C CNN
+F 1 "VCC" V 2215 8677 50  0000 L CNN
+F 2 "" H 2200 8550 50  0001 C CNN
+F 3 "" H 2200 8550 50  0001 C CNN
+	1    2200 8550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 65261307
+P 2200 8850
+AR Path="/62800928/65261307" Ref="#PWR?"  Part="1" 
+AR Path="/65261307" Ref="#PWR06"  Part="1" 
+F 0 "#PWR06" H 2200 8700 50  0001 C CNN
+F 1 "VCC" V 2215 8977 50  0000 L CNN
+F 2 "" H 2200 8850 50  0001 C CNN
+F 3 "" H 2200 8850 50  0001 C CNN
+	1    2200 8850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 652617F0
+P 2200 9150
+AR Path="/62800928/652617F0" Ref="#PWR?"  Part="1" 
+AR Path="/652617F0" Ref="#PWR07"  Part="1" 
+F 0 "#PWR07" H 2200 9000 50  0001 C CNN
+F 1 "VCC" V 2215 9277 50  0000 L CNN
+F 2 "" H 2200 9150 50  0001 C CNN
+F 3 "" H 2200 9150 50  0001 C CNN
+	1    2200 9150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 65261E8C
+P 2200 9450
+AR Path="/62800928/65261E8C" Ref="#PWR?"  Part="1" 
+AR Path="/65261E8C" Ref="#PWR08"  Part="1" 
+F 0 "#PWR08" H 2200 9300 50  0001 C CNN
+F 1 "VCC" V 2215 9577 50  0000 L CNN
+F 2 "" H 2200 9450 50  0001 C CNN
+F 3 "" H 2200 9450 50  0001 C CNN
+	1    2200 9450
+	0    -1   -1   0   
+$EndComp
+Text GLabel 9400 6850 2    50   Output ~ 0
+ADDER_CARRY_OUT
+Text GLabel 10600 7100 0    50   Input ~ 0
+~ADDER_OUT
+Text GLabel 11950 6000 2    50   3State ~ 0
+SUM0
+Text GLabel 11950 6100 2    50   3State ~ 0
+SUM1
+Text GLabel 11950 6200 2    50   3State ~ 0
+SUM2
+Text GLabel 11950 6300 2    50   3State ~ 0
+SUM3
+Text GLabel 11950 6400 2    50   3State ~ 0
+SUM4
+Text GLabel 11950 6500 2    50   3State ~ 0
+SUM5
+Text GLabel 11950 6600 2    50   3State ~ 0
+SUM6
+Text GLabel 11950 6700 2    50   3State ~ 0
+SUM7
+Text GLabel 3300 1450 3    50   3State ~ 0
+SUM0
+Text GLabel 3200 1450 3    50   3State ~ 0
+SUM1
+Text GLabel 3100 1450 3    50   3State ~ 0
+SUM2
+Text GLabel 3000 1450 3    50   3State ~ 0
+SUM3
+Text GLabel 2900 1450 3    50   3State ~ 0
+SUM4
+Text GLabel 2800 1450 3    50   3State ~ 0
+SUM5
+Text GLabel 2700 1450 3    50   3State ~ 0
+SUM6
+Text GLabel 2600 1450 3    50   3State ~ 0
+SUM7
+Wire Wire Line
+	6250 6050 6350 6050
+Wire Notes Line
+	800  2550 800  4650
+Wire Notes Line
+	800  4650 5300 4650
+Wire Notes Line
+	5300 4650 5300 2550
+Wire Notes Line
+	800  2550 5300 2550
+Text GLabel 4550 3950 2    50   Output ~ 0
+ADDER_CARRY_IN
+Wire Wire Line
+	4550 3950 4450 3950
+Text Notes 2400 5100 0    98   ~ 0
+Operand Multiplexer
+Text Notes 950  6300 0    39   ~ 0
+a) 0xff\nb) 0x0\nc) B\nd) B XOR 0XFF
+Text Notes 900  6000 0    39   ~ 8
+Configurations:
+Wire Notes Line
+	800  4800 800  10300
+Wire Notes Line
+	800  10300 5300 10300
+Wire Notes Line
+	5300 10300 5300 4800
+Wire Notes Line
+	800  4800 5300 4800
+Text GLabel 6250 6050 0    50   Input ~ 0
+ADDER_CARRY_IN
+Text Notes 8150 5100 0    98   ~ 0
+Full Adder w/ Carry
+Wire Notes Line
+	5450 4800 5450 7850
+Wire Notes Line
+	5450 7850 12400 7850
+Wire Notes Line
+	12400 7850 12400 4800
+Wire Notes Line
+	5450 4800 12400 4800
+$Comp
+L power:VCC #PWR027
+U 1 1 65726E59
+P 13400 6800
+AR Path="/65726E59" Ref="#PWR027"  Part="1" 
+AR Path="/62800928/65726E59" Ref="#PWR?"  Part="1" 
+F 0 "#PWR027" H 13400 6650 50  0001 C CNN
+F 1 "VCC" H 13415 6973 50  0000 C CNN
+F 2 "" H 13400 6800 50  0001 C CNN
+F 3 "" H 13400 6800 50  0001 C CNN
+	1    13400 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR030
+U 1 1 6572744E
+P 14200 6800
+AR Path="/6572744E" Ref="#PWR030"  Part="1" 
+AR Path="/62800928/6572744E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR030" H 14200 6650 50  0001 C CNN
+F 1 "VCC" H 14215 6973 50  0000 C CNN
+F 2 "" H 14200 6800 50  0001 C CNN
+F 3 "" H 14200 6800 50  0001 C CNN
+	1    14200 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR033
+U 1 1 6572794A
+P 15050 6800
+AR Path="/6572794A" Ref="#PWR033"  Part="1" 
+AR Path="/62800928/6572794A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR033" H 15050 6650 50  0001 C CNN
+F 1 "VCC" H 15065 6973 50  0000 C CNN
+F 2 "" H 15050 6800 50  0001 C CNN
+F 3 "" H 15050 6800 50  0001 C CNN
+	1    15050 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR028
+U 1 1 65727DA5
+P 13400 7800
+AR Path="/65727DA5" Ref="#PWR028"  Part="1" 
+AR Path="/62800928/65727DA5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR028" H 13400 7550 50  0001 C CNN
+F 1 "GND" H 13405 7627 50  0000 C CNN
+F 2 "" H 13400 7800 50  0001 C CNN
+F 3 "" H 13400 7800 50  0001 C CNN
+	1    13400 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR031
+U 1 1 6572818C
+P 14200 7800
+AR Path="/6572818C" Ref="#PWR031"  Part="1" 
+AR Path="/62800928/6572818C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR031" H 14200 7550 50  0001 C CNN
+F 1 "GND" H 14205 7627 50  0000 C CNN
+F 2 "" H 14200 7800 50  0001 C CNN
+F 3 "" H 14200 7800 50  0001 C CNN
+	1    14200 7800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 14550 4650
+NoConn ~ 14550 5150
+NoConn ~ 14550 5650
+NoConn ~ 14550 6100
+NoConn ~ 13700 6150
+NoConn ~ 15600 4850
+NoConn ~ 15600 5400
+NoConn ~ 15600 6000
+$Comp
+L power:GND #PWR026
+U 1 1 6578BC00
+P 13000 6150
+AR Path="/6578BC00" Ref="#PWR026"  Part="1" 
+AR Path="/62800928/6578BC00" Ref="#PWR?"  Part="1" 
+F 0 "#PWR026" H 13000 5900 50  0001 C CNN
+F 1 "GND" H 13005 5977 50  0000 C CNN
+F 2 "" H 13000 6150 50  0001 C CNN
+F 3 "" H 13000 6150 50  0001 C CNN
+	1    13000 6150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13000 6150 13100 6150
+Wire Wire Line
+	13100 6050 13100 6150
+Connection ~ 13100 6150
+Wire Wire Line
+	13100 6150 13100 6250
+$Comp
+L power:GND #PWR029
+U 1 1 657A0EFC
+P 13850 5400
+AR Path="/657A0EFC" Ref="#PWR029"  Part="1" 
+AR Path="/62800928/657A0EFC" Ref="#PWR?"  Part="1" 
+F 0 "#PWR029" H 13850 5150 50  0001 C CNN
+F 1 "GND" H 13855 5227 50  0000 C CNN
+F 2 "" H 13850 5400 50  0001 C CNN
+F 3 "" H 13850 5400 50  0001 C CNN
+	1    13850 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13850 5400 13950 5400
+Wire Wire Line
+	13950 5400 13950 5150
+Connection ~ 13950 5150
+Wire Wire Line
+	13950 5150 13950 4650
+Connection ~ 13950 5400
+Wire Wire Line
+	13950 5400 13950 5650
+Connection ~ 13950 5650
+Wire Wire Line
+	13950 5650 13950 6100
+Wire Wire Line
+	15000 4750 15000 4950
+Connection ~ 15000 4950
+Wire Wire Line
+	15000 4950 15000 5300
+Connection ~ 15000 5300
+Wire Wire Line
+	15000 5300 15000 5400
+Connection ~ 15000 5500
+Wire Wire Line
+	15000 5500 15000 5900
+Connection ~ 15000 5900
+Wire Wire Line
+	15000 5900 15000 6100
+Wire Wire Line
+	15000 5400 14900 5400
+Connection ~ 15000 5400
+Wire Wire Line
+	15000 5400 15000 5500
+$Comp
+L power:GND #PWR032
+U 1 1 657DCE63
+P 14900 5400
+AR Path="/657DCE63" Ref="#PWR032"  Part="1" 
+AR Path="/62800928/657DCE63" Ref="#PWR?"  Part="1" 
+F 0 "#PWR032" H 14900 5150 50  0001 C CNN
+F 1 "GND" H 14905 5227 50  0000 C CNN
+F 2 "" H 14900 5400 50  0001 C CNN
+F 3 "" H 14900 5400 50  0001 C CNN
+	1    14900 5400
+	0    1    1    0   
+$EndComp
+Text GLabel 3500 1450 3    50   Input ~ 0
+~ADDER_OUT
+Text GLabel 3600 1450 3    50   Input ~ 0
+TWOS_COMP
+Text GLabel 3700 1450 3    50   Input ~ 0
+ADC_SBB
+Text GLabel 3800 1450 3    50   Input ~ 0
+CARRY_FLAG_IN
+Text GLabel 3900 1450 3    50   Input ~ 0
+OP_MUX_SEL
+Text GLabel 4000 1450 3    50   Output ~ 0
+ADDER_CARRY_OUT
+Text GLabel 2100 3850 0    50   Input ~ 0
+CARRY_FLAG_IN
+$Comp
+L power:GND #PWR0101
+U 1 1 658170A2
+P 15050 7800
+AR Path="/658170A2" Ref="#PWR0101"  Part="1" 
+AR Path="/62800928/658170A2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0101" H 15050 7550 50  0001 C CNN
+F 1 "GND" H 15055 7627 50  0000 C CNN
+F 2 "" H 15050 7800 50  0001 C CNN
+F 3 "" H 15050 7800 50  0001 C CNN
+	1    15050 7800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 1150 4200 1450
+Wire Wire Line
+	4100 1150 4100 1450
+$Comp
+L Connector_Generic:Conn_01x08 J4
+U 1 1 65839321
+P 3800 1250
+F 0 "J4" V 3718 762 50  0001 R CNN
+F 1 "Conn_01x08" V 3673 762 50  0001 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 3800 1250 50  0001 C CNN
+F 3 "~" H 3800 1250 50  0001 C CNN
+F 4 "Control" V 3900 1400 50  0000 R CNN "L"
+	1    3800 1250
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4100 1450
+Wire Wire Line
+	4100 1450 4100 1500
+Connection ~ 4200 1450
+Wire Wire Line
+	4200 1450 4200 1500
+$Comp
+L Device:C C1
+U 1 1 659DEA92
+P 7950 3050
+F 0 "C1" H 8065 3096 50  0000 L CNN
+F 1 "C" H 8065 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 7988 2900 50  0001 C CNN
+F 3 "~" H 7950 3050 50  0001 C CNN
+	1    7950 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR034
+U 1 1 659DEF36
+P 7950 2900
+F 0 "#PWR034" H 7950 2750 50  0001 C CNN
+F 1 "VCC" H 7950 3050 50  0000 C CNN
+F 2 "" H 7950 2900 50  0001 C CNN
+F 3 "" H 7950 2900 50  0001 C CNN
+	1    7950 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR035
+U 1 1 659DF1D3
+P 7950 3200
+F 0 "#PWR035" H 7950 2950 50  0001 C CNN
+F 1 "GND" H 7950 3050 50  0000 C CNN
+F 2 "" H 7950 3200 50  0001 C CNN
+F 3 "" H 7950 3200 50  0001 C CNN
+	1    7950 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 659E0C1E
+P 8300 3050
+F 0 "C2" H 8415 3096 50  0000 L CNN
+F 1 "C" H 8415 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8338 2900 50  0001 C CNN
+F 3 "~" H 8300 3050 50  0001 C CNN
+	1    8300 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR036
+U 1 1 659E0C28
+P 8300 2900
+F 0 "#PWR036" H 8300 2750 50  0001 C CNN
+F 1 "VCC" H 8300 3050 50  0000 C CNN
+F 2 "" H 8300 2900 50  0001 C CNN
+F 3 "" H 8300 2900 50  0001 C CNN
+	1    8300 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR037
+U 1 1 659E0C32
+P 8300 3200
+F 0 "#PWR037" H 8300 2950 50  0001 C CNN
+F 1 "GND" H 8300 3050 50  0000 C CNN
+F 2 "" H 8300 3200 50  0001 C CNN
+F 3 "" H 8300 3200 50  0001 C CNN
+	1    8300 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 659EC667
+P 8650 3050
+F 0 "C3" H 8765 3096 50  0000 L CNN
+F 1 "C" H 8765 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8688 2900 50  0001 C CNN
+F 3 "~" H 8650 3050 50  0001 C CNN
+	1    8650 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR038
+U 1 1 659EC671
+P 8650 2900
+F 0 "#PWR038" H 8650 2750 50  0001 C CNN
+F 1 "VCC" H 8650 3050 50  0000 C CNN
+F 2 "" H 8650 2900 50  0001 C CNN
+F 3 "" H 8650 2900 50  0001 C CNN
+	1    8650 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR039
+U 1 1 659EC67B
+P 8650 3200
+F 0 "#PWR039" H 8650 2950 50  0001 C CNN
+F 1 "GND" H 8650 3050 50  0000 C CNN
+F 2 "" H 8650 3200 50  0001 C CNN
+F 3 "" H 8650 3200 50  0001 C CNN
+	1    8650 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 659EC685
+P 9000 3050
+F 0 "C4" H 9115 3096 50  0000 L CNN
+F 1 "C" H 9115 3005 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9038 2900 50  0001 C CNN
+F 3 "~" H 9000 3050 50  0001 C CNN
+	1    9000 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR040
+U 1 1 659EC68F
+P 9000 2900
+F 0 "#PWR040" H 9000 2750 50  0001 C CNN
+F 1 "VCC" H 9000 3050 50  0000 C CNN
+F 2 "" H 9000 2900 50  0001 C CNN
+F 3 "" H 9000 2900 50  0001 C CNN
+	1    9000 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR041
+U 1 1 659EC699
+P 9000 3200
+F 0 "#PWR041" H 9000 2950 50  0001 C CNN
+F 1 "GND" H 9000 3050 50  0000 C CNN
+F 2 "" H 9000 3200 50  0001 C CNN
+F 3 "" H 9000 3200 50  0001 C CNN
+	1    9000 3200
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
