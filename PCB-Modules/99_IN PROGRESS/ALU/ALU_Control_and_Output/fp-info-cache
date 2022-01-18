@@ -1,4 +1,4 @@
-471413359251941
+503609575771303
 Package_SO
 Diodes_PSOP-8
 8-Lead Plastic PSOP, Exposed Die Pad (see https://www.diodes.com/assets/Datasheets/AP2204.pdf)
@@ -20,6 +20,20 @@ SSOP 0.65
 0
 27
 21
+Package_SO
+HSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.3x2.3mm
+HSOP, 8 Pin (https://www.st.com/resource/en/datasheet/l7980.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+HSOP SO
+0
+13
+9
+Package_SO
+HSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.3x2.3mm_ThermalVias
+HSOP, 8 Pin (https://www.st.com/resource/en/datasheet/l7980.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+HSOP SO
+0
+18
+9
 Package_SO
 HSOP-8-1EP_3.9x4.9mm_P1.27mm_EP2.41x3.1mm
 HSOP, 8 Pin (https://www.st.com/resource/en/datasheet/l5973d.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
@@ -139,6 +153,13 @@ HTSSOP SO
 0
 21
 17
+Package_SO
+HTSSOP-20-1EP_4.4x6.5mm_P0.65mm_EP2.74x3.86mm
+HTSSOP, 20 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/4011fb.pdf#page=24), generated with kicad-footprint-generator ipc_gullwing_generator.py
+HTSSOP SO
+0
+23
+21
 Package_SO
 HTSSOP-20-1EP_4.4x6.5mm_P0.65mm_EP2.85x4mm
 HTSSOP, 20 Pin (https://pdfserv.maximintegrated.com/package_dwgs/21-0108.PDF U20E-1), generated with kicad-footprint-generator ipc_gullwing_generator.py
@@ -294,12 +315,33 @@ HTSSOP SO
 87
 39
 Package_SO
+HTSSOP-44_6.1x14mm_P0.635mm_TopEP4.14x7.01mm
+HTSSOP, 44 Pin (http://www.ti.com/lit/ds/symlink/tpa3251.pdf#page=38), generated with kicad-footprint-generator ipc_gullwing_generator.py
+HTSSOP SO
+0
+44
+44
+Package_SO
 HTSSOP-56-1EP_6.1x14mm_P0.5mm_EP3.61x6.35mm
 HTSSOP56: plastic thin shrink small outline package http://www.ti.com/lit/ds/symlink/drv8301.pdf
 HTSSOP 0.5
 0
 72
 57
+Package_SO
+HVSSOP-10-1EP_3x3mm_P0.5mm_EP1.57x1.88mm
+HVSSOP, 10 Pin (https://www.ti.com/lit/ds/symlink/bq24090.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+HVSSOP SO
+0
+15
+11
+Package_SO
+HVSSOP-10-1EP_3x3mm_P0.5mm_EP1.57x1.88mm_ThermalVias
+HVSSOP, 10 Pin (https://www.ti.com/lit/ds/symlink/bq24090.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+HVSSOP SO
+0
+20
+11
 Package_SO
 Infineon_PG-DSO-8-27_3.9x4.9mm_EP2.65x3mm
 Infineon  PG-DSO, 8 Pin (https://www.infineon.com/cms/en/product/packages/PG-DSO/PG-DSO-8-27), generated with kicad-footprint-generator ipc_gullwing_generator.py
@@ -516,6 +558,20 @@ MSOP, 10 Pin (www.allegromicro.com/~/media/Files/Datasheets/A4952-3-Datasheet.as
 MSOP SO
 0
 20
+11
+Package_SO
+MSOP-10-1EP_3x3mm_P0.5mm_EP2.2x3.1mm_Mask1.83x1.89mm
+MSOP, 10 Pin (https://www.ti.com/lit/ds/symlink/xtr111.pdf#page=27), generated with kicad-footprint-generator ipc_gullwing_generator.py
+MSOP SO
+0
+16
+11
+Package_SO
+MSOP-10-1EP_3x3mm_P0.5mm_EP2.2x3.1mm_Mask1.83x1.89mm_ThermalVias
+MSOP, 10 Pin (https://www.ti.com/lit/ds/symlink/xtr111.pdf#page=27), generated with kicad-footprint-generator ipc_gullwing_generator.py
+MSOP SO
+0
+23
 11
 Package_SO
 MSOP-10_3x3mm_P0.5mm
@@ -889,6 +945,20 @@ SOIC SO
 20
 9
 Package_SO
+SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.62x3.51mm
+SOIC, 8 Pin (https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MP2303A/document_id/494#page=14), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC SO
+0
+13
+9
+Package_SO
+SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.62x3.51mm_ThermalVias
+SOIC, 8 Pin (https://www.monolithicpower.com/en/documentview/productdocument/index/version/2/document_type/Datasheet/lang/en/sku/MP2303A/document_id/494#page=14), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC SO
+0
+20
+9
+Package_SO
 SOIC-8-1EP_3.9x4.9mm_P1.27mm_EP2.95x4.9mm_Mask2.71x3.4mm
 SOIC, 8 Pin (http://www.ti.com/lit/ds/symlink/lm5017.pdf#page=31), generated with kicad-footprint-generator ipc_gullwing_generator.py
 SOIC SO
@@ -923,6 +993,13 @@ SOIC 1.27
 0
 7
 7
+Package_SO
+SOIC-8W_5.3x5.3mm_P1.27mm
+8-Lead Plastic Small Outline (SM) - 5.28 mm Body [SOIC] (http://ww1.microchip.com/downloads/en/PackagingSpec/00000049BQ.pdf)
+SOIC 1.27
+0
+8
+8
 Package_SO
 SOIC-8_3.9x4.9mm_P1.27mm
 SOIC, 8 Pin (JEDEC MS-012AA, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_8.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
@@ -1050,13 +1127,6 @@ SOIC SO
 28
 28
 Package_SO
-SOIJ-8_5.3x5.3mm_P1.27mm
-8-Lead Plastic Small Outline (SM) - Medium, 5.28 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)
-SOIC 1.27
-0
-8
-8
-Package_SO
 SOJ-36_10.16x23.49mm_P1.27mm
 SOJ, 36 Pin (http://www.issi.com/WW/pdf/61-64C5128AL.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
 SOJ SO
@@ -1183,6 +1253,13 @@ SSO Stretched SO SOIC 1.27
 6
 6
 Package_SO
+SSO-7-8_6.4x9.78mm_P2.54mm
+SSO, 7 Pin (https://b2b-api.panasonic.eu/file_stream/pids/fileversion/2787), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SSO SO
+0
+7
+7
+Package_SO
 SSO-8_6.7x9.8mm_P2.54mm_Clearance8mm
 8-Lead Plastic Stretched Small Outline (SSO/Stretched SO), see https://www.vishay.com/docs/83831/lh1533ab.pdf
 SSO Stretched SO SOIC Pitch 2.54
@@ -1275,8 +1352,8 @@ SSOP 0.65
 16
 Package_SO
 SSOP-16_5.3x6.2mm_P0.65mm
-SSOP16: plastic shrink small outline package; 16 leads; body width 5.3 mm; (see NXP SSOP-TSSOP-VSO-REFLOW.pdf and sot338-1_po.pdf)
-SSOP 0.65
+SSOP, 16 Pin (https://assets.nexperia.com/documents/data-sheet/74HC_HCT165.pdf#page=14), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SSOP SO
 0
 16
 16
@@ -1350,6 +1427,13 @@ SSOP 0.5
 0
 44
 44
+Package_SO
+SSOP-48_5.3x12.8mm_P0.5mm
+SSOP, 48 Pin (https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-ssop/05081887_A_G48.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SSOP SO
+0
+48
+48
 Package_SO
 SSOP-48_7.5x15.9mm_P0.635mm
 SSOP48: plastic shrink small outline package; 48 leads; body width 7.5 mm; (see NXP SSOP-TSSOP-VSO-REFLOW.pdf and sot370-1_po.pdf)
@@ -1561,6 +1645,20 @@ SSOP 0.65
 24
 17
 Package_SO
+TSSOP-16-1EP_4.4x5mm_P0.65mm_EP3x3mm
+TSSOP, 16 Pin (Allegro A4954 https://www.allegromicro.com/-/media/Files/Datasheets/A4954-Datasheet.ashx), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TSSOP SO
+0
+21
+17
+Package_SO
+TSSOP-16-1EP_4.4x5mm_P0.65mm_EP3x3mm_ThermalVias
+TSSOP, 16 Pin (Allegro A4954 https://www.allegromicro.com/-/media/Files/Datasheets/A4954-Datasheet.ashx), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TSSOP SO
+0
+26
+17
+Package_SO
 TSSOP-16_4.4x5mm_P0.65mm
 TSSOP, 16 Pin (JEDEC MO-153 Var AB https://www.jedec.org/document_search?search_api_views_fulltext=MO-153), generated with kicad-footprint-generator ipc_gullwing_generator.py
 TSSOP SO
@@ -1581,6 +1679,13 @@ TSSOP SO
 0
 20
 20
+Package_SO
+TSSOP-24-1EP_4.4x7.8mm_P0.65mm_EP3.2x5mm
+TSSOP, 24 Pin (https://www.st.com/resource/en/datasheet/led1642gw.pdf#page=37), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TSSOP SO
+0
+31
+25
 Package_SO
 TSSOP-24_4.4x5mm_P0.4mm
 TSSOP, 24 Pin (JEDEC MO-153 Var CA https://www.jedec.org/document_search?search_api_views_fulltext=MO-153), generated with kicad-footprint-generator ipc_gullwing_generator.py
@@ -1615,6 +1720,13 @@ TSSOP28: plastic thin shrink small outline package; 28 leads; body width 4.4 mm;
 SSOP 0.65
 0
 36
+29
+Package_SO
+TSSOP-28-1EP_4.4x9.7mm_P0.65mm_EP2.85x6.7mm
+TSSOP, 28 Pin (JEDEC MO-153 Var AET Pkg.Code U28E-4 https://pdfserv.maximintegrated.com/package_dwgs/21-0108.PDF), generated with kicad-footprint-generator ipc_gullwing_generator.py
+TSSOP SO
+0
+35
 29
 Package_SO
 TSSOP-28_4.4x7.8mm_P0.5mm
