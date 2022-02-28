@@ -1,27 +1,24 @@
-import { useState, useEffect } from 'react';
-import Clock from './Components/Electrical/Clock';
-import Register from './Components/Electrical/Register';
+import Bus from './Components/Electrical/Bus';
+import StepCounter from './Components/Electrical/StepCounter';
+import InstructionRegister from './Components/Electrical/InstructionRegister';
+import Microcode from './Components/Electrical/Microcode';
+import State from './Recoil';
 
-function App() {
-    const [ clockState , setClockState ] = useState(0x0);
-    const [ dataBus , setDataBus ] = useState(0x0);
-    const [ halt , setHalt ] = useState(false);
-    const [ step , setStep ] = useState(1);
+import { useRecoilState } from 'recoil';
 
-    const handleAssertDataBus = data => setDataBus(data &  0xff);
-
+function Cpu() {
+    const [ setBus ] = useRecoilState(State.bus);
+    
     return (
         <div style={{ paddingTop: 40 }}>
-            <Clock freq={100} halt={halt} onChange={clock => setClockState(clock)} step={step} />
-            <Register oe increment clock={clockState} value={0x0} onAssert={handleAssertDataBus}/>
-            <button onClick={() => setHalt(!halt)}>
-                { halt ? "Resume" : "Halt"}
-            </button>
-            { halt && <button onClick={() => setStep(step == 1 ? 2 : 1)}>
-                step
-            </button> }
+            <Bus />
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems:"middle" }}>
+                <InstructionRegister en={false} />
+                <StepCounter />
+            </div>
+            <Microcode />
         </div>
     );
 }
 
-export default App;
+export default Cpu;

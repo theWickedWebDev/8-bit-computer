@@ -1,28 +1,40 @@
-import { useState, useEffect } from 'react';
-import { CLOCK } from '../../../constants';
+import { useEffect } from 'react';
 import Led from '../Led';
+import State from '../../../Recoil';
+import { useRecoilState } from 'recoil';
+import { Button } from 'antd';
+import { useState } from 'react/cjs/react.development';
 
-function Clock(props) {
-    const { onChange, freq = CLOCK.frequency, halt = false, step } = props;
-    const [ clock, setClock ] = useState(false);
+function Clock() {
+    const [ clock, setClock ] = useRecoilState(State.clock);
+    const [ mode, setMode ] = useState(false);
 
-    const toggleClock = () => {
-        setClock(!clock);
-        onChange(clock);
+    const toggleClock = () => setClock({...clock, state: !clock.state });
+
+    const stepClock = () => {
+        setClock({...clock, state: true });
+        setTimeout(() => {
+            setClock({...clock, state: false });
+        }, 200);
     }
 
     useEffect(() => {
         const interval = setInterval(() => {
-            if (!halt) {
-                toggleClock();
-            }
-        }, freq);
+            if (!clock.halted && !mode) toggleClock();
+        }, clock.frequency);
+
         return () => clearInterval(interval);
-    }, [clock, halt]);
+    }, [clock.state, mode]);
 
-    useEffect(() => toggleClock(), [step]);
-
-    return (<Led on={clock} color="blue"/>)
+    return (
+        <div style={{display: 'flex', alignItems: 'center'}}>
+            <Led on={clock.state} color="blue"/>
+            { mode && <Button type="dashed" onClick={toggleClock}>Tick</Button>}
+            { mode && <Button onClick={stepClock}>Step</Button>}
+            <Button type={mode ? "secondary" : "primary"} onClick={() => setMode(!mode)}>{ mode ? 'Auto' : 'Manual' }</Button>
+        </div>
+    )
 }
 
 export default Clock;
+

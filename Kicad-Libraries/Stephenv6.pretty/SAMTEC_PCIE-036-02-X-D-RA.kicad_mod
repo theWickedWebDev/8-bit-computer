@@ -1,6 +1,6 @@
 (footprint "SAMTEC_PCIE-036-02-X-D-RA" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
-  (tedit 61D93133)
+  (tedit 620600A0)
   (attr through_hole)
   (fp_text reference "REF**" (at -9.325 -11.235) (layer "F.SilkS")
     (effects (font (size 1 1) (thickness 0.15)))

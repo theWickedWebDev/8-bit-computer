@@ -1,15 +1,14 @@
 import { Layout, Menu } from 'antd';
-import { CopyOutlined, LaptopOutlined, BarsOutlined, CodeOutlined, BuildOutlined } from '@ant-design/icons';
+import Clock from '../../Components/Electrical/Clock';
+import { CodeOutlined } from '@ant-design/icons';
 const { Header, Content, Footer } = Layout;
 
 function GenericLayout(props) {
   return (
     <Layout className="layout">
-    <Header>
-      <Menu theme="dark" mode="horizontal">
-        <Menu.Item key="instructions"><CodeOutlined/>CPU</Menu.Item>
-      </Menu>
-    </Header>
+    <header style={{display: 'flex', justifyContent: 'flex-end', padding: '5px'}}>
+      <Clock />
+    </header>
     <Content style={{ padding: '0 50px' }}>
       {props.children}
     </Content>
