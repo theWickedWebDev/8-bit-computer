@@ -1956,11 +1956,11 @@
     (uuid 48edb921-c3ee-47e6-ae9c-4b5769c733ea)
   )
   (text "To just ASSERT or LOAD a value to the data \nbus to be used with external modules, just\nselect a single value from either READ or WRITE\n\nTo do a GPR to GPR transfer just select a \nREAD and WRITE control word and then OR \nthem together.\n\nTo do a RESET, ~{CONTROL7} is set LOW\nand all data buses are set to 0x0,\nwhich causes each register to load the \nvalue presented on their data bus."
-    (at 189.738 336.296 0)
+    (at 171.45 282.194 0)
     (effects (font (size 2 2)) (justify left bottom))
     (uuid 502c5a99-eab2-4a61-9146-ee8afb2cbbe3)
   )
-  (text "Control Word Truth Table" (at 188.976 295.91 0)
+  (text "Control Word Truth Table" (at 170.688 241.808 0)
     (effects (font (size 4 4)) (justify left bottom))
     (uuid 51100f77-6464-40f4-8504-664b97ee1bec)
   )

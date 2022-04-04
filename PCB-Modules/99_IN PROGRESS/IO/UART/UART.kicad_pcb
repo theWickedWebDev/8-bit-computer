@@ -2336,6 +2336,7 @@
     )
   )
 
+  (gr_rect (start 144.526 57.658) (end 216.916 103.886) (layer "B.Cu") (width 0.2) (fill none) (tstamp 66f97120-6c7e-441a-9997-acbf3e610e6e))
   (gr_rect (start 65.006 46.904) (end 131.336 136.124) (layer "Edge.Cuts") (width 0.12) (fill none) (tstamp b84cd507-81d3-4b97-84f4-ffd2f1f1857e))
   (gr_text "B2" (at 70.868 88.39) (layer "F.SilkS") (tstamp 0697cf2d-5bde-4d22-b531-1987bc5be453)
     (effects (font (size 1 1) (thickness 0.1)) (justify right))

@@ -317,7 +317,7 @@
       (net 20 "SPEAKER_OUT") (pintype "passive") (tstamp 5081823b-af15-4652-8f62-e115e4598367))
     (pad "T" thru_hole rect (at -2.51 9.299533 180) (size 1.5 2.6) (drill oval 0.9 2.1) (layers *.Cu *.Mask)
       (net 20 "SPEAKER_OUT") (pintype "passive") (tstamp 34407fba-357b-4052-9216-06c1e2cae3ea))
-    (model "/Users/stephenyoung/KiCad/8-bit-computer/Kicad-Libraries/Stephen - Audio Jack v2.step"
+    (model "/Users/stephenyoung/KiCad/8-bit-computer/Kicad-Libraries/Stephen - Audio Jack v7.step"
       (offset (xyz 0 -9.3 0))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))

@@ -1,0 +1,22 @@
+{
+  "name": "microcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.js",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "eslint": "^8.12.0",
+    "jest": "^27.5.1",
+    "jsdoc": "^3.6.10",
+    "prettier": "2.6.1"
+  }
+}
