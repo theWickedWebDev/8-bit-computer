@@ -13,7 +13,7 @@
     mov a, c
     mov sp, f
 */
-const REGISTER_MODE = "register";
+const REGISTER_MODE = "Register";
 
 /**
   @name REGISTER_INDIRECT_MODE
@@ -26,7 +26,7 @@ const REGISTER_MODE = "register";
   mov a, c
   mov sp, f
 */
-const REGISTER_INDIRECT_MODE = "register indirect"; // value comes from the address stored in a register
+const REGISTER_INDIRECT_MODE = "Register Indirect"; // value comes from the address stored in a register
 
 /**
   @name DIRECT_MODE / ABSOLUTE
@@ -34,7 +34,7 @@ const REGISTER_INDIRECT_MODE = "register indirect"; // value comes from the addr
   - The instruction specifies the direct address of the operand.
   - The memory address is specified where the actual operand is.
 */
-const DIRECT_MODE = "direct";
+const DIRECT_MODE = "Direct";
 
 /**
   @name INDIRECT_REGISTER_ADDRESS_MODE
@@ -42,7 +42,7 @@ const DIRECT_MODE = "direct";
   - The instruction specifies the indirect address where the effective address of the operand is placed.
   - The memory address is specified where the actual address of operand is placed.
 */
-const INDIRECT_ADDRESS_MODE = "indirect";
+const INDIRECT_ADDRESS_MODE = "Indirect";
 
 /**
   @name IMMEDIATE_MODE
@@ -50,7 +50,7 @@ const INDIRECT_ADDRESS_MODE = "indirect";
   - The operand is specified with in the instruction.
   - Operand itself is provided in the instruction rather than its address.
 */
-const IMMEDIATE_MODE = "immediate";
+const IMMEDIATE_MODE = "Immediate";
 
 /**
   @name IMPLIED_MODE
@@ -58,7 +58,7 @@ const IMMEDIATE_MODE = "immediate";
   - The operand is implied by the instruction.
   - The operand is hidden/fixed inside the instruction.
 */
-const IMPLIED_MODE = 'implied';
+const IMPLIED_MODE = 'Implied';
 
 /**
   @name RELATIVE_MODE
@@ -71,7 +71,7 @@ const IMPLIED_MODE = 'implied';
   jmp 5
   ```
 */
-const RELATIVE_MODE = 'relative';
+const RELATIVE_MODE = 'Relative';
 
 /**
   @name BASED_MODE
@@ -84,7 +84,7 @@ const RELATIVE_MODE = 'relative';
   mov a, [cd+5]
   ```
 */
-const BASED_MODE = 'based';
+const BASED_MODE = 'Based';
 
 /**
   @name INDEXED_MODE
@@ -95,7 +95,7 @@ const BASED_MODE = 'based';
   mov f, [i+5]
   ```
 */
-const INDEXED_MODE = 'indexed';
+const INDEXED_MODE = 'Indexed';
 
 /**
   @name BASED_INDEXED_MODE
@@ -107,7 +107,7 @@ const INDEXED_MODE = 'indexed';
   mov a, [cd+i]
   ```
 */
-const BASED_INDEXED_MODE = 'based index';
+const BASED_INDEXED_MODE = 'Based Index';
 
 /**
   @name AUTO_INCREMENT_DECREMENT_MODE

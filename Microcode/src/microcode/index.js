@@ -1,15 +1,23 @@
-const MOV = require("./mov");
-// const ALU = require('./alu');
-// const STACK = require('./stack');
-// const JUMPS = require('./jumps');
-// const IO = require('./io');
-// const CPU = require('./cpu');
+const mov = require('./mov');
+const alu = require('./alu');
+const stack = require('./stack');
+const jump = require('./jump');
+const io = require('./io');
+const cpu = require('./cpu');
 
-module.exports = {
-  ...MOV,
-  // ...ALU,
-  // ...STACK,
-  // ...JUMPS,
-  // ...IO,
-  // ...CPU
+let code = {
+    ...mov,
+    ...alu,
+    ...stack,
+    ...jump,
+    ...io,
+    ...cpu,
 };
+
+Object.keys(code).forEach((k, i) => {
+    code[k].opcode = `0x${i.toString(16)}`;
+});
+
+const microcode = code;
+
+module.exports = microcode;

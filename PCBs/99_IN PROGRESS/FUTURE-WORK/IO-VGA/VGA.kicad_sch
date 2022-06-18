@@ -1,0 +1,210 @@
+(kicad_sch (version 20211123) (generator eeschema)
+
+  (uuid b84ff204-cdd6-473b-976e-52d72e7c7547)
+
+  (paper "A4")
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 35.56 36.83) (size 53.34 69.85) (fields_autoplaced)
+    (stroke (width 0) (type solid) (color 0 0 0 0))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-000061d8225a)
+    (property "Sheet name" "Horizontal Timing" (id 0) (at 35.56 35.7501 0)
+      (effects (font (size 2.0066 2.0066)) (justify left bottom))
+    )
+    (property "Sheet file" "horizontal.kicad_sch" (id 1) (at 35.56 107.2646 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+    (path "/00000000-0000-0000-0000-000061d8225a" (page "2"))
+  )
+
+  (symbol_instances
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061d88da4"
+      (reference "#PWR01") (unit 1) (value "VCC") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061d88daa"
+      (reference "#PWR02") (unit 1) (value "VCC") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061d88db0"
+      (reference "#PWR03") (unit 1) (value "VCC") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061d88d6a"
+      (reference "#PWR04") (unit 1) (value "VCC") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061d88d64"
+      (reference "#PWR05") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061d88d7f"
+      (reference "#PWR06") (unit 1) (value "VCC") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061d88d79"
+      (reference "#PWR07") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061d88d94"
+      (reference "#PWR08") (unit 1) (value "VCC") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061d88d8e"
+      (reference "#PWR09") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061dc2469"
+      (reference "#PWR010") (unit 1) (value "VCC") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061dc2473"
+      (reference "#PWR011") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061e59fe6"
+      (reference "#PWR012") (unit 1) (value "VCC") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061e5a5ee"
+      (reference "#PWR013") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061e14b2d"
+      (reference "#PWR022") (unit 1) (value "VCC") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061e14b37"
+      (reference "#PWR023") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061e4e6e5"
+      (reference "#PWR0101") (unit 1) (value "VCC") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061e4ea16"
+      (reference "#PWR0102") (unit 1) (value "VCC") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061e4ee34"
+      (reference "#PWR0103") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061e4f1d6"
+      (reference "#PWR0104") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061e78759"
+      (reference "#PWR0105") (unit 1) (value "VCC") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061e78763"
+      (reference "#PWR0106") (unit 1) (value "VCC") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061e7876d"
+      (reference "#PWR0107") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061e78777"
+      (reference "#PWR0108") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061ea14e2"
+      (reference "#PWR?") (unit 1) (value "VCC") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061ea6dfd"
+      (reference "#PWR?") (unit 1) (value "VCC") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061ea7cb7"
+      (reference "#PWR?") (unit 1) (value "VCC") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061ea8007"
+      (reference "#PWR?") (unit 1) (value "VCC") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061eac420"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061eac8cb"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061eacd7f"
+      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061d88d5e"
+      (reference "U1") (unit 1) (value "SN74HC161DR") (footprint "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061d88d73"
+      (reference "U2") (unit 1) (value "SN74HC161DR") (footprint "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061d88d88"
+      (reference "U3") (unit 1) (value "SN74HC161DR") (footprint "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061dac237"
+      (reference "U4") (unit 1) (value "74HC04") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061dac242"
+      (reference "U4") (unit 2) (value "74HC04") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061dac24d"
+      (reference "U4") (unit 3) (value "74HC04") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061dac258"
+      (reference "U4") (unit 4) (value "74HC04") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061dac263"
+      (reference "U4") (unit 5) (value "74HC04") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061dac26e"
+      (reference "U4") (unit 6) (value "74HC04") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061dc245f"
+      (reference "U4") (unit 7) (value "74HC04") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061d8fbbf"
+      (reference "U5") (unit 1) (value "74HC04") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061d8fbc6"
+      (reference "U5") (unit 2) (value "74HC04") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061d8fbcd"
+      (reference "U5") (unit 3) (value "74HC04") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061d8fbd4"
+      (reference "U5") (unit 4) (value "74HC04") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061d8fbdb"
+      (reference "U5") (unit 5) (value "74HC04") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061d8fbe2"
+      (reference "U5") (unit 6) (value "74HC04") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061e14b23"
+      (reference "U5") (unit 7) (value "74HC04") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061e3f9c1"
+      (reference "U6") (unit 1) (value "CD74HC30M96") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061e4a81f"
+      (reference "U6") (unit 2) (value "CD74HC30M96") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061e4965a"
+      (reference "U7") (unit 1) (value "CD74HC30M96") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061e40966"
+      (reference "U7") (unit 2) (value "CD74HC30M96") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061e53c4e"
+      (reference "U8") (unit 1) (value "SN74HC00DR") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061e54c75"
+      (reference "U8") (unit 2) (value "SN74HC00DR") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061e56196"
+      (reference "U8") (unit 3) (value "SN74HC00DR") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061e56d0f"
+      (reference "U8") (unit 4) (value "SN74HC00DR") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061e583dc"
+      (reference "U8") (unit 5) (value "SN74HC00DR") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061e746dc"
+      (reference "U9") (unit 1) (value "CD74HC30M96") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061e7874f"
+      (reference "U9") (unit 2) (value "CD74HC30M96") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061e75e69"
+      (reference "U11") (unit 1) (value "CD74HC30M96") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+    (path "/00000000-0000-0000-0000-000061d8225a/00000000-0000-0000-0000-000061e78744"
+      (reference "U11") (unit 2) (value "CD74HC30M96") (footprint "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm")
+    )
+  )
+)

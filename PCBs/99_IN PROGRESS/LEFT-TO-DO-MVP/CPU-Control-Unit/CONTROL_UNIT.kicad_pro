@@ -414,6 +414,14 @@
     [
       "691b3f2f-e884-4ea0-9710-5bf16af9d503",
       ""
+    ],
+    [
+      "0bbc8f47-b47e-4192-b3f6-111168944fa9",
+      "Microcode EEPROM 1"
+    ],
+    [
+      "06e71d9a-73f5-4390-ad50-6a7218042f21",
+      "Microcode EEPROM 2"
     ]
   ],
   "text_variables": {}

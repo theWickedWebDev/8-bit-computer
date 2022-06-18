@@ -1,677 +1,183 @@
-const { read, write } = require("../control-words");
-const { FETCH_INSTRUCTION } = require("./mixins");
-const {
-  FLAGS,
-  ADDRESS_MODES: {
-    REGISTER_ADDRESS_MODE,
-    INDIRECT_REGISTER_ADDRESS_MODE,
-    IMMEDIATE_ADDRESS_MODE,
-    INDIRECT_ADDRESS_MODE,
-  },
-} = require("./constants");
+const { FLAGS, ADDRESSING: { REGISTER_MODE, DIRECT_MODE, IMMEDIATE_MODE, REGISTER_INDIRECT_MODE, IMPLIED_MODE }, mnemonics, instructionStream: { op_is, bl_is, bh_is, b_is } } = require("../constants");
+const { registers, memory } = require('./modules');
 
-const ALU = {
-  "ADD C": {
-    opcode: "0x60",
-    mnemonic: "add r, r",
-    description: "",
-    addressMode: REGISTER_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.C],
-      [write.A, read.ADD],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "ADD D": {
-    opcode: "0x61",
-    mnemonic: "add r, r",
-    description: "",
-    addressMode: REGISTER_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.D],
-      [write.A, read.ADD],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "ADD IMM": {
-    opcode: "0x62",
-    mnemonic: "add r, imm",
-    description: "",
-    addressMode: IMMEDIATE_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.MAR | write.INC_PC, read.PC],
-      [write.B, read.MEM_CODE],
-      [write.A, read.ADD],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "ADC C": {
-    opcode: "0x63",
-    mnemonic: "adc r, r",
-    description: "",
-    addressMode: REGISTER_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.C],
-      [write.A, read.ADC],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "ADC D": {
-    opcode: "0x64",
-    mnemonic: "adc r, r",
-    description: "",
-    addressMode: REGISTER_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.D],
-      [write.A, read.ADC],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "ADC IMM": {
-    opcode: "0x65",
-    mnemonic: "adc r, imm",
-    description: "",
-    addressMode: IMMEDIATE_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.MAR | write.INC_PC, read.PC],
-      [write.B, read.MEM_CODE],
-      [write.A, read.ADC],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "SUB C": {
-    opcode: "0x70",
-    mnemonic: "sub r, r",
-    description: "",
-    addressMode: REGISTER_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.C],
-      [write.A, read.SUB],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "SUB D": {
-    opcode: "0x71",
-    mnemonic: "sub r, r",
-    description: "",
-    addressMode: REGISTER_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.D],
-      [write.A, read.SUB],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "SUB IMM": {
-    opcode: "0x72",
-    mnemonic: "sub r, imm",
-    description: "",
-    addressMode: IMMEDIATE_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.MAR | write.INC_PC, read.PC],
-      [write.B, read.MEM_CODE],
-      [write.A, read.SUB],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "SBB C": {
-    opcode: "0x73",
-    mnemonic: "sbb r, r",
-    description: "",
-    addressMode: REGISTER_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.C],
-      [write.A, read.SBB],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "SBB D": {
-    opcode: "0x74",
-    mnemonic: "sbb r, r",
-    description: "",
-    addressMode: REGISTER_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.D],
-      [write.A, read.SUB],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "SBB IMM": {
-    opcode: "0x75",
-    mnemonic: "sbb r, imm",
-    description: "",
-    addressMode: IMMEDIATE_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.MAR | write.INC_PC, read.PC],
-      [write.B, read.MEM_CODE],
-      [write.A, read.SBB],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "AND C": {
-    opcode: "0x80",
-    mnemonic: "and r, r",
-    description: "",
-    addressMode: REGISTER_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.C],
-      [write.A, read.AND],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "AND D": {
-    opcode: "0x81",
-    mnemonic: "and r, r",
-    description: "",
-    addressMode: REGISTER_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.D],
-      [write.A, read.AND],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "AND IMM": {
-    opcode: "0x82",
-    mnemonic: "and r, imm",
-    description: "",
-    addressMode: IMMEDIATE_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.MAR | write.INC_PC, read.PC],
-      [write.B, read.MEM_CODE],
-      [write.A, read.AND],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "OR C": {
-    opcode: "0x90",
-    mnemonic: "or r, r",
-    description: "",
-    addressMode: REGISTER_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.C],
-      [write.A, read.OR],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "OR D": {
-    opcode: "0x91",
-    mnemonic: "or r, r",
-    description: "",
-    addressMode: REGISTER_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.D],
-      [write.A, read.OR],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "OR IMM": {
-    opcode: "0x92",
-    mnemonic: "or r, imm",
-    description: "",
-    addressMode: IMMEDIATE_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.MAR | write.INC_PC, read.PC],
-      [write.B, read.MEM_CODE],
-      [write.A, read.OR],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "XOR C": {
-    opcode: "0xA0",
-    mnemonic: "xor r, r",
-    description: "",
-    addressMode: REGISTER_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.C],
-      [write.A, read.XOR],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "XOR D": {
-    opcode: "0xA1",
-    mnemonic: "xor r, r",
-    description: "",
-    addressMode: REGISTER_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.D],
-      [write.A, read.XOR],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "XOR IMM": {
-    opcode: "0xA2",
-    mnemonic: "xor r, imm",
-    description: "",
-    addressMode: IMMEDIATE_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.MAR | write.INC_PC, read.PC],
-      [write.B, read.MEM_CODE],
-      [write.A, read.XOR],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "NAND C": {
-    opcode: "0x83",
-    mnemonic: "nand r, r",
-    description: "",
-    addressMode: REGISTER_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.C],
-      [write.A, read.NAND],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "NAND D": {
-    opcode: "0x84",
-    mnemonic: "nand r, r",
-    description: "",
-    addressMode: REGISTER_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.D],
-      [write.A, read.NAND],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "NAND IMM": {
-    opcode: "0x85",
-    mnemonic: "nand r, imm",
-    description: "",
-    addressMode: IMMEDIATE_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.MAR | write.INC_PC, read.PC],
-      [write.B, read.MEM_CODE],
-      [write.A, read.NAND],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "NOR C": {
-    opcode: "0x93",
-    mnemonic: "nor r, r",
-    description: "",
-    addressMode: REGISTER_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.C],
-      [write.A, read.NOR],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "NOR D": {
-    opcode: "0x94",
-    mnemonic: "nor r, r",
-    description: "",
-    addressMode: REGISTER_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.D],
-      [write.A, read.NOR],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "NOR IMM": {
-    opcode: "0x95",
-    mnemonic: "nor r, imm",
-    description: "",
-    addressMode: IMMEDIATE_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.MAR | write.INC_PC, read.PC],
-      [write.B, read.MEM_CODE],
-      [write.A, read.NOR],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "XNOR C": {
-    opcode: "0xA3",
-    mnemonic: "xnor r, r",
-    description: "",
-    addressMode: REGISTER_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.C],
-      [write.A, read.XNOR],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "XNOR D": {
-    opcode: "0xA4",
-    mnemonic: "xnor r, r",
-    description: "",
-    addressMode: REGISTER_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.D],
-      [write.A, read.XNOR],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "XNOR IMM": {
-    opcode: "0xA5",
-    mnemonic: "xnor r, imm",
-    description: "",
-    addressMode: IMMEDIATE_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.MAR | write.INC_PC, read.PC],
-      [write.B, read.MEM_CODE],
-      [write.A, read.XNOR],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "NOT A": {
-    opcode: "0x66",
-    mnemonic: "not r, r",
-    description: "",
-    addressMode: IMMEDIATE_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.A],
-      [write.A, read.NOT],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: [],
-  },
-  "NOT C": {
-    opcode: "0x76",
-    mnemonic: "not r, r",
-    description: "",
-    addressMode: IMMEDIATE_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.C],
-      [write.A, read.NOT | read.RESET_OP],
-    ],
-    flagsAffected: [],
-  },
-  "NOT D": {
-    opcode: "0x86",
-    mnemonic: "not r, r",
-    description: "",
-    addressMode: IMMEDIATE_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.D],
-      [write.A, read.NOT | read.RESET_OP],
-    ],
-    flagsAffected: [],
-  },
-  "NOT (IMM16)": {
-    opcode: "0x96",
-    mnemonic: "not r, (imm16)",
-    description: "",
-    addressMode: INDIRECT_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.MAR, read.PC],
-      [write.INC_PC | write.S2, read.MEM_CODE],
-      [write.MAR, read.PC],
-      [write.INC_PC | write.S1, read.MEM_CODE],
-      [write.MAR, read.S1S2],
-      [write.INC_PC | write.B, read.MEM_DATA],
-      [write.A, read.NOT | read.RESET_OP],
-    ],
-    flagsAffected: [],
-  },
-  SHL: {
-    opcode: "0x67",
-    mnemonic: "shl r, 1",
-    description: "",
-    addressMode: undefined,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.A],
-      [write.A, read.SHL],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  SHR: {
-    opcode: "0x68",
-    mnemonic: "shr r, 1",
-    description: "",
-    addressMode: undefined,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.A],
-      [write.A, read.SHR],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  ASL: {
-    opcode: "0x77",
-    mnemonic: "asl r, 1",
-    description: "",
-    addressMode: undefined,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.A],
-      [write.A, read.ASL],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  ASR: {
-    opcode: "0x78",
-    mnemonic: "asr r, 1",
-    description: "",
-    addressMode: undefined,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.A],
-      [write.A, read.ASR],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  ROL: {
-    opcode: "0x77",
-    mnemonic: "rol r, 1",
-    description: "",
-    addressMode: undefined,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.A],
-      [write.A, read.ROL],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  ROR: {
-    opcode: "0x78",
-    mnemonic: "ror r, 1",
-    description: "",
-    addressMode: undefined,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.A],
-      [write.A, read.ROR],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  INC: {
-    opcode: "0x97",
-    mnemonic: "inc r, 1",
-    description: "",
-    addressMode: undefined,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.A],
-      [write.A, read.INC],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  DEC: {
-    opcode: "0x98",
-    mnemonic: "dec r, 1",
-    description: "",
-    addressMode: undefined,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.A],
-      [write.A, read.DEC],
-      [write.FLAGS, read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "CMP C": {
-    opcode: "0x69",
-    mnemonic: "cmp r, r",
-    description: "",
-    addressMode: REGISTER_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.A],
-      [write.FLAGS, read.CMP | read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "CMP D": {
-    opcode: "0x79",
-    mnemonic: "cmp r, r",
-    description: "",
-    addressMode: REGISTER_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.D],
-      [write.FLAGS, read.CMP | read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "CMP imm": {
-    opcode: "0x89",
-    mnemonic: "cmp r, imm8",
-    description: "",
-    addressMode: IMMEDIATE_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.MAR | write.INC_PC, read.PC],
-      [write.B, read.MEM_CODE],
-      [write.FLAGS, read.CMP | read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "CMP (imm16)": {
-    opcode: "0x99",
-    mnemonic: "cmp r, (imm16)",
-    description: "",
-    addressMode: INDIRECT_REGISTER_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.MAR, read.PC],
-      [write.INC_PC | write.S2, read.MEM_CODE],
-      [write.MAR, read.PC],
-      [write.INC_PC | write.S1, read.MEM_CODE],
-      [write.MAR, read.S1S2],
-      [write.INC_PC | write.B, read.MEM_DATA],
-      [write.FLAGS, read.CMP | read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "TST C": {
-    opcode: "0x6A",
-    mnemonic: "tst r, r",
-    description: "",
-    addressMode: REGISTER_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.C],
-      [write.FLAGS, read.TST | read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "TST D": {
-    opcode: "0x7A",
-    mnemonic: "tst r, r",
-    description: "",
-    addressMode: REGISTER_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.B, read.D],
-      [write.FLAGS, read.TST | read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "TST imm": {
-    opcode: "0x8A",
-    mnemonic: "tst r, imm8",
-    description: "",
-    addressMode: IMMEDIATE_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      [write.MAR | write.INC_PC, read.PC],
-      [write.B, read.MEM_CODE],
-      [write.FLAGS, read.TST | read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
-  "TST (imm16)": {
-    opcode: "0x9A",
-    mnemonic: "tst r, (imm16)",
-    description: "",
-    addressMode: INDIRECT_REGISTER_ADDRESS_MODE,
-    steps: [
-      ...FETCH_INSTRUCTION,
-      "TODO",
-      [write.FLAGS, read.TST | read.RESET_OP],
-    ],
-    flagsAffected: Object.keys(FLAGS),
-  },
+const {
+  FETCH_INSTRUCTION,
+  loadDataByteInto,
+  loadTwoDataBytesIntoS1S2,
+  moveIndirectFInto,
+  RESET_OP,
+} = require('../util');
+
+const { read } = require('../control/');
+
+const {
+    ADD, ADC, SUB, SBB,
+    AND, OR, XOR,
+    NOT, NAND, NOR, XNOR, 
+    NADD, NADC, NSUB, NSBB, 
+    INC, DEC,
+    SHL, SHR, ASL, ASR, ROR, ROL,
+    NINC, NDEC, NSHL, NSHR, NASL, NASR, NROR, NROL,
+} = read;
+
+const sourceAndDestGroup = {
+    ADD, ADC, SUB, SBB, AND, OR, XOR, NOT, NAND, NOR, XNOR, NADD, NADC, NSUB, NSBB, 'CMP': SUB, 'TST': AND,
 };
 
-module.exports = { ...ALU };
+const accumulatorOnly = {
+    INC, DEC, SHL, SHR, ASL, ASR, ROR, ROL, NINC, NDEC, NSHL, NSHR, NASL, NASR, NROR, NROL,
+};
+
+const aluRegister = Object.entries(sourceAndDestGroup).reduce((acc, cur) => {
+    const KEY = cur[0];
+    const VALUE = cur[1];
+    const { op } = VALUE;
+    const destination = registers.A;
+
+    const res = [ registers.C, registers.D ].map(source => (
+        { [`${KEY} ${destination.acronym}, ${source.acronym}`]: {
+            opcode: "",
+            instruction: `${KEY} ${destination.acronym}, ${source.acronym}`,
+            addressMode: REGISTER_MODE,
+            mnemonic: `${KEY} A, r8`,
+            steps: {
+                ...FETCH_INSTRUCTION, 
+                2: { read: [ source.control.read ], write: [ registers.B.control.write ]},
+                3: { read: [ op ], write: [ destination.control.write]},
+                4: { read: [ RESET_OP ], write: [ registers.FLAGS.control.write ] },
+            },
+            bytes: 1,
+            instructionStream: op_is,
+            flagsAffected: (KEY !== 'CMP' && KEY !== 'TST') ? FLAGS : [],
+            destination,
+            source
+        }}
+    ));
+    return { ...acc, ...res[0], ...res[1] };
+}, {});
+
+const aluImmediate = Object.entries(sourceAndDestGroup).reduce((acc, cur) => {
+    const KEY = cur[0];
+    const VALUE = cur[1];
+    const destination = registers.A;
+    const source = 'IMM8';
+
+    const res = {
+        [`${KEY} ${destination.acronym}, ${source}`]: {
+        opcode: "",
+        instruction: `${KEY} ${destination.acronym}, ${source}`,
+        addressMode: IMMEDIATE_MODE,
+        mnemonic: `${KEY} A, ${source}`,
+        steps: {
+            ...FETCH_INSTRUCTION,
+            ...loadDataByteInto(registers.B),
+            4: { read: [ VALUE ], write: [ destination.control.write]},
+            5: { read: [ RESET_OP ], write: [ registers.FLAGS.control.write ] },
+        },
+        bytes: 2,
+        instructionStream: `${op_is}|${b_is}`,
+        flagsAffected: FLAGS,
+        destination,
+        source
+        }
+    };
+
+    return { ...acc, ...res };
+}, {});
+
+const aluMem = Object.entries(sourceAndDestGroup).reduce((acc, cur) => {
+    const KEY = cur[0];
+    const VALUE = cur[1];
+    const destination = registers.A;
+    const source = '(IMM16)';
+
+    const res = {
+        [`${KEY} ${destination.acronym}, ${source}`]: {
+            opcode: "",
+            instruction: `${KEY} ${destination.acronym}, ${source}`,
+            addressMode: DIRECT_MODE,
+            mnemonic: `${KEY} A, ${source}`,
+            steps: {
+                ...FETCH_INSTRUCTION,
+                ...loadTwoDataBytesIntoS1S2(),
+                6: { read: [ registers.S1S2.control.read ], write: [ registers.MAR.control.write]},
+                7: { read: [ memory.control.read ], write: [ registers.B.control.write]},
+                8: { read: [ VALUE ], write: [ destination.control.write]},
+                9: { read: [ RESET_OP ], write: [ registers.FLAGS.control.write ] },
+            },
+            bytes: 3,
+            instructionStream: `${op_is}|${bl_is}|${bh_is}`,
+            flagsAffected: FLAGS,
+            destination,
+            source
+        }
+    };
+
+    return { ...acc, ...res };
+}, {});
+
+const aluIndirect = Object.entries(sourceAndDestGroup).reduce((acc, cur) => {
+    const KEY = cur[0];
+    const VALUE = cur[1];
+    const destination = registers.A;
+    const source = registers.F;
+
+    const res = {
+        [`${KEY} ${destination.acronym}, (${source.acronym})`]: {
+            opcode: "",
+            instruction: `${KEY} ${destination.acronym}, (${source.acronym})`,
+            addressMode: REGISTER_INDIRECT_MODE,
+            mnemonic: `${KEY} A, (F)`,
+            steps: {
+                ...FETCH_INSTRUCTION,
+                ...moveIndirectFInto(registers.B),
+                10: { read: [ VALUE ], write: [ destination.control.write]},
+                11:  { read: [ RESET_OP ], write: [ registers.FLAGS.control.write ] },
+            },
+            bytes: 1,
+            instructionStream: `${op_is}`,
+            flagsAffected: FLAGS,
+            destination,
+            source
+        }
+    };
+
+    return { ...acc, ...res };
+}, {});
+
+const aluImplied = Object.entries(accumulatorOnly).reduce((acc, cur) => {
+    const KEY = cur[0];
+    const VALUE = cur[1];
+    const destination = registers.A;
+    const source = registers.F;
+
+    const res = {
+        [`${KEY} ${destination.acronym}`]: {
+            opcode: "",
+            instruction: `${KEY}`,
+            addressMode: IMPLIED_MODE,
+            mnemonic: `${KEY} A`,
+            steps: {
+                ...FETCH_INSTRUCTION,
+                10: { read: [ VALUE ], write: [ destination.control.write]},
+                11:  { read: [ RESET_OP ], write: [ registers.FLAGS.control.write ] },
+            },
+            bytes: 1,
+            instructionStream: `${op_is}`,
+            flagsAffected: FLAGS,
+            destination,
+            source
+        }
+    };
+
+    return { ...acc, ...res };
+}, {});
+
+module.exports = {
+    ...aluRegister,
+    ...aluImmediate,
+    ...aluMem,
+    ...aluIndirect,
+    ...aluImplied,
+}

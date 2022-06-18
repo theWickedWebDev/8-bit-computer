@@ -1,0 +1,32 @@
+const { aluControlTable, aluFuncTable, aluJumpsTable } = require('./alu');
+const { displacementAddressModesTable } = require('./displacement-register');
+const { gprTable } = require('./gpr');
+const { memoryTable } = require('./memory');
+const { ioTable } = require('./io');
+const { cpuTable } = require('./cpu');
+const { interruptsTable } = require('./interrupts');
+const { pcTable } = require('./program-counter');
+const { spTable } = require('./stack-pointer');
+
+console.log('\n=============== Displacement Module ===============\n');
+console.log(displacementAddressModesTable.toString());
+console.log('\n=============== ALU Module ===============\n');
+console.log(aluControlTable.toString());
+console.log(aluFuncTable.toString());
+console.log('\n=============== Jumps Module ===============\n');
+console.log(aluJumpsTable.toString());
+console.log('\n=============== General Purpose Register Module ===============\n');
+console.log(gprTable.toString());
+console.log('\n=============== Memory Module ===============\n');
+console.log(memoryTable.toString());
+console.log('\n=============== I/O Module ===============\n');
+console.log(ioTable.toString());
+console.log('\n=============== Interrupts Module ===============\n');
+console.log(interruptsTable.toString());
+console.log('\n=============== Program Counter Module ===============\n');
+console.log(pcTable.toString());
+console.log('\n=============== Stack Pointer Module ===============\n');
+console.log(spTable.toString());
+console.log('\n=============== CPU Module ===============\n');
+console.log(cpuTable.toString());
+
