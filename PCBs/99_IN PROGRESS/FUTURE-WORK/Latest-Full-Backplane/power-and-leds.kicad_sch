@@ -728,7 +728,6 @@
     )
   )
 
-
   (junction (at 146.304 134.62) (diameter 0) (color 0 0 0 0)
     (uuid 15e846a1-ad99-4c06-a818-63a26c1f3cf7)
   )
@@ -1476,10 +1475,10 @@
     (property "Reference" "J55" (id 0) (at 147.574 58.4199 90)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "Value" "Barrel_Jack_MountingPin" (id 1) (at 147.574 59.6899 90)
+    (property "Value" "Conn_01x02" (id 1) (at 147.574 59.6899 90)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "Footprint" "Connector_BarrelJack:BarrelJack_Horizontal" (id 2) (at 141.224 59.69 0)
+    (property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" (id 2) (at 141.224 59.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 141.224 59.69 0)

@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "C/C++: g++-11 build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/a.out",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "osx": {
+                "MIMode": "lldb"
+            },
+            "MIMode": "lldb",
+            "preLaunchTask": "g++ -std=c++11 main.cpp"
+        }
+    ],
+    "version": "2.0.0"
+}

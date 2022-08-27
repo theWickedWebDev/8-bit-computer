@@ -1,0 +1,71 @@
+$ 1 0.000005 10.20027730826997 50 5 50 5e-11
+. CMOS\sNOR\sGate 0 2 2 3 A 1 0 2 B 2 1 2 NOR 4 0 3 RailElm\s3\rMosfetElm\s2\s5\s3\rMosfetElm\s1\s4\s5\rMosfetElm\s1\s0\s4\rMosfetElm\s2\s0\s4 0\\s0\\s40\\s5\\s0\\s0\\s0.5\s33\\s1.5\\s0.02\s33\\s1.5\\s0.02\s32\\s1.5\\s0.02\s32\\s1.5\\s0.02
+410 688 448 816 448 1 CMOS\sNOR\sGate 0\s0\s40\s5\s0\s0\s0.5 33\s1.5\s0.02 33\s1.5\s0.02 32\s1.5\s0.02 32\s1.5\s0.02
+. CMOS_NOT_Gate 0 3 1 2 !IN 2 0 3 IN 1 0 2 NMosfetElm\s1\s0\s2\rPMosfetElm\s1\s2\s3\rRailElm\s3 32\\s1.5\\s0.02\s33\\s1.5\\s0.02\s0\\s0\\s40\\s5\\s0\\s0\\s0.5
+. CMOS\sOR\sGate 0 2 2 3 A 4 0 2 B 5 1 2 OR 1 0 3 CustomCompositeElm\s1\s2\rMosfetElm\s5\s0\s2\rMosfetElm\s4\s0\s2\rMosfetElm\s4\s2\s6\rMosfetElm\s5\s6\s7\rRailElm\s7 1\\sCMOS_NOT_Gate\\s32\\\\s1.5\\\\s0.02\\s33\\\\s1.5\\\\s0.02\\s0\\\\s0\\\\s40\\\\s5\\\\s0\\\\s0\\\\s0.5\s32\\s1.5\\s0.02\s32\\s1.5\\s0.02\s33\\s1.5\\s0.02\s33\\s1.5\\s0.02\s0\\s0\\s40\\s5\\s0\\s0\\s0.5
+410 688 368 800 368 1 CMOS\sOR\sGate 1\sCMOS_NOT_Gate\s32\\s1.5\\s0.02\s33\\s1.5\\s0.02\s0\\s0\\s40\\s5\\s0\\s0\\s0.5 32\s1.5\s0.02 32\s1.5\s0.02 33\s1.5\s0.02 33\s1.5\s0.02 0\s0\s40\s5\s0\s0\s0.5
+. CMOS_AND_Gate 0 2 2 3 A 1 0 2 B 3 1 2 OUT 4 0 3 MosfetElm\s1\s0\s2\rMosfetElm\s3\s2\s4\rMosfetElm\s3\s4\s5\rMosfetElm\s1\s4\s5\rRailElm\s5 32\\s1.5\\s0.02\s32\\s1.5\\s0.02\s33\\s1.5\\s0.02\s33\\s1.5\\s0.02\s0\\s0\\s40\\s5\\s0\\s0\\s0.5
+. CMOS-AND-Gate 0 2 2 3 A 4 0 2 AND 1 0 3 B 5 1 2 CustomCompositeElm\s1\s2\rCustomCompositeElm\s4\s5\s2 1\\sCMOS_NOT_Gate\\s32\\\\s1.5\\\\s0.02\\s33\\\\s1.5\\\\s0.02\\s0\\\\s0\\\\s40\\\\s5\\\\s0\\\\s0\\\\s0.5\s1\\sCMOS_AND_Gate\\s32\\\\s1.5\\\\s0.02\\s32\\\\s1.5\\\\s0.02\\s33\\\\s1.5\\\\s0.02\\s33\\\\s1.5\\\\s0.02\\s0\\\\s0\\\\s40\\\\s5\\\\s0\\\\s0\\\\s0.5
+410 688 528 800 528 1 CMOS-AND-Gate 1\sCMOS_NOT_Gate\s32\\s1.5\\s0.02\s33\\s1.5\\s0.02\s0\\s0\\s40\\s5\\s0\\s0\\s0.5 1\sCMOS_AND_Gate\s32\\s1.5\\s0.02\s32\\s1.5\\s0.02\s33\\s1.5\\s0.02\s33\\s1.5\\s0.02\s0\\s0\\s40\\s5\\s0\\s0\\s0.5
+w 688 560 656 560 0
+w 656 560 656 480 0
+w 656 480 688 480 0
+w 688 400 656 400 0
+w 656 400 656 480 0
+w 688 528 672 528 0
+w 672 528 672 448 0
+w 672 448 688 448 0
+w 672 448 672 368 0
+w 672 368 688 368 0
+w 672 368 624 368 0
+w 656 400 624 400 0
+L 624 368 608 368 0 0 false 5 0
+L 624 400 608 400 0 0 false 5 0
+. CMOS\sXOR\sGate 0 2 2 3 A 1 0 2 B 9 1 2 XOR 3 0 3 MosfetElm\s1\s2\s3\rMosfetElm\s4\s5\s3\rMosfetElm\s1\s6\s7\rMosfetElm\s4\s8\s7\rMosfetElm\s9\s3\s8\rMosfetElm\s10\s3\s6\rMosfetElm\s10\s0\s5\rMosfetElm\s9\s0\s2\rRailElm\s7\rCustomCompositeElm\s10\s9\rCustomCompositeElm\s4\s1 32\\s1.5\\s0.02\s32\\s1.5\\s0.02\s33\\s1.5\\s0.02\s33\\s1.5\\s0.02\s33\\s1.5\\s0.02\s33\\s1.5\\s0.02\s32\\s1.5\\s0.02\s32\\s1.5\\s0.02\s0\\s0\\s40\\s5\\s0\\s0\\s0.5\s1\\sCMOS_NOT_Gate\\s32\\\\s1.5\\\\s0.02\\s33\\\\s1.5\\\\s0.02\\s0\\\\s0\\\\s40\\\\s5\\\\s0\\\\s0\\\\s0.5\s1\\sCMOS_NOT_Gate\\s32\\\\s1.5\\\\s0.02\\s33\\\\s1.5\\\\s0.02\\s0\\\\s0\\\\s40\\\\s5\\\\s0\\\\s0\\\\s0.5
+410 688 688 752 688 1 CMOS\sXOR\sGate 32\s1.5\s0.02 32\s1.5\s0.02 33\s1.5\s0.02 33\s1.5\s0.02 33\s1.5\s0.02 33\s1.5\s0.02 32\s1.5\s0.02 32\s1.5\s0.02 0\s0\s40\s5\s0\s0\s0.5 1\sCMOS_NOT_Gate\s32\\s1.5\\s0.02\s33\\s1.5\\s0.02\s0\\s0\\s40\\s5\\s0\\s0\\s0.5 1\sCMOS_NOT_Gate\s32\\s1.5\\s0.02\s33\\s1.5\\s0.02\s0\\s0\\s40\\s5\\s0\\s0\\s0.5
+w 656 560 656 640 0
+w 656 640 688 640 0
+w 688 608 672 608 0
+w 672 608 672 528 0
+. CMOS\sXNOR\sGate 0 2 2 3 A 1 0 2 B 9 1 2 XNOR 13 0 3 MosfetElm\s1\s2\s3\rMosfetElm\s4\s5\s3\rMosfetElm\s1\s6\s7\rMosfetElm\s4\s8\s7\rMosfetElm\s9\s3\s8\rMosfetElm\s10\s3\s6\rMosfetElm\s10\s0\s5\rMosfetElm\s9\s0\s2\rRailElm\s7\rCustomCompositeElm\s10\s9\rCustomCompositeElm\s4\s1\rCustomCompositeElm\s13\s3 32\\s1.5\\s0.02\s32\\s1.5\\s0.02\s33\\s1.5\\s0.02\s33\\s1.5\\s0.02\s33\\s1.5\\s0.02\s33\\s1.5\\s0.02\s32\\s1.5\\s0.02\s32\\s1.5\\s0.02\s0\\s0\\s40\\s5\\s0\\s0\\s0.5\s1\\sCMOS_NOT_Gate\\s32\\\\s1.5\\\\s0.02\\s33\\\\s1.5\\\\s0.02\\s0\\\\s0\\\\s40\\\\s5\\\\s0\\\\s0\\\\s0.5\s1\\sCMOS_NOT_Gate\\s32\\\\s1.5\\\\s0.02\\s33\\\\s1.5\\\\s0.02\\s0\\\\s0\\\\s40\\\\s5\\\\s0\\\\s0\\\\s0.5\s1\\sCMOS_NOT_Gate\\s32\\\\s1.5\\\\s0.02\\s33\\\\s1.5\\\\s0.02\\s0\\\\s0\\\\s40\\\\s5\\\\s0\\\\s0\\\\s0.5
+410 688 768 752 768 1 CMOS\sXNOR\sGate 32\s1.5\s0.02 32\s1.5\s0.02 33\s1.5\s0.02 33\s1.5\s0.02 33\s1.5\s0.02 33\s1.5\s0.02 32\s1.5\s0.02 32\s1.5\s0.02 0\s0\s40\s5\s0\s0\s0.5 1\sCMOS_NOT_Gate\s32\\s1.5\\s0.02\s33\\s1.5\\s0.02\s0\\s0\\s40\\s5\\s0\\s0\\s0.5 1\sCMOS_NOT_Gate\s32\\s1.5\\s0.02\s33\\s1.5\\s0.02\s0\\s0\\s40\\s5\\s0\\s0\\s0.5 1\sCMOS_NOT_Gate\s32\\s1.5\\s0.02\s33\\s1.5\\s0.02\s0\\s0\\s40\\s5\\s0\\s0\\s0.5
+w 688 688 672 688 0
+w 672 688 672 608 0
+w 688 720 656 720 0
+w 656 720 656 640 0
+162 848 320 848 304 2 default-led 1 0 0 0.01
+162 816 320 816 304 2 default-led 1 0 0 0.01
+162 880 320 880 304 2 default-led 1 0 0 0.01
+162 944 320 944 304 2 default-led 1 0 0 0.01
+162 976 320 976 304 2 default-led 1 0 0 0.01
+g 848 304 848 288 0 0
+g 816 304 816 288 0 0
+g 880 304 880 288 0 0
+g 944 304 944 288 0 0
+g 976 304 976 288 0 0
+x 838 271 856 274 6 12 OR
+x 804 271 822 274 4 12 OR
+x 868 271 893 274 4 12 AND
+x 931 271 957 274 4 12 XOR
+x 963 272 989 275 6 12 XOR
+. CMOS\sNAND\sGate 0 2 2 3 A 1 0 2 B 3 1 2 NAND 8 0 3 CustomCompositeElm\s1\s2\s3\rCustomCompositeElm\s8\s2 1\\sCMOS-AND-Gate\\s1\\\\sCMOS_NOT_Gate\\\\s32\\\\\\\\s1.5\\\\\\\\s0.02\\\\s33\\\\\\\\s1.5\\\\\\\\s0.02\\\\s0\\\\\\\\s0\\\\\\\\s40\\\\\\\\s5\\\\\\\\s0\\\\\\\\s0\\\\\\\\s0.5\\s1\\\\sCMOS_AND_Gate\\\\s32\\\\\\\\s1.5\\\\\\\\s0.02\\\\s32\\\\\\\\s1.5\\\\\\\\s0.02\\\\s33\\\\\\\\s1.5\\\\\\\\s0.02\\\\s33\\\\\\\\s1.5\\\\\\\\s0.02\\\\s0\\\\\\\\s0\\\\\\\\s40\\\\\\\\s5\\\\\\\\s0\\\\\\\\s0\\\\\\\\s0.5\s1\\sCMOS_NOT_Gate\\s32\\\\s1.5\\\\s0.02\\s33\\\\s1.5\\\\s0.02\\s0\\\\s0\\\\s40\\\\s5\\\\s0\\\\s0\\\\s0.5
+410 688 608 704 608 1 CMOS\sNAND\sGate 1\sCMOS-AND-Gate\s1\\sCMOS_NOT_Gate\\s32\\\\s1.5\\\\s0.02\\s33\\\\s1.5\\\\s0.02\\s0\\\\s0\\\\s40\\\\s5\\\\s0\\\\s0\\\\s0.5\s1\\sCMOS_AND_Gate\\s32\\\\s1.5\\\\s0.02\\s32\\\\s1.5\\\\s0.02\\s33\\\\s1.5\\\\s0.02\\s33\\\\s1.5\\\\s0.02\\s0\\\\s0\\\\s40\\\\s5\\\\s0\\\\s0\\\\s0.5 1\sCMOS_NOT_Gate\s32\\s1.5\\s0.02\s33\\s1.5\\s0.02\s0\\s0\\s40\\s5\\s0\\s0\\s0.5
+w 688 768 672 768 0
+w 672 768 672 688 0
+w 688 800 656 800 0
+w 656 800 656 720 0
+w 784 368 816 368 0
+w 816 368 816 320 0
+w 848 320 848 448 0
+w 848 448 784 448 0
+w 784 528 880 528 0
+w 880 528 880 320 0
+w 912 320 912 608 0
+w 912 608 784 608 0
+w 784 688 944 688 0
+w 944 688 944 320 0
+x 899 272 924 275 6 12 AND
+g 912 304 912 288 0 0
+162 912 320 912 304 2 default-led 1 0 0 0.01
+w 976 320 976 768 0
+w 784 768 976 768 0

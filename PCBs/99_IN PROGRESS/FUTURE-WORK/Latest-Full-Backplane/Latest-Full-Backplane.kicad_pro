@@ -452,18 +452,6 @@
       "IRQ"
     ],
     [
-      "85966425-5569-4730-bdcc-177f8608419a",
-      "Control Unit"
-    ],
-    [
-      "b35533ff-c98f-4377-b071-3a424313e686",
-      "IO Control"
-    ],
-    [
-      "346c6eab-1d53-41ad-84ab-2c5b2006a213",
-      "uart"
-    ],
-    [
       "c9679b9f-2890-40fc-a7cc-6ba41e6ab473",
       "power-and-leds"
     ]

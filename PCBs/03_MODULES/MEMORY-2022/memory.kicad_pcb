@@ -412,7 +412,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 8fc613fc-d42f-4815-8710-43095091d4b3)
     )
-    (fp_text value "74LS173" (at 0 5.9 90) (layer "F.Fab") hide
+    (fp_text value "74HC173" (at 0 5.9 90) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp fadad7e5-a548-4f03-a8c6-5fbdabc9ede6)
     )
@@ -1563,7 +1563,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp df3c52f6-04c4-432e-b41a-4973d549eaa1)
     )
-    (fp_text value "74LS245" (at 0 7.99 90) (layer "F.Fab") hide
+    (fp_text value "74HC245" (at 0 7.99 90) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 903a89b3-a9fc-4c32-8f66-a8ce5160403f)
     )
@@ -2003,13 +2003,13 @@
     (tags "TSSOP SO")
     (property "Sheetfile" "memory.kicad_sch")
     (property "Sheetname" "")
-    (path "/e651e097-c708-40df-b990-4c559a66bd2b")
+    (path "/e53a7bcb-1066-4576-9866-c06625e229f3")
     (attr smd)
     (fp_text reference "U1" (at 0 -3.45 -90) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp b22ad305-e1d7-4f68-a818-83758753ff04)
     )
-    (fp_text value "74LS00" (at 0 3.45 -90) (layer "F.Fab")
+    (fp_text value "74HC00" (at 0 3.45 -90) (layer "F.Fab")
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 6c559a7f-1584-4b7a-b142-1010670258de)
     )
@@ -2126,7 +2126,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 176ab694-ba76-44b5-b826-3d509bfcf4cf)
     )
-    (fp_text value "74LS245" (at 0 7.99 90) (layer "F.Fab") hide
+    (fp_text value "74HC245" (at 0 7.99 90) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp b7131e38-8c3c-41b5-b875-af2fd85b57c9)
     )
@@ -2998,7 +2998,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp e183a63b-612c-4f10-a509-00d3729da5cb)
     )
-    (fp_text value "74LS173" (at 0 5.9 90) (layer "F.Fab") hide
+    (fp_text value "74HC173" (at 0 5.9 90) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 4d866103-0232-4204-8d16-dd8b7d2390d4)
     )
@@ -3109,7 +3109,7 @@
     (tags "SO SO")
     (property "Sheetfile" "memory.kicad_sch")
     (property "Sheetname" "")
-    (path "/adfc0b6d-812e-4ff9-9a3d-0bf5720452ea")
+    (path "/bdac1150-71a1-4e7e-8046-ff6cf56ec19d")
     (attr smd)
     (fp_text reference "U2" (at 0 -5.28 90) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)))
@@ -3341,48 +3341,6 @@
     (pad "2" smd roundrect locked (at 0.9375 0 90) (size 0.975 1.4) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 138 "/Data Segments/Stack Segment/S0") (pinfunction "A") (pintype "passive") (tstamp 725fd8bd-5351-445c-b3fb-2b78a572d3a1))
     (model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.wrl"
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-  )
-
-  (footprint "Resistor_SMD:R_0805_2012Metric" (layer "F.Cu")
-    (tedit 5F68FEEE) (tstamp 45694713-f07c-457a-a4f9-f889ea2c847c)
-    (at 108.712 85.7485 -90)
-    (descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
-    (tags "resistor")
-    (property "Sheetfile" "EEPROM.kicad_sch")
-    (property "Sheetname" "EEPROM")
-    (path "/8d1205d3-5d9b-4421-a136-3e3cfd22a275/9f07b621-fe2e-4ce7-b0df-f8852ce7c035")
-    (attr smd)
-    (fp_text reference "R35" (at 0 -1.65 90) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp 586d5e99-918c-488a-b62c-55e768381475)
-    )
-    (fp_text value "R_Small_US" (at 0 1.65 90) (layer "F.Fab") hide
-      (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp 6195deee-e172-470e-aa86-c7c91e97c016)
-    )
-    (fp_text user "${REFERENCE}" (at 0 0 90) (layer "F.Fab") hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)))
-      (tstamp 464f27f4-8661-493e-93af-6fcdf33c6dd1)
-    )
-    (fp_line (start -0.227064 -0.735) (end 0.227064 -0.735) (layer "F.SilkS") (width 0.12) (tstamp 71a484d8-199b-4e4f-b3fc-5c9639822c68))
-    (fp_line (start -0.227064 0.735) (end 0.227064 0.735) (layer "F.SilkS") (width 0.12) (tstamp ac12eb5b-e463-4e72-8b54-8c22cb230bbf))
-    (fp_line (start 1.68 -0.95) (end 1.68 0.95) (layer "F.CrtYd") (width 0.05) (tstamp b86c36a6-2bd1-4ec5-b386-8186a942ae25))
-    (fp_line (start -1.68 -0.95) (end 1.68 -0.95) (layer "F.CrtYd") (width 0.05) (tstamp e24b1f4d-987a-496c-8634-b34c664d39f1))
-    (fp_line (start -1.68 0.95) (end -1.68 -0.95) (layer "F.CrtYd") (width 0.05) (tstamp eb1d91e0-5810-4d76-a620-5e5f868ed0ca))
-    (fp_line (start 1.68 0.95) (end -1.68 0.95) (layer "F.CrtYd") (width 0.05) (tstamp efc01957-9011-40ce-96c6-e714ec11cd42))
-    (fp_line (start -1 -0.625) (end 1 -0.625) (layer "F.Fab") (width 0.1) (tstamp 0f762e34-d29c-467c-a2af-938f6d3fc183))
-    (fp_line (start -1 0.625) (end -1 -0.625) (layer "F.Fab") (width 0.1) (tstamp 247b3649-638c-48c2-bcec-52775ba2eec4))
-    (fp_line (start 1 0.625) (end -1 0.625) (layer "F.Fab") (width 0.1) (tstamp 6ae41408-756c-42b7-8d02-24e47a650013))
-    (fp_line (start 1 -0.625) (end 1 0.625) (layer "F.Fab") (width 0.1) (tstamp ae683d27-bded-40bd-b0cb-5435b4a8621c))
-    (pad "1" smd roundrect locked (at -0.9125 0 270) (size 1.025 1.4) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.243902439)
-      (net 2 "GND") (pintype "passive") (tstamp 13d0b367-9f2e-4e25-b825-723c8f04bdf9))
-    (pad "2" smd roundrect locked (at 0.9125 0 270) (size 1.025 1.4) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.243902439)
-      (net 113 "Net-(D34-Pad1)") (pintype "passive") (tstamp cc80b4e7-0e50-4bf5-8c32-34ef7f5b7f6d))
-    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -4002,7 +3960,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 25afc817-6042-46f0-b7ff-1fc378c68bcf)
     )
-    (fp_text value "74LS245" (at 0 7.99 90) (layer "F.Fab") hide
+    (fp_text value "74HC245" (at 0 7.99 90) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp d8e38bd7-1088-4ad9-8afa-e0362236df86)
     )
@@ -4341,7 +4299,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 4eccc5ca-c8ad-4921-8e57-004feeea73fe)
     )
-    (fp_text value "74LS173" (at 0 5.9 90) (layer "F.Fab") hide
+    (fp_text value "74HC173" (at 0 5.9 90) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 0b0dd4cb-42b2-4c7a-b116-f9e9747f3aa5)
     )
@@ -4905,7 +4863,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 5eed2d1a-2183-47f5-895b-1063d33a3f2f)
     )
-    (fp_text value "74LS173" (at 0 5.9 90) (layer "F.Fab") hide
+    (fp_text value "74HC173" (at 0 5.9 90) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 4766f4ec-719e-4c87-a6c5-975bd63f6009)
     )
@@ -4978,7 +4936,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 2f0945ce-018d-4a1b-9953-58a6e1be6c18)
     )
-    (fp_text value "74LS574" (at 0 7.25 90) (layer "F.Fab") hide
+    (fp_text value "74HC574" (at 0 7.25 90) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp aea642a1-94bd-412b-ab64-2170dfb59849)
     )
@@ -5149,7 +5107,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 02ba63da-377d-44c3-a0ef-eabbae31ee32)
     )
-    (fp_text value "74LS245" (at 0 4.2 90) (layer "F.Fab") hide
+    (fp_text value "74HC245" (at 0 4.2 90) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 48265fd8-4c02-48d4-aa81-26c3036b37af)
     )
@@ -5258,50 +5216,6 @@
       (net 9 "Net-(D4-Pad1)") (pinfunction "K") (pintype "passive") (tstamp 736db764-3453-44d1-acdb-3ffbbf8ebbc1))
     (pad "2" smd roundrect locked (at 0.9375 0 270) (size 0.975 1.4) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
       (net 67 "SEGMENT1") (pinfunction "A") (pintype "passive") (tstamp 0ffee0ec-7177-4e76-988c-b2c53981a0be))
-    (model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.wrl"
-      (offset (xyz 0 0 0))
-      (scale (xyz 1 1 1))
-      (rotate (xyz 0 0 0))
-    )
-  )
-
-  (footprint "LED_SMD:LED_0805_2012Metric" (layer "F.Cu")
-    (tedit 5F68FEF1) (tstamp 9c18b2a7-cf17-4038-968a-548e392f5f8a)
-    (at 108.712 89.5585 -90)
-    (descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
-    (tags "LED")
-    (property "Sheetfile" "EEPROM.kicad_sch")
-    (property "Sheetname" "EEPROM")
-    (path "/8d1205d3-5d9b-4421-a136-3e3cfd22a275/40993354-27b8-4365-aa2a-5f848f311fe7")
-    (attr smd)
-    (fp_text reference "D34" (at 0 -1.65 90) (layer "F.SilkS") hide
-      (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp 29e43326-21bd-410f-82bb-f7e40901fee3)
-    )
-    (fp_text value "LED" (at 0 1.65 90) (layer "F.Fab") hide
-      (effects (font (size 1 1) (thickness 0.15)))
-      (tstamp 94d224f5-51d2-49ef-968f-b2173c5b1a06)
-    )
-    (fp_text user "${REFERENCE}" (at 0 0 90) (layer "F.Fab") hide
-      (effects (font (size 0.5 0.5) (thickness 0.08)))
-      (tstamp b3193613-4781-456d-91f3-56883e0a7bbb)
-    )
-    (fp_line (start -1.685 -0.96) (end -1.685 0.96) (layer "F.SilkS") (width 0.12) (tstamp 0c821e47-2c65-4d49-ad3c-bfefca307436))
-    (fp_line (start -1.685 0.96) (end 1 0.96) (layer "F.SilkS") (width 0.12) (tstamp bec2f6bf-fdd2-48de-a1c7-268b34bf2c11))
-    (fp_line (start 1 -0.96) (end -1.685 -0.96) (layer "F.SilkS") (width 0.12) (tstamp e4a50d82-6985-41ad-aba2-40fedb368dc8))
-    (fp_line (start -1.68 -0.95) (end 1.68 -0.95) (layer "F.CrtYd") (width 0.05) (tstamp 0b904de9-ed42-42c3-97b2-bac16a8e8633))
-    (fp_line (start 1.68 0.95) (end -1.68 0.95) (layer "F.CrtYd") (width 0.05) (tstamp 330106d1-bbba-4bcf-ba73-7c68cfbf2659))
-    (fp_line (start 1.68 -0.95) (end 1.68 0.95) (layer "F.CrtYd") (width 0.05) (tstamp 6339858f-3460-49e3-b7c4-f4fdf8d0d08e))
-    (fp_line (start -1.68 0.95) (end -1.68 -0.95) (layer "F.CrtYd") (width 0.05) (tstamp a725d97a-4b60-45af-a479-b1fe2656ee47))
-    (fp_line (start 1 -0.6) (end -0.7 -0.6) (layer "F.Fab") (width 0.1) (tstamp abf3c0ed-5afb-4e27-8112-b7f886ecbac9))
-    (fp_line (start -1 0.6) (end 1 0.6) (layer "F.Fab") (width 0.1) (tstamp b2fe12b0-9010-4882-ae8d-21506ee963e1))
-    (fp_line (start 1 0.6) (end 1 -0.6) (layer "F.Fab") (width 0.1) (tstamp b7150d07-3b76-48f3-b7ce-95f5372ffbb5))
-    (fp_line (start -1 -0.3) (end -1 0.6) (layer "F.Fab") (width 0.1) (tstamp c105308d-7c61-436e-9acc-d55baa28d6f3))
-    (fp_line (start -0.7 -0.6) (end -1 -0.3) (layer "F.Fab") (width 0.1) (tstamp e8e08f0a-4dc1-482b-b915-6e2c96a02a72))
-    (pad "1" smd roundrect locked (at -0.9375 0 270) (size 0.975 1.4) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
-      (net 113 "Net-(D34-Pad1)") (pinfunction "K") (pintype "passive") (tstamp df764bfc-15f2-4611-b9c4-7762ba39b228))
-    (pad "2" smd roundrect locked (at 0.9375 0 270) (size 0.975 1.4) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
-      (net 88 "/~{EEPROM_EN}") (pinfunction "A") (pintype "passive") (tstamp dca5a6c6-57e9-408a-8252-fa553ed19668))
     (model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.wrl"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
@@ -5517,6 +5431,50 @@
     (pad "2" smd roundrect locked (at 0.9125 0 270) (size 1.025 1.4) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.243902439)
       (net 37 "Net-(D20-Pad1)") (pintype "passive") (tstamp 1576fd14-1ab8-4644-b6f5-1dc54a0718dc))
     (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+  )
+
+  (footprint "LED_SMD:LED_0805_2012Metric" (layer "F.Cu")
+    (tedit 5F68FEF1) (tstamp a3131810-ed44-4414-94e9-6321624fe739)
+    (at 108.712 89.662 -90)
+    (descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
+    (tags "LED")
+    (property "Sheetfile" "memory.kicad_sch")
+    (property "Sheetname" "")
+    (path "/cdb09d36-f30f-49bb-8722-2ebd3df85db7")
+    (attr smd)
+    (fp_text reference "D34" (at 0 -1.65 90) (layer "F.SilkS") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp cc2f27af-df4b-47e1-af48-c6fdf0fdbac7)
+    )
+    (fp_text value "LED" (at 0 1.65 90) (layer "F.Fab")
+      (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp 4adb9d36-eba8-4280-a278-474dee5c60b2)
+    )
+    (fp_text user "${REFERENCE}" (at 0 0 90) (layer "F.Fab")
+      (effects (font (size 0.5 0.5) (thickness 0.08)))
+      (tstamp dd54cae4-83e1-4db8-94f9-86e9ed3974b3)
+    )
+    (fp_line (start -1.685 0.96) (end 1 0.96) (layer "F.SilkS") (width 0.12) (tstamp 19127f95-b3e8-4eb0-b9f9-76825b269b1a))
+    (fp_line (start -1.685 -0.96) (end -1.685 0.96) (layer "F.SilkS") (width 0.12) (tstamp 6d63a206-53b5-4427-a8bb-e2028f993148))
+    (fp_line (start 1 -0.96) (end -1.685 -0.96) (layer "F.SilkS") (width 0.12) (tstamp a1bb387f-80ba-4bef-a9c4-ac80e66e723f))
+    (fp_line (start 1.68 -0.95) (end 1.68 0.95) (layer "F.CrtYd") (width 0.05) (tstamp 1e0814f9-6be3-43ae-a5a7-96e3c77ce25e))
+    (fp_line (start -1.68 -0.95) (end 1.68 -0.95) (layer "F.CrtYd") (width 0.05) (tstamp 1e8de0dc-0564-4727-9748-8176ffc30f61))
+    (fp_line (start -1.68 0.95) (end -1.68 -0.95) (layer "F.CrtYd") (width 0.05) (tstamp 3854803b-9170-4af2-b2e6-621dff09765c))
+    (fp_line (start 1.68 0.95) (end -1.68 0.95) (layer "F.CrtYd") (width 0.05) (tstamp 5984945c-3784-4870-9e3f-2eb138cd61ca))
+    (fp_line (start -1 -0.3) (end -1 0.6) (layer "F.Fab") (width 0.1) (tstamp 16503fa5-5c72-4dea-917b-7c99553026d5))
+    (fp_line (start -0.7 -0.6) (end -1 -0.3) (layer "F.Fab") (width 0.1) (tstamp 29d1da52-36c7-4a50-9ea8-f78fc1a0e60f))
+    (fp_line (start -1 0.6) (end 1 0.6) (layer "F.Fab") (width 0.1) (tstamp af07dc58-0c5e-425b-8985-2215d5cf659b))
+    (fp_line (start 1 -0.6) (end -0.7 -0.6) (layer "F.Fab") (width 0.1) (tstamp df40dbaa-34e3-4c14-9737-718a94f15f53))
+    (fp_line (start 1 0.6) (end 1 -0.6) (layer "F.Fab") (width 0.1) (tstamp f5051bc1-a4d0-44e9-b265-fcebf0085f0f))
+    (pad "1" smd roundrect locked (at -0.9375 0 270) (size 0.975 1.4) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
+      (net 113 "Net-(D34-Pad1)") (pinfunction "K") (pintype "passive") (tstamp c36ca0cb-76a9-491e-b0ab-fd3df622ad4c))
+    (pad "2" smd roundrect locked (at 0.9375 0 270) (size 0.975 1.4) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.25)
+      (net 88 "/~{EEPROM_EN}") (pinfunction "A") (pintype "passive") (tstamp aba0ab99-90b2-4162-bd9b-79a4737176b9))
+    (model "${KICAD6_3DMODEL_DIR}/LED_SMD.3dshapes/LED_0805_2012Metric.wrl"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -5781,6 +5739,48 @@
     )
   )
 
+  (footprint "Resistor_SMD:R_0805_2012Metric" (layer "F.Cu")
+    (tedit 5F68FEEE) (tstamp b98671f3-6ff5-4daa-8b64-43256944a7c1)
+    (at 108.712 85.852 -90)
+    (descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
+    (tags "resistor")
+    (property "Sheetfile" "memory.kicad_sch")
+    (property "Sheetname" "")
+    (path "/5dd0cfa6-df39-428b-9393-b600c66225aa")
+    (attr smd)
+    (fp_text reference "R35" (at 0 -1.65 90) (layer "F.SilkS") hide
+      (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp d70eb992-a3ff-45e5-ae81-cf2be9ff4b1c)
+    )
+    (fp_text value "R_Small_US" (at 0 1.65 90) (layer "F.Fab")
+      (effects (font (size 1 1) (thickness 0.15)))
+      (tstamp 4e20f2cc-051c-41e3-8ee5-573024c204f8)
+    )
+    (fp_text user "${REFERENCE}" (at 0 0 90) (layer "F.Fab")
+      (effects (font (size 0.5 0.5) (thickness 0.08)))
+      (tstamp 8a7eae2c-22eb-495d-974c-589a6b64e6c7)
+    )
+    (fp_line (start -0.227064 0.735) (end 0.227064 0.735) (layer "F.SilkS") (width 0.12) (tstamp 96a38568-8bb9-48d5-b36c-a2a24c512831))
+    (fp_line (start -0.227064 -0.735) (end 0.227064 -0.735) (layer "F.SilkS") (width 0.12) (tstamp aea0762f-9b4b-49c8-b311-2b433e5a47c4))
+    (fp_line (start -1.68 0.95) (end -1.68 -0.95) (layer "F.CrtYd") (width 0.05) (tstamp 45ad7f60-1586-4f9d-8d3f-b30fe236e006))
+    (fp_line (start 1.68 0.95) (end -1.68 0.95) (layer "F.CrtYd") (width 0.05) (tstamp 6c333931-b919-4147-bace-28e5059ce9c3))
+    (fp_line (start 1.68 -0.95) (end 1.68 0.95) (layer "F.CrtYd") (width 0.05) (tstamp 801dd6d5-4bdb-4bb9-be36-9cf40103594e))
+    (fp_line (start -1.68 -0.95) (end 1.68 -0.95) (layer "F.CrtYd") (width 0.05) (tstamp a088564d-45e9-4a1e-97e5-e0f250e57974))
+    (fp_line (start 1 0.625) (end -1 0.625) (layer "F.Fab") (width 0.1) (tstamp 932cad36-6800-4ed4-a4be-fca871e6dcfa))
+    (fp_line (start 1 -0.625) (end 1 0.625) (layer "F.Fab") (width 0.1) (tstamp ce808e96-ce99-4498-9334-4d1036fd93e4))
+    (fp_line (start -1 -0.625) (end 1 -0.625) (layer "F.Fab") (width 0.1) (tstamp ebbee832-57b2-4b55-b3fb-d2ca92de0148))
+    (fp_line (start -1 0.625) (end -1 -0.625) (layer "F.Fab") (width 0.1) (tstamp ed77350a-c389-4f1d-b5cd-55cf4651fdc3))
+    (pad "1" smd roundrect locked (at -0.9125 0 270) (size 1.025 1.4) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.243902)
+      (net 2 "GND") (pintype "passive") (tstamp 6391b1eb-9d8b-425f-86b8-48218eaa4daa))
+    (pad "2" smd roundrect locked (at 0.9125 0 270) (size 1.025 1.4) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.243902)
+      (net 113 "Net-(D34-Pad1)") (pintype "passive") (tstamp cd0f8e06-994e-4c28-9364-38ac4962a419))
+    (model "${KICAD6_3DMODEL_DIR}/Resistor_SMD.3dshapes/R_0805_2012Metric.wrl"
+      (offset (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+  )
+
   (footprint "Package_SO:SO-20_5.3x12.6mm_P1.27mm" (layer "F.Cu")
     (tedit 62125C40) (tstamp bc45cc16-a631-4433-96e4-ef18c6482fa6)
     (at 93.472 109.982 90)
@@ -5794,7 +5794,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp ddbc9d9f-2538-4ba7-94f6-c777e21daf16)
     )
-    (fp_text value "74LS574" (at 0 7.25 90) (layer "F.Fab") hide
+    (fp_text value "74HC574" (at 0 7.25 90) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp a0851cd9-f9e1-411a-8cf0-42dd323f4b89)
     )
@@ -6349,7 +6349,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp e5f488a3-e70e-44ec-ae64-2f040b009463)
     )
-    (fp_text value "74LS245" (at 0 7.99 90) (layer "F.Fab") hide
+    (fp_text value "74HC245" (at 0 7.99 90) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 55ca9c98-4b19-4174-87fb-2a83eb40d2a1)
     )
@@ -6814,7 +6814,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 4098ce00-b3c4-422b-bf58-d2fae3727610)
     )
-    (fp_text value "74LS173" (at 0 5.9 90) (layer "F.Fab") hide
+    (fp_text value "74HC173" (at 0 5.9 90) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp afa70931-8ced-4d84-be2a-51bdb0b001ea)
     )
@@ -6921,7 +6921,6 @@
     (at 96.52 79.756)
     (property "Sheetfile" "EEPROM.kicad_sch")
     (property "Sheetname" "EEPROM")
-    (path "/8d1205d3-5d9b-4421-a136-3e3cfd22a275/5e550651-7497-4061-9de1-237a5696102c")
     (attr through_hole)
     (fp_text reference "U11" (at -6.091329 -9.136329) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.15)) (justify left))
@@ -7046,7 +7045,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 04d8da57-78f0-49c6-8f6e-977d9b2f1625)
     )
-    (fp_text value "74LS245" (at 0 7.99 90) (layer "F.Fab") hide
+    (fp_text value "74HC245" (at 0 7.99 90) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 6948ccd4-663a-4f87-a12d-bb8ab2e3a8ad)
     )
@@ -7167,7 +7166,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp faa4dc09-8e06-4764-a0e9-196884f8bad4)
     )
-    (fp_text value "74LS245" (at 0 7.99 90) (layer "F.Fab") hide
+    (fp_text value "74HC245" (at 0 7.99 90) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp c0fde03d-0974-45d2-9ed2-d7aeb462563d)
     )
@@ -7332,7 +7331,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 693ff114-f9a8-4985-84f3-df586627a4e2)
     )
-    (fp_text value "74LS173" (at 0 5.9 90) (layer "F.Fab") hide
+    (fp_text value "74HC173" (at 0 5.9 90) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp 885848a6-4bbd-45b5-8408-d282ecd171b5)
     )
@@ -7405,7 +7404,7 @@
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp cfffd01e-4c1d-46e1-a18b-4d2817930aac)
     )
-    (fp_text value "74LS139" (at 0 3.45 90) (layer "F.Fab") hide
+    (fp_text value "74HC139" (at 0 3.45 90) (layer "F.Fab") hide
       (effects (font (size 1 1) (thickness 0.15)))
       (tstamp bb7d3d72-93cd-4ac7-8df5-3db3b91b2853)
     )
@@ -7662,6 +7661,7 @@
     (at 180.34 27.696 180)
     (descr "Through hole straight pin header, 1x09, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x09 2.54mm single row")
+    (property "Field4" "Segment Control")
     (property "Sheetfile" "memory.kicad_sch")
     (property "Sheetname" "")
     (path "/9f05c918-450f-4d90-b86b-667c6e3f616a")
@@ -7723,6 +7723,7 @@
     (at 162.306 122.682 -90)
     (descr "Through hole straight pin header, 1x07, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x07 2.54mm single row")
+    (property "Field4" "Mem Control")
     (property "Sheetfile" "memory.kicad_sch")
     (property "Sheetname" "")
     (path "/7170e623-f041-4a59-8eea-4ac7638be1e5")

@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "module": "Node16",
+    "outDir": "./dist",
+    "allowJs": true,
+    "target": "ES6",
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "sourceMap": true
+  },
+  "include": ["./src/**/*.ts"],
+  "exclude": ["node_modules", "ARCHIVE", "lib", ".vscode", "./src/BACKUP"]
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"Step.js","sourceRoot":"","sources":["../../src/classes/Step.ts"],"names":[],"mappings":";;AAEA,MAAM,IAAI;IAGN,YAAY,IAAc;QACtB,IAAI,CAAC,KAAK,GAAG;YACT,IAAI,EAAE,IAAI,CAAC,IAAI;YACf,KAAK,EAAE,IAAI,CAAC,KAAK;YACjB,IAAI,EAAE,IAAI,CAAC,IAAI;SAClB,CAAA;IACL,CAAC;CACJ;AAED,kBAAe,IAAI,CAAC"}

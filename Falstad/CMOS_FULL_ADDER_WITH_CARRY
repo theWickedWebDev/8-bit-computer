@@ -1,0 +1,37 @@
+$ 1 0.000005 10.20027730826997 50 5 50 5e-11
+. CMOS_NOT_Gate 0 3 1 2 !IN 2 0 3 IN 1 0 2 NMosfetElm\s1\s0\s2\rPMosfetElm\s1\s2\s3\rRailElm\s3 32\\s1.5\\s0.02\s33\\s1.5\\s0.02\s0\\s0\\s40\\s5\\s0\\s0\\s0.5
+. CMOS\sXOR\sGate 0 2 2 3 A 1 0 2 B 9 1 2 XOR 3 0 3 MosfetElm\s1\s2\s3\rMosfetElm\s4\s5\s3\rMosfetElm\s1\s6\s7\rMosfetElm\s4\s8\s7\rMosfetElm\s9\s3\s8\rMosfetElm\s10\s3\s6\rMosfetElm\s10\s0\s5\rMosfetElm\s9\s0\s2\rRailElm\s7\rCustomCompositeElm\s10\s9\rCustomCompositeElm\s4\s1 32\\s1.5\\s0.02\s32\\s1.5\\s0.02\s33\\s1.5\\s0.02\s33\\s1.5\\s0.02\s33\\s1.5\\s0.02\s33\\s1.5\\s0.02\s32\\s1.5\\s0.02\s32\\s1.5\\s0.02\s0\\s0\\s40\\s5\\s0\\s0\\s0.5\s1\\sCMOS_NOT_Gate\\s32\\\\s1.5\\\\s0.02\\s33\\\\s1.5\\\\s0.02\\s0\\\\s0\\\\s40\\\\s5\\\\s0\\\\s0\\\\s0.5\s1\\sCMOS_NOT_Gate\\s32\\\\s1.5\\\\s0.02\\s33\\\\s1.5\\\\s0.02\\s0\\\\s0\\\\s40\\\\s5\\\\s0\\\\s0\\\\s0.5
+410 592 336 656 336 1 CMOS\sXOR\sGate 32\s1.5\s0.02 32\s1.5\s0.02 33\s1.5\s0.02 33\s1.5\s0.02 33\s1.5\s0.02 33\s1.5\s0.02 32\s1.5\s0.02 32\s1.5\s0.02 0\s0\s40\s5\s0\s0\s0.5 1\sCMOS_NOT_Gate\s32\\s1.5\\s0.02\s33\\s1.5\\s0.02\s0\\s0\\s40\\s5\\s0\\s0\\s0.5 1\sCMOS_NOT_Gate\s32\\s1.5\\s0.02\s33\\s1.5\\s0.02\s0\\s0\\s40\\s5\\s0\\s0\\s0.5
+410 736 336 800 336 1 CMOS\sXOR\sGate 32\s1.5\s0.02 32\s1.5\s0.02 33\s1.5\s0.02 33\s1.5\s0.02 33\s1.5\s0.02 33\s1.5\s0.02 32\s1.5\s0.02 32\s1.5\s0.02 0\s0\s40\s5\s0\s0\s0.5 1\sCMOS_NOT_Gate\s32\\s1.5\\s0.02\s33\\s1.5\\s0.02\s0\\s0\\s40\\s5\\s0\\s0\\s0.5 1\sCMOS_NOT_Gate\s32\\s1.5\\s0.02\s33\\s1.5\\s0.02\s0\\s0\\s40\\s5\\s0\\s0\\s0.5
+w 592 368 464 368 0
+w 464 432 688 432 0
+w 688 432 688 368 0
+w 832 336 1040 336 0
+207 1040 336 1072 336 4 SUM
+. CMOS\sAND\sGate 0 2 2 3 A 1 0 2 AND 5 0 3 B 2 1 2 RailElm\s4\rMosfetElm\s1\s3\s4\rMosfetElm\s2\s3\s4\rMosfetElm\s2\s6\s3\rMosfetElm\s1\s0\s6\rCustomCompositeElm\s5\s3 0\\s0\\s40\\s5\\s0\\s0\\s0.5\s33\\s1.5\\s0.02\s33\\s1.5\\s0.02\s32\\s1.5\\s0.02\s32\\s1.5\\s0.02\s1\\sCMOS_NOT_Gate\\s32\\\\s1.5\\\\s0.02\\s33\\\\s1.5\\\\s0.02\\s0\\\\s0\\\\s40\\\\s5\\\\s0\\\\s0\\\\s0.5
+410 736 480 816 480 1 CMOS\sAND\sGate 0\s0\s40\s5\s0\s0\s0.5 33\s1.5\s0.02 33\s1.5\s0.02 32\s1.5\s0.02 32\s1.5\s0.02 1\sCMOS_NOT_Gate\s32\\s1.5\\s0.02\s33\\s1.5\\s0.02\s0\\s0\\s40\\s5\\s0\\s0\\s0.5
+410 736 560 816 560 1 CMOS\sAND\sGate 0\s0\s40\s5\s0\s0\s0.5 33\s1.5\s0.02 33\s1.5\s0.02 32\s1.5\s0.02 32\s1.5\s0.02 1\sCMOS_NOT_Gate\s32\\s1.5\\s0.02\s33\\s1.5\\s0.02\s0\\s0\\s40\\s5\\s0\\s0\\s0.5
+w 736 368 688 368 0
+w 688 336 704 336 0
+w 704 336 736 336 0
+w 736 480 736 368 0
+w 704 336 704 512 0
+w 704 512 736 512 0
+w 592 368 592 592 0
+w 592 592 736 592 0
+w 736 560 560 560 0
+w 560 560 560 336 0
+w 464 336 560 336 0
+w 560 336 592 336 0
+. CMOS\sNOT\sGate 0 2 1 2 IN 1 0 2 NOT 2 0 3 MosfetElm\s1\s0\s2\rMosfetElm\s1\s2\s3\rRailElm\s3 32\\s1.5\\s0.02\s33\\s1.5\\s0.02\s0\\s0\\s40\\s5\\s0\\s0\\s0.5
+. CMOS\sOR\sGate 0 2 2 3 A 1 0 2 B 2 1 2 OR 4 0 3 RailElm\s3\rMosfetElm\s2\s5\s3\rMosfetElm\s1\s6\s5\rMosfetElm\s1\s0\s6\rMosfetElm\s2\s0\s6\rCustomCompositeElm\s6\s4 0\\s0\\s40\\s5\\s0\\s0\\s0.5\s33\\s1.5\\s0.02\s33\\s1.5\\s0.02\s32\\s1.5\\s0.02\s32\\s1.5\\s0.02\s1\\sCMOS\\\\sNOT\\\\sGate\\s32\\\\s1.5\\\\s0.02\\s33\\\\s1.5\\\\s0.02\\s0\\\\s0\\\\s40\\\\s5\\\\s0\\\\s0\\\\s0.5
+410 880 512 912 512 1 CMOS\sOR\sGate 0\s0\s40\s5\s0\s0\s0.5 33\s1.5\s0.02 33\s1.5\s0.02 32\s1.5\s0.02 32\s1.5\s0.02 1\sCMOS\\sNOT\\sGate\s32\\s1.5\\s0.02\s33\\s1.5\\s0.02\s0\\s0\\s40\\s5\\s0\\s0\\s0.5
+w 880 512 832 512 0
+w 832 512 832 480 0
+w 880 544 832 544 0
+w 832 544 832 560 0
+w 976 512 1040 512 0
+207 1040 512 1072 512 4 CO
+207 464 336 416 336 4 A
+207 464 368 416 368 4 B
+207 464 432 416 432 4 CI

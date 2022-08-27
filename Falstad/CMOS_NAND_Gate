@@ -1,0 +1,9 @@
+$ 1 0.000005 10.20027730826997 50 5 43 5e-11
+. CMOS_NOT_Gate 0 3 1 2 !IN 2 0 3 IN 1 0 2 NMosfetElm\s1\s0\s2\rPMosfetElm\s1\s2\s3\rRailElm\s3 32\\s1.5\\s0.02\s33\\s1.5\\s0.02\s0\\s0\\s40\\s5\\s0\\s0\\s0.5
+. CMOS_AND_Gate 0 2 2 3 A 1 0 2 B 3 1 2 OUT 4 0 3 MosfetElm\s1\s0\s2\rMosfetElm\s3\s2\s4\rMosfetElm\s3\s4\s5\rMosfetElm\s1\s4\s5\rRailElm\s5 32\\s1.5\\s0.02\s32\\s1.5\\s0.02\s33\\s1.5\\s0.02\s33\\s1.5\\s0.02\s0\\s0\\s40\\s5\\s0\\s0\\s0.5
+. CMOS-AND-Gate 0 2 2 3 A 4 0 2 AND 1 0 3 B 5 1 2 CustomCompositeElm\s1\s2\rCustomCompositeElm\s4\s5\s2 1\\sCMOS_NOT_Gate\\s32\\\\s1.5\\\\s0.02\\s33\\\\s1.5\\\\s0.02\\s0\\\\s0\\\\s40\\\\s5\\\\s0\\\\s0\\\\s0.5\s1\\sCMOS_AND_Gate\\s32\\\\s1.5\\\\s0.02\\s32\\\\s1.5\\\\s0.02\\s33\\\\s1.5\\\\s0.02\\s33\\\\s1.5\\\\s0.02\\s0\\\\s0\\\\s40\\\\s5\\\\s0\\\\s0\\\\s0.5
+410 256 208 384 208 1 CMOS-AND-Gate 1\sCMOS_NOT_Gate\s32\\s1.5\\s0.02\s33\\s1.5\\s0.02\s0\\s0\\s40\\s5\\s0\\s0\\s0.5 1\sCMOS_AND_Gate\s32\\s1.5\\s0.02\s32\\s1.5\\s0.02\s33\\s1.5\\s0.02\s33\\s1.5\\s0.02\s0\\s0\\s40\\s5\\s0\\s0\\s0.5
+410 352 208 384 208 1 CMOS_NOT_Gate 32\s1.5\s0.02 33\s1.5\s0.02 0\s0\s40\s5\s0\s0\s0.5
+207 480 208 512 208 4 NAND
+207 256 208 208 208 4 A
+207 256 240 208 240 4 B
