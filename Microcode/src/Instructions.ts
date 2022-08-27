@@ -1,8 +1,9 @@
 import Instruction from './classes/Instruction';
 import * as Step from './Steps';
+import Opcodes from './classes/Opcodes';
 
 //
 export const INSTRUCTION_INC_A = new Instruction({
-    opcode: 0x1,
+    opcode: Opcodes.new('INC_A'),
     steps: [{...Step.INC_A, util: Step.RESET_STEP.util} ]
 });

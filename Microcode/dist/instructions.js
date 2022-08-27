@@ -29,8 +29,9 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.INSTRUCTION_INC_A = void 0;
 const Instruction_1 = __importDefault(require("./classes/Instruction"));
 const Step = __importStar(require("./Steps"));
+const Opcodes_1 = __importDefault(require("./classes/Opcodes"));
 exports.INSTRUCTION_INC_A = new Instruction_1.default({
-    opcode: 0x1,
+    opcode: Opcodes_1.default.new('INC_A'),
     steps: [Object.assign(Object.assign({}, Step.INC_A), { util: Step.RESET_STEP.util })]
 });
 //# sourceMappingURL=Instructions.js.map

@@ -1,6 +1,6 @@
 import EepromWriter from './classes/Eeprom';
 import * as Instructions from './Instructions';
-
+import Opcodes from './classes/Opcodes';
 const Microcode = new EepromWriter();
 
 for (let i in Object.values(Instructions)) {
@@ -8,3 +8,6 @@ for (let i in Object.values(Instructions)) {
 }
 
 Microcode.dump();
+
+// console.log(Opcodes.list());
+
