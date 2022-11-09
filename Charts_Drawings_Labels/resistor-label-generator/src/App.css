@@ -1,0 +1,109 @@
+html, body {
+  margin: 0;
+}
+
+body {
+  padding: 20px;
+}
+
+.App {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: 1200px;
+}
+
+.label {
+  display: block;
+  text-align: center;
+  border: dashed 1px #dadada;
+  padding: 9px 5px 0px 5px;
+  border-radius: 50%;
+  height: 38px;
+  width: 38px;
+  box-sizing: content-box;
+  flex: none;
+}
+
+p {
+  margin: 0;
+}
+
+.colors {
+  box-sizing: border-box;
+  font-size: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  gap: 2px;
+  position: relative;
+}
+
+.colors.band4::before {
+  background: #e3cc78;
+}
+
+.colors div {
+  display: inline-block;
+  width: 4px;
+  height: 8px;
+  position: relative;
+}
+
+.colors::before {
+  content: ' ';
+  display: block;
+  height: 8px;
+  position: absolute;
+  right: 0;
+  left: 0;
+  background: #7ccce9;
+  border-radius: 15px;
+  z-index: -1;
+}
+
+
+.colors div:first-child {
+  width: 5px;
+  height: 10px;
+  border-radius: 20px 0 0 20px;
+  border-right-width: 4px;
+}
+
+.colors div:first-child::after {
+  content: ' ';
+  display: block;
+  height: 10px;
+  position: absolute;
+  right: -6px;
+  background: #7ccce9;
+  width: 2px;
+}
+
+.colors.band4 div:first-child::after {
+  background: #e3cc78;
+}
+
+.colors div:last-child {
+  width: 5px;
+  height: 10px;
+  border-radius: 0 20px 20px 0;
+  border-left-width: 4px;
+}
+
+.colors div:last-child::after {
+  content: ' ';
+  display: block;
+  height: 10px;
+  position: absolute;
+  left: -6px;
+  background: #7ccce9;
+  width: 2px;
+}
+
+
+.colors.band4 div:last-child::after {
+  background: #e3cc78;
+}

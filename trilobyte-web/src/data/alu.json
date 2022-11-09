@@ -1,0 +1,795 @@
+{
+  "name":"Arithmetic Logic Unit (ALU)",
+  "description":"This portion of the CPU is responsible for all of the arithmetic, logic, and boolean functionality. It includes a flags register as well as a conditional jump logic module.  Using a 6-bit control word, and the A and B data busses, it can perform 22 different functions.  It is  connected to the main 8-bit data bus to transfer values to the accumulator and operand  registers as well as output the result of the given function. It is also used to restore the  flags register during an interrupt return.",
+  "modules":{
+    "arithmetic":{
+      "description":"This module is built with two 4-bit Full Adders to perform addition on two 8-bit values.  It uses two's-complement for Subtraction by XOR'ing the operand (B) with 0xff and adding 1.  The accumulator can be incremented or decremented. Arithmetic Control Truth Table"
+    },
+    "logic":{
+      "description":"This module is responsible for executing logical bitwise operations. It contains only  the AND, OR, and NOR functions. To achieve NAND, NOR, and XNOR the result is inverted  at the ALU control unit."
+    },
+    "shifter":{
+      "description":"This module provides the ability to shift bits to the left or right. Can be done  logically or arithmetically. The logical shift is unsigned (ignores MSB), whereas  Arithmetic Shift is signed, and maintains the most significant bit. This is the  equivalent of multiplying/dividing by 2. It also provides the ability to carry-in the bit that was shifted out in order to achieve a Rotate Left or Rotate Right."
+    },
+    "flags":{
+      "description":""
+    },
+    "control":{
+      "description":"",
+      "words":[
+        [
+          0,
+          "-",
+          "-",
+          "-",
+          "-",
+          "-",
+          "Disabled - High impedience output",
+          "",
+          "NOP",
+          "Y",
+          "0x0"
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          "Asserts Accumulator, Ato the data bus",
+          "",
+          "PASS A",
+          "Y",
+          "0x20"
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          "Asserts Inverted Accumulator, ~A~to the data bus",
+          "",
+          "NOT",
+          "Y",
+          "0x30"
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          "Asserts A plus Bto the data bus",
+          "CF, SF, OF, ZF",
+          "ADD",
+          "Y",
+          "0x21"
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          "Asserts A plus B plus Carry Flagto the data bus",
+          "CF, SF, OF, ZF",
+          "ADC",
+          "Y",
+          "0x22"
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          "Asserts A minus Bto the data bus",
+          "CF, SF, OF, ZF",
+          "SUB",
+          "Y",
+          "0x23"
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          0,
+          "Asserts A minus B minus Carry Flagto the data bus",
+          "CF, SF, OF, ZF",
+          "SBB",
+          "Y",
+          "0x24"
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          0,
+          1,
+          "Asserts A plus 1to the data bus",
+          "CF, SF, OF, ZF",
+          "INC",
+          "Y",
+          "0x25"
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          1,
+          0,
+          "Asserts A minus 1to the data bus",
+          "CF, SF, OF, ZF",
+          "DEC",
+          "Y",
+          "0x26"
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          "Asserts ABto the data bus",
+          "SF, ZF, OF: Cleared, CF: Cleared",
+          "AND",
+          "Y",
+          "0x27"
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          1,
+          "Asserts ~AB~to the data bus",
+          "SF, ZF, OF: Cleared, CF: Cleared",
+          "NAND",
+          "Y",
+          "0x37"
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          "Asserts A+Bto the data bus",
+          "SF, ZF, OF: Cleared, CF: Cleared",
+          "OR",
+          "Y",
+          "0x28"
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          "Asserts ~A+B~to the data bus",
+          "SF, ZF, OF: Cleared, CF: Cleared",
+          "NOR",
+          "Y",
+          "0x38"
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          0,
+          1,
+          "Asserts A⊕Bto the data bus",
+          "SF, ZF, OF: Cleared, CF: Cleared",
+          "XOR",
+          "Y",
+          "0x29"
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          0,
+          1,
+          "Asserts ~A⊕B~to the data bus",
+          "SF, ZF, OF: Cleared, CF: Cleared",
+          "XNOR",
+          "Y",
+          "0x39"
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          "Asserts A<<1to the data bus",
+          "CF, SF, ZF, OF",
+          "SHL",
+          "Y",
+          "0x2a"
+        ],
+        [
+          1,
+          0,
+          1,
+          0,
+          1,
+          1,
+          "Asserts A>>1to the data bus",
+          "CF, SF, ZF, OF",
+          "SHR",
+          "Y",
+          "0x2b"
+        ],
+        [
+          1,
+          0,
+          1,
+          1,
+          0,
+          0,
+          "Asserts A*2to the data bus, retains MSB.",
+          "CF, SF, ZF, OF",
+          "ASL",
+          "Y",
+          "0x2c"
+        ],
+        [
+          1,
+          0,
+          1,
+          1,
+          0,
+          1,
+          "Asserts A/2to the data bus, retains MSB.",
+          "CF, SF, ZF, OF",
+          "ASR",
+          "Y",
+          "0x2d"
+        ],
+        [
+          1,
+          0,
+          1,
+          1,
+          1,
+          0,
+          "Asserts <A<to the data bus, retains MSB.",
+          "CF, SF, ZF, OF",
+          "ROL",
+          "Y",
+          "0x2e"
+        ],
+        [
+          1,
+          0,
+          1,
+          1,
+          1,
+          1,
+          "Asserts >A>to the data bus, retains MSB.",
+          "CF, SF, ZF, OF",
+          "ROR",
+          "Y",
+          "0x2f"
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          1,
+          "Performs A minus B and disregards result, only saves flags",
+          "CF, SF, ZF, OF",
+          "CMP",
+          "Y",
+          "0x23*"
+        ],
+        [
+          1,
+          0,
+          0,
+          1,
+          1,
+          1,
+          "Performs AB and disregards result, only saves flags",
+          "CF, SF, ZF, OF",
+          "TST",
+          "Y",
+          "0x27*"
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          0,
+          1,
+          "Asserts ~A plus B~to the data bus",
+          "",
+          "~ADD~",
+          "",
+          "0x31"
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          1,
+          1,
+          "Asserts ~A minus B~to the data bus",
+          "",
+          "~SUB~",
+          "",
+          "0x33"
+        ],
+        [
+          1,
+          1,
+          0,
+          0,
+          1,
+          0,
+          "Asserts ~A plus B plus Carry Flag~to the data bus",
+          "",
+          "~ADC~",
+          "",
+          "0x32"
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          0,
+          0,
+          "Asserts ~A minus B minus Carry Flag~to the data bus",
+          "",
+          "~SBB~",
+          "",
+          "0x34"
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          0,
+          1,
+          "Asserts ~A plus 1~to the data bus",
+          "",
+          "~INC~",
+          "",
+          "0x35"
+        ],
+        [
+          1,
+          1,
+          0,
+          1,
+          1,
+          0,
+          "Asserts ~A minus 1~to the data bus",
+          "",
+          "~DEC~",
+          "",
+          "0x36"
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          1,
+          0,
+          "Asserts ~A<<1~to the data bus",
+          "",
+          "~SHL~",
+          "",
+          "0x3a"
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          "Asserts ~A>>1~to the data bus",
+          "",
+          "~SHR~",
+          "",
+          "0x3b"
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          "Asserts ~A*2~to the data bus",
+          "",
+          "~ASL~",
+          "",
+          "0x3c"
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          0,
+          1,
+          "Asserts ~A/2~to the data bus",
+          "",
+          "~ASR~",
+          "",
+          "0x3d"
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          0,
+          "Asserts ~<A<~to the data bus, retains MSB.",
+          "",
+          "~ROL~",
+          "",
+          "0x2e"
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          "Asserts ~>A>~to the data bus, retains MSB.",
+          "",
+          "~ROR~",
+          "",
+          "0x2f"
+        ]
+      ]
+    }
+  },
+  "functions":{
+    "arithmetic":[
+      {
+        "instruction":"ADD",
+        "code":"0x21",
+        "schematic":"AdderModuleSchematic",
+        "gerber":"AdderModuleGerber",
+        "board":"AdderModuleBoard",
+        "title":"Addition",
+        "subTitle":"A = A plus B",
+        "flags":[
+          "CF",
+          "SF",
+          "ZF",
+          "OF"
+        ],
+        "description":"Assigns A to the sum of A and B"
+      },
+      {
+        "instruction":"ADC",
+        "code":"0x22",
+        "title":"Addition w/carry",
+        "subTitle":"A = A plus B plus CF",
+        "flags":[
+          "CF",
+          "SF",
+          "ZF",
+          "OF"
+        ],
+        "description":"Assigns A to the sum of A and B plus the value of the Carry Flag"
+      },
+      {
+        "instruction":"SUB",
+        "code":"0x23",
+        "title":"Subtraction",
+        "subTitle":"A = A minus B",
+        "flags":[
+          "CF",
+          "SF",
+          "ZF",
+          "OF"
+        ],
+        "description":"Assigns A to the value of A plus the inverted value of B plus 1 (Two's complement)"
+      },
+      {
+        "instruction":"SBB",
+        "code":"0x24",
+        "title":"Subtraction w/borrow",
+        "subTitle":"A = A minus B minus CF",
+        "flags":[
+          "CF",
+          "SF",
+          "ZF",
+          "OF"
+        ],
+        "description":"Assigns A to the value of A plus the inverted value of B plus 1, plus the value of the Carry Flag (Two's complement)"
+      },
+      {
+        "instruction":"INC",
+        "code":"0xXX",
+        "title":"Increment",
+        "subTitle":"A = A plus 1",
+        "flags":[
+          "CF",
+          "SF",
+          "ZF",
+          "OF"
+        ],
+        "description":"Assigns A to the value of A plus 1"
+      },
+      {
+        "instruction":"DEC",
+        "code":"0xXX",
+        "title":"Decrement",
+        "subTitle":"A = A minus 1",
+        "flags":[
+          "CF",
+          "SF",
+          "ZF",
+          "OF"
+        ],
+        "description":"Assigns A to the value of A minus 1"
+      }
+    ],
+    "logic":[
+      {
+        "instruction":"AND",
+        "code":"0xXX",
+        "schematic":"",
+        "board":"",
+        "title":"AND",
+        "subTitle":"A = AB",
+        "flags":[
+          "SF",
+          "ZF",
+          "CF:0",
+          "OF:0"
+        ],
+        "description":"Assigns A to value of the Logical AND of A and B"
+      },
+      {
+        "instruction":"NAND",
+        "code":"0xXX",
+        "schematic":"",
+        "board":"",
+        "title":"NAND",
+        "subTitle":"~AB",
+        "flags":[
+          "SF",
+          "ZF",
+          "CF:0",
+          "OF:0"
+        ],
+        "description":"Assigns A to value of the Logical NAND of A and B"
+      },
+      {
+        "instruction":"OR",
+        "code":"0xXX",
+        "schematic":"",
+        "board":"",
+        "title":"OR",
+        "subTitle":"A = A + B",
+        "flags":[
+          "SF",
+          "ZF",
+          "CF:0",
+          "OF:0"
+        ],
+        "description":"Assigns A to value of the Logical OR of A and B"
+      },
+      {
+        "instruction":"NOR",
+        "code":"0xXX",
+        "schematic":"",
+        "board":"",
+        "title":"NOR",
+        "subTitle":"~OR",
+        "flags":[
+          "SF",
+          "ZF",
+          "CF:0",
+          "OF:0"
+        ],
+        "description":"Assigns A to value of the Logical NOR of A and B"
+      },
+      {
+        "instruction":"XOR",
+        "code":"0xXX",
+        "schematic":"",
+        "board":"",
+        "title":"XOR",
+        "subTitle":"A = A ⊕ B",
+        "flags":[
+          "SF",
+          "ZF",
+          "CF:0",
+          "OF:0"
+        ],
+        "description":"Assigns A to value of the Logical XOR of A and B"
+      },
+      {
+        "instruction":"XNOR",
+        "code":"0xXX",
+        "schematic":"",
+        "board":"",
+        "title":"XNOR",
+        "subTitle":"A = A ⊙ B",
+        "flags":[
+          "SF",
+          "ZF",
+          "CF:0",
+          "OF:0"
+        ],
+        "description":"Assigns A to value of the Logical XNOR of A and B"
+      },
+      {
+        "instruction":"NOT",
+        "code":"0xXX",
+        "schematic":"",
+        "board":"",
+        "title":"Invert",
+        "subTitle":"~A",
+        "flags":[
+          
+        ],
+        "description":"Assigns A to the inverted value of A"
+      }
+    ],
+    "shift":[
+      {
+        "instruction":"ASL",
+        "code":"0xXX",
+        "schematic":"",
+        "board":"",
+        "title":"Arithmetic Shift Left",
+        "subTitle":"A = A*2",
+        "flags":[
+          "CF",
+          "SF",
+          "ZF",
+          "OF"
+        ],
+        "description":"Assigns A to value of shifting A left one place. 0 is carried into LSB, and the MSB (sign) is retained. The 7th bit is moved to the CF."
+      },
+      {
+        "instruction":"ASR",
+        "code":"0xXX",
+        "schematic":"",
+        "board":"",
+        "title":"Arithmetic Shift Right",
+        "subTitle":"A = A/2",
+        "flags":[
+          "CF",
+          "SF",
+          "ZF",
+          "OF"
+        ],
+        "description":"Assigns A to value of shifting A right one place. The MSB (sign) is retained and the LSB is moved to the CF."
+      },
+      {
+        "instruction":"SHL",
+        "code":"0xXX",
+        "schematic":"",
+        "board":"",
+        "title":"Logical Shift Left",
+        "subTitle":"A = A << 1",
+        "flags":[
+          "SF",
+          "ZF"
+        ],
+        "description":"Assigns A to value of shifting A left one place. 0 is carried into LSB."
+      },
+      {
+        "instruction":"SHR",
+        "code":"0xXX",
+        "schematic":"",
+        "board":"",
+        "title":"Logical Shift Right",
+        "subTitle":"A = A >> 1",
+        "flags":[
+          "SF",
+          "ZF"
+        ],
+        "description":"Assigns A to value of shifting A right one place. 0 is carried into MSB."
+      },
+      {
+        "instruction":"ROL",
+        "code":"0xXX",
+        "schematic":"",
+        "board":"",
+        "title":"Rotate Left",
+        "subTitle":"A = (A % 128) * 2 + (A / 128)",
+        "flags":[
+          "SF",
+          "ZF"
+        ],
+        "description":"Assigns A to value of shifting A left one place. MSB is carried into LSB."
+      },
+      {
+        "instruction":"ROR",
+        "code":"0xXX",
+        "schematic":"",
+        "board":"",
+        "title":"Rotate Right",
+        "subTitle":"A = (A / 2) + ((A & 1) * 128)",
+        "flags":[
+          "SF",
+          "ZF"
+        ],
+        "description":"Assigns A to value of shifting A right one place. LSB is carried into MSB."
+      }
+    ],
+    "other":[
+      {
+        "instruction":"TST",
+        "code":"0xXX",
+        "schematic":"",
+        "board":"",
+        "title":"Test",
+        "subTitle":"AB",
+        "flags":[
+          "CF:0",
+          "OF:0",
+          "SF",
+          "ZF"
+        ],
+        "description":"Sets flags based on bitwise result of A AND B. Result is ignored."
+      },
+      {
+        "instruction":"CMP",
+        "code":"0xXX",
+        "schematic":"",
+        "board":"",
+        "title":"Compare",
+        "subTitle":"A minus B",
+        "flags":[
+          "CF",
+          "SF",
+          "ZF",
+          "OF"
+        ],
+        "description":"Sets flags based on the arithmetic result of A minus B. Result is ignored."
+      },
+      {
+        "instruction":"PASS",
+        "code":"0xXX",
+        "schematic":"",
+        "board":"",
+        "title":"Assert A",
+        "subTitle":"A => BUS",
+        "flags":[
+          
+        ],
+        "description":"Asserts the A register out onto the data bus"
+      }
+    ]
+  }
+}
